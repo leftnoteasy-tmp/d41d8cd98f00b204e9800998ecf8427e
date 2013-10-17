@@ -6,179 +6,179 @@
 #endif
 
 #include "yarn_server_common_service_protos.pb-c.h"
-void   register_node_manager_request_proto__init
-                     (RegisterNodeManagerRequestProto         *message)
+void   hadoop__yarn__register_node_manager_request_proto__init
+                     (Hadoop__Yarn__RegisterNodeManagerRequestProto         *message)
 {
-  static RegisterNodeManagerRequestProto init_value = REGISTER_NODE_MANAGER_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RegisterNodeManagerRequestProto init_value = HADOOP__YARN__REGISTER_NODE_MANAGER_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t register_node_manager_request_proto__get_packed_size
-                     (const RegisterNodeManagerRequestProto *message)
+size_t hadoop__yarn__register_node_manager_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t register_node_manager_request_proto__pack
-                     (const RegisterNodeManagerRequestProto *message,
+size_t hadoop__yarn__register_node_manager_request_proto__pack
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t register_node_manager_request_proto__pack_to_buffer
-                     (const RegisterNodeManagerRequestProto *message,
+size_t hadoop__yarn__register_node_manager_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RegisterNodeManagerRequestProto *
-       register_node_manager_request_proto__unpack
+Hadoop__Yarn__RegisterNodeManagerRequestProto *
+       hadoop__yarn__register_node_manager_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RegisterNodeManagerRequestProto *)
-     protobuf_c_message_unpack (&register_node_manager_request_proto__descriptor,
+  return (Hadoop__Yarn__RegisterNodeManagerRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__register_node_manager_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   register_node_manager_request_proto__free_unpacked
-                     (RegisterNodeManagerRequestProto *message,
+void   hadoop__yarn__register_node_manager_request_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterNodeManagerRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   register_node_manager_response_proto__init
-                     (RegisterNodeManagerResponseProto         *message)
+void   hadoop__yarn__register_node_manager_response_proto__init
+                     (Hadoop__Yarn__RegisterNodeManagerResponseProto         *message)
 {
-  static RegisterNodeManagerResponseProto init_value = REGISTER_NODE_MANAGER_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RegisterNodeManagerResponseProto init_value = HADOOP__YARN__REGISTER_NODE_MANAGER_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t register_node_manager_response_proto__get_packed_size
-                     (const RegisterNodeManagerResponseProto *message)
+size_t hadoop__yarn__register_node_manager_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t register_node_manager_response_proto__pack
-                     (const RegisterNodeManagerResponseProto *message,
+size_t hadoop__yarn__register_node_manager_response_proto__pack
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t register_node_manager_response_proto__pack_to_buffer
-                     (const RegisterNodeManagerResponseProto *message,
+size_t hadoop__yarn__register_node_manager_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RegisterNodeManagerResponseProto *
-       register_node_manager_response_proto__unpack
+Hadoop__Yarn__RegisterNodeManagerResponseProto *
+       hadoop__yarn__register_node_manager_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RegisterNodeManagerResponseProto *)
-     protobuf_c_message_unpack (&register_node_manager_response_proto__descriptor,
+  return (Hadoop__Yarn__RegisterNodeManagerResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__register_node_manager_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   register_node_manager_response_proto__free_unpacked
-                     (RegisterNodeManagerResponseProto *message,
+void   hadoop__yarn__register_node_manager_response_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterNodeManagerResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &register_node_manager_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__register_node_manager_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   node_heartbeat_request_proto__init
-                     (NodeHeartbeatRequestProto         *message)
+void   hadoop__yarn__node_heartbeat_request_proto__init
+                     (Hadoop__Yarn__NodeHeartbeatRequestProto         *message)
 {
-  static NodeHeartbeatRequestProto init_value = NODE_HEARTBEAT_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__NodeHeartbeatRequestProto init_value = HADOOP__YARN__NODE_HEARTBEAT_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t node_heartbeat_request_proto__get_packed_size
-                     (const NodeHeartbeatRequestProto *message)
+size_t hadoop__yarn__node_heartbeat_request_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t node_heartbeat_request_proto__pack
-                     (const NodeHeartbeatRequestProto *message,
+size_t hadoop__yarn__node_heartbeat_request_proto__pack
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t node_heartbeat_request_proto__pack_to_buffer
-                     (const NodeHeartbeatRequestProto *message,
+size_t hadoop__yarn__node_heartbeat_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-NodeHeartbeatRequestProto *
-       node_heartbeat_request_proto__unpack
+Hadoop__Yarn__NodeHeartbeatRequestProto *
+       hadoop__yarn__node_heartbeat_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (NodeHeartbeatRequestProto *)
-     protobuf_c_message_unpack (&node_heartbeat_request_proto__descriptor,
+  return (Hadoop__Yarn__NodeHeartbeatRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__node_heartbeat_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   node_heartbeat_request_proto__free_unpacked
-                     (NodeHeartbeatRequestProto *message,
+void   hadoop__yarn__node_heartbeat_request_proto__free_unpacked
+                     (Hadoop__Yarn__NodeHeartbeatRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   node_heartbeat_response_proto__init
-                     (NodeHeartbeatResponseProto         *message)
+void   hadoop__yarn__node_heartbeat_response_proto__init
+                     (Hadoop__Yarn__NodeHeartbeatResponseProto         *message)
 {
-  static NodeHeartbeatResponseProto init_value = NODE_HEARTBEAT_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__NodeHeartbeatResponseProto init_value = HADOOP__YARN__NODE_HEARTBEAT_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t node_heartbeat_response_proto__get_packed_size
-                     (const NodeHeartbeatResponseProto *message)
+size_t hadoop__yarn__node_heartbeat_response_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t node_heartbeat_response_proto__pack
-                     (const NodeHeartbeatResponseProto *message,
+size_t hadoop__yarn__node_heartbeat_response_proto__pack
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t node_heartbeat_response_proto__pack_to_buffer
-                     (const NodeHeartbeatResponseProto *message,
+size_t hadoop__yarn__node_heartbeat_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-NodeHeartbeatResponseProto *
-       node_heartbeat_response_proto__unpack
+Hadoop__Yarn__NodeHeartbeatResponseProto *
+       hadoop__yarn__node_heartbeat_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (NodeHeartbeatResponseProto *)
-     protobuf_c_message_unpack (&node_heartbeat_response_proto__descriptor,
+  return (Hadoop__Yarn__NodeHeartbeatResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__node_heartbeat_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   node_heartbeat_response_proto__free_unpacked
-                     (NodeHeartbeatResponseProto *message,
+void   hadoop__yarn__node_heartbeat_response_proto__free_unpacked
+                     (Hadoop__Yarn__NodeHeartbeatResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_heartbeat_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-static const ProtobufCFieldDescriptor register_node_manager_request_proto__field_descriptors[3] =
+static const ProtobufCFieldDescriptor hadoop__yarn__register_node_manager_request_proto__field_descriptors[3] =
 {
   {
     "node_id",
@@ -186,8 +186,8 @@ static const ProtobufCFieldDescriptor register_node_manager_request_proto__field
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerRequestProto, node_id),
-    &node_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerRequestProto, node_id),
+    &hadoop__yarn__node_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -197,8 +197,8 @@ static const ProtobufCFieldDescriptor register_node_manager_request_proto__field
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerRequestProto, has_http_port),
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerRequestProto, http_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerRequestProto, has_http_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerRequestProto, http_port),
     NULL,
     NULL,
     0,            /* packed */
@@ -210,40 +210,40 @@ static const ProtobufCFieldDescriptor register_node_manager_request_proto__field
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerRequestProto, resource),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerRequestProto, resource),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned register_node_manager_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__register_node_manager_request_proto__field_indices_by_name[] = {
   1,   /* field[1] = http_port */
   0,   /* field[0] = node_id */
   2,   /* field[2] = resource */
 };
-static const ProtobufCIntRange register_node_manager_request_proto__number_ranges[2 + 1] =
+static const ProtobufCIntRange hadoop__yarn__register_node_manager_request_proto__number_ranges[2 + 1] =
 {
   { 1, 0 },
   { 3, 1 },
   { 0, 3 }
 };
-const ProtobufCMessageDescriptor register_node_manager_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__register_node_manager_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RegisterNodeManagerRequestProto",
   "RegisterNodeManagerRequestProto",
-  "RegisterNodeManagerRequestProto",
-  "RegisterNodeManagerRequestProto",
-  "",
-  sizeof(RegisterNodeManagerRequestProto),
+  "Hadoop__Yarn__RegisterNodeManagerRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RegisterNodeManagerRequestProto),
   3,
-  register_node_manager_request_proto__field_descriptors,
-  register_node_manager_request_proto__field_indices_by_name,
-  2,  register_node_manager_request_proto__number_ranges,
-  (ProtobufCMessageInit) register_node_manager_request_proto__init,
+  hadoop__yarn__register_node_manager_request_proto__field_descriptors,
+  hadoop__yarn__register_node_manager_request_proto__field_indices_by_name,
+  2,  hadoop__yarn__register_node_manager_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__register_node_manager_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor register_node_manager_response_proto__field_descriptors[5] =
+static const ProtobufCFieldDescriptor hadoop__yarn__register_node_manager_response_proto__field_descriptors[5] =
 {
   {
     "container_token_master_key",
@@ -251,8 +251,8 @@ static const ProtobufCFieldDescriptor register_node_manager_response_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, container_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, container_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -263,8 +263,8 @@ static const ProtobufCFieldDescriptor register_node_manager_response_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, nm_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, nm_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -274,9 +274,9 @@ static const ProtobufCFieldDescriptor register_node_manager_response_proto__fiel
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, has_nodeaction),
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, nodeaction),
-    &node_action_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, has_nodeaction),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, nodeaction),
+    &hadoop__yarn__node_action_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -286,8 +286,8 @@ static const ProtobufCFieldDescriptor register_node_manager_response_proto__fiel
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, has_rm_identifier),
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, rm_identifier),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, has_rm_identifier),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, rm_identifier),
     NULL,
     NULL,
     0,            /* packed */
@@ -299,41 +299,41 @@ static const ProtobufCFieldDescriptor register_node_manager_response_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(RegisterNodeManagerResponseProto, diagnostics_message),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__RegisterNodeManagerResponseProto, diagnostics_message),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned register_node_manager_response_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__register_node_manager_response_proto__field_indices_by_name[] = {
   0,   /* field[0] = container_token_master_key */
   4,   /* field[4] = diagnostics_message */
   1,   /* field[1] = nm_token_master_key */
   2,   /* field[2] = nodeAction */
   3,   /* field[3] = rm_identifier */
 };
-static const ProtobufCIntRange register_node_manager_response_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__register_node_manager_response_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 5 }
 };
-const ProtobufCMessageDescriptor register_node_manager_response_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__register_node_manager_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RegisterNodeManagerResponseProto",
   "RegisterNodeManagerResponseProto",
-  "RegisterNodeManagerResponseProto",
-  "RegisterNodeManagerResponseProto",
-  "",
-  sizeof(RegisterNodeManagerResponseProto),
+  "Hadoop__Yarn__RegisterNodeManagerResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RegisterNodeManagerResponseProto),
   5,
-  register_node_manager_response_proto__field_descriptors,
-  register_node_manager_response_proto__field_indices_by_name,
-  1,  register_node_manager_response_proto__number_ranges,
-  (ProtobufCMessageInit) register_node_manager_response_proto__init,
+  hadoop__yarn__register_node_manager_response_proto__field_descriptors,
+  hadoop__yarn__register_node_manager_response_proto__field_indices_by_name,
+  1,  hadoop__yarn__register_node_manager_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__register_node_manager_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor node_heartbeat_request_proto__field_descriptors[3] =
+static const ProtobufCFieldDescriptor hadoop__yarn__node_heartbeat_request_proto__field_descriptors[3] =
 {
   {
     "node_status",
@@ -341,8 +341,8 @@ static const ProtobufCFieldDescriptor node_heartbeat_request_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatRequestProto, node_status),
-    &node_status_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatRequestProto, node_status),
+    &hadoop__yarn__node_status_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -353,8 +353,8 @@ static const ProtobufCFieldDescriptor node_heartbeat_request_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatRequestProto, last_known_container_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatRequestProto, last_known_container_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -365,47 +365,47 @@ static const ProtobufCFieldDescriptor node_heartbeat_request_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatRequestProto, last_known_nm_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatRequestProto, last_known_nm_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned node_heartbeat_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__node_heartbeat_request_proto__field_indices_by_name[] = {
   1,   /* field[1] = last_known_container_token_master_key */
   2,   /* field[2] = last_known_nm_token_master_key */
   0,   /* field[0] = node_status */
 };
-static const ProtobufCIntRange node_heartbeat_request_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__node_heartbeat_request_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 3 }
 };
-const ProtobufCMessageDescriptor node_heartbeat_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__node_heartbeat_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.NodeHeartbeatRequestProto",
   "NodeHeartbeatRequestProto",
-  "NodeHeartbeatRequestProto",
-  "NodeHeartbeatRequestProto",
-  "",
-  sizeof(NodeHeartbeatRequestProto),
+  "Hadoop__Yarn__NodeHeartbeatRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__NodeHeartbeatRequestProto),
   3,
-  node_heartbeat_request_proto__field_descriptors,
-  node_heartbeat_request_proto__field_indices_by_name,
-  1,  node_heartbeat_request_proto__number_ranges,
-  (ProtobufCMessageInit) node_heartbeat_request_proto__init,
+  hadoop__yarn__node_heartbeat_request_proto__field_descriptors,
+  hadoop__yarn__node_heartbeat_request_proto__field_indices_by_name,
+  1,  hadoop__yarn__node_heartbeat_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__node_heartbeat_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descriptors[8] =
+static const ProtobufCFieldDescriptor hadoop__yarn__node_heartbeat_response_proto__field_descriptors[8] =
 {
   {
     "response_id",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, has_response_id),
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, response_id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, has_response_id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, response_id),
     NULL,
     NULL,
     0,            /* packed */
@@ -417,8 +417,8 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, container_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, container_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -429,8 +429,8 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, nm_token_master_key),
-    &master_key_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, nm_token_master_key),
+    &hadoop__yarn__master_key_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -440,9 +440,9 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, has_nodeaction),
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, nodeaction),
-    &node_action_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, has_nodeaction),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, nodeaction),
+    &hadoop__yarn__node_action_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -452,9 +452,9 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     5,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, n_containers_to_cleanup),
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, containers_to_cleanup),
-    &container_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, n_containers_to_cleanup),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, containers_to_cleanup),
+    &hadoop__yarn__container_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -464,9 +464,9 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     6,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, n_applications_to_cleanup),
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, applications_to_cleanup),
-    &application_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, n_applications_to_cleanup),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, applications_to_cleanup),
+    &hadoop__yarn__application_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -476,8 +476,8 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     7,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, has_nextheartbeatinterval),
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, nextheartbeatinterval),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, has_nextheartbeatinterval),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, nextheartbeatinterval),
     NULL,
     NULL,
     0,            /* packed */
@@ -489,14 +489,14 @@ static const ProtobufCFieldDescriptor node_heartbeat_response_proto__field_descr
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeHeartbeatResponseProto, diagnostics_message),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeHeartbeatResponseProto, diagnostics_message),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned node_heartbeat_response_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__node_heartbeat_response_proto__field_indices_by_name[] = {
   5,   /* field[5] = applications_to_cleanup */
   1,   /* field[1] = container_token_master_key */
   4,   /* field[4] = containers_to_cleanup */
@@ -506,23 +506,23 @@ static const unsigned node_heartbeat_response_proto__field_indices_by_name[] = {
   3,   /* field[3] = nodeAction */
   0,   /* field[0] = response_id */
 };
-static const ProtobufCIntRange node_heartbeat_response_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__node_heartbeat_response_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 8 }
 };
-const ProtobufCMessageDescriptor node_heartbeat_response_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__node_heartbeat_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.NodeHeartbeatResponseProto",
   "NodeHeartbeatResponseProto",
-  "NodeHeartbeatResponseProto",
-  "NodeHeartbeatResponseProto",
-  "",
-  sizeof(NodeHeartbeatResponseProto),
+  "Hadoop__Yarn__NodeHeartbeatResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__NodeHeartbeatResponseProto),
   8,
-  node_heartbeat_response_proto__field_descriptors,
-  node_heartbeat_response_proto__field_indices_by_name,
-  1,  node_heartbeat_response_proto__number_ranges,
-  (ProtobufCMessageInit) node_heartbeat_response_proto__init,
+  hadoop__yarn__node_heartbeat_response_proto__field_descriptors,
+  hadoop__yarn__node_heartbeat_response_proto__field_indices_by_name,
+  1,  hadoop__yarn__node_heartbeat_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__node_heartbeat_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };

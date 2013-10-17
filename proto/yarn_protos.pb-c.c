@@ -6,1297 +6,1297 @@
 #endif
 
 #include "yarn_protos.pb-c.h"
-void   serialized_exception_proto__init
-                     (SerializedExceptionProto         *message)
+void   hadoop__yarn__serialized_exception_proto__init
+                     (Hadoop__Yarn__SerializedExceptionProto         *message)
 {
-  static SerializedExceptionProto init_value = SERIALIZED_EXCEPTION_PROTO__INIT;
+  static Hadoop__Yarn__SerializedExceptionProto init_value = HADOOP__YARN__SERIALIZED_EXCEPTION_PROTO__INIT;
   *message = init_value;
 }
-size_t serialized_exception_proto__get_packed_size
-                     (const SerializedExceptionProto *message)
+size_t hadoop__yarn__serialized_exception_proto__get_packed_size
+                     (const Hadoop__Yarn__SerializedExceptionProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &serialized_exception_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__serialized_exception_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t serialized_exception_proto__pack
-                     (const SerializedExceptionProto *message,
+size_t hadoop__yarn__serialized_exception_proto__pack
+                     (const Hadoop__Yarn__SerializedExceptionProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &serialized_exception_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__serialized_exception_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t serialized_exception_proto__pack_to_buffer
-                     (const SerializedExceptionProto *message,
+size_t hadoop__yarn__serialized_exception_proto__pack_to_buffer
+                     (const Hadoop__Yarn__SerializedExceptionProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &serialized_exception_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__serialized_exception_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-SerializedExceptionProto *
-       serialized_exception_proto__unpack
+Hadoop__Yarn__SerializedExceptionProto *
+       hadoop__yarn__serialized_exception_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (SerializedExceptionProto *)
-     protobuf_c_message_unpack (&serialized_exception_proto__descriptor,
+  return (Hadoop__Yarn__SerializedExceptionProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__serialized_exception_proto__descriptor,
                                 allocator, len, data);
 }
-void   serialized_exception_proto__free_unpacked
-                     (SerializedExceptionProto *message,
+void   hadoop__yarn__serialized_exception_proto__free_unpacked
+                     (Hadoop__Yarn__SerializedExceptionProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &serialized_exception_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__serialized_exception_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_id_proto__init
-                     (ApplicationIdProto         *message)
+void   hadoop__yarn__application_id_proto__init
+                     (Hadoop__Yarn__ApplicationIdProto         *message)
 {
-  static ApplicationIdProto init_value = APPLICATION_ID_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationIdProto init_value = HADOOP__YARN__APPLICATION_ID_PROTO__INIT;
   *message = init_value;
 }
-size_t application_id_proto__get_packed_size
-                     (const ApplicationIdProto *message)
+size_t hadoop__yarn__application_id_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationIdProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_id_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_id_proto__pack
-                     (const ApplicationIdProto *message,
+size_t hadoop__yarn__application_id_proto__pack
+                     (const Hadoop__Yarn__ApplicationIdProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_id_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_id_proto__pack_to_buffer
-                     (const ApplicationIdProto *message,
+size_t hadoop__yarn__application_id_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationIdProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_id_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationIdProto *
-       application_id_proto__unpack
+Hadoop__Yarn__ApplicationIdProto *
+       hadoop__yarn__application_id_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationIdProto *)
-     protobuf_c_message_unpack (&application_id_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationIdProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_id_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_id_proto__free_unpacked
-                     (ApplicationIdProto *message,
+void   hadoop__yarn__application_id_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationIdProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_id_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_attempt_id_proto__init
-                     (ApplicationAttemptIdProto         *message)
+void   hadoop__yarn__application_attempt_id_proto__init
+                     (Hadoop__Yarn__ApplicationAttemptIdProto         *message)
 {
-  static ApplicationAttemptIdProto init_value = APPLICATION_ATTEMPT_ID_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationAttemptIdProto init_value = HADOOP__YARN__APPLICATION_ATTEMPT_ID_PROTO__INIT;
   *message = init_value;
 }
-size_t application_attempt_id_proto__get_packed_size
-                     (const ApplicationAttemptIdProto *message)
+size_t hadoop__yarn__application_attempt_id_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationAttemptIdProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_id_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_attempt_id_proto__pack
-                     (const ApplicationAttemptIdProto *message,
+size_t hadoop__yarn__application_attempt_id_proto__pack
+                     (const Hadoop__Yarn__ApplicationAttemptIdProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_id_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_attempt_id_proto__pack_to_buffer
-                     (const ApplicationAttemptIdProto *message,
+size_t hadoop__yarn__application_attempt_id_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationAttemptIdProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_id_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationAttemptIdProto *
-       application_attempt_id_proto__unpack
+Hadoop__Yarn__ApplicationAttemptIdProto *
+       hadoop__yarn__application_attempt_id_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationAttemptIdProto *)
-     protobuf_c_message_unpack (&application_attempt_id_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationAttemptIdProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_attempt_id_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_attempt_id_proto__free_unpacked
-                     (ApplicationAttemptIdProto *message,
+void   hadoop__yarn__application_attempt_id_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationAttemptIdProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_id_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   container_id_proto__init
-                     (ContainerIdProto         *message)
+void   hadoop__yarn__container_id_proto__init
+                     (Hadoop__Yarn__ContainerIdProto         *message)
 {
-  static ContainerIdProto init_value = CONTAINER_ID_PROTO__INIT;
+  static Hadoop__Yarn__ContainerIdProto init_value = HADOOP__YARN__CONTAINER_ID_PROTO__INIT;
   *message = init_value;
 }
-size_t container_id_proto__get_packed_size
-                     (const ContainerIdProto *message)
+size_t hadoop__yarn__container_id_proto__get_packed_size
+                     (const Hadoop__Yarn__ContainerIdProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_id_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t container_id_proto__pack
-                     (const ContainerIdProto *message,
+size_t hadoop__yarn__container_id_proto__pack
+                     (const Hadoop__Yarn__ContainerIdProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_id_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t container_id_proto__pack_to_buffer
-                     (const ContainerIdProto *message,
+size_t hadoop__yarn__container_id_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ContainerIdProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_id_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ContainerIdProto *
-       container_id_proto__unpack
+Hadoop__Yarn__ContainerIdProto *
+       hadoop__yarn__container_id_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ContainerIdProto *)
-     protobuf_c_message_unpack (&container_id_proto__descriptor,
+  return (Hadoop__Yarn__ContainerIdProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__container_id_proto__descriptor,
                                 allocator, len, data);
 }
-void   container_id_proto__free_unpacked
-                     (ContainerIdProto *message,
+void   hadoop__yarn__container_id_proto__free_unpacked
+                     (Hadoop__Yarn__ContainerIdProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_id_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   resource_proto__init
-                     (ResourceProto         *message)
+void   hadoop__yarn__resource_proto__init
+                     (Hadoop__Yarn__ResourceProto         *message)
 {
-  static ResourceProto init_value = RESOURCE_PROTO__INIT;
+  static Hadoop__Yarn__ResourceProto init_value = HADOOP__YARN__RESOURCE_PROTO__INIT;
   *message = init_value;
 }
-size_t resource_proto__get_packed_size
-                     (const ResourceProto *message)
+size_t hadoop__yarn__resource_proto__get_packed_size
+                     (const Hadoop__Yarn__ResourceProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t resource_proto__pack
-                     (const ResourceProto *message,
+size_t hadoop__yarn__resource_proto__pack
+                     (const Hadoop__Yarn__ResourceProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t resource_proto__pack_to_buffer
-                     (const ResourceProto *message,
+size_t hadoop__yarn__resource_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ResourceProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ResourceProto *
-       resource_proto__unpack
+Hadoop__Yarn__ResourceProto *
+       hadoop__yarn__resource_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ResourceProto *)
-     protobuf_c_message_unpack (&resource_proto__descriptor,
+  return (Hadoop__Yarn__ResourceProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__resource_proto__descriptor,
                                 allocator, len, data);
 }
-void   resource_proto__free_unpacked
-                     (ResourceProto *message,
+void   hadoop__yarn__resource_proto__free_unpacked
+                     (Hadoop__Yarn__ResourceProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   priority_proto__init
-                     (PriorityProto         *message)
+void   hadoop__yarn__priority_proto__init
+                     (Hadoop__Yarn__PriorityProto         *message)
 {
-  static PriorityProto init_value = PRIORITY_PROTO__INIT;
+  static Hadoop__Yarn__PriorityProto init_value = HADOOP__YARN__PRIORITY_PROTO__INIT;
   *message = init_value;
 }
-size_t priority_proto__get_packed_size
-                     (const PriorityProto *message)
+size_t hadoop__yarn__priority_proto__get_packed_size
+                     (const Hadoop__Yarn__PriorityProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &priority_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__priority_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t priority_proto__pack
-                     (const PriorityProto *message,
+size_t hadoop__yarn__priority_proto__pack
+                     (const Hadoop__Yarn__PriorityProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &priority_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__priority_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t priority_proto__pack_to_buffer
-                     (const PriorityProto *message,
+size_t hadoop__yarn__priority_proto__pack_to_buffer
+                     (const Hadoop__Yarn__PriorityProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &priority_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__priority_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-PriorityProto *
-       priority_proto__unpack
+Hadoop__Yarn__PriorityProto *
+       hadoop__yarn__priority_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (PriorityProto *)
-     protobuf_c_message_unpack (&priority_proto__descriptor,
+  return (Hadoop__Yarn__PriorityProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__priority_proto__descriptor,
                                 allocator, len, data);
 }
-void   priority_proto__free_unpacked
-                     (PriorityProto *message,
+void   hadoop__yarn__priority_proto__free_unpacked
+                     (Hadoop__Yarn__PriorityProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &priority_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__priority_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   container_proto__init
-                     (ContainerProto         *message)
+void   hadoop__yarn__container_proto__init
+                     (Hadoop__Yarn__ContainerProto         *message)
 {
-  static ContainerProto init_value = CONTAINER_PROTO__INIT;
+  static Hadoop__Yarn__ContainerProto init_value = HADOOP__YARN__CONTAINER_PROTO__INIT;
   *message = init_value;
 }
-size_t container_proto__get_packed_size
-                     (const ContainerProto *message)
+size_t hadoop__yarn__container_proto__get_packed_size
+                     (const Hadoop__Yarn__ContainerProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t container_proto__pack
-                     (const ContainerProto *message,
+size_t hadoop__yarn__container_proto__pack
+                     (const Hadoop__Yarn__ContainerProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t container_proto__pack_to_buffer
-                     (const ContainerProto *message,
+size_t hadoop__yarn__container_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ContainerProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ContainerProto *
-       container_proto__unpack
+Hadoop__Yarn__ContainerProto *
+       hadoop__yarn__container_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ContainerProto *)
-     protobuf_c_message_unpack (&container_proto__descriptor,
+  return (Hadoop__Yarn__ContainerProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__container_proto__descriptor,
                                 allocator, len, data);
 }
-void   container_proto__free_unpacked
-                     (ContainerProto *message,
+void   hadoop__yarn__container_proto__free_unpacked
+                     (Hadoop__Yarn__ContainerProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   urlproto__init
-                     (URLProto         *message)
+void   hadoop__yarn__urlproto__init
+                     (Hadoop__Yarn__URLProto         *message)
 {
-  static URLProto init_value = URLPROTO__INIT;
+  static Hadoop__Yarn__URLProto init_value = HADOOP__YARN__URLPROTO__INIT;
   *message = init_value;
 }
-size_t urlproto__get_packed_size
-                     (const URLProto *message)
+size_t hadoop__yarn__urlproto__get_packed_size
+                     (const Hadoop__Yarn__URLProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &urlproto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__urlproto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t urlproto__pack
-                     (const URLProto *message,
+size_t hadoop__yarn__urlproto__pack
+                     (const Hadoop__Yarn__URLProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &urlproto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__urlproto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t urlproto__pack_to_buffer
-                     (const URLProto *message,
+size_t hadoop__yarn__urlproto__pack_to_buffer
+                     (const Hadoop__Yarn__URLProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &urlproto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__urlproto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-URLProto *
-       urlproto__unpack
+Hadoop__Yarn__URLProto *
+       hadoop__yarn__urlproto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (URLProto *)
-     protobuf_c_message_unpack (&urlproto__descriptor,
+  return (Hadoop__Yarn__URLProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__urlproto__descriptor,
                                 allocator, len, data);
 }
-void   urlproto__free_unpacked
-                     (URLProto *message,
+void   hadoop__yarn__urlproto__free_unpacked
+                     (Hadoop__Yarn__URLProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &urlproto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__urlproto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   local_resource_proto__init
-                     (LocalResourceProto         *message)
+void   hadoop__yarn__local_resource_proto__init
+                     (Hadoop__Yarn__LocalResourceProto         *message)
 {
-  static LocalResourceProto init_value = LOCAL_RESOURCE_PROTO__INIT;
+  static Hadoop__Yarn__LocalResourceProto init_value = HADOOP__YARN__LOCAL_RESOURCE_PROTO__INIT;
   *message = init_value;
 }
-size_t local_resource_proto__get_packed_size
-                     (const LocalResourceProto *message)
+size_t hadoop__yarn__local_resource_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalResourceProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t local_resource_proto__pack
-                     (const LocalResourceProto *message,
+size_t hadoop__yarn__local_resource_proto__pack
+                     (const Hadoop__Yarn__LocalResourceProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t local_resource_proto__pack_to_buffer
-                     (const LocalResourceProto *message,
+size_t hadoop__yarn__local_resource_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalResourceProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-LocalResourceProto *
-       local_resource_proto__unpack
+Hadoop__Yarn__LocalResourceProto *
+       hadoop__yarn__local_resource_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (LocalResourceProto *)
-     protobuf_c_message_unpack (&local_resource_proto__descriptor,
+  return (Hadoop__Yarn__LocalResourceProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__local_resource_proto__descriptor,
                                 allocator, len, data);
 }
-void   local_resource_proto__free_unpacked
-                     (LocalResourceProto *message,
+void   hadoop__yarn__local_resource_proto__free_unpacked
+                     (Hadoop__Yarn__LocalResourceProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_resource_usage_report_proto__init
-                     (ApplicationResourceUsageReportProto         *message)
+void   hadoop__yarn__application_resource_usage_report_proto__init
+                     (Hadoop__Yarn__ApplicationResourceUsageReportProto         *message)
 {
-  static ApplicationResourceUsageReportProto init_value = APPLICATION_RESOURCE_USAGE_REPORT_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationResourceUsageReportProto init_value = HADOOP__YARN__APPLICATION_RESOURCE_USAGE_REPORT_PROTO__INIT;
   *message = init_value;
 }
-size_t application_resource_usage_report_proto__get_packed_size
-                     (const ApplicationResourceUsageReportProto *message)
+size_t hadoop__yarn__application_resource_usage_report_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationResourceUsageReportProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_resource_usage_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_resource_usage_report_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_resource_usage_report_proto__pack
-                     (const ApplicationResourceUsageReportProto *message,
+size_t hadoop__yarn__application_resource_usage_report_proto__pack
+                     (const Hadoop__Yarn__ApplicationResourceUsageReportProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_resource_usage_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_resource_usage_report_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_resource_usage_report_proto__pack_to_buffer
-                     (const ApplicationResourceUsageReportProto *message,
+size_t hadoop__yarn__application_resource_usage_report_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationResourceUsageReportProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_resource_usage_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_resource_usage_report_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationResourceUsageReportProto *
-       application_resource_usage_report_proto__unpack
+Hadoop__Yarn__ApplicationResourceUsageReportProto *
+       hadoop__yarn__application_resource_usage_report_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationResourceUsageReportProto *)
-     protobuf_c_message_unpack (&application_resource_usage_report_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationResourceUsageReportProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_resource_usage_report_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_resource_usage_report_proto__free_unpacked
-                     (ApplicationResourceUsageReportProto *message,
+void   hadoop__yarn__application_resource_usage_report_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationResourceUsageReportProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_resource_usage_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_resource_usage_report_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_report_proto__init
-                     (ApplicationReportProto         *message)
+void   hadoop__yarn__application_report_proto__init
+                     (Hadoop__Yarn__ApplicationReportProto         *message)
 {
-  static ApplicationReportProto init_value = APPLICATION_REPORT_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationReportProto init_value = HADOOP__YARN__APPLICATION_REPORT_PROTO__INIT;
   *message = init_value;
 }
-size_t application_report_proto__get_packed_size
-                     (const ApplicationReportProto *message)
+size_t hadoop__yarn__application_report_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationReportProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_report_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_report_proto__pack
-                     (const ApplicationReportProto *message,
+size_t hadoop__yarn__application_report_proto__pack
+                     (const Hadoop__Yarn__ApplicationReportProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_report_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_report_proto__pack_to_buffer
-                     (const ApplicationReportProto *message,
+size_t hadoop__yarn__application_report_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationReportProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_report_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationReportProto *
-       application_report_proto__unpack
+Hadoop__Yarn__ApplicationReportProto *
+       hadoop__yarn__application_report_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationReportProto *)
-     protobuf_c_message_unpack (&application_report_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationReportProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_report_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_report_proto__free_unpacked
-                     (ApplicationReportProto *message,
+void   hadoop__yarn__application_report_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationReportProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_report_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   node_id_proto__init
-                     (NodeIdProto         *message)
+void   hadoop__yarn__node_id_proto__init
+                     (Hadoop__Yarn__NodeIdProto         *message)
 {
-  static NodeIdProto init_value = NODE_ID_PROTO__INIT;
+  static Hadoop__Yarn__NodeIdProto init_value = HADOOP__YARN__NODE_ID_PROTO__INIT;
   *message = init_value;
 }
-size_t node_id_proto__get_packed_size
-                     (const NodeIdProto *message)
+size_t hadoop__yarn__node_id_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeIdProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_id_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t node_id_proto__pack
-                     (const NodeIdProto *message,
+size_t hadoop__yarn__node_id_proto__pack
+                     (const Hadoop__Yarn__NodeIdProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_id_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t node_id_proto__pack_to_buffer
-                     (const NodeIdProto *message,
+size_t hadoop__yarn__node_id_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeIdProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_id_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-NodeIdProto *
-       node_id_proto__unpack
+Hadoop__Yarn__NodeIdProto *
+       hadoop__yarn__node_id_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (NodeIdProto *)
-     protobuf_c_message_unpack (&node_id_proto__descriptor,
+  return (Hadoop__Yarn__NodeIdProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__node_id_proto__descriptor,
                                 allocator, len, data);
 }
-void   node_id_proto__free_unpacked
-                     (NodeIdProto *message,
+void   hadoop__yarn__node_id_proto__free_unpacked
+                     (Hadoop__Yarn__NodeIdProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_id_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_id_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   node_report_proto__init
-                     (NodeReportProto         *message)
+void   hadoop__yarn__node_report_proto__init
+                     (Hadoop__Yarn__NodeReportProto         *message)
 {
-  static NodeReportProto init_value = NODE_REPORT_PROTO__INIT;
+  static Hadoop__Yarn__NodeReportProto init_value = HADOOP__YARN__NODE_REPORT_PROTO__INIT;
   *message = init_value;
 }
-size_t node_report_proto__get_packed_size
-                     (const NodeReportProto *message)
+size_t hadoop__yarn__node_report_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeReportProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_report_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t node_report_proto__pack
-                     (const NodeReportProto *message,
+size_t hadoop__yarn__node_report_proto__pack
+                     (const Hadoop__Yarn__NodeReportProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_report_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t node_report_proto__pack_to_buffer
-                     (const NodeReportProto *message,
+size_t hadoop__yarn__node_report_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeReportProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_report_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-NodeReportProto *
-       node_report_proto__unpack
+Hadoop__Yarn__NodeReportProto *
+       hadoop__yarn__node_report_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (NodeReportProto *)
-     protobuf_c_message_unpack (&node_report_proto__descriptor,
+  return (Hadoop__Yarn__NodeReportProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__node_report_proto__descriptor,
                                 allocator, len, data);
 }
-void   node_report_proto__free_unpacked
-                     (NodeReportProto *message,
+void   hadoop__yarn__node_report_proto__free_unpacked
+                     (Hadoop__Yarn__NodeReportProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &node_report_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__node_report_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   resource_request_proto__init
-                     (ResourceRequestProto         *message)
+void   hadoop__yarn__resource_request_proto__init
+                     (Hadoop__Yarn__ResourceRequestProto         *message)
 {
-  static ResourceRequestProto init_value = RESOURCE_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__ResourceRequestProto init_value = HADOOP__YARN__RESOURCE_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t resource_request_proto__get_packed_size
-                     (const ResourceRequestProto *message)
+size_t hadoop__yarn__resource_request_proto__get_packed_size
+                     (const Hadoop__Yarn__ResourceRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t resource_request_proto__pack
-                     (const ResourceRequestProto *message,
+size_t hadoop__yarn__resource_request_proto__pack
+                     (const Hadoop__Yarn__ResourceRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t resource_request_proto__pack_to_buffer
-                     (const ResourceRequestProto *message,
+size_t hadoop__yarn__resource_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ResourceRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ResourceRequestProto *
-       resource_request_proto__unpack
+Hadoop__Yarn__ResourceRequestProto *
+       hadoop__yarn__resource_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ResourceRequestProto *)
-     protobuf_c_message_unpack (&resource_request_proto__descriptor,
+  return (Hadoop__Yarn__ResourceRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__resource_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   resource_request_proto__free_unpacked
-                     (ResourceRequestProto *message,
+void   hadoop__yarn__resource_request_proto__free_unpacked
+                     (Hadoop__Yarn__ResourceRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   preemption_message_proto__init
-                     (PreemptionMessageProto         *message)
+void   hadoop__yarn__preemption_message_proto__init
+                     (Hadoop__Yarn__PreemptionMessageProto         *message)
 {
-  static PreemptionMessageProto init_value = PREEMPTION_MESSAGE_PROTO__INIT;
+  static Hadoop__Yarn__PreemptionMessageProto init_value = HADOOP__YARN__PREEMPTION_MESSAGE_PROTO__INIT;
   *message = init_value;
 }
-size_t preemption_message_proto__get_packed_size
-                     (const PreemptionMessageProto *message)
+size_t hadoop__yarn__preemption_message_proto__get_packed_size
+                     (const Hadoop__Yarn__PreemptionMessageProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_message_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_message_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t preemption_message_proto__pack
-                     (const PreemptionMessageProto *message,
+size_t hadoop__yarn__preemption_message_proto__pack
+                     (const Hadoop__Yarn__PreemptionMessageProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_message_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_message_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t preemption_message_proto__pack_to_buffer
-                     (const PreemptionMessageProto *message,
+size_t hadoop__yarn__preemption_message_proto__pack_to_buffer
+                     (const Hadoop__Yarn__PreemptionMessageProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_message_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_message_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-PreemptionMessageProto *
-       preemption_message_proto__unpack
+Hadoop__Yarn__PreemptionMessageProto *
+       hadoop__yarn__preemption_message_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (PreemptionMessageProto *)
-     protobuf_c_message_unpack (&preemption_message_proto__descriptor,
+  return (Hadoop__Yarn__PreemptionMessageProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__preemption_message_proto__descriptor,
                                 allocator, len, data);
 }
-void   preemption_message_proto__free_unpacked
-                     (PreemptionMessageProto *message,
+void   hadoop__yarn__preemption_message_proto__free_unpacked
+                     (Hadoop__Yarn__PreemptionMessageProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_message_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_message_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   strict_preemption_contract_proto__init
-                     (StrictPreemptionContractProto         *message)
+void   hadoop__yarn__strict_preemption_contract_proto__init
+                     (Hadoop__Yarn__StrictPreemptionContractProto         *message)
 {
-  static StrictPreemptionContractProto init_value = STRICT_PREEMPTION_CONTRACT_PROTO__INIT;
+  static Hadoop__Yarn__StrictPreemptionContractProto init_value = HADOOP__YARN__STRICT_PREEMPTION_CONTRACT_PROTO__INIT;
   *message = init_value;
 }
-size_t strict_preemption_contract_proto__get_packed_size
-                     (const StrictPreemptionContractProto *message)
+size_t hadoop__yarn__strict_preemption_contract_proto__get_packed_size
+                     (const Hadoop__Yarn__StrictPreemptionContractProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &strict_preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__strict_preemption_contract_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t strict_preemption_contract_proto__pack
-                     (const StrictPreemptionContractProto *message,
+size_t hadoop__yarn__strict_preemption_contract_proto__pack
+                     (const Hadoop__Yarn__StrictPreemptionContractProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &strict_preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__strict_preemption_contract_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t strict_preemption_contract_proto__pack_to_buffer
-                     (const StrictPreemptionContractProto *message,
+size_t hadoop__yarn__strict_preemption_contract_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StrictPreemptionContractProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &strict_preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__strict_preemption_contract_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-StrictPreemptionContractProto *
-       strict_preemption_contract_proto__unpack
+Hadoop__Yarn__StrictPreemptionContractProto *
+       hadoop__yarn__strict_preemption_contract_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (StrictPreemptionContractProto *)
-     protobuf_c_message_unpack (&strict_preemption_contract_proto__descriptor,
+  return (Hadoop__Yarn__StrictPreemptionContractProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__strict_preemption_contract_proto__descriptor,
                                 allocator, len, data);
 }
-void   strict_preemption_contract_proto__free_unpacked
-                     (StrictPreemptionContractProto *message,
+void   hadoop__yarn__strict_preemption_contract_proto__free_unpacked
+                     (Hadoop__Yarn__StrictPreemptionContractProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &strict_preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__strict_preemption_contract_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   preemption_contract_proto__init
-                     (PreemptionContractProto         *message)
+void   hadoop__yarn__preemption_contract_proto__init
+                     (Hadoop__Yarn__PreemptionContractProto         *message)
 {
-  static PreemptionContractProto init_value = PREEMPTION_CONTRACT_PROTO__INIT;
+  static Hadoop__Yarn__PreemptionContractProto init_value = HADOOP__YARN__PREEMPTION_CONTRACT_PROTO__INIT;
   *message = init_value;
 }
-size_t preemption_contract_proto__get_packed_size
-                     (const PreemptionContractProto *message)
+size_t hadoop__yarn__preemption_contract_proto__get_packed_size
+                     (const Hadoop__Yarn__PreemptionContractProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_contract_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t preemption_contract_proto__pack
-                     (const PreemptionContractProto *message,
+size_t hadoop__yarn__preemption_contract_proto__pack
+                     (const Hadoop__Yarn__PreemptionContractProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_contract_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t preemption_contract_proto__pack_to_buffer
-                     (const PreemptionContractProto *message,
+size_t hadoop__yarn__preemption_contract_proto__pack_to_buffer
+                     (const Hadoop__Yarn__PreemptionContractProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_contract_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-PreemptionContractProto *
-       preemption_contract_proto__unpack
+Hadoop__Yarn__PreemptionContractProto *
+       hadoop__yarn__preemption_contract_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (PreemptionContractProto *)
-     protobuf_c_message_unpack (&preemption_contract_proto__descriptor,
+  return (Hadoop__Yarn__PreemptionContractProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__preemption_contract_proto__descriptor,
                                 allocator, len, data);
 }
-void   preemption_contract_proto__free_unpacked
-                     (PreemptionContractProto *message,
+void   hadoop__yarn__preemption_contract_proto__free_unpacked
+                     (Hadoop__Yarn__PreemptionContractProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_contract_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_contract_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   preemption_container_proto__init
-                     (PreemptionContainerProto         *message)
+void   hadoop__yarn__preemption_container_proto__init
+                     (Hadoop__Yarn__PreemptionContainerProto         *message)
 {
-  static PreemptionContainerProto init_value = PREEMPTION_CONTAINER_PROTO__INIT;
+  static Hadoop__Yarn__PreemptionContainerProto init_value = HADOOP__YARN__PREEMPTION_CONTAINER_PROTO__INIT;
   *message = init_value;
 }
-size_t preemption_container_proto__get_packed_size
-                     (const PreemptionContainerProto *message)
+size_t hadoop__yarn__preemption_container_proto__get_packed_size
+                     (const Hadoop__Yarn__PreemptionContainerProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_container_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t preemption_container_proto__pack
-                     (const PreemptionContainerProto *message,
+size_t hadoop__yarn__preemption_container_proto__pack
+                     (const Hadoop__Yarn__PreemptionContainerProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_container_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t preemption_container_proto__pack_to_buffer
-                     (const PreemptionContainerProto *message,
+size_t hadoop__yarn__preemption_container_proto__pack_to_buffer
+                     (const Hadoop__Yarn__PreemptionContainerProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_container_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-PreemptionContainerProto *
-       preemption_container_proto__unpack
+Hadoop__Yarn__PreemptionContainerProto *
+       hadoop__yarn__preemption_container_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (PreemptionContainerProto *)
-     protobuf_c_message_unpack (&preemption_container_proto__descriptor,
+  return (Hadoop__Yarn__PreemptionContainerProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__preemption_container_proto__descriptor,
                                 allocator, len, data);
 }
-void   preemption_container_proto__free_unpacked
-                     (PreemptionContainerProto *message,
+void   hadoop__yarn__preemption_container_proto__free_unpacked
+                     (Hadoop__Yarn__PreemptionContainerProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_container_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_container_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   preemption_resource_request_proto__init
-                     (PreemptionResourceRequestProto         *message)
+void   hadoop__yarn__preemption_resource_request_proto__init
+                     (Hadoop__Yarn__PreemptionResourceRequestProto         *message)
 {
-  static PreemptionResourceRequestProto init_value = PREEMPTION_RESOURCE_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__PreemptionResourceRequestProto init_value = HADOOP__YARN__PREEMPTION_RESOURCE_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t preemption_resource_request_proto__get_packed_size
-                     (const PreemptionResourceRequestProto *message)
+size_t hadoop__yarn__preemption_resource_request_proto__get_packed_size
+                     (const Hadoop__Yarn__PreemptionResourceRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_resource_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t preemption_resource_request_proto__pack
-                     (const PreemptionResourceRequestProto *message,
+size_t hadoop__yarn__preemption_resource_request_proto__pack
+                     (const Hadoop__Yarn__PreemptionResourceRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_resource_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t preemption_resource_request_proto__pack_to_buffer
-                     (const PreemptionResourceRequestProto *message,
+size_t hadoop__yarn__preemption_resource_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__PreemptionResourceRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_resource_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-PreemptionResourceRequestProto *
-       preemption_resource_request_proto__unpack
+Hadoop__Yarn__PreemptionResourceRequestProto *
+       hadoop__yarn__preemption_resource_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (PreemptionResourceRequestProto *)
-     protobuf_c_message_unpack (&preemption_resource_request_proto__descriptor,
+  return (Hadoop__Yarn__PreemptionResourceRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__preemption_resource_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   preemption_resource_request_proto__free_unpacked
-                     (PreemptionResourceRequestProto *message,
+void   hadoop__yarn__preemption_resource_request_proto__free_unpacked
+                     (Hadoop__Yarn__PreemptionResourceRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &preemption_resource_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__preemption_resource_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   resource_blacklist_request_proto__init
-                     (ResourceBlacklistRequestProto         *message)
+void   hadoop__yarn__resource_blacklist_request_proto__init
+                     (Hadoop__Yarn__ResourceBlacklistRequestProto         *message)
 {
-  static ResourceBlacklistRequestProto init_value = RESOURCE_BLACKLIST_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__ResourceBlacklistRequestProto init_value = HADOOP__YARN__RESOURCE_BLACKLIST_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t resource_blacklist_request_proto__get_packed_size
-                     (const ResourceBlacklistRequestProto *message)
+size_t hadoop__yarn__resource_blacklist_request_proto__get_packed_size
+                     (const Hadoop__Yarn__ResourceBlacklistRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_blacklist_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_blacklist_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t resource_blacklist_request_proto__pack
-                     (const ResourceBlacklistRequestProto *message,
+size_t hadoop__yarn__resource_blacklist_request_proto__pack
+                     (const Hadoop__Yarn__ResourceBlacklistRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_blacklist_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_blacklist_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t resource_blacklist_request_proto__pack_to_buffer
-                     (const ResourceBlacklistRequestProto *message,
+size_t hadoop__yarn__resource_blacklist_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ResourceBlacklistRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_blacklist_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_blacklist_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ResourceBlacklistRequestProto *
-       resource_blacklist_request_proto__unpack
+Hadoop__Yarn__ResourceBlacklistRequestProto *
+       hadoop__yarn__resource_blacklist_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ResourceBlacklistRequestProto *)
-     protobuf_c_message_unpack (&resource_blacklist_request_proto__descriptor,
+  return (Hadoop__Yarn__ResourceBlacklistRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__resource_blacklist_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   resource_blacklist_request_proto__free_unpacked
-                     (ResourceBlacklistRequestProto *message,
+void   hadoop__yarn__resource_blacklist_request_proto__free_unpacked
+                     (Hadoop__Yarn__ResourceBlacklistRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_blacklist_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_blacklist_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_submission_context_proto__init
-                     (ApplicationSubmissionContextProto         *message)
+void   hadoop__yarn__application_submission_context_proto__init
+                     (Hadoop__Yarn__ApplicationSubmissionContextProto         *message)
 {
-  static ApplicationSubmissionContextProto init_value = APPLICATION_SUBMISSION_CONTEXT_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationSubmissionContextProto init_value = HADOOP__YARN__APPLICATION_SUBMISSION_CONTEXT_PROTO__INIT;
   *message = init_value;
 }
-size_t application_submission_context_proto__get_packed_size
-                     (const ApplicationSubmissionContextProto *message)
+size_t hadoop__yarn__application_submission_context_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationSubmissionContextProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_submission_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_submission_context_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_submission_context_proto__pack
-                     (const ApplicationSubmissionContextProto *message,
+size_t hadoop__yarn__application_submission_context_proto__pack
+                     (const Hadoop__Yarn__ApplicationSubmissionContextProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_submission_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_submission_context_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_submission_context_proto__pack_to_buffer
-                     (const ApplicationSubmissionContextProto *message,
+size_t hadoop__yarn__application_submission_context_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationSubmissionContextProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_submission_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_submission_context_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationSubmissionContextProto *
-       application_submission_context_proto__unpack
+Hadoop__Yarn__ApplicationSubmissionContextProto *
+       hadoop__yarn__application_submission_context_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationSubmissionContextProto *)
-     protobuf_c_message_unpack (&application_submission_context_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationSubmissionContextProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_submission_context_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_submission_context_proto__free_unpacked
-                     (ApplicationSubmissionContextProto *message,
+void   hadoop__yarn__application_submission_context_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationSubmissionContextProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_submission_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_submission_context_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_aclmap_proto__init
-                     (ApplicationACLMapProto         *message)
+void   hadoop__yarn__application_aclmap_proto__init
+                     (Hadoop__Yarn__ApplicationACLMapProto         *message)
 {
-  static ApplicationACLMapProto init_value = APPLICATION_ACLMAP_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationACLMapProto init_value = HADOOP__YARN__APPLICATION_ACLMAP_PROTO__INIT;
   *message = init_value;
 }
-size_t application_aclmap_proto__get_packed_size
-                     (const ApplicationACLMapProto *message)
+size_t hadoop__yarn__application_aclmap_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationACLMapProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_aclmap_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_aclmap_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_aclmap_proto__pack
-                     (const ApplicationACLMapProto *message,
+size_t hadoop__yarn__application_aclmap_proto__pack
+                     (const Hadoop__Yarn__ApplicationACLMapProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_aclmap_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_aclmap_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_aclmap_proto__pack_to_buffer
-                     (const ApplicationACLMapProto *message,
+size_t hadoop__yarn__application_aclmap_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationACLMapProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_aclmap_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_aclmap_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationACLMapProto *
-       application_aclmap_proto__unpack
+Hadoop__Yarn__ApplicationACLMapProto *
+       hadoop__yarn__application_aclmap_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationACLMapProto *)
-     protobuf_c_message_unpack (&application_aclmap_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationACLMapProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_aclmap_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_aclmap_proto__free_unpacked
-                     (ApplicationACLMapProto *message,
+void   hadoop__yarn__application_aclmap_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationACLMapProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_aclmap_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_aclmap_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   yarn_cluster_metrics_proto__init
-                     (YarnClusterMetricsProto         *message)
+void   hadoop__yarn__yarn_cluster_metrics_proto__init
+                     (Hadoop__Yarn__YarnClusterMetricsProto         *message)
 {
-  static YarnClusterMetricsProto init_value = YARN_CLUSTER_METRICS_PROTO__INIT;
+  static Hadoop__Yarn__YarnClusterMetricsProto init_value = HADOOP__YARN__YARN_CLUSTER_METRICS_PROTO__INIT;
   *message = init_value;
 }
-size_t yarn_cluster_metrics_proto__get_packed_size
-                     (const YarnClusterMetricsProto *message)
+size_t hadoop__yarn__yarn_cluster_metrics_proto__get_packed_size
+                     (const Hadoop__Yarn__YarnClusterMetricsProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &yarn_cluster_metrics_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__yarn_cluster_metrics_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t yarn_cluster_metrics_proto__pack
-                     (const YarnClusterMetricsProto *message,
+size_t hadoop__yarn__yarn_cluster_metrics_proto__pack
+                     (const Hadoop__Yarn__YarnClusterMetricsProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &yarn_cluster_metrics_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__yarn_cluster_metrics_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t yarn_cluster_metrics_proto__pack_to_buffer
-                     (const YarnClusterMetricsProto *message,
+size_t hadoop__yarn__yarn_cluster_metrics_proto__pack_to_buffer
+                     (const Hadoop__Yarn__YarnClusterMetricsProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &yarn_cluster_metrics_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__yarn_cluster_metrics_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-YarnClusterMetricsProto *
-       yarn_cluster_metrics_proto__unpack
+Hadoop__Yarn__YarnClusterMetricsProto *
+       hadoop__yarn__yarn_cluster_metrics_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (YarnClusterMetricsProto *)
-     protobuf_c_message_unpack (&yarn_cluster_metrics_proto__descriptor,
+  return (Hadoop__Yarn__YarnClusterMetricsProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__yarn_cluster_metrics_proto__descriptor,
                                 allocator, len, data);
 }
-void   yarn_cluster_metrics_proto__free_unpacked
-                     (YarnClusterMetricsProto *message,
+void   hadoop__yarn__yarn_cluster_metrics_proto__free_unpacked
+                     (Hadoop__Yarn__YarnClusterMetricsProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &yarn_cluster_metrics_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__yarn_cluster_metrics_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   queue_info_proto__init
-                     (QueueInfoProto         *message)
+void   hadoop__yarn__queue_info_proto__init
+                     (Hadoop__Yarn__QueueInfoProto         *message)
 {
-  static QueueInfoProto init_value = QUEUE_INFO_PROTO__INIT;
+  static Hadoop__Yarn__QueueInfoProto init_value = HADOOP__YARN__QUEUE_INFO_PROTO__INIT;
   *message = init_value;
 }
-size_t queue_info_proto__get_packed_size
-                     (const QueueInfoProto *message)
+size_t hadoop__yarn__queue_info_proto__get_packed_size
+                     (const Hadoop__Yarn__QueueInfoProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_info_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_info_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t queue_info_proto__pack
-                     (const QueueInfoProto *message,
+size_t hadoop__yarn__queue_info_proto__pack
+                     (const Hadoop__Yarn__QueueInfoProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_info_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_info_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t queue_info_proto__pack_to_buffer
-                     (const QueueInfoProto *message,
+size_t hadoop__yarn__queue_info_proto__pack_to_buffer
+                     (const Hadoop__Yarn__QueueInfoProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_info_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_info_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-QueueInfoProto *
-       queue_info_proto__unpack
+Hadoop__Yarn__QueueInfoProto *
+       hadoop__yarn__queue_info_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (QueueInfoProto *)
-     protobuf_c_message_unpack (&queue_info_proto__descriptor,
+  return (Hadoop__Yarn__QueueInfoProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__queue_info_proto__descriptor,
                                 allocator, len, data);
 }
-void   queue_info_proto__free_unpacked
-                     (QueueInfoProto *message,
+void   hadoop__yarn__queue_info_proto__free_unpacked
+                     (Hadoop__Yarn__QueueInfoProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_info_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_info_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   queue_user_aclinfo_proto__init
-                     (QueueUserACLInfoProto         *message)
+void   hadoop__yarn__queue_user_aclinfo_proto__init
+                     (Hadoop__Yarn__QueueUserACLInfoProto         *message)
 {
-  static QueueUserACLInfoProto init_value = QUEUE_USER_ACLINFO_PROTO__INIT;
+  static Hadoop__Yarn__QueueUserACLInfoProto init_value = HADOOP__YARN__QUEUE_USER_ACLINFO_PROTO__INIT;
   *message = init_value;
 }
-size_t queue_user_aclinfo_proto__get_packed_size
-                     (const QueueUserACLInfoProto *message)
+size_t hadoop__yarn__queue_user_aclinfo_proto__get_packed_size
+                     (const Hadoop__Yarn__QueueUserACLInfoProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_user_aclinfo_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_user_aclinfo_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t queue_user_aclinfo_proto__pack
-                     (const QueueUserACLInfoProto *message,
+size_t hadoop__yarn__queue_user_aclinfo_proto__pack
+                     (const Hadoop__Yarn__QueueUserACLInfoProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_user_aclinfo_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_user_aclinfo_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t queue_user_aclinfo_proto__pack_to_buffer
-                     (const QueueUserACLInfoProto *message,
+size_t hadoop__yarn__queue_user_aclinfo_proto__pack_to_buffer
+                     (const Hadoop__Yarn__QueueUserACLInfoProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_user_aclinfo_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_user_aclinfo_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-QueueUserACLInfoProto *
-       queue_user_aclinfo_proto__unpack
+Hadoop__Yarn__QueueUserACLInfoProto *
+       hadoop__yarn__queue_user_aclinfo_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (QueueUserACLInfoProto *)
-     protobuf_c_message_unpack (&queue_user_aclinfo_proto__descriptor,
+  return (Hadoop__Yarn__QueueUserACLInfoProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__queue_user_aclinfo_proto__descriptor,
                                 allocator, len, data);
 }
-void   queue_user_aclinfo_proto__free_unpacked
-                     (QueueUserACLInfoProto *message,
+void   hadoop__yarn__queue_user_aclinfo_proto__free_unpacked
+                     (Hadoop__Yarn__QueueUserACLInfoProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &queue_user_aclinfo_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__queue_user_aclinfo_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   container_launch_context_proto__init
-                     (ContainerLaunchContextProto         *message)
+void   hadoop__yarn__container_launch_context_proto__init
+                     (Hadoop__Yarn__ContainerLaunchContextProto         *message)
 {
-  static ContainerLaunchContextProto init_value = CONTAINER_LAUNCH_CONTEXT_PROTO__INIT;
+  static Hadoop__Yarn__ContainerLaunchContextProto init_value = HADOOP__YARN__CONTAINER_LAUNCH_CONTEXT_PROTO__INIT;
   *message = init_value;
 }
-size_t container_launch_context_proto__get_packed_size
-                     (const ContainerLaunchContextProto *message)
+size_t hadoop__yarn__container_launch_context_proto__get_packed_size
+                     (const Hadoop__Yarn__ContainerLaunchContextProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_launch_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_launch_context_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t container_launch_context_proto__pack
-                     (const ContainerLaunchContextProto *message,
+size_t hadoop__yarn__container_launch_context_proto__pack
+                     (const Hadoop__Yarn__ContainerLaunchContextProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_launch_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_launch_context_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t container_launch_context_proto__pack_to_buffer
-                     (const ContainerLaunchContextProto *message,
+size_t hadoop__yarn__container_launch_context_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ContainerLaunchContextProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_launch_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_launch_context_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ContainerLaunchContextProto *
-       container_launch_context_proto__unpack
+Hadoop__Yarn__ContainerLaunchContextProto *
+       hadoop__yarn__container_launch_context_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ContainerLaunchContextProto *)
-     protobuf_c_message_unpack (&container_launch_context_proto__descriptor,
+  return (Hadoop__Yarn__ContainerLaunchContextProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__container_launch_context_proto__descriptor,
                                 allocator, len, data);
 }
-void   container_launch_context_proto__free_unpacked
-                     (ContainerLaunchContextProto *message,
+void   hadoop__yarn__container_launch_context_proto__free_unpacked
+                     (Hadoop__Yarn__ContainerLaunchContextProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_launch_context_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_launch_context_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   container_status_proto__init
-                     (ContainerStatusProto         *message)
+void   hadoop__yarn__container_status_proto__init
+                     (Hadoop__Yarn__ContainerStatusProto         *message)
 {
-  static ContainerStatusProto init_value = CONTAINER_STATUS_PROTO__INIT;
+  static Hadoop__Yarn__ContainerStatusProto init_value = HADOOP__YARN__CONTAINER_STATUS_PROTO__INIT;
   *message = init_value;
 }
-size_t container_status_proto__get_packed_size
-                     (const ContainerStatusProto *message)
+size_t hadoop__yarn__container_status_proto__get_packed_size
+                     (const Hadoop__Yarn__ContainerStatusProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_status_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t container_status_proto__pack
-                     (const ContainerStatusProto *message,
+size_t hadoop__yarn__container_status_proto__pack
+                     (const Hadoop__Yarn__ContainerStatusProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_status_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t container_status_proto__pack_to_buffer
-                     (const ContainerStatusProto *message,
+size_t hadoop__yarn__container_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ContainerStatusProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_status_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ContainerStatusProto *
-       container_status_proto__unpack
+Hadoop__Yarn__ContainerStatusProto *
+       hadoop__yarn__container_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ContainerStatusProto *)
-     protobuf_c_message_unpack (&container_status_proto__descriptor,
+  return (Hadoop__Yarn__ContainerStatusProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__container_status_proto__descriptor,
                                 allocator, len, data);
 }
-void   container_status_proto__free_unpacked
-                     (ContainerStatusProto *message,
+void   hadoop__yarn__container_status_proto__free_unpacked
+                     (Hadoop__Yarn__ContainerStatusProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &container_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__container_status_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   string_local_resource_map_proto__init
-                     (StringLocalResourceMapProto         *message)
+void   hadoop__yarn__string_local_resource_map_proto__init
+                     (Hadoop__Yarn__StringLocalResourceMapProto         *message)
 {
-  static StringLocalResourceMapProto init_value = STRING_LOCAL_RESOURCE_MAP_PROTO__INIT;
+  static Hadoop__Yarn__StringLocalResourceMapProto init_value = HADOOP__YARN__STRING_LOCAL_RESOURCE_MAP_PROTO__INIT;
   *message = init_value;
 }
-size_t string_local_resource_map_proto__get_packed_size
-                     (const StringLocalResourceMapProto *message)
+size_t hadoop__yarn__string_local_resource_map_proto__get_packed_size
+                     (const Hadoop__Yarn__StringLocalResourceMapProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_local_resource_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_local_resource_map_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t string_local_resource_map_proto__pack
-                     (const StringLocalResourceMapProto *message,
+size_t hadoop__yarn__string_local_resource_map_proto__pack
+                     (const Hadoop__Yarn__StringLocalResourceMapProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_local_resource_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_local_resource_map_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t string_local_resource_map_proto__pack_to_buffer
-                     (const StringLocalResourceMapProto *message,
+size_t hadoop__yarn__string_local_resource_map_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StringLocalResourceMapProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_local_resource_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_local_resource_map_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-StringLocalResourceMapProto *
-       string_local_resource_map_proto__unpack
+Hadoop__Yarn__StringLocalResourceMapProto *
+       hadoop__yarn__string_local_resource_map_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (StringLocalResourceMapProto *)
-     protobuf_c_message_unpack (&string_local_resource_map_proto__descriptor,
+  return (Hadoop__Yarn__StringLocalResourceMapProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__string_local_resource_map_proto__descriptor,
                                 allocator, len, data);
 }
-void   string_local_resource_map_proto__free_unpacked
-                     (StringLocalResourceMapProto *message,
+void   hadoop__yarn__string_local_resource_map_proto__free_unpacked
+                     (Hadoop__Yarn__StringLocalResourceMapProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_local_resource_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_local_resource_map_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   string_string_map_proto__init
-                     (StringStringMapProto         *message)
+void   hadoop__yarn__string_string_map_proto__init
+                     (Hadoop__Yarn__StringStringMapProto         *message)
 {
-  static StringStringMapProto init_value = STRING_STRING_MAP_PROTO__INIT;
+  static Hadoop__Yarn__StringStringMapProto init_value = HADOOP__YARN__STRING_STRING_MAP_PROTO__INIT;
   *message = init_value;
 }
-size_t string_string_map_proto__get_packed_size
-                     (const StringStringMapProto *message)
+size_t hadoop__yarn__string_string_map_proto__get_packed_size
+                     (const Hadoop__Yarn__StringStringMapProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_string_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_string_map_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t string_string_map_proto__pack
-                     (const StringStringMapProto *message,
+size_t hadoop__yarn__string_string_map_proto__pack
+                     (const Hadoop__Yarn__StringStringMapProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_string_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_string_map_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t string_string_map_proto__pack_to_buffer
-                     (const StringStringMapProto *message,
+size_t hadoop__yarn__string_string_map_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StringStringMapProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_string_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_string_map_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-StringStringMapProto *
-       string_string_map_proto__unpack
+Hadoop__Yarn__StringStringMapProto *
+       hadoop__yarn__string_string_map_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (StringStringMapProto *)
-     protobuf_c_message_unpack (&string_string_map_proto__descriptor,
+  return (Hadoop__Yarn__StringStringMapProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__string_string_map_proto__descriptor,
                                 allocator, len, data);
 }
-void   string_string_map_proto__free_unpacked
-                     (StringStringMapProto *message,
+void   hadoop__yarn__string_string_map_proto__free_unpacked
+                     (Hadoop__Yarn__StringStringMapProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_string_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_string_map_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   string_bytes_map_proto__init
-                     (StringBytesMapProto         *message)
+void   hadoop__yarn__string_bytes_map_proto__init
+                     (Hadoop__Yarn__StringBytesMapProto         *message)
 {
-  static StringBytesMapProto init_value = STRING_BYTES_MAP_PROTO__INIT;
+  static Hadoop__Yarn__StringBytesMapProto init_value = HADOOP__YARN__STRING_BYTES_MAP_PROTO__INIT;
   *message = init_value;
 }
-size_t string_bytes_map_proto__get_packed_size
-                     (const StringBytesMapProto *message)
+size_t hadoop__yarn__string_bytes_map_proto__get_packed_size
+                     (const Hadoop__Yarn__StringBytesMapProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_bytes_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_bytes_map_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t string_bytes_map_proto__pack
-                     (const StringBytesMapProto *message,
+size_t hadoop__yarn__string_bytes_map_proto__pack
+                     (const Hadoop__Yarn__StringBytesMapProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_bytes_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_bytes_map_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t string_bytes_map_proto__pack_to_buffer
-                     (const StringBytesMapProto *message,
+size_t hadoop__yarn__string_bytes_map_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StringBytesMapProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_bytes_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_bytes_map_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-StringBytesMapProto *
-       string_bytes_map_proto__unpack
+Hadoop__Yarn__StringBytesMapProto *
+       hadoop__yarn__string_bytes_map_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (StringBytesMapProto *)
-     protobuf_c_message_unpack (&string_bytes_map_proto__descriptor,
+  return (Hadoop__Yarn__StringBytesMapProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__string_bytes_map_proto__descriptor,
                                 allocator, len, data);
 }
-void   string_bytes_map_proto__free_unpacked
-                     (StringBytesMapProto *message,
+void   hadoop__yarn__string_bytes_map_proto__free_unpacked
+                     (Hadoop__Yarn__StringBytesMapProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &string_bytes_map_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__string_bytes_map_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-static const ProtobufCFieldDescriptor serialized_exception_proto__field_descriptors[4] =
+static const ProtobufCFieldDescriptor hadoop__yarn__serialized_exception_proto__field_descriptors[4] =
 {
   {
     "message",
@@ -1304,7 +1304,7 @@ static const ProtobufCFieldDescriptor serialized_exception_proto__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(SerializedExceptionProto, message),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__SerializedExceptionProto, message),
     NULL,
     NULL,
     0,            /* packed */
@@ -1316,7 +1316,7 @@ static const ProtobufCFieldDescriptor serialized_exception_proto__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(SerializedExceptionProto, trace),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__SerializedExceptionProto, trace),
     NULL,
     NULL,
     0,            /* packed */
@@ -1328,7 +1328,7 @@ static const ProtobufCFieldDescriptor serialized_exception_proto__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(SerializedExceptionProto, class_name),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__SerializedExceptionProto, class_name),
     NULL,
     NULL,
     0,            /* packed */
@@ -1340,48 +1340,48 @@ static const ProtobufCFieldDescriptor serialized_exception_proto__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(SerializedExceptionProto, cause),
-    &serialized_exception_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__SerializedExceptionProto, cause),
+    &hadoop__yarn__serialized_exception_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned serialized_exception_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__serialized_exception_proto__field_indices_by_name[] = {
   3,   /* field[3] = cause */
   2,   /* field[2] = class_name */
   0,   /* field[0] = message */
   1,   /* field[1] = trace */
 };
-static const ProtobufCIntRange serialized_exception_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__serialized_exception_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 4 }
 };
-const ProtobufCMessageDescriptor serialized_exception_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__serialized_exception_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.SerializedExceptionProto",
   "SerializedExceptionProto",
-  "SerializedExceptionProto",
-  "SerializedExceptionProto",
-  "",
-  sizeof(SerializedExceptionProto),
+  "Hadoop__Yarn__SerializedExceptionProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__SerializedExceptionProto),
   4,
-  serialized_exception_proto__field_descriptors,
-  serialized_exception_proto__field_indices_by_name,
-  1,  serialized_exception_proto__number_ranges,
-  (ProtobufCMessageInit) serialized_exception_proto__init,
+  hadoop__yarn__serialized_exception_proto__field_descriptors,
+  hadoop__yarn__serialized_exception_proto__field_indices_by_name,
+  1,  hadoop__yarn__serialized_exception_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__serialized_exception_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor application_id_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__application_id_proto__field_descriptors[2] =
 {
   {
     "id",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationIdProto, has_id),
-    PROTOBUF_C_OFFSETOF(ApplicationIdProto, id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationIdProto, has_id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationIdProto, id),
     NULL,
     NULL,
     0,            /* packed */
@@ -1392,39 +1392,39 @@ static const ProtobufCFieldDescriptor application_id_proto__field_descriptors[2]
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(ApplicationIdProto, has_cluster_timestamp),
-    PROTOBUF_C_OFFSETOF(ApplicationIdProto, cluster_timestamp),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationIdProto, has_cluster_timestamp),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationIdProto, cluster_timestamp),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_id_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_id_proto__field_indices_by_name[] = {
   1,   /* field[1] = cluster_timestamp */
   0,   /* field[0] = id */
 };
-static const ProtobufCIntRange application_id_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_id_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor application_id_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_id_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationIdProto",
   "ApplicationIdProto",
-  "ApplicationIdProto",
-  "ApplicationIdProto",
-  "",
-  sizeof(ApplicationIdProto),
+  "Hadoop__Yarn__ApplicationIdProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationIdProto),
   2,
-  application_id_proto__field_descriptors,
-  application_id_proto__field_indices_by_name,
-  1,  application_id_proto__number_ranges,
-  (ProtobufCMessageInit) application_id_proto__init,
+  hadoop__yarn__application_id_proto__field_descriptors,
+  hadoop__yarn__application_id_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_id_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_id_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor application_attempt_id_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__application_attempt_id_proto__field_descriptors[2] =
 {
   {
     "application_id",
@@ -1432,8 +1432,8 @@ static const ProtobufCFieldDescriptor application_attempt_id_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptIdProto, application_id),
-    &application_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptIdProto, application_id),
+    &hadoop__yarn__application_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1443,39 +1443,39 @@ static const ProtobufCFieldDescriptor application_attempt_id_proto__field_descri
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptIdProto, has_attemptid),
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptIdProto, attemptid),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptIdProto, has_attemptid),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptIdProto, attemptid),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_attempt_id_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_attempt_id_proto__field_indices_by_name[] = {
   0,   /* field[0] = application_id */
   1,   /* field[1] = attemptId */
 };
-static const ProtobufCIntRange application_attempt_id_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_attempt_id_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor application_attempt_id_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_attempt_id_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationAttemptIdProto",
   "ApplicationAttemptIdProto",
-  "ApplicationAttemptIdProto",
-  "ApplicationAttemptIdProto",
-  "",
-  sizeof(ApplicationAttemptIdProto),
+  "Hadoop__Yarn__ApplicationAttemptIdProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationAttemptIdProto),
   2,
-  application_attempt_id_proto__field_descriptors,
-  application_attempt_id_proto__field_indices_by_name,
-  1,  application_attempt_id_proto__number_ranges,
-  (ProtobufCMessageInit) application_attempt_id_proto__init,
+  hadoop__yarn__application_attempt_id_proto__field_descriptors,
+  hadoop__yarn__application_attempt_id_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_attempt_id_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_attempt_id_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor container_id_proto__field_descriptors[3] =
+static const ProtobufCFieldDescriptor hadoop__yarn__container_id_proto__field_descriptors[3] =
 {
   {
     "app_id",
@@ -1483,8 +1483,8 @@ static const ProtobufCFieldDescriptor container_id_proto__field_descriptors[3] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerIdProto, app_id),
-    &application_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerIdProto, app_id),
+    &hadoop__yarn__application_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1495,8 +1495,8 @@ static const ProtobufCFieldDescriptor container_id_proto__field_descriptors[3] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerIdProto, app_attempt_id),
-    &application_attempt_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerIdProto, app_attempt_id),
+    &hadoop__yarn__application_attempt_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1506,48 +1506,48 @@ static const ProtobufCFieldDescriptor container_id_proto__field_descriptors[3] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ContainerIdProto, has_id),
-    PROTOBUF_C_OFFSETOF(ContainerIdProto, id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerIdProto, has_id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerIdProto, id),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned container_id_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__container_id_proto__field_indices_by_name[] = {
   1,   /* field[1] = app_attempt_id */
   0,   /* field[0] = app_id */
   2,   /* field[2] = id */
 };
-static const ProtobufCIntRange container_id_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__container_id_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 3 }
 };
-const ProtobufCMessageDescriptor container_id_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__container_id_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerIdProto",
   "ContainerIdProto",
-  "ContainerIdProto",
-  "ContainerIdProto",
-  "",
-  sizeof(ContainerIdProto),
+  "Hadoop__Yarn__ContainerIdProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ContainerIdProto),
   3,
-  container_id_proto__field_descriptors,
-  container_id_proto__field_indices_by_name,
-  1,  container_id_proto__number_ranges,
-  (ProtobufCMessageInit) container_id_proto__init,
+  hadoop__yarn__container_id_proto__field_descriptors,
+  hadoop__yarn__container_id_proto__field_indices_by_name,
+  1,  hadoop__yarn__container_id_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__container_id_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor resource_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__resource_proto__field_descriptors[2] =
 {
   {
     "memory",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ResourceProto, has_memory),
-    PROTOBUF_C_OFFSETOF(ResourceProto, memory),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceProto, has_memory),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceProto, memory),
     NULL,
     NULL,
     0,            /* packed */
@@ -1558,77 +1558,77 @@ static const ProtobufCFieldDescriptor resource_proto__field_descriptors[2] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ResourceProto, has_virtual_cores),
-    PROTOBUF_C_OFFSETOF(ResourceProto, virtual_cores),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceProto, has_virtual_cores),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceProto, virtual_cores),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned resource_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__resource_proto__field_indices_by_name[] = {
   0,   /* field[0] = memory */
   1,   /* field[1] = virtual_cores */
 };
-static const ProtobufCIntRange resource_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__resource_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor resource_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__resource_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ResourceProto",
   "ResourceProto",
-  "ResourceProto",
-  "ResourceProto",
-  "",
-  sizeof(ResourceProto),
+  "Hadoop__Yarn__ResourceProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ResourceProto),
   2,
-  resource_proto__field_descriptors,
-  resource_proto__field_indices_by_name,
-  1,  resource_proto__number_ranges,
-  (ProtobufCMessageInit) resource_proto__init,
+  hadoop__yarn__resource_proto__field_descriptors,
+  hadoop__yarn__resource_proto__field_indices_by_name,
+  1,  hadoop__yarn__resource_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__resource_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor priority_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__priority_proto__field_descriptors[1] =
 {
   {
     "priority",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(PriorityProto, has_priority),
-    PROTOBUF_C_OFFSETOF(PriorityProto, priority),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PriorityProto, has_priority),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PriorityProto, priority),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned priority_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__priority_proto__field_indices_by_name[] = {
   0,   /* field[0] = priority */
 };
-static const ProtobufCIntRange priority_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__priority_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor priority_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__priority_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.PriorityProto",
   "PriorityProto",
-  "PriorityProto",
-  "PriorityProto",
-  "",
-  sizeof(PriorityProto),
+  "Hadoop__Yarn__PriorityProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__PriorityProto),
   1,
-  priority_proto__field_descriptors,
-  priority_proto__field_indices_by_name,
-  1,  priority_proto__number_ranges,
-  (ProtobufCMessageInit) priority_proto__init,
+  hadoop__yarn__priority_proto__field_descriptors,
+  hadoop__yarn__priority_proto__field_indices_by_name,
+  1,  hadoop__yarn__priority_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__priority_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
+static const ProtobufCFieldDescriptor hadoop__yarn__container_proto__field_descriptors[6] =
 {
   {
     "id",
@@ -1636,8 +1636,8 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, id),
-    &container_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, id),
+    &hadoop__yarn__container_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1648,8 +1648,8 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, nodeid),
-    &node_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, nodeid),
+    &hadoop__yarn__node_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1660,7 +1660,7 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, node_http_address),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, node_http_address),
     NULL,
     NULL,
     0,            /* packed */
@@ -1672,8 +1672,8 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, resource),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, resource),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1684,8 +1684,8 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, priority),
-    &priority_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, priority),
+    &hadoop__yarn__priority_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1696,14 +1696,14 @@ static const ProtobufCFieldDescriptor container_proto__field_descriptors[6] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerProto, container_token),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerProto, container_token),
     &hadoop__common__token_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned container_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__container_proto__field_indices_by_name[] = {
   5,   /* field[5] = container_token */
   0,   /* field[0] = id */
   1,   /* field[1] = nodeId */
@@ -1711,27 +1711,27 @@ static const unsigned container_proto__field_indices_by_name[] = {
   4,   /* field[4] = priority */
   3,   /* field[3] = resource */
 };
-static const ProtobufCIntRange container_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__container_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 6 }
 };
-const ProtobufCMessageDescriptor container_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__container_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerProto",
   "ContainerProto",
-  "ContainerProto",
-  "ContainerProto",
-  "",
-  sizeof(ContainerProto),
+  "Hadoop__Yarn__ContainerProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ContainerProto),
   6,
-  container_proto__field_descriptors,
-  container_proto__field_indices_by_name,
-  1,  container_proto__number_ranges,
-  (ProtobufCMessageInit) container_proto__init,
+  hadoop__yarn__container_proto__field_descriptors,
+  hadoop__yarn__container_proto__field_indices_by_name,
+  1,  hadoop__yarn__container_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__container_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor urlproto__field_descriptors[4] =
+static const ProtobufCFieldDescriptor hadoop__yarn__urlproto__field_descriptors[5] =
 {
   {
     "scheme",
@@ -1739,7 +1739,7 @@ static const ProtobufCFieldDescriptor urlproto__field_descriptors[4] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(URLProto, scheme),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, scheme),
     NULL,
     NULL,
     0,            /* packed */
@@ -1751,7 +1751,7 @@ static const ProtobufCFieldDescriptor urlproto__field_descriptors[4] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(URLProto, host),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, host),
     NULL,
     NULL,
     0,            /* packed */
@@ -1762,8 +1762,8 @@ static const ProtobufCFieldDescriptor urlproto__field_descriptors[4] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(URLProto, has_port),
-    PROTOBUF_C_OFFSETOF(URLProto, port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, has_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, port),
     NULL,
     NULL,
     0,            /* packed */
@@ -1775,40 +1775,53 @@ static const ProtobufCFieldDescriptor urlproto__field_descriptors[4] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(URLProto, file),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, file),
+    NULL,
+    NULL,
+    0,            /* packed */
+    0,NULL,NULL    /* reserved1,reserved2, etc */
+  },
+  {
+    "userInfo",
+    5,
+    PROTOBUF_C_LABEL_OPTIONAL,
+    PROTOBUF_C_TYPE_STRING,
+    0,   /* quantifier_offset */
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__URLProto, userinfo),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned urlproto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__urlproto__field_indices_by_name[] = {
   3,   /* field[3] = file */
   1,   /* field[1] = host */
   2,   /* field[2] = port */
   0,   /* field[0] = scheme */
+  4,   /* field[4] = userInfo */
 };
-static const ProtobufCIntRange urlproto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__urlproto__number_ranges[1 + 1] =
 {
   { 1, 0 },
-  { 0, 4 }
+  { 0, 5 }
 };
-const ProtobufCMessageDescriptor urlproto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__urlproto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.URLProto",
   "URLProto",
-  "URLProto",
-  "URLProto",
-  "",
-  sizeof(URLProto),
-  4,
-  urlproto__field_descriptors,
-  urlproto__field_indices_by_name,
-  1,  urlproto__number_ranges,
-  (ProtobufCMessageInit) urlproto__init,
+  "Hadoop__Yarn__URLProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__URLProto),
+  5,
+  hadoop__yarn__urlproto__field_descriptors,
+  hadoop__yarn__urlproto__field_indices_by_name,
+  1,  hadoop__yarn__urlproto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__urlproto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6] =
+static const ProtobufCFieldDescriptor hadoop__yarn__local_resource_proto__field_descriptors[6] =
 {
   {
     "resource",
@@ -1816,8 +1829,8 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, resource),
-    &urlproto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, resource),
+    &hadoop__yarn__urlproto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1827,8 +1840,8 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, has_size),
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, size),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, has_size),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, size),
     NULL,
     NULL,
     0,            /* packed */
@@ -1839,8 +1852,8 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, has_timestamp),
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, timestamp),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, has_timestamp),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, timestamp),
     NULL,
     NULL,
     0,            /* packed */
@@ -1851,9 +1864,9 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, has_type),
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, type),
-    &local_resource_type_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, has_type),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, type),
+    &hadoop__yarn__local_resource_type_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1863,9 +1876,9 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, has_visibility),
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, visibility),
-    &local_resource_visibility_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, has_visibility),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, visibility),
+    &hadoop__yarn__local_resource_visibility_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1876,14 +1889,14 @@ static const ProtobufCFieldDescriptor local_resource_proto__field_descriptors[6]
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalResourceProto, pattern),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceProto, pattern),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned local_resource_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__local_resource_proto__field_indices_by_name[] = {
   5,   /* field[5] = pattern */
   0,   /* field[0] = resource */
   1,   /* field[1] = size */
@@ -1891,35 +1904,35 @@ static const unsigned local_resource_proto__field_indices_by_name[] = {
   3,   /* field[3] = type */
   4,   /* field[4] = visibility */
 };
-static const ProtobufCIntRange local_resource_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__local_resource_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 6 }
 };
-const ProtobufCMessageDescriptor local_resource_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__local_resource_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalResourceProto",
   "LocalResourceProto",
-  "LocalResourceProto",
-  "LocalResourceProto",
-  "",
-  sizeof(LocalResourceProto),
+  "Hadoop__Yarn__LocalResourceProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__LocalResourceProto),
   6,
-  local_resource_proto__field_descriptors,
-  local_resource_proto__field_indices_by_name,
-  1,  local_resource_proto__number_ranges,
-  (ProtobufCMessageInit) local_resource_proto__init,
+  hadoop__yarn__local_resource_proto__field_descriptors,
+  hadoop__yarn__local_resource_proto__field_indices_by_name,
+  1,  hadoop__yarn__local_resource_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__local_resource_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor application_resource_usage_report_proto__field_descriptors[5] =
+static const ProtobufCFieldDescriptor hadoop__yarn__application_resource_usage_report_proto__field_descriptors[5] =
 {
   {
     "num_used_containers",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, has_num_used_containers),
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, num_used_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, has_num_used_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, num_used_containers),
     NULL,
     NULL,
     0,            /* packed */
@@ -1930,8 +1943,8 @@ static const ProtobufCFieldDescriptor application_resource_usage_report_proto__f
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, has_num_reserved_containers),
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, num_reserved_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, has_num_reserved_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, num_reserved_containers),
     NULL,
     NULL,
     0,            /* packed */
@@ -1943,8 +1956,8 @@ static const ProtobufCFieldDescriptor application_resource_usage_report_proto__f
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, used_resources),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, used_resources),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1955,8 +1968,8 @@ static const ProtobufCFieldDescriptor application_resource_usage_report_proto__f
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, reserved_resources),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, reserved_resources),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1967,42 +1980,42 @@ static const ProtobufCFieldDescriptor application_resource_usage_report_proto__f
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationResourceUsageReportProto, needed_resources),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationResourceUsageReportProto, needed_resources),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_resource_usage_report_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_resource_usage_report_proto__field_indices_by_name[] = {
   4,   /* field[4] = needed_resources */
   1,   /* field[1] = num_reserved_containers */
   0,   /* field[0] = num_used_containers */
   3,   /* field[3] = reserved_resources */
   2,   /* field[2] = used_resources */
 };
-static const ProtobufCIntRange application_resource_usage_report_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_resource_usage_report_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 5 }
 };
-const ProtobufCMessageDescriptor application_resource_usage_report_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_resource_usage_report_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationResourceUsageReportProto",
   "ApplicationResourceUsageReportProto",
-  "ApplicationResourceUsageReportProto",
-  "ApplicationResourceUsageReportProto",
-  "",
-  sizeof(ApplicationResourceUsageReportProto),
+  "Hadoop__Yarn__ApplicationResourceUsageReportProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationResourceUsageReportProto),
   5,
-  application_resource_usage_report_proto__field_descriptors,
-  application_resource_usage_report_proto__field_indices_by_name,
-  1,  application_resource_usage_report_proto__number_ranges,
-  (ProtobufCMessageInit) application_resource_usage_report_proto__init,
+  hadoop__yarn__application_resource_usage_report_proto__field_descriptors,
+  hadoop__yarn__application_resource_usage_report_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_resource_usage_report_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_resource_usage_report_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-char application_report_proto__diagnostics__default_value[] = "N/A";
-static const ProtobufCFieldDescriptor application_report_proto__field_descriptors[19] =
+char hadoop__yarn__application_report_proto__diagnostics__default_value[] = "N/A";
+static const ProtobufCFieldDescriptor hadoop__yarn__application_report_proto__field_descriptors[19] =
 {
   {
     "applicationId",
@@ -2010,8 +2023,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, applicationid),
-    &application_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, applicationid),
+    &hadoop__yarn__application_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2022,7 +2035,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, user),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, user),
     NULL,
     NULL,
     0,            /* packed */
@@ -2034,7 +2047,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, queue),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, queue),
     NULL,
     NULL,
     0,            /* packed */
@@ -2046,7 +2059,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, name),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, name),
     NULL,
     NULL,
     0,            /* packed */
@@ -2058,7 +2071,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, host),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, host),
     NULL,
     NULL,
     0,            /* packed */
@@ -2069,8 +2082,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_rpc_port),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, rpc_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_rpc_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, rpc_port),
     NULL,
     NULL,
     0,            /* packed */
@@ -2082,7 +2095,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, client_to_am_token),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, client_to_am_token),
     &hadoop__common__token_proto__descriptor,
     NULL,
     0,            /* packed */
@@ -2093,9 +2106,9 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     8,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_yarn_application_state),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, yarn_application_state),
-    &yarn_application_state_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_yarn_application_state),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, yarn_application_state),
+    &hadoop__yarn__yarn_application_state_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2106,7 +2119,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, trackingurl),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, trackingurl),
     NULL,
     NULL,
     0,            /* packed */
@@ -2118,9 +2131,9 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, diagnostics),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, diagnostics),
     NULL,
-    &application_report_proto__diagnostics__default_value,
+    &hadoop__yarn__application_report_proto__diagnostics__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2129,8 +2142,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     11,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_starttime),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, starttime),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_starttime),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, starttime),
     NULL,
     NULL,
     0,            /* packed */
@@ -2141,8 +2154,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     12,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_finishtime),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, finishtime),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_finishtime),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, finishtime),
     NULL,
     NULL,
     0,            /* packed */
@@ -2153,9 +2166,9 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     13,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_final_application_status),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, final_application_status),
-    &final_application_status_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_final_application_status),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, final_application_status),
+    &hadoop__yarn__final_application_status_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2166,8 +2179,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, app_resource_usage),
-    &application_resource_usage_report_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, app_resource_usage),
+    &hadoop__yarn__application_resource_usage_report_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2178,7 +2191,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, originaltrackingurl),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, originaltrackingurl),
     NULL,
     NULL,
     0,            /* packed */
@@ -2190,8 +2203,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, currentapplicationattemptid),
-    &application_attempt_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, currentapplicationattemptid),
+    &hadoop__yarn__application_attempt_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2201,8 +2214,8 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     17,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FLOAT,
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, has_progress),
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, progress),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, has_progress),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, progress),
     NULL,
     NULL,
     0,            /* packed */
@@ -2214,7 +2227,7 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, applicationtype),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, applicationtype),
     NULL,
     NULL,
     0,            /* packed */
@@ -2226,14 +2239,14 @@ static const ProtobufCFieldDescriptor application_report_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationReportProto, am_rm_token),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationReportProto, am_rm_token),
     &hadoop__common__token_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_report_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_report_proto__field_indices_by_name[] = {
   18,   /* field[18] = am_rm_token */
   13,   /* field[13] = app_resource_Usage */
   0,   /* field[0] = applicationId */
@@ -2254,27 +2267,27 @@ static const unsigned application_report_proto__field_indices_by_name[] = {
   1,   /* field[1] = user */
   7,   /* field[7] = yarn_application_state */
 };
-static const ProtobufCIntRange application_report_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_report_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 19 }
 };
-const ProtobufCMessageDescriptor application_report_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_report_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationReportProto",
   "ApplicationReportProto",
-  "ApplicationReportProto",
-  "ApplicationReportProto",
-  "",
-  sizeof(ApplicationReportProto),
+  "Hadoop__Yarn__ApplicationReportProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationReportProto),
   19,
-  application_report_proto__field_descriptors,
-  application_report_proto__field_indices_by_name,
-  1,  application_report_proto__number_ranges,
-  (ProtobufCMessageInit) application_report_proto__init,
+  hadoop__yarn__application_report_proto__field_descriptors,
+  hadoop__yarn__application_report_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_report_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_report_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor node_id_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__node_id_proto__field_descriptors[2] =
 {
   {
     "host",
@@ -2282,7 +2295,7 @@ static const ProtobufCFieldDescriptor node_id_proto__field_descriptors[2] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeIdProto, host),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeIdProto, host),
     NULL,
     NULL,
     0,            /* packed */
@@ -2293,39 +2306,39 @@ static const ProtobufCFieldDescriptor node_id_proto__field_descriptors[2] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(NodeIdProto, has_port),
-    PROTOBUF_C_OFFSETOF(NodeIdProto, port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeIdProto, has_port),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeIdProto, port),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned node_id_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__node_id_proto__field_indices_by_name[] = {
   0,   /* field[0] = host */
   1,   /* field[1] = port */
 };
-static const ProtobufCIntRange node_id_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__node_id_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor node_id_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__node_id_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.NodeIdProto",
   "NodeIdProto",
-  "NodeIdProto",
-  "NodeIdProto",
-  "",
-  sizeof(NodeIdProto),
+  "Hadoop__Yarn__NodeIdProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__NodeIdProto),
   2,
-  node_id_proto__field_descriptors,
-  node_id_proto__field_indices_by_name,
-  1,  node_id_proto__number_ranges,
-  (ProtobufCMessageInit) node_id_proto__init,
+  hadoop__yarn__node_id_proto__field_descriptors,
+  hadoop__yarn__node_id_proto__field_indices_by_name,
+  1,  hadoop__yarn__node_id_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__node_id_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
+static const ProtobufCFieldDescriptor hadoop__yarn__node_report_proto__field_descriptors[9] =
 {
   {
     "nodeId",
@@ -2333,8 +2346,8 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, nodeid),
-    &node_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, nodeid),
+    &hadoop__yarn__node_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2345,7 +2358,7 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, httpaddress),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, httpaddress),
     NULL,
     NULL,
     0,            /* packed */
@@ -2357,7 +2370,7 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, rackname),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, rackname),
     NULL,
     NULL,
     0,            /* packed */
@@ -2369,8 +2382,8 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, used),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, used),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2381,8 +2394,8 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, capability),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, capability),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2392,8 +2405,8 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(NodeReportProto, has_numcontainers),
-    PROTOBUF_C_OFFSETOF(NodeReportProto, numcontainers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, has_numcontainers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, numcontainers),
     NULL,
     NULL,
     0,            /* packed */
@@ -2404,9 +2417,9 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     7,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(NodeReportProto, has_node_state),
-    PROTOBUF_C_OFFSETOF(NodeReportProto, node_state),
-    &node_state_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, has_node_state),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, node_state),
+    &hadoop__yarn__node_state_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2417,7 +2430,7 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(NodeReportProto, health_report),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, health_report),
     NULL,
     NULL,
     0,            /* packed */
@@ -2428,15 +2441,15 @@ static const ProtobufCFieldDescriptor node_report_proto__field_descriptors[9] =
     9,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(NodeReportProto, has_last_health_report_time),
-    PROTOBUF_C_OFFSETOF(NodeReportProto, last_health_report_time),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, has_last_health_report_time),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__NodeReportProto, last_health_report_time),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned node_report_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__node_report_proto__field_indices_by_name[] = {
   4,   /* field[4] = capability */
   7,   /* field[7] = health_report */
   1,   /* field[1] = httpAddress */
@@ -2447,28 +2460,28 @@ static const unsigned node_report_proto__field_indices_by_name[] = {
   2,   /* field[2] = rackName */
   3,   /* field[3] = used */
 };
-static const ProtobufCIntRange node_report_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__node_report_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 9 }
 };
-const ProtobufCMessageDescriptor node_report_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__node_report_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.NodeReportProto",
   "NodeReportProto",
-  "NodeReportProto",
-  "NodeReportProto",
-  "",
-  sizeof(NodeReportProto),
+  "Hadoop__Yarn__NodeReportProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__NodeReportProto),
   9,
-  node_report_proto__field_descriptors,
-  node_report_proto__field_indices_by_name,
-  1,  node_report_proto__number_ranges,
-  (ProtobufCMessageInit) node_report_proto__init,
+  hadoop__yarn__node_report_proto__field_descriptors,
+  hadoop__yarn__node_report_proto__field_indices_by_name,
+  1,  hadoop__yarn__node_report_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__node_report_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const protobuf_c_boolean resource_request_proto__relax_locality__default_value = 1;
-static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[5] =
+static const protobuf_c_boolean hadoop__yarn__resource_request_proto__relax_locality__default_value = 1;
+static const ProtobufCFieldDescriptor hadoop__yarn__resource_request_proto__field_descriptors[5] =
 {
   {
     "priority",
@@ -2476,8 +2489,8 @@ static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, priority),
-    &priority_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, priority),
+    &hadoop__yarn__priority_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2488,7 +2501,7 @@ static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, resource_name),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, resource_name),
     NULL,
     NULL,
     0,            /* packed */
@@ -2500,8 +2513,8 @@ static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, capability),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, capability),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2511,8 +2524,8 @@ static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, has_num_containers),
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, num_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, has_num_containers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, num_containers),
     NULL,
     NULL,
     0,            /* packed */
@@ -2523,42 +2536,42 @@ static const ProtobufCFieldDescriptor resource_request_proto__field_descriptors[
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, has_relax_locality),
-    PROTOBUF_C_OFFSETOF(ResourceRequestProto, relax_locality),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, has_relax_locality),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceRequestProto, relax_locality),
     NULL,
-    &resource_request_proto__relax_locality__default_value,
+    &hadoop__yarn__resource_request_proto__relax_locality__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned resource_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__resource_request_proto__field_indices_by_name[] = {
   2,   /* field[2] = capability */
   3,   /* field[3] = num_containers */
   0,   /* field[0] = priority */
   4,   /* field[4] = relax_locality */
   1,   /* field[1] = resource_name */
 };
-static const ProtobufCIntRange resource_request_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__resource_request_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 5 }
 };
-const ProtobufCMessageDescriptor resource_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__resource_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ResourceRequestProto",
   "ResourceRequestProto",
-  "ResourceRequestProto",
-  "ResourceRequestProto",
-  "",
-  sizeof(ResourceRequestProto),
+  "Hadoop__Yarn__ResourceRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ResourceRequestProto),
   5,
-  resource_request_proto__field_descriptors,
-  resource_request_proto__field_indices_by_name,
-  1,  resource_request_proto__number_ranges,
-  (ProtobufCMessageInit) resource_request_proto__init,
+  hadoop__yarn__resource_request_proto__field_descriptors,
+  hadoop__yarn__resource_request_proto__field_indices_by_name,
+  1,  hadoop__yarn__resource_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__resource_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor preemption_message_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__preemption_message_proto__field_descriptors[2] =
 {
   {
     "strictContract",
@@ -2566,8 +2579,8 @@ static const ProtobufCFieldDescriptor preemption_message_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(PreemptionMessageProto, strictcontract),
-    &strict_preemption_contract_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionMessageProto, strictcontract),
+    &hadoop__yarn__strict_preemption_contract_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2578,85 +2591,85 @@ static const ProtobufCFieldDescriptor preemption_message_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(PreemptionMessageProto, contract),
-    &preemption_contract_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionMessageProto, contract),
+    &hadoop__yarn__preemption_contract_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned preemption_message_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__preemption_message_proto__field_indices_by_name[] = {
   1,   /* field[1] = contract */
   0,   /* field[0] = strictContract */
 };
-static const ProtobufCIntRange preemption_message_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__preemption_message_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor preemption_message_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__preemption_message_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.PreemptionMessageProto",
   "PreemptionMessageProto",
-  "PreemptionMessageProto",
-  "PreemptionMessageProto",
-  "",
-  sizeof(PreemptionMessageProto),
+  "Hadoop__Yarn__PreemptionMessageProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__PreemptionMessageProto),
   2,
-  preemption_message_proto__field_descriptors,
-  preemption_message_proto__field_indices_by_name,
-  1,  preemption_message_proto__number_ranges,
-  (ProtobufCMessageInit) preemption_message_proto__init,
+  hadoop__yarn__preemption_message_proto__field_descriptors,
+  hadoop__yarn__preemption_message_proto__field_indices_by_name,
+  1,  hadoop__yarn__preemption_message_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__preemption_message_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor strict_preemption_contract_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__strict_preemption_contract_proto__field_descriptors[1] =
 {
   {
     "container",
     1,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(StrictPreemptionContractProto, n_container),
-    PROTOBUF_C_OFFSETOF(StrictPreemptionContractProto, container),
-    &preemption_container_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StrictPreemptionContractProto, n_container),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StrictPreemptionContractProto, container),
+    &hadoop__yarn__preemption_container_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned strict_preemption_contract_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__strict_preemption_contract_proto__field_indices_by_name[] = {
   0,   /* field[0] = container */
 };
-static const ProtobufCIntRange strict_preemption_contract_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__strict_preemption_contract_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor strict_preemption_contract_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__strict_preemption_contract_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.StrictPreemptionContractProto",
   "StrictPreemptionContractProto",
-  "StrictPreemptionContractProto",
-  "StrictPreemptionContractProto",
-  "",
-  sizeof(StrictPreemptionContractProto),
+  "Hadoop__Yarn__StrictPreemptionContractProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__StrictPreemptionContractProto),
   1,
-  strict_preemption_contract_proto__field_descriptors,
-  strict_preemption_contract_proto__field_indices_by_name,
-  1,  strict_preemption_contract_proto__number_ranges,
-  (ProtobufCMessageInit) strict_preemption_contract_proto__init,
+  hadoop__yarn__strict_preemption_contract_proto__field_descriptors,
+  hadoop__yarn__strict_preemption_contract_proto__field_indices_by_name,
+  1,  hadoop__yarn__strict_preemption_contract_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__strict_preemption_contract_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor preemption_contract_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__preemption_contract_proto__field_descriptors[2] =
 {
   {
     "resource",
     1,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(PreemptionContractProto, n_resource),
-    PROTOBUF_C_OFFSETOF(PreemptionContractProto, resource),
-    &preemption_resource_request_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionContractProto, n_resource),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionContractProto, resource),
+    &hadoop__yarn__preemption_resource_request_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2666,39 +2679,39 @@ static const ProtobufCFieldDescriptor preemption_contract_proto__field_descripto
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(PreemptionContractProto, n_container),
-    PROTOBUF_C_OFFSETOF(PreemptionContractProto, container),
-    &preemption_container_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionContractProto, n_container),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionContractProto, container),
+    &hadoop__yarn__preemption_container_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned preemption_contract_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__preemption_contract_proto__field_indices_by_name[] = {
   1,   /* field[1] = container */
   0,   /* field[0] = resource */
 };
-static const ProtobufCIntRange preemption_contract_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__preemption_contract_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor preemption_contract_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__preemption_contract_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.PreemptionContractProto",
   "PreemptionContractProto",
-  "PreemptionContractProto",
-  "PreemptionContractProto",
-  "",
-  sizeof(PreemptionContractProto),
+  "Hadoop__Yarn__PreemptionContractProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__PreemptionContractProto),
   2,
-  preemption_contract_proto__field_descriptors,
-  preemption_contract_proto__field_indices_by_name,
-  1,  preemption_contract_proto__number_ranges,
-  (ProtobufCMessageInit) preemption_contract_proto__init,
+  hadoop__yarn__preemption_contract_proto__field_descriptors,
+  hadoop__yarn__preemption_contract_proto__field_indices_by_name,
+  1,  hadoop__yarn__preemption_contract_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__preemption_contract_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor preemption_container_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__preemption_container_proto__field_descriptors[1] =
 {
   {
     "id",
@@ -2706,37 +2719,37 @@ static const ProtobufCFieldDescriptor preemption_container_proto__field_descript
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(PreemptionContainerProto, id),
-    &container_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionContainerProto, id),
+    &hadoop__yarn__container_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned preemption_container_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__preemption_container_proto__field_indices_by_name[] = {
   0,   /* field[0] = id */
 };
-static const ProtobufCIntRange preemption_container_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__preemption_container_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor preemption_container_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__preemption_container_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.PreemptionContainerProto",
   "PreemptionContainerProto",
-  "PreemptionContainerProto",
-  "PreemptionContainerProto",
-  "",
-  sizeof(PreemptionContainerProto),
+  "Hadoop__Yarn__PreemptionContainerProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__PreemptionContainerProto),
   1,
-  preemption_container_proto__field_descriptors,
-  preemption_container_proto__field_indices_by_name,
-  1,  preemption_container_proto__number_ranges,
-  (ProtobufCMessageInit) preemption_container_proto__init,
+  hadoop__yarn__preemption_container_proto__field_descriptors,
+  hadoop__yarn__preemption_container_proto__field_indices_by_name,
+  1,  hadoop__yarn__preemption_container_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__preemption_container_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor preemption_resource_request_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__preemption_resource_request_proto__field_descriptors[1] =
 {
   {
     "resource",
@@ -2744,45 +2757,45 @@ static const ProtobufCFieldDescriptor preemption_resource_request_proto__field_d
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(PreemptionResourceRequestProto, resource),
-    &resource_request_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__PreemptionResourceRequestProto, resource),
+    &hadoop__yarn__resource_request_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned preemption_resource_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__preemption_resource_request_proto__field_indices_by_name[] = {
   0,   /* field[0] = resource */
 };
-static const ProtobufCIntRange preemption_resource_request_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__preemption_resource_request_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor preemption_resource_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__preemption_resource_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.PreemptionResourceRequestProto",
   "PreemptionResourceRequestProto",
-  "PreemptionResourceRequestProto",
-  "PreemptionResourceRequestProto",
-  "",
-  sizeof(PreemptionResourceRequestProto),
+  "Hadoop__Yarn__PreemptionResourceRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__PreemptionResourceRequestProto),
   1,
-  preemption_resource_request_proto__field_descriptors,
-  preemption_resource_request_proto__field_indices_by_name,
-  1,  preemption_resource_request_proto__number_ranges,
-  (ProtobufCMessageInit) preemption_resource_request_proto__init,
+  hadoop__yarn__preemption_resource_request_proto__field_descriptors,
+  hadoop__yarn__preemption_resource_request_proto__field_indices_by_name,
+  1,  hadoop__yarn__preemption_resource_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__preemption_resource_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor resource_blacklist_request_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__resource_blacklist_request_proto__field_descriptors[2] =
 {
   {
     "blacklist_additions",
     1,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_STRING,
-    PROTOBUF_C_OFFSETOF(ResourceBlacklistRequestProto, n_blacklist_additions),
-    PROTOBUF_C_OFFSETOF(ResourceBlacklistRequestProto, blacklist_additions),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceBlacklistRequestProto, n_blacklist_additions),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceBlacklistRequestProto, blacklist_additions),
     NULL,
     NULL,
     0,            /* packed */
@@ -2793,45 +2806,45 @@ static const ProtobufCFieldDescriptor resource_blacklist_request_proto__field_de
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_STRING,
-    PROTOBUF_C_OFFSETOF(ResourceBlacklistRequestProto, n_blacklist_removals),
-    PROTOBUF_C_OFFSETOF(ResourceBlacklistRequestProto, blacklist_removals),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceBlacklistRequestProto, n_blacklist_removals),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceBlacklistRequestProto, blacklist_removals),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned resource_blacklist_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__resource_blacklist_request_proto__field_indices_by_name[] = {
   0,   /* field[0] = blacklist_additions */
   1,   /* field[1] = blacklist_removals */
 };
-static const ProtobufCIntRange resource_blacklist_request_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__resource_blacklist_request_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor resource_blacklist_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__resource_blacklist_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ResourceBlacklistRequestProto",
   "ResourceBlacklistRequestProto",
-  "ResourceBlacklistRequestProto",
-  "ResourceBlacklistRequestProto",
-  "",
-  sizeof(ResourceBlacklistRequestProto),
+  "Hadoop__Yarn__ResourceBlacklistRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ResourceBlacklistRequestProto),
   2,
-  resource_blacklist_request_proto__field_descriptors,
-  resource_blacklist_request_proto__field_indices_by_name,
-  1,  resource_blacklist_request_proto__number_ranges,
-  (ProtobufCMessageInit) resource_blacklist_request_proto__init,
+  hadoop__yarn__resource_blacklist_request_proto__field_descriptors,
+  hadoop__yarn__resource_blacklist_request_proto__field_indices_by_name,
+  1,  hadoop__yarn__resource_blacklist_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__resource_blacklist_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-char application_submission_context_proto__application_name__default_value[] = "N/A";
-char application_submission_context_proto__queue__default_value[] = "default";
-char application_submission_context_proto__application_type__default_value[] = "YARN";
-static const protobuf_c_boolean application_submission_context_proto__cancel_tokens_when_complete__default_value = 1;
-static const protobuf_c_boolean application_submission_context_proto__unmanaged_am__default_value = 0;
-static const int32_t application_submission_context_proto__max_app_attempts__default_value = 0;
-static const ProtobufCFieldDescriptor application_submission_context_proto__field_descriptors[10] =
+char hadoop__yarn__application_submission_context_proto__application_name__default_value[] = "N/A";
+char hadoop__yarn__application_submission_context_proto__queue__default_value[] = "default";
+char hadoop__yarn__application_submission_context_proto__application_type__default_value[] = "YARN";
+static const protobuf_c_boolean hadoop__yarn__application_submission_context_proto__cancel_tokens_when_complete__default_value = 1;
+static const protobuf_c_boolean hadoop__yarn__application_submission_context_proto__unmanaged_am__default_value = 0;
+static const int32_t hadoop__yarn__application_submission_context_proto__max_app_attempts__default_value = 0;
+static const ProtobufCFieldDescriptor hadoop__yarn__application_submission_context_proto__field_descriptors[10] =
 {
   {
     "application_id",
@@ -2839,8 +2852,8 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, application_id),
-    &application_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, application_id),
+    &hadoop__yarn__application_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2851,9 +2864,9 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, application_name),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, application_name),
     NULL,
-    &application_submission_context_proto__application_name__default_value,
+    &hadoop__yarn__application_submission_context_proto__application_name__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2863,9 +2876,9 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, queue),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, queue),
     NULL,
-    &application_submission_context_proto__queue__default_value,
+    &hadoop__yarn__application_submission_context_proto__queue__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2875,8 +2888,8 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, priority),
-    &priority_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, priority),
+    &hadoop__yarn__priority_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2887,8 +2900,8 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, am_container_spec),
-    &container_launch_context_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, am_container_spec),
+    &hadoop__yarn__container_launch_context_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2898,10 +2911,10 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     6,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, has_cancel_tokens_when_complete),
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, cancel_tokens_when_complete),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, has_cancel_tokens_when_complete),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, cancel_tokens_when_complete),
     NULL,
-    &application_submission_context_proto__cancel_tokens_when_complete__default_value,
+    &hadoop__yarn__application_submission_context_proto__cancel_tokens_when_complete__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2910,10 +2923,10 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     7,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BOOL,
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, has_unmanaged_am),
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, unmanaged_am),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, has_unmanaged_am),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, unmanaged_am),
     NULL,
-    &application_submission_context_proto__unmanaged_am__default_value,
+    &hadoop__yarn__application_submission_context_proto__unmanaged_am__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2922,10 +2935,10 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     8,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, has_maxappattempts),
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, maxappattempts),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, has_maxappattempts),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, maxappattempts),
     NULL,
-    &application_submission_context_proto__max_app_attempts__default_value,
+    &hadoop__yarn__application_submission_context_proto__max_app_attempts__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -2935,8 +2948,8 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, resource),
-    &resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, resource),
+    &hadoop__yarn__resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -2947,14 +2960,14 @@ static const ProtobufCFieldDescriptor application_submission_context_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationSubmissionContextProto, applicationtype),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationSubmissionContextProto, applicationtype),
     NULL,
-    &application_submission_context_proto__application_type__default_value,
+    &hadoop__yarn__application_submission_context_proto__application_type__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_submission_context_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_submission_context_proto__field_indices_by_name[] = {
   4,   /* field[4] = am_container_spec */
   9,   /* field[9] = applicationType */
   0,   /* field[0] = application_id */
@@ -2966,37 +2979,37 @@ static const unsigned application_submission_context_proto__field_indices_by_nam
   8,   /* field[8] = resource */
   6,   /* field[6] = unmanaged_am */
 };
-static const ProtobufCIntRange application_submission_context_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_submission_context_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 10 }
 };
-const ProtobufCMessageDescriptor application_submission_context_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_submission_context_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationSubmissionContextProto",
   "ApplicationSubmissionContextProto",
-  "ApplicationSubmissionContextProto",
-  "ApplicationSubmissionContextProto",
-  "",
-  sizeof(ApplicationSubmissionContextProto),
+  "Hadoop__Yarn__ApplicationSubmissionContextProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationSubmissionContextProto),
   10,
-  application_submission_context_proto__field_descriptors,
-  application_submission_context_proto__field_indices_by_name,
-  1,  application_submission_context_proto__number_ranges,
-  (ProtobufCMessageInit) application_submission_context_proto__init,
+  hadoop__yarn__application_submission_context_proto__field_descriptors,
+  hadoop__yarn__application_submission_context_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_submission_context_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_submission_context_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-char application_aclmap_proto__acl__default_value[] = " ";
-static const ProtobufCFieldDescriptor application_aclmap_proto__field_descriptors[2] =
+char hadoop__yarn__application_aclmap_proto__acl__default_value[] = " ";
+static const ProtobufCFieldDescriptor hadoop__yarn__application_aclmap_proto__field_descriptors[2] =
 {
   {
     "accessType",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(ApplicationACLMapProto, has_accesstype),
-    PROTOBUF_C_OFFSETOF(ApplicationACLMapProto, accesstype),
-    &application_access_type_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationACLMapProto, has_accesstype),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationACLMapProto, accesstype),
+    &hadoop__yarn__application_access_type_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3007,76 +3020,76 @@ static const ProtobufCFieldDescriptor application_aclmap_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationACLMapProto, acl),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationACLMapProto, acl),
     NULL,
-    &application_aclmap_proto__acl__default_value,
+    &hadoop__yarn__application_aclmap_proto__acl__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_aclmap_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_aclmap_proto__field_indices_by_name[] = {
   0,   /* field[0] = accessType */
   1,   /* field[1] = acl */
 };
-static const ProtobufCIntRange application_aclmap_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_aclmap_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor application_aclmap_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_aclmap_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationACLMapProto",
   "ApplicationACLMapProto",
-  "ApplicationACLMapProto",
-  "ApplicationACLMapProto",
-  "",
-  sizeof(ApplicationACLMapProto),
+  "Hadoop__Yarn__ApplicationACLMapProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationACLMapProto),
   2,
-  application_aclmap_proto__field_descriptors,
-  application_aclmap_proto__field_indices_by_name,
-  1,  application_aclmap_proto__number_ranges,
-  (ProtobufCMessageInit) application_aclmap_proto__init,
+  hadoop__yarn__application_aclmap_proto__field_descriptors,
+  hadoop__yarn__application_aclmap_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_aclmap_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_aclmap_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor yarn_cluster_metrics_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__yarn_cluster_metrics_proto__field_descriptors[1] =
 {
   {
     "num_node_managers",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(YarnClusterMetricsProto, has_num_node_managers),
-    PROTOBUF_C_OFFSETOF(YarnClusterMetricsProto, num_node_managers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__YarnClusterMetricsProto, has_num_node_managers),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__YarnClusterMetricsProto, num_node_managers),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned yarn_cluster_metrics_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__yarn_cluster_metrics_proto__field_indices_by_name[] = {
   0,   /* field[0] = num_node_managers */
 };
-static const ProtobufCIntRange yarn_cluster_metrics_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__yarn_cluster_metrics_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor yarn_cluster_metrics_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__yarn_cluster_metrics_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.YarnClusterMetricsProto",
   "YarnClusterMetricsProto",
-  "YarnClusterMetricsProto",
-  "YarnClusterMetricsProto",
-  "",
-  sizeof(YarnClusterMetricsProto),
+  "Hadoop__Yarn__YarnClusterMetricsProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__YarnClusterMetricsProto),
   1,
-  yarn_cluster_metrics_proto__field_descriptors,
-  yarn_cluster_metrics_proto__field_indices_by_name,
-  1,  yarn_cluster_metrics_proto__number_ranges,
-  (ProtobufCMessageInit) yarn_cluster_metrics_proto__init,
+  hadoop__yarn__yarn_cluster_metrics_proto__field_descriptors,
+  hadoop__yarn__yarn_cluster_metrics_proto__field_indices_by_name,
+  1,  hadoop__yarn__yarn_cluster_metrics_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__yarn_cluster_metrics_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
+static const ProtobufCFieldDescriptor hadoop__yarn__queue_info_proto__field_descriptors[7] =
 {
   {
     "queueName",
@@ -3084,7 +3097,7 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, queuename),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, queuename),
     NULL,
     NULL,
     0,            /* packed */
@@ -3095,8 +3108,8 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FLOAT,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, has_capacity),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, capacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, has_capacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, capacity),
     NULL,
     NULL,
     0,            /* packed */
@@ -3107,8 +3120,8 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FLOAT,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, has_maximumcapacity),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, maximumcapacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, has_maximumcapacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, maximumcapacity),
     NULL,
     NULL,
     0,            /* packed */
@@ -3119,8 +3132,8 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_FLOAT,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, has_currentcapacity),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, currentcapacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, has_currentcapacity),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, currentcapacity),
     NULL,
     NULL,
     0,            /* packed */
@@ -3131,9 +3144,9 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     5,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, has_state),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, state),
-    &queue_state_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, has_state),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, state),
+    &hadoop__yarn__queue_state_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3143,9 +3156,9 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     6,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, n_childqueues),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, childqueues),
-    &queue_info_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, n_childqueues),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, childqueues),
+    &hadoop__yarn__queue_info_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3155,15 +3168,15 @@ static const ProtobufCFieldDescriptor queue_info_proto__field_descriptors[7] =
     7,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, n_applications),
-    PROTOBUF_C_OFFSETOF(QueueInfoProto, applications),
-    &application_report_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, n_applications),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueInfoProto, applications),
+    &hadoop__yarn__application_report_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned queue_info_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__queue_info_proto__field_indices_by_name[] = {
   6,   /* field[6] = applications */
   1,   /* field[1] = capacity */
   5,   /* field[5] = childQueues */
@@ -3172,27 +3185,27 @@ static const unsigned queue_info_proto__field_indices_by_name[] = {
   0,   /* field[0] = queueName */
   4,   /* field[4] = state */
 };
-static const ProtobufCIntRange queue_info_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__queue_info_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 7 }
 };
-const ProtobufCMessageDescriptor queue_info_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__queue_info_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.QueueInfoProto",
   "QueueInfoProto",
-  "QueueInfoProto",
-  "QueueInfoProto",
-  "",
-  sizeof(QueueInfoProto),
+  "Hadoop__Yarn__QueueInfoProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__QueueInfoProto),
   7,
-  queue_info_proto__field_descriptors,
-  queue_info_proto__field_indices_by_name,
-  1,  queue_info_proto__number_ranges,
-  (ProtobufCMessageInit) queue_info_proto__init,
+  hadoop__yarn__queue_info_proto__field_descriptors,
+  hadoop__yarn__queue_info_proto__field_indices_by_name,
+  1,  hadoop__yarn__queue_info_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__queue_info_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor queue_user_aclinfo_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__queue_user_aclinfo_proto__field_descriptors[2] =
 {
   {
     "queueName",
@@ -3200,7 +3213,7 @@ static const ProtobufCFieldDescriptor queue_user_aclinfo_proto__field_descriptor
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(QueueUserACLInfoProto, queuename),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueUserACLInfoProto, queuename),
     NULL,
     NULL,
     0,            /* packed */
@@ -3211,48 +3224,48 @@ static const ProtobufCFieldDescriptor queue_user_aclinfo_proto__field_descriptor
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(QueueUserACLInfoProto, n_useracls),
-    PROTOBUF_C_OFFSETOF(QueueUserACLInfoProto, useracls),
-    &queue_aclproto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueUserACLInfoProto, n_useracls),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__QueueUserACLInfoProto, useracls),
+    &hadoop__yarn__queue_aclproto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned queue_user_aclinfo_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__queue_user_aclinfo_proto__field_indices_by_name[] = {
   0,   /* field[0] = queueName */
   1,   /* field[1] = userAcls */
 };
-static const ProtobufCIntRange queue_user_aclinfo_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__queue_user_aclinfo_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor queue_user_aclinfo_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__queue_user_aclinfo_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.QueueUserACLInfoProto",
   "QueueUserACLInfoProto",
-  "QueueUserACLInfoProto",
-  "QueueUserACLInfoProto",
-  "",
-  sizeof(QueueUserACLInfoProto),
+  "Hadoop__Yarn__QueueUserACLInfoProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__QueueUserACLInfoProto),
   2,
-  queue_user_aclinfo_proto__field_descriptors,
-  queue_user_aclinfo_proto__field_indices_by_name,
-  1,  queue_user_aclinfo_proto__number_ranges,
-  (ProtobufCMessageInit) queue_user_aclinfo_proto__init,
+  hadoop__yarn__queue_user_aclinfo_proto__field_descriptors,
+  hadoop__yarn__queue_user_aclinfo_proto__field_indices_by_name,
+  1,  hadoop__yarn__queue_user_aclinfo_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__queue_user_aclinfo_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor container_launch_context_proto__field_descriptors[6] =
+static const ProtobufCFieldDescriptor hadoop__yarn__container_launch_context_proto__field_descriptors[6] =
 {
   {
     "localResources",
     1,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, n_localresources),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, localresources),
-    &string_local_resource_map_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, n_localresources),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, localresources),
+    &hadoop__yarn__string_local_resource_map_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3262,8 +3275,8 @@ static const ProtobufCFieldDescriptor container_launch_context_proto__field_desc
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, has_tokens),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, tokens),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, has_tokens),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, tokens),
     NULL,
     NULL,
     0,            /* packed */
@@ -3274,9 +3287,9 @@ static const ProtobufCFieldDescriptor container_launch_context_proto__field_desc
     3,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, n_service_data),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, service_data),
-    &string_bytes_map_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, n_service_data),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, service_data),
+    &hadoop__yarn__string_bytes_map_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3286,9 +3299,9 @@ static const ProtobufCFieldDescriptor container_launch_context_proto__field_desc
     4,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, n_environment),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, environment),
-    &string_string_map_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, n_environment),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, environment),
+    &hadoop__yarn__string_string_map_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3298,8 +3311,8 @@ static const ProtobufCFieldDescriptor container_launch_context_proto__field_desc
     5,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_STRING,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, n_command),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, command),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, n_command),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, command),
     NULL,
     NULL,
     0,            /* packed */
@@ -3310,15 +3323,15 @@ static const ProtobufCFieldDescriptor container_launch_context_proto__field_desc
     6,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, n_application_acls),
-    PROTOBUF_C_OFFSETOF(ContainerLaunchContextProto, application_acls),
-    &application_aclmap_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, n_application_acls),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerLaunchContextProto, application_acls),
+    &hadoop__yarn__application_aclmap_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned container_launch_context_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__container_launch_context_proto__field_indices_by_name[] = {
   5,   /* field[5] = application_ACLs */
   4,   /* field[4] = command */
   3,   /* field[3] = environment */
@@ -3326,29 +3339,29 @@ static const unsigned container_launch_context_proto__field_indices_by_name[] = 
   2,   /* field[2] = service_data */
   1,   /* field[1] = tokens */
 };
-static const ProtobufCIntRange container_launch_context_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__container_launch_context_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 6 }
 };
-const ProtobufCMessageDescriptor container_launch_context_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__container_launch_context_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerLaunchContextProto",
   "ContainerLaunchContextProto",
-  "ContainerLaunchContextProto",
-  "ContainerLaunchContextProto",
-  "",
-  sizeof(ContainerLaunchContextProto),
+  "Hadoop__Yarn__ContainerLaunchContextProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ContainerLaunchContextProto),
   6,
-  container_launch_context_proto__field_descriptors,
-  container_launch_context_proto__field_indices_by_name,
-  1,  container_launch_context_proto__number_ranges,
-  (ProtobufCMessageInit) container_launch_context_proto__init,
+  hadoop__yarn__container_launch_context_proto__field_descriptors,
+  hadoop__yarn__container_launch_context_proto__field_indices_by_name,
+  1,  hadoop__yarn__container_launch_context_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__container_launch_context_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-char container_status_proto__diagnostics__default_value[] = "N/A";
-static const int32_t container_status_proto__exit_status__default_value = -1000;
-static const ProtobufCFieldDescriptor container_status_proto__field_descriptors[4] =
+char hadoop__yarn__container_status_proto__diagnostics__default_value[] = "N/A";
+static const int32_t hadoop__yarn__container_status_proto__exit_status__default_value = -1000;
+static const ProtobufCFieldDescriptor hadoop__yarn__container_status_proto__field_descriptors[4] =
 {
   {
     "container_id",
@@ -3356,8 +3369,8 @@ static const ProtobufCFieldDescriptor container_status_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, container_id),
-    &container_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, container_id),
+    &hadoop__yarn__container_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3367,9 +3380,9 @@ static const ProtobufCFieldDescriptor container_status_proto__field_descriptors[
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, has_state),
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, state),
-    &container_state_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, has_state),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, state),
+    &hadoop__yarn__container_state_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -3380,9 +3393,9 @@ static const ProtobufCFieldDescriptor container_status_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, diagnostics),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, diagnostics),
     NULL,
-    &container_status_proto__diagnostics__default_value,
+    &hadoop__yarn__container_status_proto__diagnostics__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
@@ -3391,41 +3404,41 @@ static const ProtobufCFieldDescriptor container_status_proto__field_descriptors[
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, has_exit_status),
-    PROTOBUF_C_OFFSETOF(ContainerStatusProto, exit_status),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, has_exit_status),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ContainerStatusProto, exit_status),
     NULL,
-    &container_status_proto__exit_status__default_value,
+    &hadoop__yarn__container_status_proto__exit_status__default_value,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned container_status_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__container_status_proto__field_indices_by_name[] = {
   0,   /* field[0] = container_id */
   2,   /* field[2] = diagnostics */
   3,   /* field[3] = exit_status */
   1,   /* field[1] = state */
 };
-static const ProtobufCIntRange container_status_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__container_status_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 4 }
 };
-const ProtobufCMessageDescriptor container_status_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__container_status_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerStatusProto",
   "ContainerStatusProto",
-  "ContainerStatusProto",
-  "ContainerStatusProto",
-  "",
-  sizeof(ContainerStatusProto),
+  "Hadoop__Yarn__ContainerStatusProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ContainerStatusProto),
   4,
-  container_status_proto__field_descriptors,
-  container_status_proto__field_indices_by_name,
-  1,  container_status_proto__number_ranges,
-  (ProtobufCMessageInit) container_status_proto__init,
+  hadoop__yarn__container_status_proto__field_descriptors,
+  hadoop__yarn__container_status_proto__field_indices_by_name,
+  1,  hadoop__yarn__container_status_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__container_status_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor string_local_resource_map_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__string_local_resource_map_proto__field_descriptors[2] =
 {
   {
     "key",
@@ -3433,7 +3446,7 @@ static const ProtobufCFieldDescriptor string_local_resource_map_proto__field_des
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(StringLocalResourceMapProto, key),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringLocalResourceMapProto, key),
     NULL,
     NULL,
     0,            /* packed */
@@ -3445,38 +3458,38 @@ static const ProtobufCFieldDescriptor string_local_resource_map_proto__field_des
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(StringLocalResourceMapProto, value),
-    &local_resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringLocalResourceMapProto, value),
+    &hadoop__yarn__local_resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned string_local_resource_map_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__string_local_resource_map_proto__field_indices_by_name[] = {
   0,   /* field[0] = key */
   1,   /* field[1] = value */
 };
-static const ProtobufCIntRange string_local_resource_map_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__string_local_resource_map_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor string_local_resource_map_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__string_local_resource_map_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.StringLocalResourceMapProto",
   "StringLocalResourceMapProto",
-  "StringLocalResourceMapProto",
-  "StringLocalResourceMapProto",
-  "",
-  sizeof(StringLocalResourceMapProto),
+  "Hadoop__Yarn__StringLocalResourceMapProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__StringLocalResourceMapProto),
   2,
-  string_local_resource_map_proto__field_descriptors,
-  string_local_resource_map_proto__field_indices_by_name,
-  1,  string_local_resource_map_proto__number_ranges,
-  (ProtobufCMessageInit) string_local_resource_map_proto__init,
+  hadoop__yarn__string_local_resource_map_proto__field_descriptors,
+  hadoop__yarn__string_local_resource_map_proto__field_indices_by_name,
+  1,  hadoop__yarn__string_local_resource_map_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__string_local_resource_map_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor string_string_map_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__string_string_map_proto__field_descriptors[2] =
 {
   {
     "key",
@@ -3484,7 +3497,7 @@ static const ProtobufCFieldDescriptor string_string_map_proto__field_descriptors
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(StringStringMapProto, key),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringStringMapProto, key),
     NULL,
     NULL,
     0,            /* packed */
@@ -3496,38 +3509,38 @@ static const ProtobufCFieldDescriptor string_string_map_proto__field_descriptors
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(StringStringMapProto, value),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringStringMapProto, value),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned string_string_map_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__string_string_map_proto__field_indices_by_name[] = {
   0,   /* field[0] = key */
   1,   /* field[1] = value */
 };
-static const ProtobufCIntRange string_string_map_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__string_string_map_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor string_string_map_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__string_string_map_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.StringStringMapProto",
   "StringStringMapProto",
-  "StringStringMapProto",
-  "StringStringMapProto",
-  "",
-  sizeof(StringStringMapProto),
+  "Hadoop__Yarn__StringStringMapProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__StringStringMapProto),
   2,
-  string_string_map_proto__field_descriptors,
-  string_string_map_proto__field_indices_by_name,
-  1,  string_string_map_proto__number_ranges,
-  (ProtobufCMessageInit) string_string_map_proto__init,
+  hadoop__yarn__string_string_map_proto__field_descriptors,
+  hadoop__yarn__string_string_map_proto__field_indices_by_name,
+  1,  hadoop__yarn__string_string_map_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__string_string_map_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor string_bytes_map_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__string_bytes_map_proto__field_descriptors[2] =
 {
   {
     "key",
@@ -3535,7 +3548,7 @@ static const ProtobufCFieldDescriptor string_bytes_map_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(StringBytesMapProto, key),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringBytesMapProto, key),
     NULL,
     NULL,
     0,            /* packed */
@@ -3546,83 +3559,83 @@ static const ProtobufCFieldDescriptor string_bytes_map_proto__field_descriptors[
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(StringBytesMapProto, has_value),
-    PROTOBUF_C_OFFSETOF(StringBytesMapProto, value),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringBytesMapProto, has_value),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__StringBytesMapProto, value),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned string_bytes_map_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__string_bytes_map_proto__field_indices_by_name[] = {
   0,   /* field[0] = key */
   1,   /* field[1] = value */
 };
-static const ProtobufCIntRange string_bytes_map_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__string_bytes_map_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor string_bytes_map_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__string_bytes_map_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.StringBytesMapProto",
   "StringBytesMapProto",
-  "StringBytesMapProto",
-  "StringBytesMapProto",
-  "",
-  sizeof(StringBytesMapProto),
+  "Hadoop__Yarn__StringBytesMapProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__StringBytesMapProto),
   2,
-  string_bytes_map_proto__field_descriptors,
-  string_bytes_map_proto__field_indices_by_name,
-  1,  string_bytes_map_proto__number_ranges,
-  (ProtobufCMessageInit) string_bytes_map_proto__init,
+  hadoop__yarn__string_bytes_map_proto__field_descriptors,
+  hadoop__yarn__string_bytes_map_proto__field_indices_by_name,
+  1,  hadoop__yarn__string_bytes_map_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__string_bytes_map_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-const ProtobufCEnumValue container_state_proto__enum_values_by_number[3] =
+const ProtobufCEnumValue hadoop__yarn__container_state_proto__enum_values_by_number[3] =
 {
-  { "C_NEW", "CONTAINER_STATE_PROTO__C_NEW", 1 },
-  { "C_RUNNING", "CONTAINER_STATE_PROTO__C_RUNNING", 2 },
-  { "C_COMPLETE", "CONTAINER_STATE_PROTO__C_COMPLETE", 3 },
+  { "C_NEW", "HADOOP__YARN__CONTAINER_STATE_PROTO__C_NEW", 1 },
+  { "C_RUNNING", "HADOOP__YARN__CONTAINER_STATE_PROTO__C_RUNNING", 2 },
+  { "C_COMPLETE", "HADOOP__YARN__CONTAINER_STATE_PROTO__C_COMPLETE", 3 },
 };
-static const ProtobufCIntRange container_state_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__container_state_proto__value_ranges[] = {
 {1, 0},{0, 3}
 };
-const ProtobufCEnumValueIndex container_state_proto__enum_values_by_name[3] =
+const ProtobufCEnumValueIndex hadoop__yarn__container_state_proto__enum_values_by_name[3] =
 {
   { "C_COMPLETE", 2 },
   { "C_NEW", 0 },
   { "C_RUNNING", 1 },
 };
-const ProtobufCEnumDescriptor container_state_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__container_state_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerStateProto",
   "ContainerStateProto",
-  "ContainerStateProto",
-  "ContainerStateProto",
-  "",
+  "Hadoop__Yarn__ContainerStateProto",
+  "hadoop.yarn",
   3,
-  container_state_proto__enum_values_by_number,
+  hadoop__yarn__container_state_proto__enum_values_by_number,
   3,
-  container_state_proto__enum_values_by_name,
+  hadoop__yarn__container_state_proto__enum_values_by_name,
   1,
-  container_state_proto__value_ranges,
+  hadoop__yarn__container_state_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue yarn_application_state_proto__enum_values_by_number[8] =
+const ProtobufCEnumValue hadoop__yarn__yarn_application_state_proto__enum_values_by_number[8] =
 {
-  { "NEW", "YARN_APPLICATION_STATE_PROTO__NEW", 1 },
-  { "NEW_SAVING", "YARN_APPLICATION_STATE_PROTO__NEW_SAVING", 2 },
-  { "SUBMITTED", "YARN_APPLICATION_STATE_PROTO__SUBMITTED", 3 },
-  { "ACCEPTED", "YARN_APPLICATION_STATE_PROTO__ACCEPTED", 4 },
-  { "RUNNING", "YARN_APPLICATION_STATE_PROTO__RUNNING", 5 },
-  { "FINISHED", "YARN_APPLICATION_STATE_PROTO__FINISHED", 6 },
-  { "FAILED", "YARN_APPLICATION_STATE_PROTO__FAILED", 7 },
-  { "KILLED", "YARN_APPLICATION_STATE_PROTO__KILLED", 8 },
+  { "NEW", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__NEW", 1 },
+  { "NEW_SAVING", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__NEW_SAVING", 2 },
+  { "SUBMITTED", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__SUBMITTED", 3 },
+  { "ACCEPTED", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__ACCEPTED", 4 },
+  { "RUNNING", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__RUNNING", 5 },
+  { "FINISHED", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__FINISHED", 6 },
+  { "FAILED", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__FAILED", 7 },
+  { "KILLED", "HADOOP__YARN__YARN_APPLICATION_STATE_PROTO__KILLED", 8 },
 };
-static const ProtobufCIntRange yarn_application_state_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__yarn_application_state_proto__value_ranges[] = {
 {1, 0},{0, 8}
 };
-const ProtobufCEnumValueIndex yarn_application_state_proto__enum_values_by_name[8] =
+const ProtobufCEnumValueIndex hadoop__yarn__yarn_application_state_proto__enum_values_by_name[8] =
 {
   { "ACCEPTED", 3 },
   { "FAILED", 6 },
@@ -3633,126 +3646,126 @@ const ProtobufCEnumValueIndex yarn_application_state_proto__enum_values_by_name[
   { "RUNNING", 4 },
   { "SUBMITTED", 2 },
 };
-const ProtobufCEnumDescriptor yarn_application_state_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__yarn_application_state_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.YarnApplicationStateProto",
   "YarnApplicationStateProto",
-  "YarnApplicationStateProto",
-  "YarnApplicationStateProto",
-  "",
+  "Hadoop__Yarn__YarnApplicationStateProto",
+  "hadoop.yarn",
   8,
-  yarn_application_state_proto__enum_values_by_number,
+  hadoop__yarn__yarn_application_state_proto__enum_values_by_number,
   8,
-  yarn_application_state_proto__enum_values_by_name,
+  hadoop__yarn__yarn_application_state_proto__enum_values_by_name,
   1,
-  yarn_application_state_proto__value_ranges,
+  hadoop__yarn__yarn_application_state_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue final_application_status_proto__enum_values_by_number[4] =
+const ProtobufCEnumValue hadoop__yarn__final_application_status_proto__enum_values_by_number[4] =
 {
-  { "APP_UNDEFINED", "FINAL_APPLICATION_STATUS_PROTO__APP_UNDEFINED", 0 },
-  { "APP_SUCCEEDED", "FINAL_APPLICATION_STATUS_PROTO__APP_SUCCEEDED", 1 },
-  { "APP_FAILED", "FINAL_APPLICATION_STATUS_PROTO__APP_FAILED", 2 },
-  { "APP_KILLED", "FINAL_APPLICATION_STATUS_PROTO__APP_KILLED", 3 },
+  { "APP_UNDEFINED", "HADOOP__YARN__FINAL_APPLICATION_STATUS_PROTO__APP_UNDEFINED", 0 },
+  { "APP_SUCCEEDED", "HADOOP__YARN__FINAL_APPLICATION_STATUS_PROTO__APP_SUCCEEDED", 1 },
+  { "APP_FAILED", "HADOOP__YARN__FINAL_APPLICATION_STATUS_PROTO__APP_FAILED", 2 },
+  { "APP_KILLED", "HADOOP__YARN__FINAL_APPLICATION_STATUS_PROTO__APP_KILLED", 3 },
 };
-static const ProtobufCIntRange final_application_status_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__final_application_status_proto__value_ranges[] = {
 {0, 0},{0, 4}
 };
-const ProtobufCEnumValueIndex final_application_status_proto__enum_values_by_name[4] =
+const ProtobufCEnumValueIndex hadoop__yarn__final_application_status_proto__enum_values_by_name[4] =
 {
   { "APP_FAILED", 2 },
   { "APP_KILLED", 3 },
   { "APP_SUCCEEDED", 1 },
   { "APP_UNDEFINED", 0 },
 };
-const ProtobufCEnumDescriptor final_application_status_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__final_application_status_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.FinalApplicationStatusProto",
   "FinalApplicationStatusProto",
-  "FinalApplicationStatusProto",
-  "FinalApplicationStatusProto",
-  "",
+  "Hadoop__Yarn__FinalApplicationStatusProto",
+  "hadoop.yarn",
   4,
-  final_application_status_proto__enum_values_by_number,
+  hadoop__yarn__final_application_status_proto__enum_values_by_number,
   4,
-  final_application_status_proto__enum_values_by_name,
+  hadoop__yarn__final_application_status_proto__enum_values_by_name,
   1,
-  final_application_status_proto__value_ranges,
+  hadoop__yarn__final_application_status_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue local_resource_visibility_proto__enum_values_by_number[3] =
+const ProtobufCEnumValue hadoop__yarn__local_resource_visibility_proto__enum_values_by_number[3] =
 {
-  { "PUBLIC", "LOCAL_RESOURCE_VISIBILITY_PROTO__PUBLIC", 1 },
-  { "PRIVATE", "LOCAL_RESOURCE_VISIBILITY_PROTO__PRIVATE", 2 },
-  { "APPLICATION", "LOCAL_RESOURCE_VISIBILITY_PROTO__APPLICATION", 3 },
+  { "PUBLIC", "HADOOP__YARN__LOCAL_RESOURCE_VISIBILITY_PROTO__PUBLIC", 1 },
+  { "PRIVATE", "HADOOP__YARN__LOCAL_RESOURCE_VISIBILITY_PROTO__PRIVATE", 2 },
+  { "APPLICATION", "HADOOP__YARN__LOCAL_RESOURCE_VISIBILITY_PROTO__APPLICATION", 3 },
 };
-static const ProtobufCIntRange local_resource_visibility_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__local_resource_visibility_proto__value_ranges[] = {
 {1, 0},{0, 3}
 };
-const ProtobufCEnumValueIndex local_resource_visibility_proto__enum_values_by_name[3] =
+const ProtobufCEnumValueIndex hadoop__yarn__local_resource_visibility_proto__enum_values_by_name[3] =
 {
   { "APPLICATION", 2 },
   { "PRIVATE", 1 },
   { "PUBLIC", 0 },
 };
-const ProtobufCEnumDescriptor local_resource_visibility_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__local_resource_visibility_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalResourceVisibilityProto",
   "LocalResourceVisibilityProto",
-  "LocalResourceVisibilityProto",
-  "LocalResourceVisibilityProto",
-  "",
+  "Hadoop__Yarn__LocalResourceVisibilityProto",
+  "hadoop.yarn",
   3,
-  local_resource_visibility_proto__enum_values_by_number,
+  hadoop__yarn__local_resource_visibility_proto__enum_values_by_number,
   3,
-  local_resource_visibility_proto__enum_values_by_name,
+  hadoop__yarn__local_resource_visibility_proto__enum_values_by_name,
   1,
-  local_resource_visibility_proto__value_ranges,
+  hadoop__yarn__local_resource_visibility_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue local_resource_type_proto__enum_values_by_number[3] =
+const ProtobufCEnumValue hadoop__yarn__local_resource_type_proto__enum_values_by_number[3] =
 {
-  { "ARCHIVE", "LOCAL_RESOURCE_TYPE_PROTO__ARCHIVE", 1 },
-  { "FILE", "LOCAL_RESOURCE_TYPE_PROTO__FILE", 2 },
-  { "PATTERN", "LOCAL_RESOURCE_TYPE_PROTO__PATTERN", 3 },
+  { "ARCHIVE", "HADOOP__YARN__LOCAL_RESOURCE_TYPE_PROTO__ARCHIVE", 1 },
+  { "FILE", "HADOOP__YARN__LOCAL_RESOURCE_TYPE_PROTO__FILE", 2 },
+  { "PATTERN", "HADOOP__YARN__LOCAL_RESOURCE_TYPE_PROTO__PATTERN", 3 },
 };
-static const ProtobufCIntRange local_resource_type_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__local_resource_type_proto__value_ranges[] = {
 {1, 0},{0, 3}
 };
-const ProtobufCEnumValueIndex local_resource_type_proto__enum_values_by_name[3] =
+const ProtobufCEnumValueIndex hadoop__yarn__local_resource_type_proto__enum_values_by_name[3] =
 {
   { "ARCHIVE", 0 },
   { "FILE", 1 },
   { "PATTERN", 2 },
 };
-const ProtobufCEnumDescriptor local_resource_type_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__local_resource_type_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalResourceTypeProto",
   "LocalResourceTypeProto",
-  "LocalResourceTypeProto",
-  "LocalResourceTypeProto",
-  "",
+  "Hadoop__Yarn__LocalResourceTypeProto",
+  "hadoop.yarn",
   3,
-  local_resource_type_proto__enum_values_by_number,
+  hadoop__yarn__local_resource_type_proto__enum_values_by_number,
   3,
-  local_resource_type_proto__enum_values_by_name,
+  hadoop__yarn__local_resource_type_proto__enum_values_by_name,
   1,
-  local_resource_type_proto__value_ranges,
+  hadoop__yarn__local_resource_type_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue node_state_proto__enum_values_by_number[6] =
+const ProtobufCEnumValue hadoop__yarn__node_state_proto__enum_values_by_number[6] =
 {
-  { "NS_NEW", "NODE_STATE_PROTO__NS_NEW", 1 },
-  { "NS_RUNNING", "NODE_STATE_PROTO__NS_RUNNING", 2 },
-  { "NS_UNHEALTHY", "NODE_STATE_PROTO__NS_UNHEALTHY", 3 },
-  { "NS_DECOMMISSIONED", "NODE_STATE_PROTO__NS_DECOMMISSIONED", 4 },
-  { "NS_LOST", "NODE_STATE_PROTO__NS_LOST", 5 },
-  { "NS_REBOOTED", "NODE_STATE_PROTO__NS_REBOOTED", 6 },
+  { "NS_NEW", "HADOOP__YARN__NODE_STATE_PROTO__NS_NEW", 1 },
+  { "NS_RUNNING", "HADOOP__YARN__NODE_STATE_PROTO__NS_RUNNING", 2 },
+  { "NS_UNHEALTHY", "HADOOP__YARN__NODE_STATE_PROTO__NS_UNHEALTHY", 3 },
+  { "NS_DECOMMISSIONED", "HADOOP__YARN__NODE_STATE_PROTO__NS_DECOMMISSIONED", 4 },
+  { "NS_LOST", "HADOOP__YARN__NODE_STATE_PROTO__NS_LOST", 5 },
+  { "NS_REBOOTED", "HADOOP__YARN__NODE_STATE_PROTO__NS_REBOOTED", 6 },
 };
-static const ProtobufCIntRange node_state_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__node_state_proto__value_ranges[] = {
 {1, 0},{0, 6}
 };
-const ProtobufCEnumValueIndex node_state_proto__enum_values_by_name[6] =
+const ProtobufCEnumValueIndex hadoop__yarn__node_state_proto__enum_values_by_name[6] =
 {
   { "NS_DECOMMISSIONED", 3 },
   { "NS_LOST", 4 },
@@ -3761,162 +3774,162 @@ const ProtobufCEnumValueIndex node_state_proto__enum_values_by_name[6] =
   { "NS_RUNNING", 1 },
   { "NS_UNHEALTHY", 2 },
 };
-const ProtobufCEnumDescriptor node_state_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__node_state_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.NodeStateProto",
   "NodeStateProto",
-  "NodeStateProto",
-  "NodeStateProto",
-  "",
+  "Hadoop__Yarn__NodeStateProto",
+  "hadoop.yarn",
   6,
-  node_state_proto__enum_values_by_number,
+  hadoop__yarn__node_state_proto__enum_values_by_number,
   6,
-  node_state_proto__enum_values_by_name,
+  hadoop__yarn__node_state_proto__enum_values_by_name,
   1,
-  node_state_proto__value_ranges,
+  hadoop__yarn__node_state_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue amcommand_proto__enum_values_by_number[2] =
+const ProtobufCEnumValue hadoop__yarn__amcommand_proto__enum_values_by_number[2] =
 {
-  { "AM_RESYNC", "AMCOMMAND_PROTO__AM_RESYNC", 1 },
-  { "AM_SHUTDOWN", "AMCOMMAND_PROTO__AM_SHUTDOWN", 2 },
+  { "AM_RESYNC", "HADOOP__YARN__AMCOMMAND_PROTO__AM_RESYNC", 1 },
+  { "AM_SHUTDOWN", "HADOOP__YARN__AMCOMMAND_PROTO__AM_SHUTDOWN", 2 },
 };
-static const ProtobufCIntRange amcommand_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__amcommand_proto__value_ranges[] = {
 {1, 0},{0, 2}
 };
-const ProtobufCEnumValueIndex amcommand_proto__enum_values_by_name[2] =
+const ProtobufCEnumValueIndex hadoop__yarn__amcommand_proto__enum_values_by_name[2] =
 {
   { "AM_RESYNC", 0 },
   { "AM_SHUTDOWN", 1 },
 };
-const ProtobufCEnumDescriptor amcommand_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__amcommand_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.AMCommandProto",
   "AMCommandProto",
-  "AMCommandProto",
-  "AMCommandProto",
-  "",
+  "Hadoop__Yarn__AMCommandProto",
+  "hadoop.yarn",
   2,
-  amcommand_proto__enum_values_by_number,
+  hadoop__yarn__amcommand_proto__enum_values_by_number,
   2,
-  amcommand_proto__enum_values_by_name,
+  hadoop__yarn__amcommand_proto__enum_values_by_name,
   1,
-  amcommand_proto__value_ranges,
+  hadoop__yarn__amcommand_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue application_access_type_proto__enum_values_by_number[2] =
+const ProtobufCEnumValue hadoop__yarn__application_access_type_proto__enum_values_by_number[2] =
 {
-  { "APPACCESS_VIEW_APP", "APPLICATION_ACCESS_TYPE_PROTO__APPACCESS_VIEW_APP", 1 },
-  { "APPACCESS_MODIFY_APP", "APPLICATION_ACCESS_TYPE_PROTO__APPACCESS_MODIFY_APP", 2 },
+  { "APPACCESS_VIEW_APP", "HADOOP__YARN__APPLICATION_ACCESS_TYPE_PROTO__APPACCESS_VIEW_APP", 1 },
+  { "APPACCESS_MODIFY_APP", "HADOOP__YARN__APPLICATION_ACCESS_TYPE_PROTO__APPACCESS_MODIFY_APP", 2 },
 };
-static const ProtobufCIntRange application_access_type_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__application_access_type_proto__value_ranges[] = {
 {1, 0},{0, 2}
 };
-const ProtobufCEnumValueIndex application_access_type_proto__enum_values_by_name[2] =
+const ProtobufCEnumValueIndex hadoop__yarn__application_access_type_proto__enum_values_by_name[2] =
 {
   { "APPACCESS_MODIFY_APP", 1 },
   { "APPACCESS_VIEW_APP", 0 },
 };
-const ProtobufCEnumDescriptor application_access_type_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__application_access_type_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationAccessTypeProto",
   "ApplicationAccessTypeProto",
-  "ApplicationAccessTypeProto",
-  "ApplicationAccessTypeProto",
-  "",
+  "Hadoop__Yarn__ApplicationAccessTypeProto",
+  "hadoop.yarn",
   2,
-  application_access_type_proto__enum_values_by_number,
+  hadoop__yarn__application_access_type_proto__enum_values_by_number,
   2,
-  application_access_type_proto__enum_values_by_name,
+  hadoop__yarn__application_access_type_proto__enum_values_by_name,
   1,
-  application_access_type_proto__value_ranges,
+  hadoop__yarn__application_access_type_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue queue_state_proto__enum_values_by_number[2] =
+const ProtobufCEnumValue hadoop__yarn__queue_state_proto__enum_values_by_number[2] =
 {
-  { "Q_STOPPED", "QUEUE_STATE_PROTO__Q_STOPPED", 1 },
-  { "Q_RUNNING", "QUEUE_STATE_PROTO__Q_RUNNING", 2 },
+  { "Q_STOPPED", "HADOOP__YARN__QUEUE_STATE_PROTO__Q_STOPPED", 1 },
+  { "Q_RUNNING", "HADOOP__YARN__QUEUE_STATE_PROTO__Q_RUNNING", 2 },
 };
-static const ProtobufCIntRange queue_state_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__queue_state_proto__value_ranges[] = {
 {1, 0},{0, 2}
 };
-const ProtobufCEnumValueIndex queue_state_proto__enum_values_by_name[2] =
+const ProtobufCEnumValueIndex hadoop__yarn__queue_state_proto__enum_values_by_name[2] =
 {
   { "Q_RUNNING", 1 },
   { "Q_STOPPED", 0 },
 };
-const ProtobufCEnumDescriptor queue_state_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__queue_state_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.QueueStateProto",
   "QueueStateProto",
-  "QueueStateProto",
-  "QueueStateProto",
-  "",
+  "Hadoop__Yarn__QueueStateProto",
+  "hadoop.yarn",
   2,
-  queue_state_proto__enum_values_by_number,
+  hadoop__yarn__queue_state_proto__enum_values_by_number,
   2,
-  queue_state_proto__enum_values_by_name,
+  hadoop__yarn__queue_state_proto__enum_values_by_name,
   1,
-  queue_state_proto__value_ranges,
+  hadoop__yarn__queue_state_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue queue_aclproto__enum_values_by_number[2] =
+const ProtobufCEnumValue hadoop__yarn__queue_aclproto__enum_values_by_number[2] =
 {
-  { "QACL_SUBMIT_APPLICATIONS", "QUEUE_ACLPROTO__QACL_SUBMIT_APPLICATIONS", 1 },
-  { "QACL_ADMINISTER_QUEUE", "QUEUE_ACLPROTO__QACL_ADMINISTER_QUEUE", 2 },
+  { "QACL_SUBMIT_APPLICATIONS", "HADOOP__YARN__QUEUE_ACLPROTO__QACL_SUBMIT_APPLICATIONS", 1 },
+  { "QACL_ADMINISTER_QUEUE", "HADOOP__YARN__QUEUE_ACLPROTO__QACL_ADMINISTER_QUEUE", 2 },
 };
-static const ProtobufCIntRange queue_aclproto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__queue_aclproto__value_ranges[] = {
 {1, 0},{0, 2}
 };
-const ProtobufCEnumValueIndex queue_aclproto__enum_values_by_name[2] =
+const ProtobufCEnumValueIndex hadoop__yarn__queue_aclproto__enum_values_by_name[2] =
 {
   { "QACL_ADMINISTER_QUEUE", 1 },
   { "QACL_SUBMIT_APPLICATIONS", 0 },
 };
-const ProtobufCEnumDescriptor queue_aclproto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__queue_aclproto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.QueueACLProto",
   "QueueACLProto",
-  "QueueACLProto",
-  "QueueACLProto",
-  "",
+  "Hadoop__Yarn__QueueACLProto",
+  "hadoop.yarn",
   2,
-  queue_aclproto__enum_values_by_number,
+  hadoop__yarn__queue_aclproto__enum_values_by_number,
   2,
-  queue_aclproto__enum_values_by_name,
+  hadoop__yarn__queue_aclproto__enum_values_by_name,
   1,
-  queue_aclproto__value_ranges,
+  hadoop__yarn__queue_aclproto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue container_exit_status_proto__enum_values_by_number[4] =
+const ProtobufCEnumValue hadoop__yarn__container_exit_status_proto__enum_values_by_number[4] =
 {
-  { "INVALID", "CONTAINER_EXIT_STATUS_PROTO__INVALID", -1000 },
-  { "DISKS_FAILED", "CONTAINER_EXIT_STATUS_PROTO__DISKS_FAILED", -101 },
-  { "ABORTED", "CONTAINER_EXIT_STATUS_PROTO__ABORTED", -100 },
-  { "SUCCESS", "CONTAINER_EXIT_STATUS_PROTO__SUCCESS", 0 },
+  { "INVALID", "HADOOP__YARN__CONTAINER_EXIT_STATUS_PROTO__INVALID", -1000 },
+  { "DISKS_FAILED", "HADOOP__YARN__CONTAINER_EXIT_STATUS_PROTO__DISKS_FAILED", -101 },
+  { "ABORTED", "HADOOP__YARN__CONTAINER_EXIT_STATUS_PROTO__ABORTED", -100 },
+  { "SUCCESS", "HADOOP__YARN__CONTAINER_EXIT_STATUS_PROTO__SUCCESS", 0 },
 };
-static const ProtobufCIntRange container_exit_status_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__container_exit_status_proto__value_ranges[] = {
 {4294966296, 0},{4294967195, 1},{0, 3},{0, 4}
 };
-const ProtobufCEnumValueIndex container_exit_status_proto__enum_values_by_name[4] =
+const ProtobufCEnumValueIndex hadoop__yarn__container_exit_status_proto__enum_values_by_name[4] =
 {
   { "ABORTED", 2 },
   { "DISKS_FAILED", 1 },
   { "INVALID", 0 },
   { "SUCCESS", 3 },
 };
-const ProtobufCEnumDescriptor container_exit_status_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__container_exit_status_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ContainerExitStatusProto",
   "ContainerExitStatusProto",
-  "ContainerExitStatusProto",
-  "ContainerExitStatusProto",
-  "",
+  "Hadoop__Yarn__ContainerExitStatusProto",
+  "hadoop.yarn",
   4,
-  container_exit_status_proto__enum_values_by_number,
+  hadoop__yarn__container_exit_status_proto__enum_values_by_number,
   4,
-  container_exit_status_proto__enum_values_by_name,
+  hadoop__yarn__container_exit_status_proto__enum_values_by_name,
   3,
-  container_exit_status_proto__value_ranges,
+  hadoop__yarn__container_exit_status_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };

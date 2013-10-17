@@ -21,46 +21,46 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _ResourceManagerAdministrationProtocolService_Service ResourceManagerAdministrationProtocolService_Service;
-struct _ResourceManagerAdministrationProtocolService_Service
+typedef struct _Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service;
+struct _Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service
 {
   ProtobufCService base;
-  void (*refresh_queues)(ResourceManagerAdministrationProtocolService_Service *service,
-                         const RefreshQueuesRequestProto *input,
-                         RefreshQueuesResponseProto_Closure closure,
+  void (*refresh_queues)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                         const Hadoop__Yarn__RefreshQueuesRequestProto *input,
+                         Hadoop__Yarn__RefreshQueuesResponseProto_Closure closure,
                          void *closure_data);
-  void (*refresh_nodes)(ResourceManagerAdministrationProtocolService_Service *service,
-                        const RefreshNodesRequestProto *input,
-                        RefreshNodesResponseProto_Closure closure,
+  void (*refresh_nodes)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                        const Hadoop__Yarn__RefreshNodesRequestProto *input,
+                        Hadoop__Yarn__RefreshNodesResponseProto_Closure closure,
                         void *closure_data);
-  void (*refresh_super_user_groups_configuration)(ResourceManagerAdministrationProtocolService_Service *service,
-                                                  const RefreshSuperUserGroupsConfigurationRequestProto *input,
-                                                  RefreshSuperUserGroupsConfigurationResponseProto_Closure closure,
+  void (*refresh_super_user_groups_configuration)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                                                  const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *input,
+                                                  Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto_Closure closure,
                                                   void *closure_data);
-  void (*refresh_user_to_groups_mappings)(ResourceManagerAdministrationProtocolService_Service *service,
-                                          const RefreshUserToGroupsMappingsRequestProto *input,
-                                          RefreshUserToGroupsMappingsResponseProto_Closure closure,
+  void (*refresh_user_to_groups_mappings)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                                          const Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *input,
+                                          Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto_Closure closure,
                                           void *closure_data);
-  void (*refresh_admin_acls)(ResourceManagerAdministrationProtocolService_Service *service,
-                             const RefreshAdminAclsRequestProto *input,
-                             RefreshAdminAclsResponseProto_Closure closure,
+  void (*refresh_admin_acls)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                             const Hadoop__Yarn__RefreshAdminAclsRequestProto *input,
+                             Hadoop__Yarn__RefreshAdminAclsResponseProto_Closure closure,
                              void *closure_data);
-  void (*refresh_service_acls)(ResourceManagerAdministrationProtocolService_Service *service,
-                               const RefreshServiceAclsRequestProto *input,
-                               RefreshServiceAclsResponseProto_Closure closure,
+  void (*refresh_service_acls)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                               const Hadoop__Yarn__RefreshServiceAclsRequestProto *input,
+                               Hadoop__Yarn__RefreshServiceAclsResponseProto_Closure closure,
                                void *closure_data);
-  void (*get_groups_for_user)(ResourceManagerAdministrationProtocolService_Service *service,
-                              const GetGroupsForUserRequestProto *input,
-                              GetGroupsForUserResponseProto_Closure closure,
+  void (*get_groups_for_user)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                              const Hadoop__Yarn__GetGroupsForUserRequestProto *input,
+                              Hadoop__Yarn__GetGroupsForUserResponseProto_Closure closure,
                               void *closure_data);
 };
-typedef void (*ResourceManagerAdministrationProtocolService_ServiceDestroy)(ResourceManagerAdministrationProtocolService_Service *);
-void resource_manager_administration_protocol_service__init (ResourceManagerAdministrationProtocolService_Service *service,
-                                                             ResourceManagerAdministrationProtocolService_ServiceDestroy destroy);
-#define RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__BASE_INIT \
-    { &resource_manager_administration_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__INIT(function_prefix__) \
-    { RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__ResourceManagerAdministrationProtocolService_ServiceDestroy)(Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *);
+void hadoop__yarn__resource_manager_administration_protocol_service__init (Hadoop__Yarn__ResourceManagerAdministrationProtocolService_Service *service,
+                                                                           Hadoop__Yarn__ResourceManagerAdministrationProtocolService_ServiceDestroy destroy);
+#define HADOOP__YARN__RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__BASE_INIT \
+    { &hadoop__yarn__resource_manager_administration_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__RESOURCE_MANAGER_ADMINISTRATION_PROTOCOL_SERVICE__BASE_INIT,\
       function_prefix__ ## refresh_queues,\
       function_prefix__ ## refresh_nodes,\
       function_prefix__ ## refresh_super_user_groups_configuration,\
@@ -68,38 +68,38 @@ void resource_manager_administration_protocol_service__init (ResourceManagerAdmi
       function_prefix__ ## refresh_admin_acls,\
       function_prefix__ ## refresh_service_acls,\
       function_prefix__ ## get_groups_for_user  }
-void resource_manager_administration_protocol_service__refresh_queues(ProtobufCService *service,
-                                                                      const RefreshQueuesRequestProto *input,
-                                                                      RefreshQueuesResponseProto_Closure closure,
-                                                                      void *closure_data);
-void resource_manager_administration_protocol_service__refresh_nodes(ProtobufCService *service,
-                                                                     const RefreshNodesRequestProto *input,
-                                                                     RefreshNodesResponseProto_Closure closure,
-                                                                     void *closure_data);
-void resource_manager_administration_protocol_service__refresh_super_user_groups_configuration(ProtobufCService *service,
-                                                                                               const RefreshSuperUserGroupsConfigurationRequestProto *input,
-                                                                                               RefreshSuperUserGroupsConfigurationResponseProto_Closure closure,
-                                                                                               void *closure_data);
-void resource_manager_administration_protocol_service__refresh_user_to_groups_mappings(ProtobufCService *service,
-                                                                                       const RefreshUserToGroupsMappingsRequestProto *input,
-                                                                                       RefreshUserToGroupsMappingsResponseProto_Closure closure,
-                                                                                       void *closure_data);
-void resource_manager_administration_protocol_service__refresh_admin_acls(ProtobufCService *service,
-                                                                          const RefreshAdminAclsRequestProto *input,
-                                                                          RefreshAdminAclsResponseProto_Closure closure,
-                                                                          void *closure_data);
-void resource_manager_administration_protocol_service__refresh_service_acls(ProtobufCService *service,
-                                                                            const RefreshServiceAclsRequestProto *input,
-                                                                            RefreshServiceAclsResponseProto_Closure closure,
-                                                                            void *closure_data);
-void resource_manager_administration_protocol_service__get_groups_for_user(ProtobufCService *service,
-                                                                           const GetGroupsForUserRequestProto *input,
-                                                                           GetGroupsForUserResponseProto_Closure closure,
-                                                                           void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_queues(ProtobufCService *service,
+                                                                                    const Hadoop__Yarn__RefreshQueuesRequestProto *input,
+                                                                                    Hadoop__Yarn__RefreshQueuesResponseProto_Closure closure,
+                                                                                    void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_nodes(ProtobufCService *service,
+                                                                                   const Hadoop__Yarn__RefreshNodesRequestProto *input,
+                                                                                   Hadoop__Yarn__RefreshNodesResponseProto_Closure closure,
+                                                                                   void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_super_user_groups_configuration(ProtobufCService *service,
+                                                                                                             const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *input,
+                                                                                                             Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto_Closure closure,
+                                                                                                             void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_user_to_groups_mappings(ProtobufCService *service,
+                                                                                                     const Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *input,
+                                                                                                     Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto_Closure closure,
+                                                                                                     void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_admin_acls(ProtobufCService *service,
+                                                                                        const Hadoop__Yarn__RefreshAdminAclsRequestProto *input,
+                                                                                        Hadoop__Yarn__RefreshAdminAclsResponseProto_Closure closure,
+                                                                                        void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__refresh_service_acls(ProtobufCService *service,
+                                                                                          const Hadoop__Yarn__RefreshServiceAclsRequestProto *input,
+                                                                                          Hadoop__Yarn__RefreshServiceAclsResponseProto_Closure closure,
+                                                                                          void *closure_data);
+void hadoop__yarn__resource_manager_administration_protocol_service__get_groups_for_user(ProtobufCService *service,
+                                                                                         const Hadoop__Yarn__GetGroupsForUserRequestProto *input,
+                                                                                         Hadoop__Yarn__GetGroupsForUserResponseProto_Closure closure,
+                                                                                         void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor resource_manager_administration_protocol_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__resource_manager_administration_protocol_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

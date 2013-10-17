@@ -202,7 +202,7 @@ static const ProtobufCFieldDescriptor hadoop__common__rpc_request_header_proto__
     "callId",
     3,
     PROTOBUF_C_LABEL_REQUIRED,
-    PROTOBUF_C_TYPE_UINT32,
+    PROTOBUF_C_TYPE_SINT32,
     0,   /* quantifier_offset */
     PROTOBUF_C_OFFSETOF(Hadoop__Common__RpcRequestHeaderProto, callid),
     NULL,

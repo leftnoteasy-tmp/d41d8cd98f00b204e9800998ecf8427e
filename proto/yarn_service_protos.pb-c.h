@@ -10,44 +10,44 @@ PROTOBUF_C_BEGIN_DECLS
 #include "Security.pb-c.h"
 #include "yarn_protos.pb-c.h"
 
-typedef struct _RegisterApplicationMasterRequestProto RegisterApplicationMasterRequestProto;
-typedef struct _RegisterApplicationMasterResponseProto RegisterApplicationMasterResponseProto;
-typedef struct _FinishApplicationMasterRequestProto FinishApplicationMasterRequestProto;
-typedef struct _FinishApplicationMasterResponseProto FinishApplicationMasterResponseProto;
-typedef struct _AllocateRequestProto AllocateRequestProto;
-typedef struct _NMTokenProto NMTokenProto;
-typedef struct _AllocateResponseProto AllocateResponseProto;
-typedef struct _GetNewApplicationRequestProto GetNewApplicationRequestProto;
-typedef struct _GetNewApplicationResponseProto GetNewApplicationResponseProto;
-typedef struct _GetApplicationReportRequestProto GetApplicationReportRequestProto;
-typedef struct _GetApplicationReportResponseProto GetApplicationReportResponseProto;
-typedef struct _SubmitApplicationRequestProto SubmitApplicationRequestProto;
-typedef struct _SubmitApplicationResponseProto SubmitApplicationResponseProto;
-typedef struct _KillApplicationRequestProto KillApplicationRequestProto;
-typedef struct _KillApplicationResponseProto KillApplicationResponseProto;
-typedef struct _GetClusterMetricsRequestProto GetClusterMetricsRequestProto;
-typedef struct _GetClusterMetricsResponseProto GetClusterMetricsResponseProto;
-typedef struct _GetApplicationsRequestProto GetApplicationsRequestProto;
-typedef struct _GetApplicationsResponseProto GetApplicationsResponseProto;
-typedef struct _GetClusterNodesRequestProto GetClusterNodesRequestProto;
-typedef struct _GetClusterNodesResponseProto GetClusterNodesResponseProto;
-typedef struct _GetQueueInfoRequestProto GetQueueInfoRequestProto;
-typedef struct _GetQueueInfoResponseProto GetQueueInfoResponseProto;
-typedef struct _GetQueueUserAclsInfoRequestProto GetQueueUserAclsInfoRequestProto;
-typedef struct _GetQueueUserAclsInfoResponseProto GetQueueUserAclsInfoResponseProto;
-typedef struct _StartContainerRequestProto StartContainerRequestProto;
-typedef struct _StartContainerResponseProto StartContainerResponseProto;
-typedef struct _StopContainerRequestProto StopContainerRequestProto;
-typedef struct _StopContainerResponseProto StopContainerResponseProto;
-typedef struct _GetContainerStatusRequestProto GetContainerStatusRequestProto;
-typedef struct _GetContainerStatusResponseProto GetContainerStatusResponseProto;
-typedef struct _StartContainersRequestProto StartContainersRequestProto;
-typedef struct _ContainerExceptionMapProto ContainerExceptionMapProto;
-typedef struct _StartContainersResponseProto StartContainersResponseProto;
-typedef struct _StopContainersRequestProto StopContainersRequestProto;
-typedef struct _StopContainersResponseProto StopContainersResponseProto;
-typedef struct _GetContainerStatusesRequestProto GetContainerStatusesRequestProto;
-typedef struct _GetContainerStatusesResponseProto GetContainerStatusesResponseProto;
+typedef struct _Hadoop__Yarn__RegisterApplicationMasterRequestProto Hadoop__Yarn__RegisterApplicationMasterRequestProto;
+typedef struct _Hadoop__Yarn__RegisterApplicationMasterResponseProto Hadoop__Yarn__RegisterApplicationMasterResponseProto;
+typedef struct _Hadoop__Yarn__FinishApplicationMasterRequestProto Hadoop__Yarn__FinishApplicationMasterRequestProto;
+typedef struct _Hadoop__Yarn__FinishApplicationMasterResponseProto Hadoop__Yarn__FinishApplicationMasterResponseProto;
+typedef struct _Hadoop__Yarn__AllocateRequestProto Hadoop__Yarn__AllocateRequestProto;
+typedef struct _Hadoop__Yarn__NMTokenProto Hadoop__Yarn__NMTokenProto;
+typedef struct _Hadoop__Yarn__AllocateResponseProto Hadoop__Yarn__AllocateResponseProto;
+typedef struct _Hadoop__Yarn__GetNewApplicationRequestProto Hadoop__Yarn__GetNewApplicationRequestProto;
+typedef struct _Hadoop__Yarn__GetNewApplicationResponseProto Hadoop__Yarn__GetNewApplicationResponseProto;
+typedef struct _Hadoop__Yarn__GetApplicationReportRequestProto Hadoop__Yarn__GetApplicationReportRequestProto;
+typedef struct _Hadoop__Yarn__GetApplicationReportResponseProto Hadoop__Yarn__GetApplicationReportResponseProto;
+typedef struct _Hadoop__Yarn__SubmitApplicationRequestProto Hadoop__Yarn__SubmitApplicationRequestProto;
+typedef struct _Hadoop__Yarn__SubmitApplicationResponseProto Hadoop__Yarn__SubmitApplicationResponseProto;
+typedef struct _Hadoop__Yarn__KillApplicationRequestProto Hadoop__Yarn__KillApplicationRequestProto;
+typedef struct _Hadoop__Yarn__KillApplicationResponseProto Hadoop__Yarn__KillApplicationResponseProto;
+typedef struct _Hadoop__Yarn__GetClusterMetricsRequestProto Hadoop__Yarn__GetClusterMetricsRequestProto;
+typedef struct _Hadoop__Yarn__GetClusterMetricsResponseProto Hadoop__Yarn__GetClusterMetricsResponseProto;
+typedef struct _Hadoop__Yarn__GetApplicationsRequestProto Hadoop__Yarn__GetApplicationsRequestProto;
+typedef struct _Hadoop__Yarn__GetApplicationsResponseProto Hadoop__Yarn__GetApplicationsResponseProto;
+typedef struct _Hadoop__Yarn__GetClusterNodesRequestProto Hadoop__Yarn__GetClusterNodesRequestProto;
+typedef struct _Hadoop__Yarn__GetClusterNodesResponseProto Hadoop__Yarn__GetClusterNodesResponseProto;
+typedef struct _Hadoop__Yarn__GetQueueInfoRequestProto Hadoop__Yarn__GetQueueInfoRequestProto;
+typedef struct _Hadoop__Yarn__GetQueueInfoResponseProto Hadoop__Yarn__GetQueueInfoResponseProto;
+typedef struct _Hadoop__Yarn__GetQueueUserAclsInfoRequestProto Hadoop__Yarn__GetQueueUserAclsInfoRequestProto;
+typedef struct _Hadoop__Yarn__GetQueueUserAclsInfoResponseProto Hadoop__Yarn__GetQueueUserAclsInfoResponseProto;
+typedef struct _Hadoop__Yarn__StartContainerRequestProto Hadoop__Yarn__StartContainerRequestProto;
+typedef struct _Hadoop__Yarn__StartContainerResponseProto Hadoop__Yarn__StartContainerResponseProto;
+typedef struct _Hadoop__Yarn__StopContainerRequestProto Hadoop__Yarn__StopContainerRequestProto;
+typedef struct _Hadoop__Yarn__StopContainerResponseProto Hadoop__Yarn__StopContainerResponseProto;
+typedef struct _Hadoop__Yarn__GetContainerStatusRequestProto Hadoop__Yarn__GetContainerStatusRequestProto;
+typedef struct _Hadoop__Yarn__GetContainerStatusResponseProto Hadoop__Yarn__GetContainerStatusResponseProto;
+typedef struct _Hadoop__Yarn__StartContainersRequestProto Hadoop__Yarn__StartContainersRequestProto;
+typedef struct _Hadoop__Yarn__ContainerExceptionMapProto Hadoop__Yarn__ContainerExceptionMapProto;
+typedef struct _Hadoop__Yarn__StartContainersResponseProto Hadoop__Yarn__StartContainersResponseProto;
+typedef struct _Hadoop__Yarn__StopContainersRequestProto Hadoop__Yarn__StopContainersRequestProto;
+typedef struct _Hadoop__Yarn__StopContainersResponseProto Hadoop__Yarn__StopContainersResponseProto;
+typedef struct _Hadoop__Yarn__GetContainerStatusesRequestProto Hadoop__Yarn__GetContainerStatusesRequestProto;
+typedef struct _Hadoop__Yarn__GetContainerStatusesResponseProto Hadoop__Yarn__GetContainerStatusesResponseProto;
 
 
 /* --- enums --- */
@@ -55,7 +55,7 @@ typedef struct _GetContainerStatusesResponseProto GetContainerStatusesResponsePr
 
 /* --- messages --- */
 
-struct  _RegisterApplicationMasterRequestProto
+struct  _Hadoop__Yarn__RegisterApplicationMasterRequestProto
 {
   ProtobufCMessage base;
   char *host;
@@ -63,243 +63,247 @@ struct  _RegisterApplicationMasterRequestProto
   int32_t rpc_port;
   char *tracking_url;
 };
-#define REGISTER_APPLICATION_MASTER_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&register_application_master_request_proto__descriptor) \
+#define HADOOP__YARN__REGISTER_APPLICATION_MASTER_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__register_application_master_request_proto__descriptor) \
     , NULL, 0,0, NULL }
 
 
-struct  _RegisterApplicationMasterResponseProto
+struct  _Hadoop__Yarn__RegisterApplicationMasterResponseProto
 {
   ProtobufCMessage base;
-  ResourceProto *maximumcapability;
+  Hadoop__Yarn__ResourceProto *maximumcapability;
   protobuf_c_boolean has_client_to_am_token_master_key;
   ProtobufCBinaryData client_to_am_token_master_key;
   size_t n_application_acls;
-  ApplicationACLMapProto **application_acls;
+  Hadoop__Yarn__ApplicationACLMapProto **application_acls;
 };
-#define REGISTER_APPLICATION_MASTER_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&register_application_master_response_proto__descriptor) \
+#define HADOOP__YARN__REGISTER_APPLICATION_MASTER_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__register_application_master_response_proto__descriptor) \
     , NULL, 0,{0,NULL}, 0,NULL }
 
 
-struct  _FinishApplicationMasterRequestProto
+struct  _Hadoop__Yarn__FinishApplicationMasterRequestProto
 {
   ProtobufCMessage base;
   char *diagnostics;
   char *tracking_url;
   protobuf_c_boolean has_final_application_status;
-  FinalApplicationStatusProto final_application_status;
+  Hadoop__Yarn__FinalApplicationStatusProto final_application_status;
 };
-#define FINISH_APPLICATION_MASTER_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&finish_application_master_request_proto__descriptor) \
+#define HADOOP__YARN__FINISH_APPLICATION_MASTER_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__finish_application_master_request_proto__descriptor) \
     , NULL, NULL, 0,0 }
 
 
-struct  _FinishApplicationMasterResponseProto
+struct  _Hadoop__Yarn__FinishApplicationMasterResponseProto
 {
   ProtobufCMessage base;
+  protobuf_c_boolean has_isunregistered;
+  protobuf_c_boolean isunregistered;
 };
-#define FINISH_APPLICATION_MASTER_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&finish_application_master_response_proto__descriptor) \
-     }
+#define HADOOP__YARN__FINISH_APPLICATION_MASTER_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__finish_application_master_response_proto__descriptor) \
+    , 0,0 }
 
 
-struct  _AllocateRequestProto
+struct  _Hadoop__Yarn__AllocateRequestProto
 {
   ProtobufCMessage base;
   size_t n_ask;
-  ResourceRequestProto **ask;
+  Hadoop__Yarn__ResourceRequestProto **ask;
   size_t n_release;
-  ContainerIdProto **release;
-  ResourceBlacklistRequestProto *blacklist_request;
+  Hadoop__Yarn__ContainerIdProto **release;
+  Hadoop__Yarn__ResourceBlacklistRequestProto *blacklist_request;
   protobuf_c_boolean has_response_id;
   int32_t response_id;
   protobuf_c_boolean has_progress;
   float progress;
 };
-#define ALLOCATE_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&allocate_request_proto__descriptor) \
+#define HADOOP__YARN__ALLOCATE_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__allocate_request_proto__descriptor) \
     , 0,NULL, 0,NULL, NULL, 0,0, 0,0 }
 
 
-struct  _NMTokenProto
+struct  _Hadoop__Yarn__NMTokenProto
 {
   ProtobufCMessage base;
-  NodeIdProto *nodeid;
+  Hadoop__Yarn__NodeIdProto *nodeid;
   Hadoop__Common__TokenProto *token;
 };
-#define NMTOKEN_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&nmtoken_proto__descriptor) \
+#define HADOOP__YARN__NMTOKEN_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__nmtoken_proto__descriptor) \
     , NULL, NULL }
 
 
-struct  _AllocateResponseProto
+struct  _Hadoop__Yarn__AllocateResponseProto
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_a_m_command;
-  AMCommandProto a_m_command;
+  Hadoop__Yarn__AMCommandProto a_m_command;
   protobuf_c_boolean has_response_id;
   int32_t response_id;
   size_t n_allocated_containers;
-  ContainerProto **allocated_containers;
+  Hadoop__Yarn__ContainerProto **allocated_containers;
   size_t n_completed_container_statuses;
-  ContainerStatusProto **completed_container_statuses;
-  ResourceProto *limit;
+  Hadoop__Yarn__ContainerStatusProto **completed_container_statuses;
+  Hadoop__Yarn__ResourceProto *limit;
   size_t n_updated_nodes;
-  NodeReportProto **updated_nodes;
+  Hadoop__Yarn__NodeReportProto **updated_nodes;
   protobuf_c_boolean has_num_cluster_nodes;
   int32_t num_cluster_nodes;
-  PreemptionMessageProto *preempt;
+  Hadoop__Yarn__PreemptionMessageProto *preempt;
   size_t n_nm_tokens;
-  NMTokenProto **nm_tokens;
+  Hadoop__Yarn__NMTokenProto **nm_tokens;
 };
-#define ALLOCATE_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&allocate_response_proto__descriptor) \
+#define HADOOP__YARN__ALLOCATE_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__allocate_response_proto__descriptor) \
     , 0,0, 0,0, 0,NULL, 0,NULL, NULL, 0,NULL, 0,0, NULL, 0,NULL }
 
 
-struct  _GetNewApplicationRequestProto
+struct  _Hadoop__Yarn__GetNewApplicationRequestProto
 {
   ProtobufCMessage base;
 };
-#define GET_NEW_APPLICATION_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_new_application_request_proto__descriptor) \
+#define HADOOP__YARN__GET_NEW_APPLICATION_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_new_application_request_proto__descriptor) \
      }
 
 
-struct  _GetNewApplicationResponseProto
+struct  _Hadoop__Yarn__GetNewApplicationResponseProto
 {
   ProtobufCMessage base;
-  ApplicationIdProto *application_id;
-  ResourceProto *maximumcapability;
+  Hadoop__Yarn__ApplicationIdProto *application_id;
+  Hadoop__Yarn__ResourceProto *maximumcapability;
 };
-#define GET_NEW_APPLICATION_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_new_application_response_proto__descriptor) \
+#define HADOOP__YARN__GET_NEW_APPLICATION_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_new_application_response_proto__descriptor) \
     , NULL, NULL }
 
 
-struct  _GetApplicationReportRequestProto
+struct  _Hadoop__Yarn__GetApplicationReportRequestProto
 {
   ProtobufCMessage base;
-  ApplicationIdProto *application_id;
+  Hadoop__Yarn__ApplicationIdProto *application_id;
 };
-#define GET_APPLICATION_REPORT_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_application_report_request_proto__descriptor) \
+#define HADOOP__YARN__GET_APPLICATION_REPORT_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_application_report_request_proto__descriptor) \
     , NULL }
 
 
-struct  _GetApplicationReportResponseProto
+struct  _Hadoop__Yarn__GetApplicationReportResponseProto
 {
   ProtobufCMessage base;
-  ApplicationReportProto *application_report;
+  Hadoop__Yarn__ApplicationReportProto *application_report;
 };
-#define GET_APPLICATION_REPORT_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_application_report_response_proto__descriptor) \
+#define HADOOP__YARN__GET_APPLICATION_REPORT_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_application_report_response_proto__descriptor) \
     , NULL }
 
 
-struct  _SubmitApplicationRequestProto
+struct  _Hadoop__Yarn__SubmitApplicationRequestProto
 {
   ProtobufCMessage base;
-  ApplicationSubmissionContextProto *application_submission_context;
+  Hadoop__Yarn__ApplicationSubmissionContextProto *application_submission_context;
 };
-#define SUBMIT_APPLICATION_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&submit_application_request_proto__descriptor) \
+#define HADOOP__YARN__SUBMIT_APPLICATION_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__submit_application_request_proto__descriptor) \
     , NULL }
 
 
-struct  _SubmitApplicationResponseProto
+struct  _Hadoop__Yarn__SubmitApplicationResponseProto
 {
   ProtobufCMessage base;
 };
-#define SUBMIT_APPLICATION_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&submit_application_response_proto__descriptor) \
+#define HADOOP__YARN__SUBMIT_APPLICATION_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__submit_application_response_proto__descriptor) \
      }
 
 
-struct  _KillApplicationRequestProto
+struct  _Hadoop__Yarn__KillApplicationRequestProto
 {
   ProtobufCMessage base;
-  ApplicationIdProto *application_id;
+  Hadoop__Yarn__ApplicationIdProto *application_id;
 };
-#define KILL_APPLICATION_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&kill_application_request_proto__descriptor) \
+#define HADOOP__YARN__KILL_APPLICATION_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__kill_application_request_proto__descriptor) \
     , NULL }
 
 
-struct  _KillApplicationResponseProto
+struct  _Hadoop__Yarn__KillApplicationResponseProto
 {
   ProtobufCMessage base;
 };
-#define KILL_APPLICATION_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&kill_application_response_proto__descriptor) \
+#define HADOOP__YARN__KILL_APPLICATION_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__kill_application_response_proto__descriptor) \
      }
 
 
-struct  _GetClusterMetricsRequestProto
+struct  _Hadoop__Yarn__GetClusterMetricsRequestProto
 {
   ProtobufCMessage base;
 };
-#define GET_CLUSTER_METRICS_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_cluster_metrics_request_proto__descriptor) \
+#define HADOOP__YARN__GET_CLUSTER_METRICS_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_cluster_metrics_request_proto__descriptor) \
      }
 
 
-struct  _GetClusterMetricsResponseProto
+struct  _Hadoop__Yarn__GetClusterMetricsResponseProto
 {
   ProtobufCMessage base;
-  YarnClusterMetricsProto *cluster_metrics;
+  Hadoop__Yarn__YarnClusterMetricsProto *cluster_metrics;
 };
-#define GET_CLUSTER_METRICS_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_cluster_metrics_response_proto__descriptor) \
+#define HADOOP__YARN__GET_CLUSTER_METRICS_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_cluster_metrics_response_proto__descriptor) \
     , NULL }
 
 
-struct  _GetApplicationsRequestProto
+struct  _Hadoop__Yarn__GetApplicationsRequestProto
 {
   ProtobufCMessage base;
   size_t n_application_types;
   char **application_types;
+  size_t n_application_states;
+  Hadoop__Yarn__YarnApplicationStateProto *application_states;
 };
-#define GET_APPLICATIONS_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_applications_request_proto__descriptor) \
-    , 0,NULL }
+#define HADOOP__YARN__GET_APPLICATIONS_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_applications_request_proto__descriptor) \
+    , 0,NULL, 0,NULL }
 
 
-struct  _GetApplicationsResponseProto
+struct  _Hadoop__Yarn__GetApplicationsResponseProto
 {
   ProtobufCMessage base;
   size_t n_applications;
-  ApplicationReportProto **applications;
+  Hadoop__Yarn__ApplicationReportProto **applications;
 };
-#define GET_APPLICATIONS_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_applications_response_proto__descriptor) \
+#define HADOOP__YARN__GET_APPLICATIONS_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_applications_response_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _GetClusterNodesRequestProto
+struct  _Hadoop__Yarn__GetClusterNodesRequestProto
 {
   ProtobufCMessage base;
   size_t n_nodestates;
-  NodeStateProto *nodestates;
+  Hadoop__Yarn__NodeStateProto *nodestates;
 };
-#define GET_CLUSTER_NODES_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_cluster_nodes_request_proto__descriptor) \
+#define HADOOP__YARN__GET_CLUSTER_NODES_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_cluster_nodes_request_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _GetClusterNodesResponseProto
+struct  _Hadoop__Yarn__GetClusterNodesResponseProto
 {
   ProtobufCMessage base;
   size_t n_nodereports;
-  NodeReportProto **nodereports;
+  Hadoop__Yarn__NodeReportProto **nodereports;
 };
-#define GET_CLUSTER_NODES_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_cluster_nodes_response_proto__descriptor) \
+#define HADOOP__YARN__GET_CLUSTER_NODES_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_cluster_nodes_response_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _GetQueueInfoRequestProto
+struct  _Hadoop__Yarn__GetQueueInfoRequestProto
 {
   ProtobufCMessage base;
   char *queuename;
@@ -310,1024 +314,1024 @@ struct  _GetQueueInfoRequestProto
   protobuf_c_boolean has_recursive;
   protobuf_c_boolean recursive;
 };
-#define GET_QUEUE_INFO_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_queue_info_request_proto__descriptor) \
+#define HADOOP__YARN__GET_QUEUE_INFO_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_queue_info_request_proto__descriptor) \
     , NULL, 0,0, 0,0, 0,0 }
 
 
-struct  _GetQueueInfoResponseProto
+struct  _Hadoop__Yarn__GetQueueInfoResponseProto
 {
   ProtobufCMessage base;
-  QueueInfoProto *queueinfo;
+  Hadoop__Yarn__QueueInfoProto *queueinfo;
 };
-#define GET_QUEUE_INFO_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_queue_info_response_proto__descriptor) \
+#define HADOOP__YARN__GET_QUEUE_INFO_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_queue_info_response_proto__descriptor) \
     , NULL }
 
 
-struct  _GetQueueUserAclsInfoRequestProto
+struct  _Hadoop__Yarn__GetQueueUserAclsInfoRequestProto
 {
   ProtobufCMessage base;
 };
-#define GET_QUEUE_USER_ACLS_INFO_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_queue_user_acls_info_request_proto__descriptor) \
+#define HADOOP__YARN__GET_QUEUE_USER_ACLS_INFO_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_queue_user_acls_info_request_proto__descriptor) \
      }
 
 
-struct  _GetQueueUserAclsInfoResponseProto
+struct  _Hadoop__Yarn__GetQueueUserAclsInfoResponseProto
 {
   ProtobufCMessage base;
   size_t n_queueuseracls;
-  QueueUserACLInfoProto **queueuseracls;
+  Hadoop__Yarn__QueueUserACLInfoProto **queueuseracls;
 };
-#define GET_QUEUE_USER_ACLS_INFO_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_queue_user_acls_info_response_proto__descriptor) \
+#define HADOOP__YARN__GET_QUEUE_USER_ACLS_INFO_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_queue_user_acls_info_response_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _StartContainerRequestProto
+struct  _Hadoop__Yarn__StartContainerRequestProto
 {
   ProtobufCMessage base;
-  ContainerLaunchContextProto *container_launch_context;
+  Hadoop__Yarn__ContainerLaunchContextProto *container_launch_context;
   Hadoop__Common__TokenProto *container_token;
 };
-#define START_CONTAINER_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&start_container_request_proto__descriptor) \
+#define HADOOP__YARN__START_CONTAINER_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__start_container_request_proto__descriptor) \
     , NULL, NULL }
 
 
-struct  _StartContainerResponseProto
+struct  _Hadoop__Yarn__StartContainerResponseProto
 {
   ProtobufCMessage base;
   size_t n_services_meta_data;
-  StringBytesMapProto **services_meta_data;
+  Hadoop__Yarn__StringBytesMapProto **services_meta_data;
 };
-#define START_CONTAINER_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&start_container_response_proto__descriptor) \
+#define HADOOP__YARN__START_CONTAINER_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__start_container_response_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _StopContainerRequestProto
+struct  _Hadoop__Yarn__StopContainerRequestProto
 {
   ProtobufCMessage base;
-  ContainerIdProto *container_id;
+  Hadoop__Yarn__ContainerIdProto *container_id;
 };
-#define STOP_CONTAINER_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&stop_container_request_proto__descriptor) \
+#define HADOOP__YARN__STOP_CONTAINER_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__stop_container_request_proto__descriptor) \
     , NULL }
 
 
-struct  _StopContainerResponseProto
+struct  _Hadoop__Yarn__StopContainerResponseProto
 {
   ProtobufCMessage base;
 };
-#define STOP_CONTAINER_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&stop_container_response_proto__descriptor) \
+#define HADOOP__YARN__STOP_CONTAINER_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__stop_container_response_proto__descriptor) \
      }
 
 
-struct  _GetContainerStatusRequestProto
+struct  _Hadoop__Yarn__GetContainerStatusRequestProto
 {
   ProtobufCMessage base;
-  ContainerIdProto *container_id;
+  Hadoop__Yarn__ContainerIdProto *container_id;
 };
-#define GET_CONTAINER_STATUS_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_container_status_request_proto__descriptor) \
+#define HADOOP__YARN__GET_CONTAINER_STATUS_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_container_status_request_proto__descriptor) \
     , NULL }
 
 
-struct  _GetContainerStatusResponseProto
+struct  _Hadoop__Yarn__GetContainerStatusResponseProto
 {
   ProtobufCMessage base;
-  ContainerStatusProto *status;
+  Hadoop__Yarn__ContainerStatusProto *status;
 };
-#define GET_CONTAINER_STATUS_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_container_status_response_proto__descriptor) \
+#define HADOOP__YARN__GET_CONTAINER_STATUS_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_container_status_response_proto__descriptor) \
     , NULL }
 
 
-struct  _StartContainersRequestProto
+struct  _Hadoop__Yarn__StartContainersRequestProto
 {
   ProtobufCMessage base;
   size_t n_start_container_request;
-  StartContainerRequestProto **start_container_request;
+  Hadoop__Yarn__StartContainerRequestProto **start_container_request;
 };
-#define START_CONTAINERS_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&start_containers_request_proto__descriptor) \
+#define HADOOP__YARN__START_CONTAINERS_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__start_containers_request_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _ContainerExceptionMapProto
+struct  _Hadoop__Yarn__ContainerExceptionMapProto
 {
   ProtobufCMessage base;
-  ContainerIdProto *container_id;
-  SerializedExceptionProto *exception;
+  Hadoop__Yarn__ContainerIdProto *container_id;
+  Hadoop__Yarn__SerializedExceptionProto *exception;
 };
-#define CONTAINER_EXCEPTION_MAP_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&container_exception_map_proto__descriptor) \
+#define HADOOP__YARN__CONTAINER_EXCEPTION_MAP_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__container_exception_map_proto__descriptor) \
     , NULL, NULL }
 
 
-struct  _StartContainersResponseProto
+struct  _Hadoop__Yarn__StartContainersResponseProto
 {
   ProtobufCMessage base;
   size_t n_services_meta_data;
-  StringBytesMapProto **services_meta_data;
+  Hadoop__Yarn__StringBytesMapProto **services_meta_data;
   size_t n_succeeded_requests;
-  ContainerIdProto **succeeded_requests;
+  Hadoop__Yarn__ContainerIdProto **succeeded_requests;
   size_t n_failed_requests;
-  ContainerExceptionMapProto **failed_requests;
+  Hadoop__Yarn__ContainerExceptionMapProto **failed_requests;
 };
-#define START_CONTAINERS_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&start_containers_response_proto__descriptor) \
+#define HADOOP__YARN__START_CONTAINERS_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__start_containers_response_proto__descriptor) \
     , 0,NULL, 0,NULL, 0,NULL }
 
 
-struct  _StopContainersRequestProto
+struct  _Hadoop__Yarn__StopContainersRequestProto
 {
   ProtobufCMessage base;
   size_t n_container_id;
-  ContainerIdProto **container_id;
+  Hadoop__Yarn__ContainerIdProto **container_id;
 };
-#define STOP_CONTAINERS_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&stop_containers_request_proto__descriptor) \
+#define HADOOP__YARN__STOP_CONTAINERS_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__stop_containers_request_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _StopContainersResponseProto
+struct  _Hadoop__Yarn__StopContainersResponseProto
 {
   ProtobufCMessage base;
   size_t n_succeeded_requests;
-  ContainerIdProto **succeeded_requests;
+  Hadoop__Yarn__ContainerIdProto **succeeded_requests;
   size_t n_failed_requests;
-  ContainerExceptionMapProto **failed_requests;
+  Hadoop__Yarn__ContainerExceptionMapProto **failed_requests;
 };
-#define STOP_CONTAINERS_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&stop_containers_response_proto__descriptor) \
+#define HADOOP__YARN__STOP_CONTAINERS_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__stop_containers_response_proto__descriptor) \
     , 0,NULL, 0,NULL }
 
 
-struct  _GetContainerStatusesRequestProto
+struct  _Hadoop__Yarn__GetContainerStatusesRequestProto
 {
   ProtobufCMessage base;
   size_t n_container_id;
-  ContainerIdProto **container_id;
+  Hadoop__Yarn__ContainerIdProto **container_id;
 };
-#define GET_CONTAINER_STATUSES_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_container_statuses_request_proto__descriptor) \
+#define HADOOP__YARN__GET_CONTAINER_STATUSES_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_container_statuses_request_proto__descriptor) \
     , 0,NULL }
 
 
-struct  _GetContainerStatusesResponseProto
+struct  _Hadoop__Yarn__GetContainerStatusesResponseProto
 {
   ProtobufCMessage base;
   size_t n_status;
-  ContainerStatusProto **status;
+  Hadoop__Yarn__ContainerStatusProto **status;
   size_t n_failed_requests;
-  ContainerExceptionMapProto **failed_requests;
+  Hadoop__Yarn__ContainerExceptionMapProto **failed_requests;
 };
-#define GET_CONTAINER_STATUSES_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&get_container_statuses_response_proto__descriptor) \
+#define HADOOP__YARN__GET_CONTAINER_STATUSES_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__get_container_statuses_response_proto__descriptor) \
     , 0,NULL, 0,NULL }
 
 
-/* RegisterApplicationMasterRequestProto methods */
-void   register_application_master_request_proto__init
-                     (RegisterApplicationMasterRequestProto         *message);
-size_t register_application_master_request_proto__get_packed_size
-                     (const RegisterApplicationMasterRequestProto   *message);
-size_t register_application_master_request_proto__pack
-                     (const RegisterApplicationMasterRequestProto   *message,
+/* Hadoop__Yarn__RegisterApplicationMasterRequestProto methods */
+void   hadoop__yarn__register_application_master_request_proto__init
+                     (Hadoop__Yarn__RegisterApplicationMasterRequestProto         *message);
+size_t hadoop__yarn__register_application_master_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterApplicationMasterRequestProto   *message);
+size_t hadoop__yarn__register_application_master_request_proto__pack
+                     (const Hadoop__Yarn__RegisterApplicationMasterRequestProto   *message,
                       uint8_t             *out);
-size_t register_application_master_request_proto__pack_to_buffer
-                     (const RegisterApplicationMasterRequestProto   *message,
+size_t hadoop__yarn__register_application_master_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterApplicationMasterRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-RegisterApplicationMasterRequestProto *
-       register_application_master_request_proto__unpack
+Hadoop__Yarn__RegisterApplicationMasterRequestProto *
+       hadoop__yarn__register_application_master_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   register_application_master_request_proto__free_unpacked
-                     (RegisterApplicationMasterRequestProto *message,
+void   hadoop__yarn__register_application_master_request_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterApplicationMasterRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* RegisterApplicationMasterResponseProto methods */
-void   register_application_master_response_proto__init
-                     (RegisterApplicationMasterResponseProto         *message);
-size_t register_application_master_response_proto__get_packed_size
-                     (const RegisterApplicationMasterResponseProto   *message);
-size_t register_application_master_response_proto__pack
-                     (const RegisterApplicationMasterResponseProto   *message,
+/* Hadoop__Yarn__RegisterApplicationMasterResponseProto methods */
+void   hadoop__yarn__register_application_master_response_proto__init
+                     (Hadoop__Yarn__RegisterApplicationMasterResponseProto         *message);
+size_t hadoop__yarn__register_application_master_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterApplicationMasterResponseProto   *message);
+size_t hadoop__yarn__register_application_master_response_proto__pack
+                     (const Hadoop__Yarn__RegisterApplicationMasterResponseProto   *message,
                       uint8_t             *out);
-size_t register_application_master_response_proto__pack_to_buffer
-                     (const RegisterApplicationMasterResponseProto   *message,
+size_t hadoop__yarn__register_application_master_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterApplicationMasterResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-RegisterApplicationMasterResponseProto *
-       register_application_master_response_proto__unpack
+Hadoop__Yarn__RegisterApplicationMasterResponseProto *
+       hadoop__yarn__register_application_master_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   register_application_master_response_proto__free_unpacked
-                     (RegisterApplicationMasterResponseProto *message,
+void   hadoop__yarn__register_application_master_response_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterApplicationMasterResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* FinishApplicationMasterRequestProto methods */
-void   finish_application_master_request_proto__init
-                     (FinishApplicationMasterRequestProto         *message);
-size_t finish_application_master_request_proto__get_packed_size
-                     (const FinishApplicationMasterRequestProto   *message);
-size_t finish_application_master_request_proto__pack
-                     (const FinishApplicationMasterRequestProto   *message,
+/* Hadoop__Yarn__FinishApplicationMasterRequestProto methods */
+void   hadoop__yarn__finish_application_master_request_proto__init
+                     (Hadoop__Yarn__FinishApplicationMasterRequestProto         *message);
+size_t hadoop__yarn__finish_application_master_request_proto__get_packed_size
+                     (const Hadoop__Yarn__FinishApplicationMasterRequestProto   *message);
+size_t hadoop__yarn__finish_application_master_request_proto__pack
+                     (const Hadoop__Yarn__FinishApplicationMasterRequestProto   *message,
                       uint8_t             *out);
-size_t finish_application_master_request_proto__pack_to_buffer
-                     (const FinishApplicationMasterRequestProto   *message,
+size_t hadoop__yarn__finish_application_master_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__FinishApplicationMasterRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-FinishApplicationMasterRequestProto *
-       finish_application_master_request_proto__unpack
+Hadoop__Yarn__FinishApplicationMasterRequestProto *
+       hadoop__yarn__finish_application_master_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   finish_application_master_request_proto__free_unpacked
-                     (FinishApplicationMasterRequestProto *message,
+void   hadoop__yarn__finish_application_master_request_proto__free_unpacked
+                     (Hadoop__Yarn__FinishApplicationMasterRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* FinishApplicationMasterResponseProto methods */
-void   finish_application_master_response_proto__init
-                     (FinishApplicationMasterResponseProto         *message);
-size_t finish_application_master_response_proto__get_packed_size
-                     (const FinishApplicationMasterResponseProto   *message);
-size_t finish_application_master_response_proto__pack
-                     (const FinishApplicationMasterResponseProto   *message,
+/* Hadoop__Yarn__FinishApplicationMasterResponseProto methods */
+void   hadoop__yarn__finish_application_master_response_proto__init
+                     (Hadoop__Yarn__FinishApplicationMasterResponseProto         *message);
+size_t hadoop__yarn__finish_application_master_response_proto__get_packed_size
+                     (const Hadoop__Yarn__FinishApplicationMasterResponseProto   *message);
+size_t hadoop__yarn__finish_application_master_response_proto__pack
+                     (const Hadoop__Yarn__FinishApplicationMasterResponseProto   *message,
                       uint8_t             *out);
-size_t finish_application_master_response_proto__pack_to_buffer
-                     (const FinishApplicationMasterResponseProto   *message,
+size_t hadoop__yarn__finish_application_master_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__FinishApplicationMasterResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-FinishApplicationMasterResponseProto *
-       finish_application_master_response_proto__unpack
+Hadoop__Yarn__FinishApplicationMasterResponseProto *
+       hadoop__yarn__finish_application_master_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   finish_application_master_response_proto__free_unpacked
-                     (FinishApplicationMasterResponseProto *message,
+void   hadoop__yarn__finish_application_master_response_proto__free_unpacked
+                     (Hadoop__Yarn__FinishApplicationMasterResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* AllocateRequestProto methods */
-void   allocate_request_proto__init
-                     (AllocateRequestProto         *message);
-size_t allocate_request_proto__get_packed_size
-                     (const AllocateRequestProto   *message);
-size_t allocate_request_proto__pack
-                     (const AllocateRequestProto   *message,
+/* Hadoop__Yarn__AllocateRequestProto methods */
+void   hadoop__yarn__allocate_request_proto__init
+                     (Hadoop__Yarn__AllocateRequestProto         *message);
+size_t hadoop__yarn__allocate_request_proto__get_packed_size
+                     (const Hadoop__Yarn__AllocateRequestProto   *message);
+size_t hadoop__yarn__allocate_request_proto__pack
+                     (const Hadoop__Yarn__AllocateRequestProto   *message,
                       uint8_t             *out);
-size_t allocate_request_proto__pack_to_buffer
-                     (const AllocateRequestProto   *message,
+size_t hadoop__yarn__allocate_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__AllocateRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-AllocateRequestProto *
-       allocate_request_proto__unpack
+Hadoop__Yarn__AllocateRequestProto *
+       hadoop__yarn__allocate_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   allocate_request_proto__free_unpacked
-                     (AllocateRequestProto *message,
+void   hadoop__yarn__allocate_request_proto__free_unpacked
+                     (Hadoop__Yarn__AllocateRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* NMTokenProto methods */
-void   nmtoken_proto__init
-                     (NMTokenProto         *message);
-size_t nmtoken_proto__get_packed_size
-                     (const NMTokenProto   *message);
-size_t nmtoken_proto__pack
-                     (const NMTokenProto   *message,
+/* Hadoop__Yarn__NMTokenProto methods */
+void   hadoop__yarn__nmtoken_proto__init
+                     (Hadoop__Yarn__NMTokenProto         *message);
+size_t hadoop__yarn__nmtoken_proto__get_packed_size
+                     (const Hadoop__Yarn__NMTokenProto   *message);
+size_t hadoop__yarn__nmtoken_proto__pack
+                     (const Hadoop__Yarn__NMTokenProto   *message,
                       uint8_t             *out);
-size_t nmtoken_proto__pack_to_buffer
-                     (const NMTokenProto   *message,
+size_t hadoop__yarn__nmtoken_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NMTokenProto   *message,
                       ProtobufCBuffer     *buffer);
-NMTokenProto *
-       nmtoken_proto__unpack
+Hadoop__Yarn__NMTokenProto *
+       hadoop__yarn__nmtoken_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   nmtoken_proto__free_unpacked
-                     (NMTokenProto *message,
+void   hadoop__yarn__nmtoken_proto__free_unpacked
+                     (Hadoop__Yarn__NMTokenProto *message,
                       ProtobufCAllocator *allocator);
-/* AllocateResponseProto methods */
-void   allocate_response_proto__init
-                     (AllocateResponseProto         *message);
-size_t allocate_response_proto__get_packed_size
-                     (const AllocateResponseProto   *message);
-size_t allocate_response_proto__pack
-                     (const AllocateResponseProto   *message,
+/* Hadoop__Yarn__AllocateResponseProto methods */
+void   hadoop__yarn__allocate_response_proto__init
+                     (Hadoop__Yarn__AllocateResponseProto         *message);
+size_t hadoop__yarn__allocate_response_proto__get_packed_size
+                     (const Hadoop__Yarn__AllocateResponseProto   *message);
+size_t hadoop__yarn__allocate_response_proto__pack
+                     (const Hadoop__Yarn__AllocateResponseProto   *message,
                       uint8_t             *out);
-size_t allocate_response_proto__pack_to_buffer
-                     (const AllocateResponseProto   *message,
+size_t hadoop__yarn__allocate_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__AllocateResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-AllocateResponseProto *
-       allocate_response_proto__unpack
+Hadoop__Yarn__AllocateResponseProto *
+       hadoop__yarn__allocate_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   allocate_response_proto__free_unpacked
-                     (AllocateResponseProto *message,
+void   hadoop__yarn__allocate_response_proto__free_unpacked
+                     (Hadoop__Yarn__AllocateResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetNewApplicationRequestProto methods */
-void   get_new_application_request_proto__init
-                     (GetNewApplicationRequestProto         *message);
-size_t get_new_application_request_proto__get_packed_size
-                     (const GetNewApplicationRequestProto   *message);
-size_t get_new_application_request_proto__pack
-                     (const GetNewApplicationRequestProto   *message,
+/* Hadoop__Yarn__GetNewApplicationRequestProto methods */
+void   hadoop__yarn__get_new_application_request_proto__init
+                     (Hadoop__Yarn__GetNewApplicationRequestProto         *message);
+size_t hadoop__yarn__get_new_application_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetNewApplicationRequestProto   *message);
+size_t hadoop__yarn__get_new_application_request_proto__pack
+                     (const Hadoop__Yarn__GetNewApplicationRequestProto   *message,
                       uint8_t             *out);
-size_t get_new_application_request_proto__pack_to_buffer
-                     (const GetNewApplicationRequestProto   *message,
+size_t hadoop__yarn__get_new_application_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetNewApplicationRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetNewApplicationRequestProto *
-       get_new_application_request_proto__unpack
+Hadoop__Yarn__GetNewApplicationRequestProto *
+       hadoop__yarn__get_new_application_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_new_application_request_proto__free_unpacked
-                     (GetNewApplicationRequestProto *message,
+void   hadoop__yarn__get_new_application_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetNewApplicationRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetNewApplicationResponseProto methods */
-void   get_new_application_response_proto__init
-                     (GetNewApplicationResponseProto         *message);
-size_t get_new_application_response_proto__get_packed_size
-                     (const GetNewApplicationResponseProto   *message);
-size_t get_new_application_response_proto__pack
-                     (const GetNewApplicationResponseProto   *message,
+/* Hadoop__Yarn__GetNewApplicationResponseProto methods */
+void   hadoop__yarn__get_new_application_response_proto__init
+                     (Hadoop__Yarn__GetNewApplicationResponseProto         *message);
+size_t hadoop__yarn__get_new_application_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetNewApplicationResponseProto   *message);
+size_t hadoop__yarn__get_new_application_response_proto__pack
+                     (const Hadoop__Yarn__GetNewApplicationResponseProto   *message,
                       uint8_t             *out);
-size_t get_new_application_response_proto__pack_to_buffer
-                     (const GetNewApplicationResponseProto   *message,
+size_t hadoop__yarn__get_new_application_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetNewApplicationResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetNewApplicationResponseProto *
-       get_new_application_response_proto__unpack
+Hadoop__Yarn__GetNewApplicationResponseProto *
+       hadoop__yarn__get_new_application_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_new_application_response_proto__free_unpacked
-                     (GetNewApplicationResponseProto *message,
+void   hadoop__yarn__get_new_application_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetNewApplicationResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetApplicationReportRequestProto methods */
-void   get_application_report_request_proto__init
-                     (GetApplicationReportRequestProto         *message);
-size_t get_application_report_request_proto__get_packed_size
-                     (const GetApplicationReportRequestProto   *message);
-size_t get_application_report_request_proto__pack
-                     (const GetApplicationReportRequestProto   *message,
+/* Hadoop__Yarn__GetApplicationReportRequestProto methods */
+void   hadoop__yarn__get_application_report_request_proto__init
+                     (Hadoop__Yarn__GetApplicationReportRequestProto         *message);
+size_t hadoop__yarn__get_application_report_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetApplicationReportRequestProto   *message);
+size_t hadoop__yarn__get_application_report_request_proto__pack
+                     (const Hadoop__Yarn__GetApplicationReportRequestProto   *message,
                       uint8_t             *out);
-size_t get_application_report_request_proto__pack_to_buffer
-                     (const GetApplicationReportRequestProto   *message,
+size_t hadoop__yarn__get_application_report_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetApplicationReportRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetApplicationReportRequestProto *
-       get_application_report_request_proto__unpack
+Hadoop__Yarn__GetApplicationReportRequestProto *
+       hadoop__yarn__get_application_report_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_application_report_request_proto__free_unpacked
-                     (GetApplicationReportRequestProto *message,
+void   hadoop__yarn__get_application_report_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetApplicationReportRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetApplicationReportResponseProto methods */
-void   get_application_report_response_proto__init
-                     (GetApplicationReportResponseProto         *message);
-size_t get_application_report_response_proto__get_packed_size
-                     (const GetApplicationReportResponseProto   *message);
-size_t get_application_report_response_proto__pack
-                     (const GetApplicationReportResponseProto   *message,
+/* Hadoop__Yarn__GetApplicationReportResponseProto methods */
+void   hadoop__yarn__get_application_report_response_proto__init
+                     (Hadoop__Yarn__GetApplicationReportResponseProto         *message);
+size_t hadoop__yarn__get_application_report_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetApplicationReportResponseProto   *message);
+size_t hadoop__yarn__get_application_report_response_proto__pack
+                     (const Hadoop__Yarn__GetApplicationReportResponseProto   *message,
                       uint8_t             *out);
-size_t get_application_report_response_proto__pack_to_buffer
-                     (const GetApplicationReportResponseProto   *message,
+size_t hadoop__yarn__get_application_report_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetApplicationReportResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetApplicationReportResponseProto *
-       get_application_report_response_proto__unpack
+Hadoop__Yarn__GetApplicationReportResponseProto *
+       hadoop__yarn__get_application_report_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_application_report_response_proto__free_unpacked
-                     (GetApplicationReportResponseProto *message,
+void   hadoop__yarn__get_application_report_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetApplicationReportResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* SubmitApplicationRequestProto methods */
-void   submit_application_request_proto__init
-                     (SubmitApplicationRequestProto         *message);
-size_t submit_application_request_proto__get_packed_size
-                     (const SubmitApplicationRequestProto   *message);
-size_t submit_application_request_proto__pack
-                     (const SubmitApplicationRequestProto   *message,
+/* Hadoop__Yarn__SubmitApplicationRequestProto methods */
+void   hadoop__yarn__submit_application_request_proto__init
+                     (Hadoop__Yarn__SubmitApplicationRequestProto         *message);
+size_t hadoop__yarn__submit_application_request_proto__get_packed_size
+                     (const Hadoop__Yarn__SubmitApplicationRequestProto   *message);
+size_t hadoop__yarn__submit_application_request_proto__pack
+                     (const Hadoop__Yarn__SubmitApplicationRequestProto   *message,
                       uint8_t             *out);
-size_t submit_application_request_proto__pack_to_buffer
-                     (const SubmitApplicationRequestProto   *message,
+size_t hadoop__yarn__submit_application_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__SubmitApplicationRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-SubmitApplicationRequestProto *
-       submit_application_request_proto__unpack
+Hadoop__Yarn__SubmitApplicationRequestProto *
+       hadoop__yarn__submit_application_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   submit_application_request_proto__free_unpacked
-                     (SubmitApplicationRequestProto *message,
+void   hadoop__yarn__submit_application_request_proto__free_unpacked
+                     (Hadoop__Yarn__SubmitApplicationRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* SubmitApplicationResponseProto methods */
-void   submit_application_response_proto__init
-                     (SubmitApplicationResponseProto         *message);
-size_t submit_application_response_proto__get_packed_size
-                     (const SubmitApplicationResponseProto   *message);
-size_t submit_application_response_proto__pack
-                     (const SubmitApplicationResponseProto   *message,
+/* Hadoop__Yarn__SubmitApplicationResponseProto methods */
+void   hadoop__yarn__submit_application_response_proto__init
+                     (Hadoop__Yarn__SubmitApplicationResponseProto         *message);
+size_t hadoop__yarn__submit_application_response_proto__get_packed_size
+                     (const Hadoop__Yarn__SubmitApplicationResponseProto   *message);
+size_t hadoop__yarn__submit_application_response_proto__pack
+                     (const Hadoop__Yarn__SubmitApplicationResponseProto   *message,
                       uint8_t             *out);
-size_t submit_application_response_proto__pack_to_buffer
-                     (const SubmitApplicationResponseProto   *message,
+size_t hadoop__yarn__submit_application_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__SubmitApplicationResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-SubmitApplicationResponseProto *
-       submit_application_response_proto__unpack
+Hadoop__Yarn__SubmitApplicationResponseProto *
+       hadoop__yarn__submit_application_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   submit_application_response_proto__free_unpacked
-                     (SubmitApplicationResponseProto *message,
+void   hadoop__yarn__submit_application_response_proto__free_unpacked
+                     (Hadoop__Yarn__SubmitApplicationResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* KillApplicationRequestProto methods */
-void   kill_application_request_proto__init
-                     (KillApplicationRequestProto         *message);
-size_t kill_application_request_proto__get_packed_size
-                     (const KillApplicationRequestProto   *message);
-size_t kill_application_request_proto__pack
-                     (const KillApplicationRequestProto   *message,
+/* Hadoop__Yarn__KillApplicationRequestProto methods */
+void   hadoop__yarn__kill_application_request_proto__init
+                     (Hadoop__Yarn__KillApplicationRequestProto         *message);
+size_t hadoop__yarn__kill_application_request_proto__get_packed_size
+                     (const Hadoop__Yarn__KillApplicationRequestProto   *message);
+size_t hadoop__yarn__kill_application_request_proto__pack
+                     (const Hadoop__Yarn__KillApplicationRequestProto   *message,
                       uint8_t             *out);
-size_t kill_application_request_proto__pack_to_buffer
-                     (const KillApplicationRequestProto   *message,
+size_t hadoop__yarn__kill_application_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__KillApplicationRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-KillApplicationRequestProto *
-       kill_application_request_proto__unpack
+Hadoop__Yarn__KillApplicationRequestProto *
+       hadoop__yarn__kill_application_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   kill_application_request_proto__free_unpacked
-                     (KillApplicationRequestProto *message,
+void   hadoop__yarn__kill_application_request_proto__free_unpacked
+                     (Hadoop__Yarn__KillApplicationRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* KillApplicationResponseProto methods */
-void   kill_application_response_proto__init
-                     (KillApplicationResponseProto         *message);
-size_t kill_application_response_proto__get_packed_size
-                     (const KillApplicationResponseProto   *message);
-size_t kill_application_response_proto__pack
-                     (const KillApplicationResponseProto   *message,
+/* Hadoop__Yarn__KillApplicationResponseProto methods */
+void   hadoop__yarn__kill_application_response_proto__init
+                     (Hadoop__Yarn__KillApplicationResponseProto         *message);
+size_t hadoop__yarn__kill_application_response_proto__get_packed_size
+                     (const Hadoop__Yarn__KillApplicationResponseProto   *message);
+size_t hadoop__yarn__kill_application_response_proto__pack
+                     (const Hadoop__Yarn__KillApplicationResponseProto   *message,
                       uint8_t             *out);
-size_t kill_application_response_proto__pack_to_buffer
-                     (const KillApplicationResponseProto   *message,
+size_t hadoop__yarn__kill_application_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__KillApplicationResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-KillApplicationResponseProto *
-       kill_application_response_proto__unpack
+Hadoop__Yarn__KillApplicationResponseProto *
+       hadoop__yarn__kill_application_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   kill_application_response_proto__free_unpacked
-                     (KillApplicationResponseProto *message,
+void   hadoop__yarn__kill_application_response_proto__free_unpacked
+                     (Hadoop__Yarn__KillApplicationResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetClusterMetricsRequestProto methods */
-void   get_cluster_metrics_request_proto__init
-                     (GetClusterMetricsRequestProto         *message);
-size_t get_cluster_metrics_request_proto__get_packed_size
-                     (const GetClusterMetricsRequestProto   *message);
-size_t get_cluster_metrics_request_proto__pack
-                     (const GetClusterMetricsRequestProto   *message,
+/* Hadoop__Yarn__GetClusterMetricsRequestProto methods */
+void   hadoop__yarn__get_cluster_metrics_request_proto__init
+                     (Hadoop__Yarn__GetClusterMetricsRequestProto         *message);
+size_t hadoop__yarn__get_cluster_metrics_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetClusterMetricsRequestProto   *message);
+size_t hadoop__yarn__get_cluster_metrics_request_proto__pack
+                     (const Hadoop__Yarn__GetClusterMetricsRequestProto   *message,
                       uint8_t             *out);
-size_t get_cluster_metrics_request_proto__pack_to_buffer
-                     (const GetClusterMetricsRequestProto   *message,
+size_t hadoop__yarn__get_cluster_metrics_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetClusterMetricsRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetClusterMetricsRequestProto *
-       get_cluster_metrics_request_proto__unpack
+Hadoop__Yarn__GetClusterMetricsRequestProto *
+       hadoop__yarn__get_cluster_metrics_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_cluster_metrics_request_proto__free_unpacked
-                     (GetClusterMetricsRequestProto *message,
+void   hadoop__yarn__get_cluster_metrics_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetClusterMetricsRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetClusterMetricsResponseProto methods */
-void   get_cluster_metrics_response_proto__init
-                     (GetClusterMetricsResponseProto         *message);
-size_t get_cluster_metrics_response_proto__get_packed_size
-                     (const GetClusterMetricsResponseProto   *message);
-size_t get_cluster_metrics_response_proto__pack
-                     (const GetClusterMetricsResponseProto   *message,
+/* Hadoop__Yarn__GetClusterMetricsResponseProto methods */
+void   hadoop__yarn__get_cluster_metrics_response_proto__init
+                     (Hadoop__Yarn__GetClusterMetricsResponseProto         *message);
+size_t hadoop__yarn__get_cluster_metrics_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetClusterMetricsResponseProto   *message);
+size_t hadoop__yarn__get_cluster_metrics_response_proto__pack
+                     (const Hadoop__Yarn__GetClusterMetricsResponseProto   *message,
                       uint8_t             *out);
-size_t get_cluster_metrics_response_proto__pack_to_buffer
-                     (const GetClusterMetricsResponseProto   *message,
+size_t hadoop__yarn__get_cluster_metrics_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetClusterMetricsResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetClusterMetricsResponseProto *
-       get_cluster_metrics_response_proto__unpack
+Hadoop__Yarn__GetClusterMetricsResponseProto *
+       hadoop__yarn__get_cluster_metrics_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_cluster_metrics_response_proto__free_unpacked
-                     (GetClusterMetricsResponseProto *message,
+void   hadoop__yarn__get_cluster_metrics_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetClusterMetricsResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetApplicationsRequestProto methods */
-void   get_applications_request_proto__init
-                     (GetApplicationsRequestProto         *message);
-size_t get_applications_request_proto__get_packed_size
-                     (const GetApplicationsRequestProto   *message);
-size_t get_applications_request_proto__pack
-                     (const GetApplicationsRequestProto   *message,
+/* Hadoop__Yarn__GetApplicationsRequestProto methods */
+void   hadoop__yarn__get_applications_request_proto__init
+                     (Hadoop__Yarn__GetApplicationsRequestProto         *message);
+size_t hadoop__yarn__get_applications_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetApplicationsRequestProto   *message);
+size_t hadoop__yarn__get_applications_request_proto__pack
+                     (const Hadoop__Yarn__GetApplicationsRequestProto   *message,
                       uint8_t             *out);
-size_t get_applications_request_proto__pack_to_buffer
-                     (const GetApplicationsRequestProto   *message,
+size_t hadoop__yarn__get_applications_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetApplicationsRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetApplicationsRequestProto *
-       get_applications_request_proto__unpack
+Hadoop__Yarn__GetApplicationsRequestProto *
+       hadoop__yarn__get_applications_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_applications_request_proto__free_unpacked
-                     (GetApplicationsRequestProto *message,
+void   hadoop__yarn__get_applications_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetApplicationsRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetApplicationsResponseProto methods */
-void   get_applications_response_proto__init
-                     (GetApplicationsResponseProto         *message);
-size_t get_applications_response_proto__get_packed_size
-                     (const GetApplicationsResponseProto   *message);
-size_t get_applications_response_proto__pack
-                     (const GetApplicationsResponseProto   *message,
+/* Hadoop__Yarn__GetApplicationsResponseProto methods */
+void   hadoop__yarn__get_applications_response_proto__init
+                     (Hadoop__Yarn__GetApplicationsResponseProto         *message);
+size_t hadoop__yarn__get_applications_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetApplicationsResponseProto   *message);
+size_t hadoop__yarn__get_applications_response_proto__pack
+                     (const Hadoop__Yarn__GetApplicationsResponseProto   *message,
                       uint8_t             *out);
-size_t get_applications_response_proto__pack_to_buffer
-                     (const GetApplicationsResponseProto   *message,
+size_t hadoop__yarn__get_applications_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetApplicationsResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetApplicationsResponseProto *
-       get_applications_response_proto__unpack
+Hadoop__Yarn__GetApplicationsResponseProto *
+       hadoop__yarn__get_applications_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_applications_response_proto__free_unpacked
-                     (GetApplicationsResponseProto *message,
+void   hadoop__yarn__get_applications_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetApplicationsResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetClusterNodesRequestProto methods */
-void   get_cluster_nodes_request_proto__init
-                     (GetClusterNodesRequestProto         *message);
-size_t get_cluster_nodes_request_proto__get_packed_size
-                     (const GetClusterNodesRequestProto   *message);
-size_t get_cluster_nodes_request_proto__pack
-                     (const GetClusterNodesRequestProto   *message,
+/* Hadoop__Yarn__GetClusterNodesRequestProto methods */
+void   hadoop__yarn__get_cluster_nodes_request_proto__init
+                     (Hadoop__Yarn__GetClusterNodesRequestProto         *message);
+size_t hadoop__yarn__get_cluster_nodes_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetClusterNodesRequestProto   *message);
+size_t hadoop__yarn__get_cluster_nodes_request_proto__pack
+                     (const Hadoop__Yarn__GetClusterNodesRequestProto   *message,
                       uint8_t             *out);
-size_t get_cluster_nodes_request_proto__pack_to_buffer
-                     (const GetClusterNodesRequestProto   *message,
+size_t hadoop__yarn__get_cluster_nodes_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetClusterNodesRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetClusterNodesRequestProto *
-       get_cluster_nodes_request_proto__unpack
+Hadoop__Yarn__GetClusterNodesRequestProto *
+       hadoop__yarn__get_cluster_nodes_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_cluster_nodes_request_proto__free_unpacked
-                     (GetClusterNodesRequestProto *message,
+void   hadoop__yarn__get_cluster_nodes_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetClusterNodesRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetClusterNodesResponseProto methods */
-void   get_cluster_nodes_response_proto__init
-                     (GetClusterNodesResponseProto         *message);
-size_t get_cluster_nodes_response_proto__get_packed_size
-                     (const GetClusterNodesResponseProto   *message);
-size_t get_cluster_nodes_response_proto__pack
-                     (const GetClusterNodesResponseProto   *message,
+/* Hadoop__Yarn__GetClusterNodesResponseProto methods */
+void   hadoop__yarn__get_cluster_nodes_response_proto__init
+                     (Hadoop__Yarn__GetClusterNodesResponseProto         *message);
+size_t hadoop__yarn__get_cluster_nodes_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetClusterNodesResponseProto   *message);
+size_t hadoop__yarn__get_cluster_nodes_response_proto__pack
+                     (const Hadoop__Yarn__GetClusterNodesResponseProto   *message,
                       uint8_t             *out);
-size_t get_cluster_nodes_response_proto__pack_to_buffer
-                     (const GetClusterNodesResponseProto   *message,
+size_t hadoop__yarn__get_cluster_nodes_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetClusterNodesResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetClusterNodesResponseProto *
-       get_cluster_nodes_response_proto__unpack
+Hadoop__Yarn__GetClusterNodesResponseProto *
+       hadoop__yarn__get_cluster_nodes_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_cluster_nodes_response_proto__free_unpacked
-                     (GetClusterNodesResponseProto *message,
+void   hadoop__yarn__get_cluster_nodes_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetClusterNodesResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetQueueInfoRequestProto methods */
-void   get_queue_info_request_proto__init
-                     (GetQueueInfoRequestProto         *message);
-size_t get_queue_info_request_proto__get_packed_size
-                     (const GetQueueInfoRequestProto   *message);
-size_t get_queue_info_request_proto__pack
-                     (const GetQueueInfoRequestProto   *message,
+/* Hadoop__Yarn__GetQueueInfoRequestProto methods */
+void   hadoop__yarn__get_queue_info_request_proto__init
+                     (Hadoop__Yarn__GetQueueInfoRequestProto         *message);
+size_t hadoop__yarn__get_queue_info_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetQueueInfoRequestProto   *message);
+size_t hadoop__yarn__get_queue_info_request_proto__pack
+                     (const Hadoop__Yarn__GetQueueInfoRequestProto   *message,
                       uint8_t             *out);
-size_t get_queue_info_request_proto__pack_to_buffer
-                     (const GetQueueInfoRequestProto   *message,
+size_t hadoop__yarn__get_queue_info_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetQueueInfoRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetQueueInfoRequestProto *
-       get_queue_info_request_proto__unpack
+Hadoop__Yarn__GetQueueInfoRequestProto *
+       hadoop__yarn__get_queue_info_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_queue_info_request_proto__free_unpacked
-                     (GetQueueInfoRequestProto *message,
+void   hadoop__yarn__get_queue_info_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetQueueInfoRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetQueueInfoResponseProto methods */
-void   get_queue_info_response_proto__init
-                     (GetQueueInfoResponseProto         *message);
-size_t get_queue_info_response_proto__get_packed_size
-                     (const GetQueueInfoResponseProto   *message);
-size_t get_queue_info_response_proto__pack
-                     (const GetQueueInfoResponseProto   *message,
+/* Hadoop__Yarn__GetQueueInfoResponseProto methods */
+void   hadoop__yarn__get_queue_info_response_proto__init
+                     (Hadoop__Yarn__GetQueueInfoResponseProto         *message);
+size_t hadoop__yarn__get_queue_info_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetQueueInfoResponseProto   *message);
+size_t hadoop__yarn__get_queue_info_response_proto__pack
+                     (const Hadoop__Yarn__GetQueueInfoResponseProto   *message,
                       uint8_t             *out);
-size_t get_queue_info_response_proto__pack_to_buffer
-                     (const GetQueueInfoResponseProto   *message,
+size_t hadoop__yarn__get_queue_info_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetQueueInfoResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetQueueInfoResponseProto *
-       get_queue_info_response_proto__unpack
+Hadoop__Yarn__GetQueueInfoResponseProto *
+       hadoop__yarn__get_queue_info_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_queue_info_response_proto__free_unpacked
-                     (GetQueueInfoResponseProto *message,
+void   hadoop__yarn__get_queue_info_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetQueueInfoResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetQueueUserAclsInfoRequestProto methods */
-void   get_queue_user_acls_info_request_proto__init
-                     (GetQueueUserAclsInfoRequestProto         *message);
-size_t get_queue_user_acls_info_request_proto__get_packed_size
-                     (const GetQueueUserAclsInfoRequestProto   *message);
-size_t get_queue_user_acls_info_request_proto__pack
-                     (const GetQueueUserAclsInfoRequestProto   *message,
+/* Hadoop__Yarn__GetQueueUserAclsInfoRequestProto methods */
+void   hadoop__yarn__get_queue_user_acls_info_request_proto__init
+                     (Hadoop__Yarn__GetQueueUserAclsInfoRequestProto         *message);
+size_t hadoop__yarn__get_queue_user_acls_info_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto   *message);
+size_t hadoop__yarn__get_queue_user_acls_info_request_proto__pack
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto   *message,
                       uint8_t             *out);
-size_t get_queue_user_acls_info_request_proto__pack_to_buffer
-                     (const GetQueueUserAclsInfoRequestProto   *message,
+size_t hadoop__yarn__get_queue_user_acls_info_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetQueueUserAclsInfoRequestProto *
-       get_queue_user_acls_info_request_proto__unpack
+Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *
+       hadoop__yarn__get_queue_user_acls_info_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_queue_user_acls_info_request_proto__free_unpacked
-                     (GetQueueUserAclsInfoRequestProto *message,
+void   hadoop__yarn__get_queue_user_acls_info_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetQueueUserAclsInfoResponseProto methods */
-void   get_queue_user_acls_info_response_proto__init
-                     (GetQueueUserAclsInfoResponseProto         *message);
-size_t get_queue_user_acls_info_response_proto__get_packed_size
-                     (const GetQueueUserAclsInfoResponseProto   *message);
-size_t get_queue_user_acls_info_response_proto__pack
-                     (const GetQueueUserAclsInfoResponseProto   *message,
+/* Hadoop__Yarn__GetQueueUserAclsInfoResponseProto methods */
+void   hadoop__yarn__get_queue_user_acls_info_response_proto__init
+                     (Hadoop__Yarn__GetQueueUserAclsInfoResponseProto         *message);
+size_t hadoop__yarn__get_queue_user_acls_info_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoResponseProto   *message);
+size_t hadoop__yarn__get_queue_user_acls_info_response_proto__pack
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoResponseProto   *message,
                       uint8_t             *out);
-size_t get_queue_user_acls_info_response_proto__pack_to_buffer
-                     (const GetQueueUserAclsInfoResponseProto   *message,
+size_t hadoop__yarn__get_queue_user_acls_info_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetQueueUserAclsInfoResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetQueueUserAclsInfoResponseProto *
-       get_queue_user_acls_info_response_proto__unpack
+Hadoop__Yarn__GetQueueUserAclsInfoResponseProto *
+       hadoop__yarn__get_queue_user_acls_info_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_queue_user_acls_info_response_proto__free_unpacked
-                     (GetQueueUserAclsInfoResponseProto *message,
+void   hadoop__yarn__get_queue_user_acls_info_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetQueueUserAclsInfoResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* StartContainerRequestProto methods */
-void   start_container_request_proto__init
-                     (StartContainerRequestProto         *message);
-size_t start_container_request_proto__get_packed_size
-                     (const StartContainerRequestProto   *message);
-size_t start_container_request_proto__pack
-                     (const StartContainerRequestProto   *message,
+/* Hadoop__Yarn__StartContainerRequestProto methods */
+void   hadoop__yarn__start_container_request_proto__init
+                     (Hadoop__Yarn__StartContainerRequestProto         *message);
+size_t hadoop__yarn__start_container_request_proto__get_packed_size
+                     (const Hadoop__Yarn__StartContainerRequestProto   *message);
+size_t hadoop__yarn__start_container_request_proto__pack
+                     (const Hadoop__Yarn__StartContainerRequestProto   *message,
                       uint8_t             *out);
-size_t start_container_request_proto__pack_to_buffer
-                     (const StartContainerRequestProto   *message,
+size_t hadoop__yarn__start_container_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StartContainerRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-StartContainerRequestProto *
-       start_container_request_proto__unpack
+Hadoop__Yarn__StartContainerRequestProto *
+       hadoop__yarn__start_container_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   start_container_request_proto__free_unpacked
-                     (StartContainerRequestProto *message,
+void   hadoop__yarn__start_container_request_proto__free_unpacked
+                     (Hadoop__Yarn__StartContainerRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* StartContainerResponseProto methods */
-void   start_container_response_proto__init
-                     (StartContainerResponseProto         *message);
-size_t start_container_response_proto__get_packed_size
-                     (const StartContainerResponseProto   *message);
-size_t start_container_response_proto__pack
-                     (const StartContainerResponseProto   *message,
+/* Hadoop__Yarn__StartContainerResponseProto methods */
+void   hadoop__yarn__start_container_response_proto__init
+                     (Hadoop__Yarn__StartContainerResponseProto         *message);
+size_t hadoop__yarn__start_container_response_proto__get_packed_size
+                     (const Hadoop__Yarn__StartContainerResponseProto   *message);
+size_t hadoop__yarn__start_container_response_proto__pack
+                     (const Hadoop__Yarn__StartContainerResponseProto   *message,
                       uint8_t             *out);
-size_t start_container_response_proto__pack_to_buffer
-                     (const StartContainerResponseProto   *message,
+size_t hadoop__yarn__start_container_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StartContainerResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-StartContainerResponseProto *
-       start_container_response_proto__unpack
+Hadoop__Yarn__StartContainerResponseProto *
+       hadoop__yarn__start_container_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   start_container_response_proto__free_unpacked
-                     (StartContainerResponseProto *message,
+void   hadoop__yarn__start_container_response_proto__free_unpacked
+                     (Hadoop__Yarn__StartContainerResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* StopContainerRequestProto methods */
-void   stop_container_request_proto__init
-                     (StopContainerRequestProto         *message);
-size_t stop_container_request_proto__get_packed_size
-                     (const StopContainerRequestProto   *message);
-size_t stop_container_request_proto__pack
-                     (const StopContainerRequestProto   *message,
+/* Hadoop__Yarn__StopContainerRequestProto methods */
+void   hadoop__yarn__stop_container_request_proto__init
+                     (Hadoop__Yarn__StopContainerRequestProto         *message);
+size_t hadoop__yarn__stop_container_request_proto__get_packed_size
+                     (const Hadoop__Yarn__StopContainerRequestProto   *message);
+size_t hadoop__yarn__stop_container_request_proto__pack
+                     (const Hadoop__Yarn__StopContainerRequestProto   *message,
                       uint8_t             *out);
-size_t stop_container_request_proto__pack_to_buffer
-                     (const StopContainerRequestProto   *message,
+size_t hadoop__yarn__stop_container_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StopContainerRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-StopContainerRequestProto *
-       stop_container_request_proto__unpack
+Hadoop__Yarn__StopContainerRequestProto *
+       hadoop__yarn__stop_container_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   stop_container_request_proto__free_unpacked
-                     (StopContainerRequestProto *message,
+void   hadoop__yarn__stop_container_request_proto__free_unpacked
+                     (Hadoop__Yarn__StopContainerRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* StopContainerResponseProto methods */
-void   stop_container_response_proto__init
-                     (StopContainerResponseProto         *message);
-size_t stop_container_response_proto__get_packed_size
-                     (const StopContainerResponseProto   *message);
-size_t stop_container_response_proto__pack
-                     (const StopContainerResponseProto   *message,
+/* Hadoop__Yarn__StopContainerResponseProto methods */
+void   hadoop__yarn__stop_container_response_proto__init
+                     (Hadoop__Yarn__StopContainerResponseProto         *message);
+size_t hadoop__yarn__stop_container_response_proto__get_packed_size
+                     (const Hadoop__Yarn__StopContainerResponseProto   *message);
+size_t hadoop__yarn__stop_container_response_proto__pack
+                     (const Hadoop__Yarn__StopContainerResponseProto   *message,
                       uint8_t             *out);
-size_t stop_container_response_proto__pack_to_buffer
-                     (const StopContainerResponseProto   *message,
+size_t hadoop__yarn__stop_container_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StopContainerResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-StopContainerResponseProto *
-       stop_container_response_proto__unpack
+Hadoop__Yarn__StopContainerResponseProto *
+       hadoop__yarn__stop_container_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   stop_container_response_proto__free_unpacked
-                     (StopContainerResponseProto *message,
+void   hadoop__yarn__stop_container_response_proto__free_unpacked
+                     (Hadoop__Yarn__StopContainerResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetContainerStatusRequestProto methods */
-void   get_container_status_request_proto__init
-                     (GetContainerStatusRequestProto         *message);
-size_t get_container_status_request_proto__get_packed_size
-                     (const GetContainerStatusRequestProto   *message);
-size_t get_container_status_request_proto__pack
-                     (const GetContainerStatusRequestProto   *message,
+/* Hadoop__Yarn__GetContainerStatusRequestProto methods */
+void   hadoop__yarn__get_container_status_request_proto__init
+                     (Hadoop__Yarn__GetContainerStatusRequestProto         *message);
+size_t hadoop__yarn__get_container_status_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetContainerStatusRequestProto   *message);
+size_t hadoop__yarn__get_container_status_request_proto__pack
+                     (const Hadoop__Yarn__GetContainerStatusRequestProto   *message,
                       uint8_t             *out);
-size_t get_container_status_request_proto__pack_to_buffer
-                     (const GetContainerStatusRequestProto   *message,
+size_t hadoop__yarn__get_container_status_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetContainerStatusRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetContainerStatusRequestProto *
-       get_container_status_request_proto__unpack
+Hadoop__Yarn__GetContainerStatusRequestProto *
+       hadoop__yarn__get_container_status_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_container_status_request_proto__free_unpacked
-                     (GetContainerStatusRequestProto *message,
+void   hadoop__yarn__get_container_status_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetContainerStatusRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetContainerStatusResponseProto methods */
-void   get_container_status_response_proto__init
-                     (GetContainerStatusResponseProto         *message);
-size_t get_container_status_response_proto__get_packed_size
-                     (const GetContainerStatusResponseProto   *message);
-size_t get_container_status_response_proto__pack
-                     (const GetContainerStatusResponseProto   *message,
+/* Hadoop__Yarn__GetContainerStatusResponseProto methods */
+void   hadoop__yarn__get_container_status_response_proto__init
+                     (Hadoop__Yarn__GetContainerStatusResponseProto         *message);
+size_t hadoop__yarn__get_container_status_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetContainerStatusResponseProto   *message);
+size_t hadoop__yarn__get_container_status_response_proto__pack
+                     (const Hadoop__Yarn__GetContainerStatusResponseProto   *message,
                       uint8_t             *out);
-size_t get_container_status_response_proto__pack_to_buffer
-                     (const GetContainerStatusResponseProto   *message,
+size_t hadoop__yarn__get_container_status_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetContainerStatusResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetContainerStatusResponseProto *
-       get_container_status_response_proto__unpack
+Hadoop__Yarn__GetContainerStatusResponseProto *
+       hadoop__yarn__get_container_status_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_container_status_response_proto__free_unpacked
-                     (GetContainerStatusResponseProto *message,
+void   hadoop__yarn__get_container_status_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetContainerStatusResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* StartContainersRequestProto methods */
-void   start_containers_request_proto__init
-                     (StartContainersRequestProto         *message);
-size_t start_containers_request_proto__get_packed_size
-                     (const StartContainersRequestProto   *message);
-size_t start_containers_request_proto__pack
-                     (const StartContainersRequestProto   *message,
+/* Hadoop__Yarn__StartContainersRequestProto methods */
+void   hadoop__yarn__start_containers_request_proto__init
+                     (Hadoop__Yarn__StartContainersRequestProto         *message);
+size_t hadoop__yarn__start_containers_request_proto__get_packed_size
+                     (const Hadoop__Yarn__StartContainersRequestProto   *message);
+size_t hadoop__yarn__start_containers_request_proto__pack
+                     (const Hadoop__Yarn__StartContainersRequestProto   *message,
                       uint8_t             *out);
-size_t start_containers_request_proto__pack_to_buffer
-                     (const StartContainersRequestProto   *message,
+size_t hadoop__yarn__start_containers_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StartContainersRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-StartContainersRequestProto *
-       start_containers_request_proto__unpack
+Hadoop__Yarn__StartContainersRequestProto *
+       hadoop__yarn__start_containers_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   start_containers_request_proto__free_unpacked
-                     (StartContainersRequestProto *message,
+void   hadoop__yarn__start_containers_request_proto__free_unpacked
+                     (Hadoop__Yarn__StartContainersRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* ContainerExceptionMapProto methods */
-void   container_exception_map_proto__init
-                     (ContainerExceptionMapProto         *message);
-size_t container_exception_map_proto__get_packed_size
-                     (const ContainerExceptionMapProto   *message);
-size_t container_exception_map_proto__pack
-                     (const ContainerExceptionMapProto   *message,
+/* Hadoop__Yarn__ContainerExceptionMapProto methods */
+void   hadoop__yarn__container_exception_map_proto__init
+                     (Hadoop__Yarn__ContainerExceptionMapProto         *message);
+size_t hadoop__yarn__container_exception_map_proto__get_packed_size
+                     (const Hadoop__Yarn__ContainerExceptionMapProto   *message);
+size_t hadoop__yarn__container_exception_map_proto__pack
+                     (const Hadoop__Yarn__ContainerExceptionMapProto   *message,
                       uint8_t             *out);
-size_t container_exception_map_proto__pack_to_buffer
-                     (const ContainerExceptionMapProto   *message,
+size_t hadoop__yarn__container_exception_map_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ContainerExceptionMapProto   *message,
                       ProtobufCBuffer     *buffer);
-ContainerExceptionMapProto *
-       container_exception_map_proto__unpack
+Hadoop__Yarn__ContainerExceptionMapProto *
+       hadoop__yarn__container_exception_map_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   container_exception_map_proto__free_unpacked
-                     (ContainerExceptionMapProto *message,
+void   hadoop__yarn__container_exception_map_proto__free_unpacked
+                     (Hadoop__Yarn__ContainerExceptionMapProto *message,
                       ProtobufCAllocator *allocator);
-/* StartContainersResponseProto methods */
-void   start_containers_response_proto__init
-                     (StartContainersResponseProto         *message);
-size_t start_containers_response_proto__get_packed_size
-                     (const StartContainersResponseProto   *message);
-size_t start_containers_response_proto__pack
-                     (const StartContainersResponseProto   *message,
+/* Hadoop__Yarn__StartContainersResponseProto methods */
+void   hadoop__yarn__start_containers_response_proto__init
+                     (Hadoop__Yarn__StartContainersResponseProto         *message);
+size_t hadoop__yarn__start_containers_response_proto__get_packed_size
+                     (const Hadoop__Yarn__StartContainersResponseProto   *message);
+size_t hadoop__yarn__start_containers_response_proto__pack
+                     (const Hadoop__Yarn__StartContainersResponseProto   *message,
                       uint8_t             *out);
-size_t start_containers_response_proto__pack_to_buffer
-                     (const StartContainersResponseProto   *message,
+size_t hadoop__yarn__start_containers_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StartContainersResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-StartContainersResponseProto *
-       start_containers_response_proto__unpack
+Hadoop__Yarn__StartContainersResponseProto *
+       hadoop__yarn__start_containers_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   start_containers_response_proto__free_unpacked
-                     (StartContainersResponseProto *message,
+void   hadoop__yarn__start_containers_response_proto__free_unpacked
+                     (Hadoop__Yarn__StartContainersResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* StopContainersRequestProto methods */
-void   stop_containers_request_proto__init
-                     (StopContainersRequestProto         *message);
-size_t stop_containers_request_proto__get_packed_size
-                     (const StopContainersRequestProto   *message);
-size_t stop_containers_request_proto__pack
-                     (const StopContainersRequestProto   *message,
+/* Hadoop__Yarn__StopContainersRequestProto methods */
+void   hadoop__yarn__stop_containers_request_proto__init
+                     (Hadoop__Yarn__StopContainersRequestProto         *message);
+size_t hadoop__yarn__stop_containers_request_proto__get_packed_size
+                     (const Hadoop__Yarn__StopContainersRequestProto   *message);
+size_t hadoop__yarn__stop_containers_request_proto__pack
+                     (const Hadoop__Yarn__StopContainersRequestProto   *message,
                       uint8_t             *out);
-size_t stop_containers_request_proto__pack_to_buffer
-                     (const StopContainersRequestProto   *message,
+size_t hadoop__yarn__stop_containers_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StopContainersRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-StopContainersRequestProto *
-       stop_containers_request_proto__unpack
+Hadoop__Yarn__StopContainersRequestProto *
+       hadoop__yarn__stop_containers_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   stop_containers_request_proto__free_unpacked
-                     (StopContainersRequestProto *message,
+void   hadoop__yarn__stop_containers_request_proto__free_unpacked
+                     (Hadoop__Yarn__StopContainersRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* StopContainersResponseProto methods */
-void   stop_containers_response_proto__init
-                     (StopContainersResponseProto         *message);
-size_t stop_containers_response_proto__get_packed_size
-                     (const StopContainersResponseProto   *message);
-size_t stop_containers_response_proto__pack
-                     (const StopContainersResponseProto   *message,
+/* Hadoop__Yarn__StopContainersResponseProto methods */
+void   hadoop__yarn__stop_containers_response_proto__init
+                     (Hadoop__Yarn__StopContainersResponseProto         *message);
+size_t hadoop__yarn__stop_containers_response_proto__get_packed_size
+                     (const Hadoop__Yarn__StopContainersResponseProto   *message);
+size_t hadoop__yarn__stop_containers_response_proto__pack
+                     (const Hadoop__Yarn__StopContainersResponseProto   *message,
                       uint8_t             *out);
-size_t stop_containers_response_proto__pack_to_buffer
-                     (const StopContainersResponseProto   *message,
+size_t hadoop__yarn__stop_containers_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__StopContainersResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-StopContainersResponseProto *
-       stop_containers_response_proto__unpack
+Hadoop__Yarn__StopContainersResponseProto *
+       hadoop__yarn__stop_containers_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   stop_containers_response_proto__free_unpacked
-                     (StopContainersResponseProto *message,
+void   hadoop__yarn__stop_containers_response_proto__free_unpacked
+                     (Hadoop__Yarn__StopContainersResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* GetContainerStatusesRequestProto methods */
-void   get_container_statuses_request_proto__init
-                     (GetContainerStatusesRequestProto         *message);
-size_t get_container_statuses_request_proto__get_packed_size
-                     (const GetContainerStatusesRequestProto   *message);
-size_t get_container_statuses_request_proto__pack
-                     (const GetContainerStatusesRequestProto   *message,
+/* Hadoop__Yarn__GetContainerStatusesRequestProto methods */
+void   hadoop__yarn__get_container_statuses_request_proto__init
+                     (Hadoop__Yarn__GetContainerStatusesRequestProto         *message);
+size_t hadoop__yarn__get_container_statuses_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetContainerStatusesRequestProto   *message);
+size_t hadoop__yarn__get_container_statuses_request_proto__pack
+                     (const Hadoop__Yarn__GetContainerStatusesRequestProto   *message,
                       uint8_t             *out);
-size_t get_container_statuses_request_proto__pack_to_buffer
-                     (const GetContainerStatusesRequestProto   *message,
+size_t hadoop__yarn__get_container_statuses_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetContainerStatusesRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-GetContainerStatusesRequestProto *
-       get_container_statuses_request_proto__unpack
+Hadoop__Yarn__GetContainerStatusesRequestProto *
+       hadoop__yarn__get_container_statuses_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_container_statuses_request_proto__free_unpacked
-                     (GetContainerStatusesRequestProto *message,
+void   hadoop__yarn__get_container_statuses_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetContainerStatusesRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* GetContainerStatusesResponseProto methods */
-void   get_container_statuses_response_proto__init
-                     (GetContainerStatusesResponseProto         *message);
-size_t get_container_statuses_response_proto__get_packed_size
-                     (const GetContainerStatusesResponseProto   *message);
-size_t get_container_statuses_response_proto__pack
-                     (const GetContainerStatusesResponseProto   *message,
+/* Hadoop__Yarn__GetContainerStatusesResponseProto methods */
+void   hadoop__yarn__get_container_statuses_response_proto__init
+                     (Hadoop__Yarn__GetContainerStatusesResponseProto         *message);
+size_t hadoop__yarn__get_container_statuses_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetContainerStatusesResponseProto   *message);
+size_t hadoop__yarn__get_container_statuses_response_proto__pack
+                     (const Hadoop__Yarn__GetContainerStatusesResponseProto   *message,
                       uint8_t             *out);
-size_t get_container_statuses_response_proto__pack_to_buffer
-                     (const GetContainerStatusesResponseProto   *message,
+size_t hadoop__yarn__get_container_statuses_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetContainerStatusesResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-GetContainerStatusesResponseProto *
-       get_container_statuses_response_proto__unpack
+Hadoop__Yarn__GetContainerStatusesResponseProto *
+       hadoop__yarn__get_container_statuses_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   get_container_statuses_response_proto__free_unpacked
-                     (GetContainerStatusesResponseProto *message,
+void   hadoop__yarn__get_container_statuses_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetContainerStatusesResponseProto *message,
                       ProtobufCAllocator *allocator);
 /* --- per-message closures --- */
 
-typedef void (*RegisterApplicationMasterRequestProto_Closure)
-                 (const RegisterApplicationMasterRequestProto *message,
+typedef void (*Hadoop__Yarn__RegisterApplicationMasterRequestProto_Closure)
+                 (const Hadoop__Yarn__RegisterApplicationMasterRequestProto *message,
                   void *closure_data);
-typedef void (*RegisterApplicationMasterResponseProto_Closure)
-                 (const RegisterApplicationMasterResponseProto *message,
+typedef void (*Hadoop__Yarn__RegisterApplicationMasterResponseProto_Closure)
+                 (const Hadoop__Yarn__RegisterApplicationMasterResponseProto *message,
                   void *closure_data);
-typedef void (*FinishApplicationMasterRequestProto_Closure)
-                 (const FinishApplicationMasterRequestProto *message,
+typedef void (*Hadoop__Yarn__FinishApplicationMasterRequestProto_Closure)
+                 (const Hadoop__Yarn__FinishApplicationMasterRequestProto *message,
                   void *closure_data);
-typedef void (*FinishApplicationMasterResponseProto_Closure)
-                 (const FinishApplicationMasterResponseProto *message,
+typedef void (*Hadoop__Yarn__FinishApplicationMasterResponseProto_Closure)
+                 (const Hadoop__Yarn__FinishApplicationMasterResponseProto *message,
                   void *closure_data);
-typedef void (*AllocateRequestProto_Closure)
-                 (const AllocateRequestProto *message,
+typedef void (*Hadoop__Yarn__AllocateRequestProto_Closure)
+                 (const Hadoop__Yarn__AllocateRequestProto *message,
                   void *closure_data);
-typedef void (*NMTokenProto_Closure)
-                 (const NMTokenProto *message,
+typedef void (*Hadoop__Yarn__NMTokenProto_Closure)
+                 (const Hadoop__Yarn__NMTokenProto *message,
                   void *closure_data);
-typedef void (*AllocateResponseProto_Closure)
-                 (const AllocateResponseProto *message,
+typedef void (*Hadoop__Yarn__AllocateResponseProto_Closure)
+                 (const Hadoop__Yarn__AllocateResponseProto *message,
                   void *closure_data);
-typedef void (*GetNewApplicationRequestProto_Closure)
-                 (const GetNewApplicationRequestProto *message,
+typedef void (*Hadoop__Yarn__GetNewApplicationRequestProto_Closure)
+                 (const Hadoop__Yarn__GetNewApplicationRequestProto *message,
                   void *closure_data);
-typedef void (*GetNewApplicationResponseProto_Closure)
-                 (const GetNewApplicationResponseProto *message,
+typedef void (*Hadoop__Yarn__GetNewApplicationResponseProto_Closure)
+                 (const Hadoop__Yarn__GetNewApplicationResponseProto *message,
                   void *closure_data);
-typedef void (*GetApplicationReportRequestProto_Closure)
-                 (const GetApplicationReportRequestProto *message,
+typedef void (*Hadoop__Yarn__GetApplicationReportRequestProto_Closure)
+                 (const Hadoop__Yarn__GetApplicationReportRequestProto *message,
                   void *closure_data);
-typedef void (*GetApplicationReportResponseProto_Closure)
-                 (const GetApplicationReportResponseProto *message,
+typedef void (*Hadoop__Yarn__GetApplicationReportResponseProto_Closure)
+                 (const Hadoop__Yarn__GetApplicationReportResponseProto *message,
                   void *closure_data);
-typedef void (*SubmitApplicationRequestProto_Closure)
-                 (const SubmitApplicationRequestProto *message,
+typedef void (*Hadoop__Yarn__SubmitApplicationRequestProto_Closure)
+                 (const Hadoop__Yarn__SubmitApplicationRequestProto *message,
                   void *closure_data);
-typedef void (*SubmitApplicationResponseProto_Closure)
-                 (const SubmitApplicationResponseProto *message,
+typedef void (*Hadoop__Yarn__SubmitApplicationResponseProto_Closure)
+                 (const Hadoop__Yarn__SubmitApplicationResponseProto *message,
                   void *closure_data);
-typedef void (*KillApplicationRequestProto_Closure)
-                 (const KillApplicationRequestProto *message,
+typedef void (*Hadoop__Yarn__KillApplicationRequestProto_Closure)
+                 (const Hadoop__Yarn__KillApplicationRequestProto *message,
                   void *closure_data);
-typedef void (*KillApplicationResponseProto_Closure)
-                 (const KillApplicationResponseProto *message,
+typedef void (*Hadoop__Yarn__KillApplicationResponseProto_Closure)
+                 (const Hadoop__Yarn__KillApplicationResponseProto *message,
                   void *closure_data);
-typedef void (*GetClusterMetricsRequestProto_Closure)
-                 (const GetClusterMetricsRequestProto *message,
+typedef void (*Hadoop__Yarn__GetClusterMetricsRequestProto_Closure)
+                 (const Hadoop__Yarn__GetClusterMetricsRequestProto *message,
                   void *closure_data);
-typedef void (*GetClusterMetricsResponseProto_Closure)
-                 (const GetClusterMetricsResponseProto *message,
+typedef void (*Hadoop__Yarn__GetClusterMetricsResponseProto_Closure)
+                 (const Hadoop__Yarn__GetClusterMetricsResponseProto *message,
                   void *closure_data);
-typedef void (*GetApplicationsRequestProto_Closure)
-                 (const GetApplicationsRequestProto *message,
+typedef void (*Hadoop__Yarn__GetApplicationsRequestProto_Closure)
+                 (const Hadoop__Yarn__GetApplicationsRequestProto *message,
                   void *closure_data);
-typedef void (*GetApplicationsResponseProto_Closure)
-                 (const GetApplicationsResponseProto *message,
+typedef void (*Hadoop__Yarn__GetApplicationsResponseProto_Closure)
+                 (const Hadoop__Yarn__GetApplicationsResponseProto *message,
                   void *closure_data);
-typedef void (*GetClusterNodesRequestProto_Closure)
-                 (const GetClusterNodesRequestProto *message,
+typedef void (*Hadoop__Yarn__GetClusterNodesRequestProto_Closure)
+                 (const Hadoop__Yarn__GetClusterNodesRequestProto *message,
                   void *closure_data);
-typedef void (*GetClusterNodesResponseProto_Closure)
-                 (const GetClusterNodesResponseProto *message,
+typedef void (*Hadoop__Yarn__GetClusterNodesResponseProto_Closure)
+                 (const Hadoop__Yarn__GetClusterNodesResponseProto *message,
                   void *closure_data);
-typedef void (*GetQueueInfoRequestProto_Closure)
-                 (const GetQueueInfoRequestProto *message,
+typedef void (*Hadoop__Yarn__GetQueueInfoRequestProto_Closure)
+                 (const Hadoop__Yarn__GetQueueInfoRequestProto *message,
                   void *closure_data);
-typedef void (*GetQueueInfoResponseProto_Closure)
-                 (const GetQueueInfoResponseProto *message,
+typedef void (*Hadoop__Yarn__GetQueueInfoResponseProto_Closure)
+                 (const Hadoop__Yarn__GetQueueInfoResponseProto *message,
                   void *closure_data);
-typedef void (*GetQueueUserAclsInfoRequestProto_Closure)
-                 (const GetQueueUserAclsInfoRequestProto *message,
+typedef void (*Hadoop__Yarn__GetQueueUserAclsInfoRequestProto_Closure)
+                 (const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *message,
                   void *closure_data);
-typedef void (*GetQueueUserAclsInfoResponseProto_Closure)
-                 (const GetQueueUserAclsInfoResponseProto *message,
+typedef void (*Hadoop__Yarn__GetQueueUserAclsInfoResponseProto_Closure)
+                 (const Hadoop__Yarn__GetQueueUserAclsInfoResponseProto *message,
                   void *closure_data);
-typedef void (*StartContainerRequestProto_Closure)
-                 (const StartContainerRequestProto *message,
+typedef void (*Hadoop__Yarn__StartContainerRequestProto_Closure)
+                 (const Hadoop__Yarn__StartContainerRequestProto *message,
                   void *closure_data);
-typedef void (*StartContainerResponseProto_Closure)
-                 (const StartContainerResponseProto *message,
+typedef void (*Hadoop__Yarn__StartContainerResponseProto_Closure)
+                 (const Hadoop__Yarn__StartContainerResponseProto *message,
                   void *closure_data);
-typedef void (*StopContainerRequestProto_Closure)
-                 (const StopContainerRequestProto *message,
+typedef void (*Hadoop__Yarn__StopContainerRequestProto_Closure)
+                 (const Hadoop__Yarn__StopContainerRequestProto *message,
                   void *closure_data);
-typedef void (*StopContainerResponseProto_Closure)
-                 (const StopContainerResponseProto *message,
+typedef void (*Hadoop__Yarn__StopContainerResponseProto_Closure)
+                 (const Hadoop__Yarn__StopContainerResponseProto *message,
                   void *closure_data);
-typedef void (*GetContainerStatusRequestProto_Closure)
-                 (const GetContainerStatusRequestProto *message,
+typedef void (*Hadoop__Yarn__GetContainerStatusRequestProto_Closure)
+                 (const Hadoop__Yarn__GetContainerStatusRequestProto *message,
                   void *closure_data);
-typedef void (*GetContainerStatusResponseProto_Closure)
-                 (const GetContainerStatusResponseProto *message,
+typedef void (*Hadoop__Yarn__GetContainerStatusResponseProto_Closure)
+                 (const Hadoop__Yarn__GetContainerStatusResponseProto *message,
                   void *closure_data);
-typedef void (*StartContainersRequestProto_Closure)
-                 (const StartContainersRequestProto *message,
+typedef void (*Hadoop__Yarn__StartContainersRequestProto_Closure)
+                 (const Hadoop__Yarn__StartContainersRequestProto *message,
                   void *closure_data);
-typedef void (*ContainerExceptionMapProto_Closure)
-                 (const ContainerExceptionMapProto *message,
+typedef void (*Hadoop__Yarn__ContainerExceptionMapProto_Closure)
+                 (const Hadoop__Yarn__ContainerExceptionMapProto *message,
                   void *closure_data);
-typedef void (*StartContainersResponseProto_Closure)
-                 (const StartContainersResponseProto *message,
+typedef void (*Hadoop__Yarn__StartContainersResponseProto_Closure)
+                 (const Hadoop__Yarn__StartContainersResponseProto *message,
                   void *closure_data);
-typedef void (*StopContainersRequestProto_Closure)
-                 (const StopContainersRequestProto *message,
+typedef void (*Hadoop__Yarn__StopContainersRequestProto_Closure)
+                 (const Hadoop__Yarn__StopContainersRequestProto *message,
                   void *closure_data);
-typedef void (*StopContainersResponseProto_Closure)
-                 (const StopContainersResponseProto *message,
+typedef void (*Hadoop__Yarn__StopContainersResponseProto_Closure)
+                 (const Hadoop__Yarn__StopContainersResponseProto *message,
                   void *closure_data);
-typedef void (*GetContainerStatusesRequestProto_Closure)
-                 (const GetContainerStatusesRequestProto *message,
+typedef void (*Hadoop__Yarn__GetContainerStatusesRequestProto_Closure)
+                 (const Hadoop__Yarn__GetContainerStatusesRequestProto *message,
                   void *closure_data);
-typedef void (*GetContainerStatusesResponseProto_Closure)
-                 (const GetContainerStatusesResponseProto *message,
+typedef void (*Hadoop__Yarn__GetContainerStatusesResponseProto_Closure)
+                 (const Hadoop__Yarn__GetContainerStatusesResponseProto *message,
                   void *closure_data);
 
 /* --- services --- */
@@ -1335,44 +1339,44 @@ typedef void (*GetContainerStatusesResponseProto_Closure)
 
 /* --- descriptors --- */
 
-extern const ProtobufCMessageDescriptor register_application_master_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor register_application_master_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor finish_application_master_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor finish_application_master_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor allocate_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor nmtoken_proto__descriptor;
-extern const ProtobufCMessageDescriptor allocate_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_new_application_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_new_application_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_application_report_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_application_report_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor submit_application_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor submit_application_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor kill_application_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor kill_application_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_cluster_metrics_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_cluster_metrics_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_applications_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_applications_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_cluster_nodes_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_cluster_nodes_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_queue_info_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_queue_info_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_queue_user_acls_info_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_queue_user_acls_info_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor start_container_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor start_container_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor stop_container_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor stop_container_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_container_status_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_container_status_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor start_containers_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor container_exception_map_proto__descriptor;
-extern const ProtobufCMessageDescriptor start_containers_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor stop_containers_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor stop_containers_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_container_statuses_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor get_container_statuses_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__register_application_master_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__register_application_master_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__finish_application_master_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__finish_application_master_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__allocate_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__nmtoken_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__allocate_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_new_application_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_new_application_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_application_report_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_application_report_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__submit_application_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__submit_application_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__kill_application_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__kill_application_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_cluster_metrics_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_cluster_metrics_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_applications_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_applications_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_cluster_nodes_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_cluster_nodes_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_queue_info_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_queue_info_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_queue_user_acls_info_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_queue_user_acls_info_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__start_container_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__start_container_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__stop_container_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__stop_container_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_container_status_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_container_status_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__start_containers_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__container_exception_map_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__start_containers_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__stop_containers_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__stop_containers_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_container_statuses_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__get_container_statuses_response_proto__descriptor;
 
 PROTOBUF_C_END_DECLS
 

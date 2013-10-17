@@ -21,49 +21,49 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _ApplicationMasterProtocolService_Service ApplicationMasterProtocolService_Service;
-struct _ApplicationMasterProtocolService_Service
+typedef struct _Hadoop__Yarn__ApplicationMasterProtocolService_Service Hadoop__Yarn__ApplicationMasterProtocolService_Service;
+struct _Hadoop__Yarn__ApplicationMasterProtocolService_Service
 {
   ProtobufCService base;
-  void (*register_application_master)(ApplicationMasterProtocolService_Service *service,
-                                      const RegisterApplicationMasterRequestProto *input,
-                                      RegisterApplicationMasterResponseProto_Closure closure,
+  void (*register_application_master)(Hadoop__Yarn__ApplicationMasterProtocolService_Service *service,
+                                      const Hadoop__Yarn__RegisterApplicationMasterRequestProto *input,
+                                      Hadoop__Yarn__RegisterApplicationMasterResponseProto_Closure closure,
                                       void *closure_data);
-  void (*finish_application_master)(ApplicationMasterProtocolService_Service *service,
-                                    const FinishApplicationMasterRequestProto *input,
-                                    FinishApplicationMasterResponseProto_Closure closure,
+  void (*finish_application_master)(Hadoop__Yarn__ApplicationMasterProtocolService_Service *service,
+                                    const Hadoop__Yarn__FinishApplicationMasterRequestProto *input,
+                                    Hadoop__Yarn__FinishApplicationMasterResponseProto_Closure closure,
                                     void *closure_data);
-  void (*allocate)(ApplicationMasterProtocolService_Service *service,
-                   const AllocateRequestProto *input,
-                   AllocateResponseProto_Closure closure,
+  void (*allocate)(Hadoop__Yarn__ApplicationMasterProtocolService_Service *service,
+                   const Hadoop__Yarn__AllocateRequestProto *input,
+                   Hadoop__Yarn__AllocateResponseProto_Closure closure,
                    void *closure_data);
 };
-typedef void (*ApplicationMasterProtocolService_ServiceDestroy)(ApplicationMasterProtocolService_Service *);
-void application_master_protocol_service__init (ApplicationMasterProtocolService_Service *service,
-                                                ApplicationMasterProtocolService_ServiceDestroy destroy);
-#define APPLICATION_MASTER_PROTOCOL_SERVICE__BASE_INIT \
-    { &application_master_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define APPLICATION_MASTER_PROTOCOL_SERVICE__INIT(function_prefix__) \
-    { APPLICATION_MASTER_PROTOCOL_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__ApplicationMasterProtocolService_ServiceDestroy)(Hadoop__Yarn__ApplicationMasterProtocolService_Service *);
+void hadoop__yarn__application_master_protocol_service__init (Hadoop__Yarn__ApplicationMasterProtocolService_Service *service,
+                                                              Hadoop__Yarn__ApplicationMasterProtocolService_ServiceDestroy destroy);
+#define HADOOP__YARN__APPLICATION_MASTER_PROTOCOL_SERVICE__BASE_INIT \
+    { &hadoop__yarn__application_master_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__APPLICATION_MASTER_PROTOCOL_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__APPLICATION_MASTER_PROTOCOL_SERVICE__BASE_INIT,\
       function_prefix__ ## register_application_master,\
       function_prefix__ ## finish_application_master,\
       function_prefix__ ## allocate  }
-void application_master_protocol_service__register_application_master(ProtobufCService *service,
-                                                                      const RegisterApplicationMasterRequestProto *input,
-                                                                      RegisterApplicationMasterResponseProto_Closure closure,
-                                                                      void *closure_data);
-void application_master_protocol_service__finish_application_master(ProtobufCService *service,
-                                                                    const FinishApplicationMasterRequestProto *input,
-                                                                    FinishApplicationMasterResponseProto_Closure closure,
-                                                                    void *closure_data);
-void application_master_protocol_service__allocate(ProtobufCService *service,
-                                                   const AllocateRequestProto *input,
-                                                   AllocateResponseProto_Closure closure,
-                                                   void *closure_data);
+void hadoop__yarn__application_master_protocol_service__register_application_master(ProtobufCService *service,
+                                                                                    const Hadoop__Yarn__RegisterApplicationMasterRequestProto *input,
+                                                                                    Hadoop__Yarn__RegisterApplicationMasterResponseProto_Closure closure,
+                                                                                    void *closure_data);
+void hadoop__yarn__application_master_protocol_service__finish_application_master(ProtobufCService *service,
+                                                                                  const Hadoop__Yarn__FinishApplicationMasterRequestProto *input,
+                                                                                  Hadoop__Yarn__FinishApplicationMasterResponseProto_Closure closure,
+                                                                                  void *closure_data);
+void hadoop__yarn__application_master_protocol_service__allocate(ProtobufCService *service,
+                                                                 const Hadoop__Yarn__AllocateRequestProto *input,
+                                                                 Hadoop__Yarn__AllocateResponseProto_Closure closure,
+                                                                 void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor application_master_protocol_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__application_master_protocol_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

@@ -41,6 +41,21 @@ int write_raw_varint32(char* buffer, int value) {
     return index;
 }
 
+// get protobuf-style varint-int length
+int get_raw_varint32_len(int value) {
+    int index = 0;
+    while (1) {
+        if ((value & ~0x7F) == 0) {
+            index++;
+            return index;
+        } else {
+            index++;
+            value >>= 7;
+        }
+    }
+    return index;
+}
+
 /* try to read buffer with length=size to socket, will fail when 
  * read failed,
  * return 0 when succeed

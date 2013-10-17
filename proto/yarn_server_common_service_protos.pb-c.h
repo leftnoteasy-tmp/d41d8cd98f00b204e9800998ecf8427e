@@ -10,10 +10,10 @@ PROTOBUF_C_BEGIN_DECLS
 #include "yarn_protos.pb-c.h"
 #include "yarn_server_common_protos.pb-c.h"
 
-typedef struct _RegisterNodeManagerRequestProto RegisterNodeManagerRequestProto;
-typedef struct _RegisterNodeManagerResponseProto RegisterNodeManagerResponseProto;
-typedef struct _NodeHeartbeatRequestProto NodeHeartbeatRequestProto;
-typedef struct _NodeHeartbeatResponseProto NodeHeartbeatResponseProto;
+typedef struct _Hadoop__Yarn__RegisterNodeManagerRequestProto Hadoop__Yarn__RegisterNodeManagerRequestProto;
+typedef struct _Hadoop__Yarn__RegisterNodeManagerResponseProto Hadoop__Yarn__RegisterNodeManagerResponseProto;
+typedef struct _Hadoop__Yarn__NodeHeartbeatRequestProto Hadoop__Yarn__NodeHeartbeatRequestProto;
+typedef struct _Hadoop__Yarn__NodeHeartbeatResponseProto Hadoop__Yarn__NodeHeartbeatResponseProto;
 
 
 /* --- enums --- */
@@ -21,158 +21,158 @@ typedef struct _NodeHeartbeatResponseProto NodeHeartbeatResponseProto;
 
 /* --- messages --- */
 
-struct  _RegisterNodeManagerRequestProto
+struct  _Hadoop__Yarn__RegisterNodeManagerRequestProto
 {
   ProtobufCMessage base;
-  NodeIdProto *node_id;
+  Hadoop__Yarn__NodeIdProto *node_id;
   protobuf_c_boolean has_http_port;
   int32_t http_port;
-  ResourceProto *resource;
+  Hadoop__Yarn__ResourceProto *resource;
 };
-#define REGISTER_NODE_MANAGER_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&register_node_manager_request_proto__descriptor) \
+#define HADOOP__YARN__REGISTER_NODE_MANAGER_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__register_node_manager_request_proto__descriptor) \
     , NULL, 0,0, NULL }
 
 
-struct  _RegisterNodeManagerResponseProto
+struct  _Hadoop__Yarn__RegisterNodeManagerResponseProto
 {
   ProtobufCMessage base;
-  MasterKeyProto *container_token_master_key;
-  MasterKeyProto *nm_token_master_key;
+  Hadoop__Yarn__MasterKeyProto *container_token_master_key;
+  Hadoop__Yarn__MasterKeyProto *nm_token_master_key;
   protobuf_c_boolean has_nodeaction;
-  NodeActionProto nodeaction;
+  Hadoop__Yarn__NodeActionProto nodeaction;
   protobuf_c_boolean has_rm_identifier;
   int64_t rm_identifier;
   char *diagnostics_message;
 };
-#define REGISTER_NODE_MANAGER_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&register_node_manager_response_proto__descriptor) \
+#define HADOOP__YARN__REGISTER_NODE_MANAGER_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__register_node_manager_response_proto__descriptor) \
     , NULL, NULL, 0,0, 0,0, NULL }
 
 
-struct  _NodeHeartbeatRequestProto
+struct  _Hadoop__Yarn__NodeHeartbeatRequestProto
 {
   ProtobufCMessage base;
-  NodeStatusProto *node_status;
-  MasterKeyProto *last_known_container_token_master_key;
-  MasterKeyProto *last_known_nm_token_master_key;
+  Hadoop__Yarn__NodeStatusProto *node_status;
+  Hadoop__Yarn__MasterKeyProto *last_known_container_token_master_key;
+  Hadoop__Yarn__MasterKeyProto *last_known_nm_token_master_key;
 };
-#define NODE_HEARTBEAT_REQUEST_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&node_heartbeat_request_proto__descriptor) \
+#define HADOOP__YARN__NODE_HEARTBEAT_REQUEST_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__node_heartbeat_request_proto__descriptor) \
     , NULL, NULL, NULL }
 
 
-struct  _NodeHeartbeatResponseProto
+struct  _Hadoop__Yarn__NodeHeartbeatResponseProto
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_response_id;
   int32_t response_id;
-  MasterKeyProto *container_token_master_key;
-  MasterKeyProto *nm_token_master_key;
+  Hadoop__Yarn__MasterKeyProto *container_token_master_key;
+  Hadoop__Yarn__MasterKeyProto *nm_token_master_key;
   protobuf_c_boolean has_nodeaction;
-  NodeActionProto nodeaction;
+  Hadoop__Yarn__NodeActionProto nodeaction;
   size_t n_containers_to_cleanup;
-  ContainerIdProto **containers_to_cleanup;
+  Hadoop__Yarn__ContainerIdProto **containers_to_cleanup;
   size_t n_applications_to_cleanup;
-  ApplicationIdProto **applications_to_cleanup;
+  Hadoop__Yarn__ApplicationIdProto **applications_to_cleanup;
   protobuf_c_boolean has_nextheartbeatinterval;
   int64_t nextheartbeatinterval;
   char *diagnostics_message;
 };
-#define NODE_HEARTBEAT_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&node_heartbeat_response_proto__descriptor) \
+#define HADOOP__YARN__NODE_HEARTBEAT_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__node_heartbeat_response_proto__descriptor) \
     , 0,0, NULL, NULL, 0,0, 0,NULL, 0,NULL, 0,0, NULL }
 
 
-/* RegisterNodeManagerRequestProto methods */
-void   register_node_manager_request_proto__init
-                     (RegisterNodeManagerRequestProto         *message);
-size_t register_node_manager_request_proto__get_packed_size
-                     (const RegisterNodeManagerRequestProto   *message);
-size_t register_node_manager_request_proto__pack
-                     (const RegisterNodeManagerRequestProto   *message,
+/* Hadoop__Yarn__RegisterNodeManagerRequestProto methods */
+void   hadoop__yarn__register_node_manager_request_proto__init
+                     (Hadoop__Yarn__RegisterNodeManagerRequestProto         *message);
+size_t hadoop__yarn__register_node_manager_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto   *message);
+size_t hadoop__yarn__register_node_manager_request_proto__pack
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto   *message,
                       uint8_t             *out);
-size_t register_node_manager_request_proto__pack_to_buffer
-                     (const RegisterNodeManagerRequestProto   *message,
+size_t hadoop__yarn__register_node_manager_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterNodeManagerRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-RegisterNodeManagerRequestProto *
-       register_node_manager_request_proto__unpack
+Hadoop__Yarn__RegisterNodeManagerRequestProto *
+       hadoop__yarn__register_node_manager_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   register_node_manager_request_proto__free_unpacked
-                     (RegisterNodeManagerRequestProto *message,
+void   hadoop__yarn__register_node_manager_request_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterNodeManagerRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* RegisterNodeManagerResponseProto methods */
-void   register_node_manager_response_proto__init
-                     (RegisterNodeManagerResponseProto         *message);
-size_t register_node_manager_response_proto__get_packed_size
-                     (const RegisterNodeManagerResponseProto   *message);
-size_t register_node_manager_response_proto__pack
-                     (const RegisterNodeManagerResponseProto   *message,
+/* Hadoop__Yarn__RegisterNodeManagerResponseProto methods */
+void   hadoop__yarn__register_node_manager_response_proto__init
+                     (Hadoop__Yarn__RegisterNodeManagerResponseProto         *message);
+size_t hadoop__yarn__register_node_manager_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto   *message);
+size_t hadoop__yarn__register_node_manager_response_proto__pack
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto   *message,
                       uint8_t             *out);
-size_t register_node_manager_response_proto__pack_to_buffer
-                     (const RegisterNodeManagerResponseProto   *message,
+size_t hadoop__yarn__register_node_manager_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RegisterNodeManagerResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-RegisterNodeManagerResponseProto *
-       register_node_manager_response_proto__unpack
+Hadoop__Yarn__RegisterNodeManagerResponseProto *
+       hadoop__yarn__register_node_manager_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   register_node_manager_response_proto__free_unpacked
-                     (RegisterNodeManagerResponseProto *message,
+void   hadoop__yarn__register_node_manager_response_proto__free_unpacked
+                     (Hadoop__Yarn__RegisterNodeManagerResponseProto *message,
                       ProtobufCAllocator *allocator);
-/* NodeHeartbeatRequestProto methods */
-void   node_heartbeat_request_proto__init
-                     (NodeHeartbeatRequestProto         *message);
-size_t node_heartbeat_request_proto__get_packed_size
-                     (const NodeHeartbeatRequestProto   *message);
-size_t node_heartbeat_request_proto__pack
-                     (const NodeHeartbeatRequestProto   *message,
+/* Hadoop__Yarn__NodeHeartbeatRequestProto methods */
+void   hadoop__yarn__node_heartbeat_request_proto__init
+                     (Hadoop__Yarn__NodeHeartbeatRequestProto         *message);
+size_t hadoop__yarn__node_heartbeat_request_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto   *message);
+size_t hadoop__yarn__node_heartbeat_request_proto__pack
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto   *message,
                       uint8_t             *out);
-size_t node_heartbeat_request_proto__pack_to_buffer
-                     (const NodeHeartbeatRequestProto   *message,
+size_t hadoop__yarn__node_heartbeat_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeHeartbeatRequestProto   *message,
                       ProtobufCBuffer     *buffer);
-NodeHeartbeatRequestProto *
-       node_heartbeat_request_proto__unpack
+Hadoop__Yarn__NodeHeartbeatRequestProto *
+       hadoop__yarn__node_heartbeat_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   node_heartbeat_request_proto__free_unpacked
-                     (NodeHeartbeatRequestProto *message,
+void   hadoop__yarn__node_heartbeat_request_proto__free_unpacked
+                     (Hadoop__Yarn__NodeHeartbeatRequestProto *message,
                       ProtobufCAllocator *allocator);
-/* NodeHeartbeatResponseProto methods */
-void   node_heartbeat_response_proto__init
-                     (NodeHeartbeatResponseProto         *message);
-size_t node_heartbeat_response_proto__get_packed_size
-                     (const NodeHeartbeatResponseProto   *message);
-size_t node_heartbeat_response_proto__pack
-                     (const NodeHeartbeatResponseProto   *message,
+/* Hadoop__Yarn__NodeHeartbeatResponseProto methods */
+void   hadoop__yarn__node_heartbeat_response_proto__init
+                     (Hadoop__Yarn__NodeHeartbeatResponseProto         *message);
+size_t hadoop__yarn__node_heartbeat_response_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto   *message);
+size_t hadoop__yarn__node_heartbeat_response_proto__pack
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto   *message,
                       uint8_t             *out);
-size_t node_heartbeat_response_proto__pack_to_buffer
-                     (const NodeHeartbeatResponseProto   *message,
+size_t hadoop__yarn__node_heartbeat_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeHeartbeatResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-NodeHeartbeatResponseProto *
-       node_heartbeat_response_proto__unpack
+Hadoop__Yarn__NodeHeartbeatResponseProto *
+       hadoop__yarn__node_heartbeat_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   node_heartbeat_response_proto__free_unpacked
-                     (NodeHeartbeatResponseProto *message,
+void   hadoop__yarn__node_heartbeat_response_proto__free_unpacked
+                     (Hadoop__Yarn__NodeHeartbeatResponseProto *message,
                       ProtobufCAllocator *allocator);
 /* --- per-message closures --- */
 
-typedef void (*RegisterNodeManagerRequestProto_Closure)
-                 (const RegisterNodeManagerRequestProto *message,
+typedef void (*Hadoop__Yarn__RegisterNodeManagerRequestProto_Closure)
+                 (const Hadoop__Yarn__RegisterNodeManagerRequestProto *message,
                   void *closure_data);
-typedef void (*RegisterNodeManagerResponseProto_Closure)
-                 (const RegisterNodeManagerResponseProto *message,
+typedef void (*Hadoop__Yarn__RegisterNodeManagerResponseProto_Closure)
+                 (const Hadoop__Yarn__RegisterNodeManagerResponseProto *message,
                   void *closure_data);
-typedef void (*NodeHeartbeatRequestProto_Closure)
-                 (const NodeHeartbeatRequestProto *message,
+typedef void (*Hadoop__Yarn__NodeHeartbeatRequestProto_Closure)
+                 (const Hadoop__Yarn__NodeHeartbeatRequestProto *message,
                   void *closure_data);
-typedef void (*NodeHeartbeatResponseProto_Closure)
-                 (const NodeHeartbeatResponseProto *message,
+typedef void (*Hadoop__Yarn__NodeHeartbeatResponseProto_Closure)
+                 (const Hadoop__Yarn__NodeHeartbeatResponseProto *message,
                   void *closure_data);
 
 /* --- services --- */
@@ -180,10 +180,10 @@ typedef void (*NodeHeartbeatResponseProto_Closure)
 
 /* --- descriptors --- */
 
-extern const ProtobufCMessageDescriptor register_node_manager_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor register_node_manager_response_proto__descriptor;
-extern const ProtobufCMessageDescriptor node_heartbeat_request_proto__descriptor;
-extern const ProtobufCMessageDescriptor node_heartbeat_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__register_node_manager_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__register_node_manager_response_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__node_heartbeat_request_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__node_heartbeat_response_proto__descriptor;
 
 PROTOBUF_C_END_DECLS
 

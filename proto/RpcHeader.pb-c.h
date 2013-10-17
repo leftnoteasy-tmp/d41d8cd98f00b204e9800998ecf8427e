@@ -63,7 +63,7 @@ struct  _Hadoop__Common__RpcRequestHeaderProto
   Hadoop__Common__RpcKindProto rpckind;
   protobuf_c_boolean has_rpcop;
   Hadoop__Common__RpcRequestHeaderProto__OperationProto rpcop;
-  uint32_t callid;
+  int32_t callid;
   ProtobufCBinaryData clientid;
   protobuf_c_boolean has_retrycount;
   int32_t retrycount;

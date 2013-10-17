@@ -1,7 +1,8 @@
 #ifndef _HD_CLIENT_HADOOP_RPC_UTILS_H_
 #define _HD_CLIENT_HADOOP_RPC_UTILS_H_
 
-#include "orte/mca/common/yarnpbc/hdclient/hadoop_rpc.h"
+#include "yarn.h"
+#include <google/protobuf-c/protobuf-c.h>
 #include <stdbool.h>
 
 /* type of RPC PB response */
@@ -21,26 +22,11 @@ int connect_to_server(int socket_id, const char* host, int port);
 /* write connection header to socket */
 int write_connection_header(hadoop_rpc_proxy_t* proxy);
 
-/* generate header for request :
-    enum RpcKindProto {
-      RPC_BUILTIN          = 0;  // Used for built in calls by tests
-      RPC_WRITABLE         = 1;  // Use WritableRpcEngine 
-      RPC_PROTOCOL_BUFFER  = 2;  // Use ProtobufRpcEngine
-    }
-     
-    enum RpcPayloadOperationProto {
-      RPC_FINAL_PAYLOAD        = 0; // The final payload
-      RPC_CONTINUATION_PAYLOAD = 1; // not implemented yet
-      RPC_CLOSE_CONNECTION     = 2; // close the rpc connection
-    }
-        
-    message RpcPayloadHeaderProto { // the header for the RpcRequest
-      optional RpcKindProto rpcKind = 1;
-      optional RpcPayloadOperationProto rpcOp = 2;
-      required uint32 callId = 3; // each rpc has a callId that is also used in response
-    }
-*/
-int generate_request_header(char** buffer, int* size, int caller_id);
+/* generate header for request */
+char* generate_request_header(hadoop_rpc_proxy_t* proxy, bool first, int* size);
+
+/* genereate delimited message (with vint length in buffer) */
+char* generate_delimited_message(const ProtobufCMessage *message, int* length_out);
 
 /**
  *  message ApplicationAttemptIdProto {
@@ -48,21 +34,21 @@ int generate_request_header(char** buffer, int* size, int caller_id);
  *   optional int32 attemptId = 2;
  *  }
  */
-int set_app_attempt_id(struct pbc_wmessage *m,
+int set_app_attempt_id(ProtobufCMessage *msg,
         const char *key,
         hadoop_rpc_proxy_t* proxy);
 
 /**
  *  set app_id in PB
  */
-int set_app_id(struct pbc_wmessage *m,
+int set_app_id(ProtobufCMessage *m,
         const char *key,
         hadoop_rpc_proxy_t* proxy);
 
 /**
  * set local resources to msg, return 0 if succeed
  */
-int set_local_resources(struct pbc_wmessage* msg, const char* key);
+int set_local_resources(ProtobufCMessage* msg, const char* key);
 
 /* 
 message HadoopRpcRequestProto {
@@ -125,8 +111,9 @@ int read_exception(hadoop_rpc_proxy_t* proxy,
 
 /* send the whole rpc payload to socket, will add header for it */
 int send_rpc_request(hadoop_rpc_proxy_t* proxy, 
-    char* request_payload, 
-    int request_payload_len);
+    const char* method, 
+    const char* msg,
+    int msg_len);
 
 void process_bad_rpc_response(hadoop_rpc_proxy_t* proxy, response_type_t type);
 

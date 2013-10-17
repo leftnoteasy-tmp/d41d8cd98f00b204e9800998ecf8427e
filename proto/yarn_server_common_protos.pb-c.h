@@ -9,39 +9,39 @@ PROTOBUF_C_BEGIN_DECLS
 
 #include "yarn_protos.pb-c.h"
 
-typedef struct _NodeStatusProto NodeStatusProto;
-typedef struct _MasterKeyProto MasterKeyProto;
-typedef struct _NodeHealthStatusProto NodeHealthStatusProto;
+typedef struct _Hadoop__Yarn__NodeStatusProto Hadoop__Yarn__NodeStatusProto;
+typedef struct _Hadoop__Yarn__MasterKeyProto Hadoop__Yarn__MasterKeyProto;
+typedef struct _Hadoop__Yarn__NodeHealthStatusProto Hadoop__Yarn__NodeHealthStatusProto;
 
 
 /* --- enums --- */
 
-typedef enum _NodeActionProto {
-  NODE_ACTION_PROTO__NORMAL = 0,
-  NODE_ACTION_PROTO__RESYNC = 1,
-  NODE_ACTION_PROTO__SHUTDOWN = 2
-} NodeActionProto;
+typedef enum _Hadoop__Yarn__NodeActionProto {
+  HADOOP__YARN__NODE_ACTION_PROTO__NORMAL = 0,
+  HADOOP__YARN__NODE_ACTION_PROTO__RESYNC = 1,
+  HADOOP__YARN__NODE_ACTION_PROTO__SHUTDOWN = 2
+} Hadoop__Yarn__NodeActionProto;
 
 /* --- messages --- */
 
-struct  _NodeStatusProto
+struct  _Hadoop__Yarn__NodeStatusProto
 {
   ProtobufCMessage base;
-  NodeIdProto *node_id;
+  Hadoop__Yarn__NodeIdProto *node_id;
   protobuf_c_boolean has_response_id;
   int32_t response_id;
   size_t n_containersstatuses;
-  ContainerStatusProto **containersstatuses;
-  NodeHealthStatusProto *nodehealthstatus;
+  Hadoop__Yarn__ContainerStatusProto **containersstatuses;
+  Hadoop__Yarn__NodeHealthStatusProto *nodehealthstatus;
   size_t n_keep_alive_applications;
-  ApplicationIdProto **keep_alive_applications;
+  Hadoop__Yarn__ApplicationIdProto **keep_alive_applications;
 };
-#define NODE_STATUS_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&node_status_proto__descriptor) \
+#define HADOOP__YARN__NODE_STATUS_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__node_status_proto__descriptor) \
     , NULL, 0,0, 0,NULL, NULL, 0,NULL }
 
 
-struct  _MasterKeyProto
+struct  _Hadoop__Yarn__MasterKeyProto
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_key_id;
@@ -49,12 +49,12 @@ struct  _MasterKeyProto
   protobuf_c_boolean has_bytes;
   ProtobufCBinaryData bytes;
 };
-#define MASTER_KEY_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&master_key_proto__descriptor) \
+#define HADOOP__YARN__MASTER_KEY_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__master_key_proto__descriptor) \
     , 0,0, 0,{0,NULL} }
 
 
-struct  _NodeHealthStatusProto
+struct  _Hadoop__Yarn__NodeHealthStatusProto
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_is_node_healthy;
@@ -63,78 +63,78 @@ struct  _NodeHealthStatusProto
   protobuf_c_boolean has_last_health_report_time;
   int64_t last_health_report_time;
 };
-#define NODE_HEALTH_STATUS_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&node_health_status_proto__descriptor) \
+#define HADOOP__YARN__NODE_HEALTH_STATUS_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__node_health_status_proto__descriptor) \
     , 0,0, NULL, 0,0 }
 
 
-/* NodeStatusProto methods */
-void   node_status_proto__init
-                     (NodeStatusProto         *message);
-size_t node_status_proto__get_packed_size
-                     (const NodeStatusProto   *message);
-size_t node_status_proto__pack
-                     (const NodeStatusProto   *message,
+/* Hadoop__Yarn__NodeStatusProto methods */
+void   hadoop__yarn__node_status_proto__init
+                     (Hadoop__Yarn__NodeStatusProto         *message);
+size_t hadoop__yarn__node_status_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeStatusProto   *message);
+size_t hadoop__yarn__node_status_proto__pack
+                     (const Hadoop__Yarn__NodeStatusProto   *message,
                       uint8_t             *out);
-size_t node_status_proto__pack_to_buffer
-                     (const NodeStatusProto   *message,
+size_t hadoop__yarn__node_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeStatusProto   *message,
                       ProtobufCBuffer     *buffer);
-NodeStatusProto *
-       node_status_proto__unpack
+Hadoop__Yarn__NodeStatusProto *
+       hadoop__yarn__node_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   node_status_proto__free_unpacked
-                     (NodeStatusProto *message,
+void   hadoop__yarn__node_status_proto__free_unpacked
+                     (Hadoop__Yarn__NodeStatusProto *message,
                       ProtobufCAllocator *allocator);
-/* MasterKeyProto methods */
-void   master_key_proto__init
-                     (MasterKeyProto         *message);
-size_t master_key_proto__get_packed_size
-                     (const MasterKeyProto   *message);
-size_t master_key_proto__pack
-                     (const MasterKeyProto   *message,
+/* Hadoop__Yarn__MasterKeyProto methods */
+void   hadoop__yarn__master_key_proto__init
+                     (Hadoop__Yarn__MasterKeyProto         *message);
+size_t hadoop__yarn__master_key_proto__get_packed_size
+                     (const Hadoop__Yarn__MasterKeyProto   *message);
+size_t hadoop__yarn__master_key_proto__pack
+                     (const Hadoop__Yarn__MasterKeyProto   *message,
                       uint8_t             *out);
-size_t master_key_proto__pack_to_buffer
-                     (const MasterKeyProto   *message,
+size_t hadoop__yarn__master_key_proto__pack_to_buffer
+                     (const Hadoop__Yarn__MasterKeyProto   *message,
                       ProtobufCBuffer     *buffer);
-MasterKeyProto *
-       master_key_proto__unpack
+Hadoop__Yarn__MasterKeyProto *
+       hadoop__yarn__master_key_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   master_key_proto__free_unpacked
-                     (MasterKeyProto *message,
+void   hadoop__yarn__master_key_proto__free_unpacked
+                     (Hadoop__Yarn__MasterKeyProto *message,
                       ProtobufCAllocator *allocator);
-/* NodeHealthStatusProto methods */
-void   node_health_status_proto__init
-                     (NodeHealthStatusProto         *message);
-size_t node_health_status_proto__get_packed_size
-                     (const NodeHealthStatusProto   *message);
-size_t node_health_status_proto__pack
-                     (const NodeHealthStatusProto   *message,
+/* Hadoop__Yarn__NodeHealthStatusProto methods */
+void   hadoop__yarn__node_health_status_proto__init
+                     (Hadoop__Yarn__NodeHealthStatusProto         *message);
+size_t hadoop__yarn__node_health_status_proto__get_packed_size
+                     (const Hadoop__Yarn__NodeHealthStatusProto   *message);
+size_t hadoop__yarn__node_health_status_proto__pack
+                     (const Hadoop__Yarn__NodeHealthStatusProto   *message,
                       uint8_t             *out);
-size_t node_health_status_proto__pack_to_buffer
-                     (const NodeHealthStatusProto   *message,
+size_t hadoop__yarn__node_health_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__NodeHealthStatusProto   *message,
                       ProtobufCBuffer     *buffer);
-NodeHealthStatusProto *
-       node_health_status_proto__unpack
+Hadoop__Yarn__NodeHealthStatusProto *
+       hadoop__yarn__node_health_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   node_health_status_proto__free_unpacked
-                     (NodeHealthStatusProto *message,
+void   hadoop__yarn__node_health_status_proto__free_unpacked
+                     (Hadoop__Yarn__NodeHealthStatusProto *message,
                       ProtobufCAllocator *allocator);
 /* --- per-message closures --- */
 
-typedef void (*NodeStatusProto_Closure)
-                 (const NodeStatusProto *message,
+typedef void (*Hadoop__Yarn__NodeStatusProto_Closure)
+                 (const Hadoop__Yarn__NodeStatusProto *message,
                   void *closure_data);
-typedef void (*MasterKeyProto_Closure)
-                 (const MasterKeyProto *message,
+typedef void (*Hadoop__Yarn__MasterKeyProto_Closure)
+                 (const Hadoop__Yarn__MasterKeyProto *message,
                   void *closure_data);
-typedef void (*NodeHealthStatusProto_Closure)
-                 (const NodeHealthStatusProto *message,
+typedef void (*Hadoop__Yarn__NodeHealthStatusProto_Closure)
+                 (const Hadoop__Yarn__NodeHealthStatusProto *message,
                   void *closure_data);
 
 /* --- services --- */
@@ -142,10 +142,10 @@ typedef void (*NodeHealthStatusProto_Closure)
 
 /* --- descriptors --- */
 
-extern const ProtobufCEnumDescriptor    node_action_proto__descriptor;
-extern const ProtobufCMessageDescriptor node_status_proto__descriptor;
-extern const ProtobufCMessageDescriptor master_key_proto__descriptor;
-extern const ProtobufCMessageDescriptor node_health_status_proto__descriptor;
+extern const ProtobufCEnumDescriptor    hadoop__yarn__node_action_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__node_status_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__master_key_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__node_health_status_proto__descriptor;
 
 PROTOBUF_C_END_DECLS
 

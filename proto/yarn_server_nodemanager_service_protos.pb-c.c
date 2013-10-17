@@ -6,179 +6,179 @@
 #endif
 
 #include "yarn_server_nodemanager_service_protos.pb-c.h"
-void   local_resource_status_proto__init
-                     (LocalResourceStatusProto         *message)
+void   hadoop__yarn__local_resource_status_proto__init
+                     (Hadoop__Yarn__LocalResourceStatusProto         *message)
 {
-  static LocalResourceStatusProto init_value = LOCAL_RESOURCE_STATUS_PROTO__INIT;
+  static Hadoop__Yarn__LocalResourceStatusProto init_value = HADOOP__YARN__LOCAL_RESOURCE_STATUS_PROTO__INIT;
   *message = init_value;
 }
-size_t local_resource_status_proto__get_packed_size
-                     (const LocalResourceStatusProto *message)
+size_t hadoop__yarn__local_resource_status_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalResourceStatusProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_status_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t local_resource_status_proto__pack
-                     (const LocalResourceStatusProto *message,
+size_t hadoop__yarn__local_resource_status_proto__pack
+                     (const Hadoop__Yarn__LocalResourceStatusProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_status_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t local_resource_status_proto__pack_to_buffer
-                     (const LocalResourceStatusProto *message,
+size_t hadoop__yarn__local_resource_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalResourceStatusProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_status_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-LocalResourceStatusProto *
-       local_resource_status_proto__unpack
+Hadoop__Yarn__LocalResourceStatusProto *
+       hadoop__yarn__local_resource_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (LocalResourceStatusProto *)
-     protobuf_c_message_unpack (&local_resource_status_proto__descriptor,
+  return (Hadoop__Yarn__LocalResourceStatusProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__local_resource_status_proto__descriptor,
                                 allocator, len, data);
 }
-void   local_resource_status_proto__free_unpacked
-                     (LocalResourceStatusProto *message,
+void   hadoop__yarn__local_resource_status_proto__free_unpacked
+                     (Hadoop__Yarn__LocalResourceStatusProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &local_resource_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__local_resource_status_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   localizer_status_proto__init
-                     (LocalizerStatusProto         *message)
+void   hadoop__yarn__localizer_status_proto__init
+                     (Hadoop__Yarn__LocalizerStatusProto         *message)
 {
-  static LocalizerStatusProto init_value = LOCALIZER_STATUS_PROTO__INIT;
+  static Hadoop__Yarn__LocalizerStatusProto init_value = HADOOP__YARN__LOCALIZER_STATUS_PROTO__INIT;
   *message = init_value;
 }
-size_t localizer_status_proto__get_packed_size
-                     (const LocalizerStatusProto *message)
+size_t hadoop__yarn__localizer_status_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalizerStatusProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_status_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t localizer_status_proto__pack
-                     (const LocalizerStatusProto *message,
+size_t hadoop__yarn__localizer_status_proto__pack
+                     (const Hadoop__Yarn__LocalizerStatusProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_status_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t localizer_status_proto__pack_to_buffer
-                     (const LocalizerStatusProto *message,
+size_t hadoop__yarn__localizer_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalizerStatusProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_status_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-LocalizerStatusProto *
-       localizer_status_proto__unpack
+Hadoop__Yarn__LocalizerStatusProto *
+       hadoop__yarn__localizer_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (LocalizerStatusProto *)
-     protobuf_c_message_unpack (&localizer_status_proto__descriptor,
+  return (Hadoop__Yarn__LocalizerStatusProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__localizer_status_proto__descriptor,
                                 allocator, len, data);
 }
-void   localizer_status_proto__free_unpacked
-                     (LocalizerStatusProto *message,
+void   hadoop__yarn__localizer_status_proto__free_unpacked
+                     (Hadoop__Yarn__LocalizerStatusProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_status_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_status_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   resource_localization_spec_proto__init
-                     (ResourceLocalizationSpecProto         *message)
+void   hadoop__yarn__resource_localization_spec_proto__init
+                     (Hadoop__Yarn__ResourceLocalizationSpecProto         *message)
 {
-  static ResourceLocalizationSpecProto init_value = RESOURCE_LOCALIZATION_SPEC_PROTO__INIT;
+  static Hadoop__Yarn__ResourceLocalizationSpecProto init_value = HADOOP__YARN__RESOURCE_LOCALIZATION_SPEC_PROTO__INIT;
   *message = init_value;
 }
-size_t resource_localization_spec_proto__get_packed_size
-                     (const ResourceLocalizationSpecProto *message)
+size_t hadoop__yarn__resource_localization_spec_proto__get_packed_size
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_localization_spec_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_localization_spec_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t resource_localization_spec_proto__pack
-                     (const ResourceLocalizationSpecProto *message,
+size_t hadoop__yarn__resource_localization_spec_proto__pack
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_localization_spec_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_localization_spec_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t resource_localization_spec_proto__pack_to_buffer
-                     (const ResourceLocalizationSpecProto *message,
+size_t hadoop__yarn__resource_localization_spec_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_localization_spec_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_localization_spec_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ResourceLocalizationSpecProto *
-       resource_localization_spec_proto__unpack
+Hadoop__Yarn__ResourceLocalizationSpecProto *
+       hadoop__yarn__resource_localization_spec_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ResourceLocalizationSpecProto *)
-     protobuf_c_message_unpack (&resource_localization_spec_proto__descriptor,
+  return (Hadoop__Yarn__ResourceLocalizationSpecProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__resource_localization_spec_proto__descriptor,
                                 allocator, len, data);
 }
-void   resource_localization_spec_proto__free_unpacked
-                     (ResourceLocalizationSpecProto *message,
+void   hadoop__yarn__resource_localization_spec_proto__free_unpacked
+                     (Hadoop__Yarn__ResourceLocalizationSpecProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &resource_localization_spec_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__resource_localization_spec_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   localizer_heartbeat_response_proto__init
-                     (LocalizerHeartbeatResponseProto         *message)
+void   hadoop__yarn__localizer_heartbeat_response_proto__init
+                     (Hadoop__Yarn__LocalizerHeartbeatResponseProto         *message)
 {
-  static LocalizerHeartbeatResponseProto init_value = LOCALIZER_HEARTBEAT_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__LocalizerHeartbeatResponseProto init_value = HADOOP__YARN__LOCALIZER_HEARTBEAT_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t localizer_heartbeat_response_proto__get_packed_size
-                     (const LocalizerHeartbeatResponseProto *message)
+size_t hadoop__yarn__localizer_heartbeat_response_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_heartbeat_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t localizer_heartbeat_response_proto__pack
-                     (const LocalizerHeartbeatResponseProto *message,
+size_t hadoop__yarn__localizer_heartbeat_response_proto__pack
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_heartbeat_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t localizer_heartbeat_response_proto__pack_to_buffer
-                     (const LocalizerHeartbeatResponseProto *message,
+size_t hadoop__yarn__localizer_heartbeat_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_heartbeat_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-LocalizerHeartbeatResponseProto *
-       localizer_heartbeat_response_proto__unpack
+Hadoop__Yarn__LocalizerHeartbeatResponseProto *
+       hadoop__yarn__localizer_heartbeat_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (LocalizerHeartbeatResponseProto *)
-     protobuf_c_message_unpack (&localizer_heartbeat_response_proto__descriptor,
+  return (Hadoop__Yarn__LocalizerHeartbeatResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__localizer_heartbeat_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   localizer_heartbeat_response_proto__free_unpacked
-                     (LocalizerHeartbeatResponseProto *message,
+void   hadoop__yarn__localizer_heartbeat_response_proto__free_unpacked
+                     (Hadoop__Yarn__LocalizerHeartbeatResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &localizer_heartbeat_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__localizer_heartbeat_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-static const ProtobufCFieldDescriptor local_resource_status_proto__field_descriptors[5] =
+static const ProtobufCFieldDescriptor hadoop__yarn__local_resource_status_proto__field_descriptors[5] =
 {
   {
     "resource",
@@ -186,8 +186,8 @@ static const ProtobufCFieldDescriptor local_resource_status_proto__field_descrip
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, resource),
-    &local_resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, resource),
+    &hadoop__yarn__local_resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -197,9 +197,9 @@ static const ProtobufCFieldDescriptor local_resource_status_proto__field_descrip
     2,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, has_status),
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, status),
-    &resource_status_type_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, has_status),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, status),
+    &hadoop__yarn__resource_status_type_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -210,8 +210,8 @@ static const ProtobufCFieldDescriptor local_resource_status_proto__field_descrip
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, localpath),
-    &urlproto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, localpath),
+    &hadoop__yarn__urlproto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -221,8 +221,8 @@ static const ProtobufCFieldDescriptor local_resource_status_proto__field_descrip
     4,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, has_localsize),
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, localsize),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, has_localsize),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, localsize),
     NULL,
     NULL,
     0,            /* packed */
@@ -234,41 +234,41 @@ static const ProtobufCFieldDescriptor local_resource_status_proto__field_descrip
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalResourceStatusProto, exception),
-    &serialized_exception_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalResourceStatusProto, exception),
+    &hadoop__yarn__serialized_exception_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned local_resource_status_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__local_resource_status_proto__field_indices_by_name[] = {
   4,   /* field[4] = exception */
   2,   /* field[2] = localPath */
   3,   /* field[3] = localSize */
   0,   /* field[0] = resource */
   1,   /* field[1] = status */
 };
-static const ProtobufCIntRange local_resource_status_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__local_resource_status_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 5 }
 };
-const ProtobufCMessageDescriptor local_resource_status_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__local_resource_status_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalResourceStatusProto",
   "LocalResourceStatusProto",
-  "LocalResourceStatusProto",
-  "LocalResourceStatusProto",
-  "",
-  sizeof(LocalResourceStatusProto),
+  "Hadoop__Yarn__LocalResourceStatusProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__LocalResourceStatusProto),
   5,
-  local_resource_status_proto__field_descriptors,
-  local_resource_status_proto__field_indices_by_name,
-  1,  local_resource_status_proto__number_ranges,
-  (ProtobufCMessageInit) local_resource_status_proto__init,
+  hadoop__yarn__local_resource_status_proto__field_descriptors,
+  hadoop__yarn__local_resource_status_proto__field_indices_by_name,
+  1,  hadoop__yarn__local_resource_status_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__local_resource_status_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor localizer_status_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__localizer_status_proto__field_descriptors[2] =
 {
   {
     "localizer_id",
@@ -276,7 +276,7 @@ static const ProtobufCFieldDescriptor localizer_status_proto__field_descriptors[
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(LocalizerStatusProto, localizer_id),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerStatusProto, localizer_id),
     NULL,
     NULL,
     0,            /* packed */
@@ -287,39 +287,39 @@ static const ProtobufCFieldDescriptor localizer_status_proto__field_descriptors[
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(LocalizerStatusProto, n_resources),
-    PROTOBUF_C_OFFSETOF(LocalizerStatusProto, resources),
-    &local_resource_status_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerStatusProto, n_resources),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerStatusProto, resources),
+    &hadoop__yarn__local_resource_status_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned localizer_status_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__localizer_status_proto__field_indices_by_name[] = {
   0,   /* field[0] = localizer_id */
   1,   /* field[1] = resources */
 };
-static const ProtobufCIntRange localizer_status_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__localizer_status_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor localizer_status_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__localizer_status_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalizerStatusProto",
   "LocalizerStatusProto",
-  "LocalizerStatusProto",
-  "LocalizerStatusProto",
-  "",
-  sizeof(LocalizerStatusProto),
+  "Hadoop__Yarn__LocalizerStatusProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__LocalizerStatusProto),
   2,
-  localizer_status_proto__field_descriptors,
-  localizer_status_proto__field_indices_by_name,
-  1,  localizer_status_proto__number_ranges,
-  (ProtobufCMessageInit) localizer_status_proto__init,
+  hadoop__yarn__localizer_status_proto__field_descriptors,
+  hadoop__yarn__localizer_status_proto__field_indices_by_name,
+  1,  hadoop__yarn__localizer_status_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__localizer_status_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor resource_localization_spec_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__resource_localization_spec_proto__field_descriptors[2] =
 {
   {
     "resource",
@@ -327,8 +327,8 @@ static const ProtobufCFieldDescriptor resource_localization_spec_proto__field_de
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ResourceLocalizationSpecProto, resource),
-    &local_resource_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceLocalizationSpecProto, resource),
+    &hadoop__yarn__local_resource_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -339,47 +339,47 @@ static const ProtobufCFieldDescriptor resource_localization_spec_proto__field_de
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ResourceLocalizationSpecProto, destination_directory),
-    &urlproto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ResourceLocalizationSpecProto, destination_directory),
+    &hadoop__yarn__urlproto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned resource_localization_spec_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__resource_localization_spec_proto__field_indices_by_name[] = {
   1,   /* field[1] = destination_directory */
   0,   /* field[0] = resource */
 };
-static const ProtobufCIntRange resource_localization_spec_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__resource_localization_spec_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor resource_localization_spec_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__resource_localization_spec_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ResourceLocalizationSpecProto",
   "ResourceLocalizationSpecProto",
-  "ResourceLocalizationSpecProto",
-  "ResourceLocalizationSpecProto",
-  "",
-  sizeof(ResourceLocalizationSpecProto),
+  "Hadoop__Yarn__ResourceLocalizationSpecProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ResourceLocalizationSpecProto),
   2,
-  resource_localization_spec_proto__field_descriptors,
-  resource_localization_spec_proto__field_indices_by_name,
-  1,  resource_localization_spec_proto__number_ranges,
-  (ProtobufCMessageInit) resource_localization_spec_proto__init,
+  hadoop__yarn__resource_localization_spec_proto__field_descriptors,
+  hadoop__yarn__resource_localization_spec_proto__field_indices_by_name,
+  1,  hadoop__yarn__resource_localization_spec_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__resource_localization_spec_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor localizer_heartbeat_response_proto__field_descriptors[2] =
+static const ProtobufCFieldDescriptor hadoop__yarn__localizer_heartbeat_response_proto__field_descriptors[2] =
 {
   {
     "action",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(LocalizerHeartbeatResponseProto, has_action),
-    PROTOBUF_C_OFFSETOF(LocalizerHeartbeatResponseProto, action),
-    &localizer_action_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerHeartbeatResponseProto, has_action),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerHeartbeatResponseProto, action),
+    &hadoop__yarn__localizer_action_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -389,93 +389,93 @@ static const ProtobufCFieldDescriptor localizer_heartbeat_response_proto__field_
     2,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_MESSAGE,
-    PROTOBUF_C_OFFSETOF(LocalizerHeartbeatResponseProto, n_resources),
-    PROTOBUF_C_OFFSETOF(LocalizerHeartbeatResponseProto, resources),
-    &resource_localization_spec_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerHeartbeatResponseProto, n_resources),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__LocalizerHeartbeatResponseProto, resources),
+    &hadoop__yarn__resource_localization_spec_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned localizer_heartbeat_response_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__localizer_heartbeat_response_proto__field_indices_by_name[] = {
   0,   /* field[0] = action */
   1,   /* field[1] = resources */
 };
-static const ProtobufCIntRange localizer_heartbeat_response_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__localizer_heartbeat_response_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 2 }
 };
-const ProtobufCMessageDescriptor localizer_heartbeat_response_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__localizer_heartbeat_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalizerHeartbeatResponseProto",
   "LocalizerHeartbeatResponseProto",
-  "LocalizerHeartbeatResponseProto",
-  "LocalizerHeartbeatResponseProto",
-  "",
-  sizeof(LocalizerHeartbeatResponseProto),
+  "Hadoop__Yarn__LocalizerHeartbeatResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__LocalizerHeartbeatResponseProto),
   2,
-  localizer_heartbeat_response_proto__field_descriptors,
-  localizer_heartbeat_response_proto__field_indices_by_name,
-  1,  localizer_heartbeat_response_proto__number_ranges,
-  (ProtobufCMessageInit) localizer_heartbeat_response_proto__init,
+  hadoop__yarn__localizer_heartbeat_response_proto__field_descriptors,
+  hadoop__yarn__localizer_heartbeat_response_proto__field_indices_by_name,
+  1,  hadoop__yarn__localizer_heartbeat_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__localizer_heartbeat_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-const ProtobufCEnumValue resource_status_type_proto__enum_values_by_number[3] =
+const ProtobufCEnumValue hadoop__yarn__resource_status_type_proto__enum_values_by_number[3] =
 {
-  { "FETCH_PENDING", "RESOURCE_STATUS_TYPE_PROTO__FETCH_PENDING", 1 },
-  { "FETCH_SUCCESS", "RESOURCE_STATUS_TYPE_PROTO__FETCH_SUCCESS", 2 },
-  { "FETCH_FAILURE", "RESOURCE_STATUS_TYPE_PROTO__FETCH_FAILURE", 3 },
+  { "FETCH_PENDING", "HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_PENDING", 1 },
+  { "FETCH_SUCCESS", "HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_SUCCESS", 2 },
+  { "FETCH_FAILURE", "HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_FAILURE", 3 },
 };
-static const ProtobufCIntRange resource_status_type_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__resource_status_type_proto__value_ranges[] = {
 {1, 0},{0, 3}
 };
-const ProtobufCEnumValueIndex resource_status_type_proto__enum_values_by_name[3] =
+const ProtobufCEnumValueIndex hadoop__yarn__resource_status_type_proto__enum_values_by_name[3] =
 {
   { "FETCH_FAILURE", 2 },
   { "FETCH_PENDING", 0 },
   { "FETCH_SUCCESS", 1 },
 };
-const ProtobufCEnumDescriptor resource_status_type_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__resource_status_type_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ResourceStatusTypeProto",
   "ResourceStatusTypeProto",
-  "ResourceStatusTypeProto",
-  "ResourceStatusTypeProto",
-  "",
+  "Hadoop__Yarn__ResourceStatusTypeProto",
+  "hadoop.yarn",
   3,
-  resource_status_type_proto__enum_values_by_number,
+  hadoop__yarn__resource_status_type_proto__enum_values_by_number,
   3,
-  resource_status_type_proto__enum_values_by_name,
+  hadoop__yarn__resource_status_type_proto__enum_values_by_name,
   1,
-  resource_status_type_proto__value_ranges,
+  hadoop__yarn__resource_status_type_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };
-const ProtobufCEnumValue localizer_action_proto__enum_values_by_number[2] =
+const ProtobufCEnumValue hadoop__yarn__localizer_action_proto__enum_values_by_number[2] =
 {
-  { "LIVE", "LOCALIZER_ACTION_PROTO__LIVE", 1 },
-  { "DIE", "LOCALIZER_ACTION_PROTO__DIE", 2 },
+  { "LIVE", "HADOOP__YARN__LOCALIZER_ACTION_PROTO__LIVE", 1 },
+  { "DIE", "HADOOP__YARN__LOCALIZER_ACTION_PROTO__DIE", 2 },
 };
-static const ProtobufCIntRange localizer_action_proto__value_ranges[] = {
+static const ProtobufCIntRange hadoop__yarn__localizer_action_proto__value_ranges[] = {
 {1, 0},{0, 2}
 };
-const ProtobufCEnumValueIndex localizer_action_proto__enum_values_by_name[2] =
+const ProtobufCEnumValueIndex hadoop__yarn__localizer_action_proto__enum_values_by_name[2] =
 {
   { "DIE", 1 },
   { "LIVE", 0 },
 };
-const ProtobufCEnumDescriptor localizer_action_proto__descriptor =
+const ProtobufCEnumDescriptor hadoop__yarn__localizer_action_proto__descriptor =
 {
   PROTOBUF_C_ENUM_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.LocalizerActionProto",
   "LocalizerActionProto",
-  "LocalizerActionProto",
-  "LocalizerActionProto",
-  "",
+  "Hadoop__Yarn__LocalizerActionProto",
+  "hadoop.yarn",
   2,
-  localizer_action_proto__enum_values_by_number,
+  hadoop__yarn__localizer_action_proto__enum_values_by_number,
   2,
-  localizer_action_proto__enum_values_by_name,
+  hadoop__yarn__localizer_action_proto__enum_values_by_name,
   1,
-  localizer_action_proto__value_ranges,
+  hadoop__yarn__localizer_action_proto__value_ranges,
   NULL,NULL,NULL,NULL   /* reserved[1234] */
 };

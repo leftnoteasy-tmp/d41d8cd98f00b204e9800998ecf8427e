@@ -1,7 +1,7 @@
 #ifndef _HD_CLIENT_AM_RM_PROTOCOL_IMPL_H
 #define _HD_CLIENT_AM_RM_PROTOCOL_IMPL_H
 
-#include "orte/mca/common/yarnpbc/hdclient/hadoop_rpc.h"
+#include "yarn.h"
 
 /**
  * implementation of register app master

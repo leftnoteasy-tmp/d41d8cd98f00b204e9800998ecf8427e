@@ -21,31 +21,31 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _LocalizationProtocolService_Service LocalizationProtocolService_Service;
-struct _LocalizationProtocolService_Service
+typedef struct _Hadoop__Yarn__LocalizationProtocolService_Service Hadoop__Yarn__LocalizationProtocolService_Service;
+struct _Hadoop__Yarn__LocalizationProtocolService_Service
 {
   ProtobufCService base;
-  void (*heartbeat)(LocalizationProtocolService_Service *service,
-                    const LocalizerStatusProto *input,
-                    LocalizerHeartbeatResponseProto_Closure closure,
+  void (*heartbeat)(Hadoop__Yarn__LocalizationProtocolService_Service *service,
+                    const Hadoop__Yarn__LocalizerStatusProto *input,
+                    Hadoop__Yarn__LocalizerHeartbeatResponseProto_Closure closure,
                     void *closure_data);
 };
-typedef void (*LocalizationProtocolService_ServiceDestroy)(LocalizationProtocolService_Service *);
-void localization_protocol_service__init (LocalizationProtocolService_Service *service,
-                                          LocalizationProtocolService_ServiceDestroy destroy);
-#define LOCALIZATION_PROTOCOL_SERVICE__BASE_INIT \
-    { &localization_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define LOCALIZATION_PROTOCOL_SERVICE__INIT(function_prefix__) \
-    { LOCALIZATION_PROTOCOL_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__LocalizationProtocolService_ServiceDestroy)(Hadoop__Yarn__LocalizationProtocolService_Service *);
+void hadoop__yarn__localization_protocol_service__init (Hadoop__Yarn__LocalizationProtocolService_Service *service,
+                                                        Hadoop__Yarn__LocalizationProtocolService_ServiceDestroy destroy);
+#define HADOOP__YARN__LOCALIZATION_PROTOCOL_SERVICE__BASE_INIT \
+    { &hadoop__yarn__localization_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__LOCALIZATION_PROTOCOL_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__LOCALIZATION_PROTOCOL_SERVICE__BASE_INIT,\
       function_prefix__ ## heartbeat  }
-void localization_protocol_service__heartbeat(ProtobufCService *service,
-                                              const LocalizerStatusProto *input,
-                                              LocalizerHeartbeatResponseProto_Closure closure,
-                                              void *closure_data);
+void hadoop__yarn__localization_protocol_service__heartbeat(ProtobufCService *service,
+                                                            const Hadoop__Yarn__LocalizerStatusProto *input,
+                                                            Hadoop__Yarn__LocalizerHeartbeatResponseProto_Closure closure,
+                                                            void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor localization_protocol_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__localization_protocol_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

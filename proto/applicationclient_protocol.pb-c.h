@@ -22,66 +22,66 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _ApplicationClientProtocolService_Service ApplicationClientProtocolService_Service;
-struct _ApplicationClientProtocolService_Service
+typedef struct _Hadoop__Yarn__ApplicationClientProtocolService_Service Hadoop__Yarn__ApplicationClientProtocolService_Service;
+struct _Hadoop__Yarn__ApplicationClientProtocolService_Service
 {
   ProtobufCService base;
-  void (*get_new_application)(ApplicationClientProtocolService_Service *service,
-                              const GetNewApplicationRequestProto *input,
-                              GetNewApplicationResponseProto_Closure closure,
+  void (*get_new_application)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                              const Hadoop__Yarn__GetNewApplicationRequestProto *input,
+                              Hadoop__Yarn__GetNewApplicationResponseProto_Closure closure,
                               void *closure_data);
-  void (*get_application_report)(ApplicationClientProtocolService_Service *service,
-                                 const GetApplicationReportRequestProto *input,
-                                 GetApplicationReportResponseProto_Closure closure,
+  void (*get_application_report)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                                 const Hadoop__Yarn__GetApplicationReportRequestProto *input,
+                                 Hadoop__Yarn__GetApplicationReportResponseProto_Closure closure,
                                  void *closure_data);
-  void (*submit_application)(ApplicationClientProtocolService_Service *service,
-                             const SubmitApplicationRequestProto *input,
-                             SubmitApplicationResponseProto_Closure closure,
+  void (*submit_application)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                             const Hadoop__Yarn__SubmitApplicationRequestProto *input,
+                             Hadoop__Yarn__SubmitApplicationResponseProto_Closure closure,
                              void *closure_data);
-  void (*force_kill_application)(ApplicationClientProtocolService_Service *service,
-                                 const KillApplicationRequestProto *input,
-                                 KillApplicationResponseProto_Closure closure,
+  void (*force_kill_application)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                                 const Hadoop__Yarn__KillApplicationRequestProto *input,
+                                 Hadoop__Yarn__KillApplicationResponseProto_Closure closure,
                                  void *closure_data);
-  void (*get_cluster_metrics)(ApplicationClientProtocolService_Service *service,
-                              const GetClusterMetricsRequestProto *input,
-                              GetClusterMetricsResponseProto_Closure closure,
+  void (*get_cluster_metrics)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                              const Hadoop__Yarn__GetClusterMetricsRequestProto *input,
+                              Hadoop__Yarn__GetClusterMetricsResponseProto_Closure closure,
                               void *closure_data);
-  void (*get_applications)(ApplicationClientProtocolService_Service *service,
-                           const GetApplicationsRequestProto *input,
-                           GetApplicationsResponseProto_Closure closure,
+  void (*get_applications)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                           const Hadoop__Yarn__GetApplicationsRequestProto *input,
+                           Hadoop__Yarn__GetApplicationsResponseProto_Closure closure,
                            void *closure_data);
-  void (*get_cluster_nodes)(ApplicationClientProtocolService_Service *service,
-                            const GetClusterNodesRequestProto *input,
-                            GetClusterNodesResponseProto_Closure closure,
+  void (*get_cluster_nodes)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                            const Hadoop__Yarn__GetClusterNodesRequestProto *input,
+                            Hadoop__Yarn__GetClusterNodesResponseProto_Closure closure,
                             void *closure_data);
-  void (*get_queue_info)(ApplicationClientProtocolService_Service *service,
-                         const GetQueueInfoRequestProto *input,
-                         GetQueueInfoResponseProto_Closure closure,
+  void (*get_queue_info)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                         const Hadoop__Yarn__GetQueueInfoRequestProto *input,
+                         Hadoop__Yarn__GetQueueInfoResponseProto_Closure closure,
                          void *closure_data);
-  void (*get_queue_user_acls)(ApplicationClientProtocolService_Service *service,
-                              const GetQueueUserAclsInfoRequestProto *input,
-                              GetQueueUserAclsInfoResponseProto_Closure closure,
+  void (*get_queue_user_acls)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                              const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *input,
+                              Hadoop__Yarn__GetQueueUserAclsInfoResponseProto_Closure closure,
                               void *closure_data);
-  void (*get_delegation_token)(ApplicationClientProtocolService_Service *service,
+  void (*get_delegation_token)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
                                const Hadoop__Common__GetDelegationTokenRequestProto *input,
                                Hadoop__Common__GetDelegationTokenResponseProto_Closure closure,
                                void *closure_data);
-  void (*renew_delegation_token)(ApplicationClientProtocolService_Service *service,
+  void (*renew_delegation_token)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
                                  const Hadoop__Common__RenewDelegationTokenRequestProto *input,
                                  Hadoop__Common__RenewDelegationTokenResponseProto_Closure closure,
                                  void *closure_data);
-  void (*cancel_delegation_token)(ApplicationClientProtocolService_Service *service,
+  void (*cancel_delegation_token)(Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
                                   const Hadoop__Common__CancelDelegationTokenRequestProto *input,
                                   Hadoop__Common__CancelDelegationTokenResponseProto_Closure closure,
                                   void *closure_data);
 };
-typedef void (*ApplicationClientProtocolService_ServiceDestroy)(ApplicationClientProtocolService_Service *);
-void application_client_protocol_service__init (ApplicationClientProtocolService_Service *service,
-                                                ApplicationClientProtocolService_ServiceDestroy destroy);
-#define APPLICATION_CLIENT_PROTOCOL_SERVICE__BASE_INIT \
-    { &application_client_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define APPLICATION_CLIENT_PROTOCOL_SERVICE__INIT(function_prefix__) \
-    { APPLICATION_CLIENT_PROTOCOL_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__ApplicationClientProtocolService_ServiceDestroy)(Hadoop__Yarn__ApplicationClientProtocolService_Service *);
+void hadoop__yarn__application_client_protocol_service__init (Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                                                              Hadoop__Yarn__ApplicationClientProtocolService_ServiceDestroy destroy);
+#define HADOOP__YARN__APPLICATION_CLIENT_PROTOCOL_SERVICE__BASE_INIT \
+    { &hadoop__yarn__application_client_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__APPLICATION_CLIENT_PROTOCOL_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__APPLICATION_CLIENT_PROTOCOL_SERVICE__BASE_INIT,\
       function_prefix__ ## get_new_application,\
       function_prefix__ ## get_application_report,\
       function_prefix__ ## submit_application,\
@@ -94,58 +94,58 @@ void application_client_protocol_service__init (ApplicationClientProtocolService
       function_prefix__ ## get_delegation_token,\
       function_prefix__ ## renew_delegation_token,\
       function_prefix__ ## cancel_delegation_token  }
-void application_client_protocol_service__get_new_application(ProtobufCService *service,
-                                                              const GetNewApplicationRequestProto *input,
-                                                              GetNewApplicationResponseProto_Closure closure,
-                                                              void *closure_data);
-void application_client_protocol_service__get_application_report(ProtobufCService *service,
-                                                                 const GetApplicationReportRequestProto *input,
-                                                                 GetApplicationReportResponseProto_Closure closure,
-                                                                 void *closure_data);
-void application_client_protocol_service__submit_application(ProtobufCService *service,
-                                                             const SubmitApplicationRequestProto *input,
-                                                             SubmitApplicationResponseProto_Closure closure,
-                                                             void *closure_data);
-void application_client_protocol_service__force_kill_application(ProtobufCService *service,
-                                                                 const KillApplicationRequestProto *input,
-                                                                 KillApplicationResponseProto_Closure closure,
-                                                                 void *closure_data);
-void application_client_protocol_service__get_cluster_metrics(ProtobufCService *service,
-                                                              const GetClusterMetricsRequestProto *input,
-                                                              GetClusterMetricsResponseProto_Closure closure,
-                                                              void *closure_data);
-void application_client_protocol_service__get_applications(ProtobufCService *service,
-                                                           const GetApplicationsRequestProto *input,
-                                                           GetApplicationsResponseProto_Closure closure,
-                                                           void *closure_data);
-void application_client_protocol_service__get_cluster_nodes(ProtobufCService *service,
-                                                            const GetClusterNodesRequestProto *input,
-                                                            GetClusterNodesResponseProto_Closure closure,
-                                                            void *closure_data);
-void application_client_protocol_service__get_queue_info(ProtobufCService *service,
-                                                         const GetQueueInfoRequestProto *input,
-                                                         GetQueueInfoResponseProto_Closure closure,
-                                                         void *closure_data);
-void application_client_protocol_service__get_queue_user_acls(ProtobufCService *service,
-                                                              const GetQueueUserAclsInfoRequestProto *input,
-                                                              GetQueueUserAclsInfoResponseProto_Closure closure,
-                                                              void *closure_data);
-void application_client_protocol_service__get_delegation_token(ProtobufCService *service,
-                                                               const Hadoop__Common__GetDelegationTokenRequestProto *input,
-                                                               Hadoop__Common__GetDelegationTokenResponseProto_Closure closure,
-                                                               void *closure_data);
-void application_client_protocol_service__renew_delegation_token(ProtobufCService *service,
-                                                                 const Hadoop__Common__RenewDelegationTokenRequestProto *input,
-                                                                 Hadoop__Common__RenewDelegationTokenResponseProto_Closure closure,
-                                                                 void *closure_data);
-void application_client_protocol_service__cancel_delegation_token(ProtobufCService *service,
-                                                                  const Hadoop__Common__CancelDelegationTokenRequestProto *input,
-                                                                  Hadoop__Common__CancelDelegationTokenResponseProto_Closure closure,
-                                                                  void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_new_application(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetNewApplicationRequestProto *input,
+                                                                            Hadoop__Yarn__GetNewApplicationResponseProto_Closure closure,
+                                                                            void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_application_report(ProtobufCService *service,
+                                                                               const Hadoop__Yarn__GetApplicationReportRequestProto *input,
+                                                                               Hadoop__Yarn__GetApplicationReportResponseProto_Closure closure,
+                                                                               void *closure_data);
+void hadoop__yarn__application_client_protocol_service__submit_application(ProtobufCService *service,
+                                                                           const Hadoop__Yarn__SubmitApplicationRequestProto *input,
+                                                                           Hadoop__Yarn__SubmitApplicationResponseProto_Closure closure,
+                                                                           void *closure_data);
+void hadoop__yarn__application_client_protocol_service__force_kill_application(ProtobufCService *service,
+                                                                               const Hadoop__Yarn__KillApplicationRequestProto *input,
+                                                                               Hadoop__Yarn__KillApplicationResponseProto_Closure closure,
+                                                                               void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_cluster_metrics(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetClusterMetricsRequestProto *input,
+                                                                            Hadoop__Yarn__GetClusterMetricsResponseProto_Closure closure,
+                                                                            void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_applications(ProtobufCService *service,
+                                                                         const Hadoop__Yarn__GetApplicationsRequestProto *input,
+                                                                         Hadoop__Yarn__GetApplicationsResponseProto_Closure closure,
+                                                                         void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_cluster_nodes(ProtobufCService *service,
+                                                                          const Hadoop__Yarn__GetClusterNodesRequestProto *input,
+                                                                          Hadoop__Yarn__GetClusterNodesResponseProto_Closure closure,
+                                                                          void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_queue_info(ProtobufCService *service,
+                                                                       const Hadoop__Yarn__GetQueueInfoRequestProto *input,
+                                                                       Hadoop__Yarn__GetQueueInfoResponseProto_Closure closure,
+                                                                       void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_queue_user_acls(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *input,
+                                                                            Hadoop__Yarn__GetQueueUserAclsInfoResponseProto_Closure closure,
+                                                                            void *closure_data);
+void hadoop__yarn__application_client_protocol_service__get_delegation_token(ProtobufCService *service,
+                                                                             const Hadoop__Common__GetDelegationTokenRequestProto *input,
+                                                                             Hadoop__Common__GetDelegationTokenResponseProto_Closure closure,
+                                                                             void *closure_data);
+void hadoop__yarn__application_client_protocol_service__renew_delegation_token(ProtobufCService *service,
+                                                                               const Hadoop__Common__RenewDelegationTokenRequestProto *input,
+                                                                               Hadoop__Common__RenewDelegationTokenResponseProto_Closure closure,
+                                                                               void *closure_data);
+void hadoop__yarn__application_client_protocol_service__cancel_delegation_token(ProtobufCService *service,
+                                                                                const Hadoop__Common__CancelDelegationTokenRequestProto *input,
+                                                                                Hadoop__Common__CancelDelegationTokenResponseProto_Closure closure,
+                                                                                void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor application_client_protocol_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__application_client_protocol_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

@@ -1,7 +1,7 @@
 #ifndef _HD_CLIENT_CONTAINER_MANAGER_H
 #define _HD_CLIENT_CONTAINER_MANAGER_H
 
-#include "orte/mca/common/yarnpbc/hdclient/hadoop_rpc.h"
+#include "yarn.h"
 
 /**
  * launch <launch_context> in specified container

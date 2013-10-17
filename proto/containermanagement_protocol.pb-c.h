@@ -21,49 +21,49 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _ContainerManagementProtocolService_Service ContainerManagementProtocolService_Service;
-struct _ContainerManagementProtocolService_Service
+typedef struct _Hadoop__Yarn__ContainerManagementProtocolService_Service Hadoop__Yarn__ContainerManagementProtocolService_Service;
+struct _Hadoop__Yarn__ContainerManagementProtocolService_Service
 {
   ProtobufCService base;
-  void (*start_containers)(ContainerManagementProtocolService_Service *service,
-                           const StartContainersRequestProto *input,
-                           StartContainersResponseProto_Closure closure,
+  void (*start_containers)(Hadoop__Yarn__ContainerManagementProtocolService_Service *service,
+                           const Hadoop__Yarn__StartContainersRequestProto *input,
+                           Hadoop__Yarn__StartContainersResponseProto_Closure closure,
                            void *closure_data);
-  void (*stop_containers)(ContainerManagementProtocolService_Service *service,
-                          const StopContainersRequestProto *input,
-                          StopContainersResponseProto_Closure closure,
+  void (*stop_containers)(Hadoop__Yarn__ContainerManagementProtocolService_Service *service,
+                          const Hadoop__Yarn__StopContainersRequestProto *input,
+                          Hadoop__Yarn__StopContainersResponseProto_Closure closure,
                           void *closure_data);
-  void (*get_container_statuses)(ContainerManagementProtocolService_Service *service,
-                                 const GetContainerStatusesRequestProto *input,
-                                 GetContainerStatusesResponseProto_Closure closure,
+  void (*get_container_statuses)(Hadoop__Yarn__ContainerManagementProtocolService_Service *service,
+                                 const Hadoop__Yarn__GetContainerStatusesRequestProto *input,
+                                 Hadoop__Yarn__GetContainerStatusesResponseProto_Closure closure,
                                  void *closure_data);
 };
-typedef void (*ContainerManagementProtocolService_ServiceDestroy)(ContainerManagementProtocolService_Service *);
-void container_management_protocol_service__init (ContainerManagementProtocolService_Service *service,
-                                                  ContainerManagementProtocolService_ServiceDestroy destroy);
-#define CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__BASE_INIT \
-    { &container_management_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__INIT(function_prefix__) \
-    { CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__ContainerManagementProtocolService_ServiceDestroy)(Hadoop__Yarn__ContainerManagementProtocolService_Service *);
+void hadoop__yarn__container_management_protocol_service__init (Hadoop__Yarn__ContainerManagementProtocolService_Service *service,
+                                                                Hadoop__Yarn__ContainerManagementProtocolService_ServiceDestroy destroy);
+#define HADOOP__YARN__CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__BASE_INIT \
+    { &hadoop__yarn__container_management_protocol_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__CONTAINER_MANAGEMENT_PROTOCOL_SERVICE__BASE_INIT,\
       function_prefix__ ## start_containers,\
       function_prefix__ ## stop_containers,\
       function_prefix__ ## get_container_statuses  }
-void container_management_protocol_service__start_containers(ProtobufCService *service,
-                                                             const StartContainersRequestProto *input,
-                                                             StartContainersResponseProto_Closure closure,
-                                                             void *closure_data);
-void container_management_protocol_service__stop_containers(ProtobufCService *service,
-                                                            const StopContainersRequestProto *input,
-                                                            StopContainersResponseProto_Closure closure,
-                                                            void *closure_data);
-void container_management_protocol_service__get_container_statuses(ProtobufCService *service,
-                                                                   const GetContainerStatusesRequestProto *input,
-                                                                   GetContainerStatusesResponseProto_Closure closure,
-                                                                   void *closure_data);
+void hadoop__yarn__container_management_protocol_service__start_containers(ProtobufCService *service,
+                                                                           const Hadoop__Yarn__StartContainersRequestProto *input,
+                                                                           Hadoop__Yarn__StartContainersResponseProto_Closure closure,
+                                                                           void *closure_data);
+void hadoop__yarn__container_management_protocol_service__stop_containers(ProtobufCService *service,
+                                                                          const Hadoop__Yarn__StopContainersRequestProto *input,
+                                                                          Hadoop__Yarn__StopContainersResponseProto_Closure closure,
+                                                                          void *closure_data);
+void hadoop__yarn__container_management_protocol_service__get_container_statuses(ProtobufCService *service,
+                                                                                 const Hadoop__Yarn__GetContainerStatusesRequestProto *input,
+                                                                                 Hadoop__Yarn__GetContainerStatusesResponseProto_Closure closure,
+                                                                                 void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor container_management_protocol_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__container_management_protocol_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

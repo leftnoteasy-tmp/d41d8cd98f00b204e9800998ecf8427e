@@ -28,6 +28,9 @@ void write_endian_swap_short(int socket, short num);
 // write protobuf-style varint-int to buffer
 int write_raw_varint32(char* buffer, int value);
 
+// get protobuf-style varint-int length
+int get_raw_varint32_len(int value);
+
 // read protbuf-style varint-int from socket
 // return 0 if succeed
 int read_raw_varint32(int socket_id, int* readlen, int* value);

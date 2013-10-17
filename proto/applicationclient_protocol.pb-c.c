@@ -6,22 +6,22 @@
 #endif
 
 #include "applicationclient_protocol.pb-c.h"
-static const ProtobufCMethodDescriptor application_client_protocol_service__method_descriptors[12] =
+static const ProtobufCMethodDescriptor hadoop__yarn__application_client_protocol_service__method_descriptors[12] =
 {
-  { "getNewApplication", &get_new_application_request_proto__descriptor, &get_new_application_response_proto__descriptor },
-  { "getApplicationReport", &get_application_report_request_proto__descriptor, &get_application_report_response_proto__descriptor },
-  { "submitApplication", &submit_application_request_proto__descriptor, &submit_application_response_proto__descriptor },
-  { "forceKillApplication", &kill_application_request_proto__descriptor, &kill_application_response_proto__descriptor },
-  { "getClusterMetrics", &get_cluster_metrics_request_proto__descriptor, &get_cluster_metrics_response_proto__descriptor },
-  { "getApplications", &get_applications_request_proto__descriptor, &get_applications_response_proto__descriptor },
-  { "getClusterNodes", &get_cluster_nodes_request_proto__descriptor, &get_cluster_nodes_response_proto__descriptor },
-  { "getQueueInfo", &get_queue_info_request_proto__descriptor, &get_queue_info_response_proto__descriptor },
-  { "getQueueUserAcls", &get_queue_user_acls_info_request_proto__descriptor, &get_queue_user_acls_info_response_proto__descriptor },
+  { "getNewApplication", &hadoop__yarn__get_new_application_request_proto__descriptor, &hadoop__yarn__get_new_application_response_proto__descriptor },
+  { "getApplicationReport", &hadoop__yarn__get_application_report_request_proto__descriptor, &hadoop__yarn__get_application_report_response_proto__descriptor },
+  { "submitApplication", &hadoop__yarn__submit_application_request_proto__descriptor, &hadoop__yarn__submit_application_response_proto__descriptor },
+  { "forceKillApplication", &hadoop__yarn__kill_application_request_proto__descriptor, &hadoop__yarn__kill_application_response_proto__descriptor },
+  { "getClusterMetrics", &hadoop__yarn__get_cluster_metrics_request_proto__descriptor, &hadoop__yarn__get_cluster_metrics_response_proto__descriptor },
+  { "getApplications", &hadoop__yarn__get_applications_request_proto__descriptor, &hadoop__yarn__get_applications_response_proto__descriptor },
+  { "getClusterNodes", &hadoop__yarn__get_cluster_nodes_request_proto__descriptor, &hadoop__yarn__get_cluster_nodes_response_proto__descriptor },
+  { "getQueueInfo", &hadoop__yarn__get_queue_info_request_proto__descriptor, &hadoop__yarn__get_queue_info_response_proto__descriptor },
+  { "getQueueUserAcls", &hadoop__yarn__get_queue_user_acls_info_request_proto__descriptor, &hadoop__yarn__get_queue_user_acls_info_response_proto__descriptor },
   { "getDelegationToken", &hadoop__common__get_delegation_token_request_proto__descriptor, &hadoop__common__get_delegation_token_response_proto__descriptor },
   { "renewDelegationToken", &hadoop__common__renew_delegation_token_request_proto__descriptor, &hadoop__common__renew_delegation_token_response_proto__descriptor },
   { "cancelDelegationToken", &hadoop__common__cancel_delegation_token_request_proto__descriptor, &hadoop__common__cancel_delegation_token_response_proto__descriptor },
 };
-const unsigned application_client_protocol_service__method_indices_by_name[] = {
+const unsigned hadoop__yarn__application_client_protocol_service__method_indices_by_name[] = {
   11,        /* cancelDelegationToken */
   3,        /* forceKillApplication */
   1,        /* getApplicationReport */
@@ -35,117 +35,117 @@ const unsigned application_client_protocol_service__method_indices_by_name[] = {
   10,        /* renewDelegationToken */
   2         /* submitApplication */
 };
-const ProtobufCServiceDescriptor application_client_protocol_service__descriptor =
+const ProtobufCServiceDescriptor hadoop__yarn__application_client_protocol_service__descriptor =
 {
   PROTOBUF_C_SERVICE_DESCRIPTOR_MAGIC,
-  "ApplicationClientProtocolService",
+  "hadoop.yarn.ApplicationClientProtocolService",
   "submitApplication",
-  "ApplicationClientProtocolService",
-  "",
+  "Hadoop__Yarn__ApplicationClientProtocolService",
+  "hadoop.yarn",
   12,
-  application_client_protocol_service__method_descriptors,
-  application_client_protocol_service__method_indices_by_name
+  hadoop__yarn__application_client_protocol_service__method_descriptors,
+  hadoop__yarn__application_client_protocol_service__method_indices_by_name
 };
-void application_client_protocol_service__get_new_application(ProtobufCService *service,
-                                                              const GetNewApplicationRequestProto *input,
-                                                              GetNewApplicationResponseProto_Closure closure,
-                                                              void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_new_application(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetNewApplicationRequestProto *input,
+                                                                            Hadoop__Yarn__GetNewApplicationResponseProto_Closure closure,
+                                                                            void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 0, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_application_report(ProtobufCService *service,
-                                                                 const GetApplicationReportRequestProto *input,
-                                                                 GetApplicationReportResponseProto_Closure closure,
-                                                                 void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_application_report(ProtobufCService *service,
+                                                                               const Hadoop__Yarn__GetApplicationReportRequestProto *input,
+                                                                               Hadoop__Yarn__GetApplicationReportResponseProto_Closure closure,
+                                                                               void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 1, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__submit_application(ProtobufCService *service,
-                                                             const SubmitApplicationRequestProto *input,
-                                                             SubmitApplicationResponseProto_Closure closure,
-                                                             void *closure_data)
+void hadoop__yarn__application_client_protocol_service__submit_application(ProtobufCService *service,
+                                                                           const Hadoop__Yarn__SubmitApplicationRequestProto *input,
+                                                                           Hadoop__Yarn__SubmitApplicationResponseProto_Closure closure,
+                                                                           void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 2, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__force_kill_application(ProtobufCService *service,
-                                                                 const KillApplicationRequestProto *input,
-                                                                 KillApplicationResponseProto_Closure closure,
-                                                                 void *closure_data)
+void hadoop__yarn__application_client_protocol_service__force_kill_application(ProtobufCService *service,
+                                                                               const Hadoop__Yarn__KillApplicationRequestProto *input,
+                                                                               Hadoop__Yarn__KillApplicationResponseProto_Closure closure,
+                                                                               void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 3, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_cluster_metrics(ProtobufCService *service,
-                                                              const GetClusterMetricsRequestProto *input,
-                                                              GetClusterMetricsResponseProto_Closure closure,
-                                                              void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_cluster_metrics(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetClusterMetricsRequestProto *input,
+                                                                            Hadoop__Yarn__GetClusterMetricsResponseProto_Closure closure,
+                                                                            void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 4, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_applications(ProtobufCService *service,
-                                                           const GetApplicationsRequestProto *input,
-                                                           GetApplicationsResponseProto_Closure closure,
-                                                           void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_applications(ProtobufCService *service,
+                                                                         const Hadoop__Yarn__GetApplicationsRequestProto *input,
+                                                                         Hadoop__Yarn__GetApplicationsResponseProto_Closure closure,
+                                                                         void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 5, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_cluster_nodes(ProtobufCService *service,
-                                                            const GetClusterNodesRequestProto *input,
-                                                            GetClusterNodesResponseProto_Closure closure,
-                                                            void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_cluster_nodes(ProtobufCService *service,
+                                                                          const Hadoop__Yarn__GetClusterNodesRequestProto *input,
+                                                                          Hadoop__Yarn__GetClusterNodesResponseProto_Closure closure,
+                                                                          void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 6, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_queue_info(ProtobufCService *service,
-                                                         const GetQueueInfoRequestProto *input,
-                                                         GetQueueInfoResponseProto_Closure closure,
-                                                         void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_queue_info(ProtobufCService *service,
+                                                                       const Hadoop__Yarn__GetQueueInfoRequestProto *input,
+                                                                       Hadoop__Yarn__GetQueueInfoResponseProto_Closure closure,
+                                                                       void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 7, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_queue_user_acls(ProtobufCService *service,
-                                                              const GetQueueUserAclsInfoRequestProto *input,
-                                                              GetQueueUserAclsInfoResponseProto_Closure closure,
-                                                              void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_queue_user_acls(ProtobufCService *service,
+                                                                            const Hadoop__Yarn__GetQueueUserAclsInfoRequestProto *input,
+                                                                            Hadoop__Yarn__GetQueueUserAclsInfoResponseProto_Closure closure,
+                                                                            void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 8, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__get_delegation_token(ProtobufCService *service,
-                                                               const Hadoop__Common__GetDelegationTokenRequestProto *input,
-                                                               Hadoop__Common__GetDelegationTokenResponseProto_Closure closure,
-                                                               void *closure_data)
+void hadoop__yarn__application_client_protocol_service__get_delegation_token(ProtobufCService *service,
+                                                                             const Hadoop__Common__GetDelegationTokenRequestProto *input,
+                                                                             Hadoop__Common__GetDelegationTokenResponseProto_Closure closure,
+                                                                             void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 9, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__renew_delegation_token(ProtobufCService *service,
-                                                                 const Hadoop__Common__RenewDelegationTokenRequestProto *input,
-                                                                 Hadoop__Common__RenewDelegationTokenResponseProto_Closure closure,
-                                                                 void *closure_data)
+void hadoop__yarn__application_client_protocol_service__renew_delegation_token(ProtobufCService *service,
+                                                                               const Hadoop__Common__RenewDelegationTokenRequestProto *input,
+                                                                               Hadoop__Common__RenewDelegationTokenResponseProto_Closure closure,
+                                                                               void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 10, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__cancel_delegation_token(ProtobufCService *service,
-                                                                  const Hadoop__Common__CancelDelegationTokenRequestProto *input,
-                                                                  Hadoop__Common__CancelDelegationTokenResponseProto_Closure closure,
-                                                                  void *closure_data)
+void hadoop__yarn__application_client_protocol_service__cancel_delegation_token(ProtobufCService *service,
+                                                                                const Hadoop__Common__CancelDelegationTokenRequestProto *input,
+                                                                                Hadoop__Common__CancelDelegationTokenResponseProto_Closure closure,
+                                                                                void *closure_data)
 {
-  PROTOBUF_C_ASSERT (service->descriptor == &application_client_protocol_service__descriptor);
+  PROTOBUF_C_ASSERT (service->descriptor == &hadoop__yarn__application_client_protocol_service__descriptor);
   service->invoke(service, 11, (const ProtobufCMessage *) input, (ProtobufCClosure) closure, closure_data);
 }
-void application_client_protocol_service__init (ApplicationClientProtocolService_Service *service,
-                                                ApplicationClientProtocolService_ServiceDestroy destroy)
+void hadoop__yarn__application_client_protocol_service__init (Hadoop__Yarn__ApplicationClientProtocolService_Service *service,
+                                                              Hadoop__Yarn__ApplicationClientProtocolService_ServiceDestroy destroy)
 {
   protobuf_c_service_generated_init (&service->base,
-                                     &application_client_protocol_service__descriptor,
+                                     &hadoop__yarn__application_client_protocol_service__descriptor,
                                      (ProtobufCServiceDestroy) destroy);
 }

@@ -6,911 +6,911 @@
 #endif
 
 #include "yarn_server_resourcemanager_service_protos.pb-c.h"
-void   refresh_queues_request_proto__init
-                     (RefreshQueuesRequestProto         *message)
+void   hadoop__yarn__refresh_queues_request_proto__init
+                     (Hadoop__Yarn__RefreshQueuesRequestProto         *message)
 {
-  static RefreshQueuesRequestProto init_value = REFRESH_QUEUES_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshQueuesRequestProto init_value = HADOOP__YARN__REFRESH_QUEUES_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_queues_request_proto__get_packed_size
-                     (const RefreshQueuesRequestProto *message)
+size_t hadoop__yarn__refresh_queues_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshQueuesRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_queues_request_proto__pack
-                     (const RefreshQueuesRequestProto *message,
+size_t hadoop__yarn__refresh_queues_request_proto__pack
+                     (const Hadoop__Yarn__RefreshQueuesRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_queues_request_proto__pack_to_buffer
-                     (const RefreshQueuesRequestProto *message,
+size_t hadoop__yarn__refresh_queues_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshQueuesRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshQueuesRequestProto *
-       refresh_queues_request_proto__unpack
+Hadoop__Yarn__RefreshQueuesRequestProto *
+       hadoop__yarn__refresh_queues_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshQueuesRequestProto *)
-     protobuf_c_message_unpack (&refresh_queues_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshQueuesRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_queues_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_queues_request_proto__free_unpacked
-                     (RefreshQueuesRequestProto *message,
+void   hadoop__yarn__refresh_queues_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshQueuesRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_queues_response_proto__init
-                     (RefreshQueuesResponseProto         *message)
+void   hadoop__yarn__refresh_queues_response_proto__init
+                     (Hadoop__Yarn__RefreshQueuesResponseProto         *message)
 {
-  static RefreshQueuesResponseProto init_value = REFRESH_QUEUES_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshQueuesResponseProto init_value = HADOOP__YARN__REFRESH_QUEUES_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_queues_response_proto__get_packed_size
-                     (const RefreshQueuesResponseProto *message)
+size_t hadoop__yarn__refresh_queues_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshQueuesResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_queues_response_proto__pack
-                     (const RefreshQueuesResponseProto *message,
+size_t hadoop__yarn__refresh_queues_response_proto__pack
+                     (const Hadoop__Yarn__RefreshQueuesResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_queues_response_proto__pack_to_buffer
-                     (const RefreshQueuesResponseProto *message,
+size_t hadoop__yarn__refresh_queues_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshQueuesResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshQueuesResponseProto *
-       refresh_queues_response_proto__unpack
+Hadoop__Yarn__RefreshQueuesResponseProto *
+       hadoop__yarn__refresh_queues_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshQueuesResponseProto *)
-     protobuf_c_message_unpack (&refresh_queues_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshQueuesResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_queues_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_queues_response_proto__free_unpacked
-                     (RefreshQueuesResponseProto *message,
+void   hadoop__yarn__refresh_queues_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshQueuesResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_queues_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_queues_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_nodes_request_proto__init
-                     (RefreshNodesRequestProto         *message)
+void   hadoop__yarn__refresh_nodes_request_proto__init
+                     (Hadoop__Yarn__RefreshNodesRequestProto         *message)
 {
-  static RefreshNodesRequestProto init_value = REFRESH_NODES_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshNodesRequestProto init_value = HADOOP__YARN__REFRESH_NODES_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_nodes_request_proto__get_packed_size
-                     (const RefreshNodesRequestProto *message)
+size_t hadoop__yarn__refresh_nodes_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshNodesRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_nodes_request_proto__pack
-                     (const RefreshNodesRequestProto *message,
+size_t hadoop__yarn__refresh_nodes_request_proto__pack
+                     (const Hadoop__Yarn__RefreshNodesRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_nodes_request_proto__pack_to_buffer
-                     (const RefreshNodesRequestProto *message,
+size_t hadoop__yarn__refresh_nodes_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshNodesRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshNodesRequestProto *
-       refresh_nodes_request_proto__unpack
+Hadoop__Yarn__RefreshNodesRequestProto *
+       hadoop__yarn__refresh_nodes_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshNodesRequestProto *)
-     protobuf_c_message_unpack (&refresh_nodes_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshNodesRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_nodes_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_nodes_request_proto__free_unpacked
-                     (RefreshNodesRequestProto *message,
+void   hadoop__yarn__refresh_nodes_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshNodesRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_nodes_response_proto__init
-                     (RefreshNodesResponseProto         *message)
+void   hadoop__yarn__refresh_nodes_response_proto__init
+                     (Hadoop__Yarn__RefreshNodesResponseProto         *message)
 {
-  static RefreshNodesResponseProto init_value = REFRESH_NODES_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshNodesResponseProto init_value = HADOOP__YARN__REFRESH_NODES_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_nodes_response_proto__get_packed_size
-                     (const RefreshNodesResponseProto *message)
+size_t hadoop__yarn__refresh_nodes_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshNodesResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_nodes_response_proto__pack
-                     (const RefreshNodesResponseProto *message,
+size_t hadoop__yarn__refresh_nodes_response_proto__pack
+                     (const Hadoop__Yarn__RefreshNodesResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_nodes_response_proto__pack_to_buffer
-                     (const RefreshNodesResponseProto *message,
+size_t hadoop__yarn__refresh_nodes_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshNodesResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshNodesResponseProto *
-       refresh_nodes_response_proto__unpack
+Hadoop__Yarn__RefreshNodesResponseProto *
+       hadoop__yarn__refresh_nodes_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshNodesResponseProto *)
-     protobuf_c_message_unpack (&refresh_nodes_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshNodesResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_nodes_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_nodes_response_proto__free_unpacked
-                     (RefreshNodesResponseProto *message,
+void   hadoop__yarn__refresh_nodes_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshNodesResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_nodes_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_nodes_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_super_user_groups_configuration_request_proto__init
-                     (RefreshSuperUserGroupsConfigurationRequestProto         *message)
+void   hadoop__yarn__refresh_super_user_groups_configuration_request_proto__init
+                     (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto         *message)
 {
-  static RefreshSuperUserGroupsConfigurationRequestProto init_value = REFRESH_SUPER_USER_GROUPS_CONFIGURATION_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto init_value = HADOOP__YARN__REFRESH_SUPER_USER_GROUPS_CONFIGURATION_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_super_user_groups_configuration_request_proto__get_packed_size
-                     (const RefreshSuperUserGroupsConfigurationRequestProto *message)
+size_t hadoop__yarn__refresh_super_user_groups_configuration_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_super_user_groups_configuration_request_proto__pack
-                     (const RefreshSuperUserGroupsConfigurationRequestProto *message,
+size_t hadoop__yarn__refresh_super_user_groups_configuration_request_proto__pack
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_super_user_groups_configuration_request_proto__pack_to_buffer
-                     (const RefreshSuperUserGroupsConfigurationRequestProto *message,
+size_t hadoop__yarn__refresh_super_user_groups_configuration_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshSuperUserGroupsConfigurationRequestProto *
-       refresh_super_user_groups_configuration_request_proto__unpack
+Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *
+       hadoop__yarn__refresh_super_user_groups_configuration_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshSuperUserGroupsConfigurationRequestProto *)
-     protobuf_c_message_unpack (&refresh_super_user_groups_configuration_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_super_user_groups_configuration_request_proto__free_unpacked
-                     (RefreshSuperUserGroupsConfigurationRequestProto *message,
+void   hadoop__yarn__refresh_super_user_groups_configuration_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_super_user_groups_configuration_response_proto__init
-                     (RefreshSuperUserGroupsConfigurationResponseProto         *message)
+void   hadoop__yarn__refresh_super_user_groups_configuration_response_proto__init
+                     (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto         *message)
 {
-  static RefreshSuperUserGroupsConfigurationResponseProto init_value = REFRESH_SUPER_USER_GROUPS_CONFIGURATION_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto init_value = HADOOP__YARN__REFRESH_SUPER_USER_GROUPS_CONFIGURATION_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_super_user_groups_configuration_response_proto__get_packed_size
-                     (const RefreshSuperUserGroupsConfigurationResponseProto *message)
+size_t hadoop__yarn__refresh_super_user_groups_configuration_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_super_user_groups_configuration_response_proto__pack
-                     (const RefreshSuperUserGroupsConfigurationResponseProto *message,
+size_t hadoop__yarn__refresh_super_user_groups_configuration_response_proto__pack
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_super_user_groups_configuration_response_proto__pack_to_buffer
-                     (const RefreshSuperUserGroupsConfigurationResponseProto *message,
+size_t hadoop__yarn__refresh_super_user_groups_configuration_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshSuperUserGroupsConfigurationResponseProto *
-       refresh_super_user_groups_configuration_response_proto__unpack
+Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *
+       hadoop__yarn__refresh_super_user_groups_configuration_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshSuperUserGroupsConfigurationResponseProto *)
-     protobuf_c_message_unpack (&refresh_super_user_groups_configuration_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_super_user_groups_configuration_response_proto__free_unpacked
-                     (RefreshSuperUserGroupsConfigurationResponseProto *message,
+void   hadoop__yarn__refresh_super_user_groups_configuration_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_super_user_groups_configuration_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_user_to_groups_mappings_request_proto__init
-                     (RefreshUserToGroupsMappingsRequestProto         *message)
+void   hadoop__yarn__refresh_user_to_groups_mappings_request_proto__init
+                     (Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto         *message)
 {
-  static RefreshUserToGroupsMappingsRequestProto init_value = REFRESH_USER_TO_GROUPS_MAPPINGS_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto init_value = HADOOP__YARN__REFRESH_USER_TO_GROUPS_MAPPINGS_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_user_to_groups_mappings_request_proto__get_packed_size
-                     (const RefreshUserToGroupsMappingsRequestProto *message)
+size_t hadoop__yarn__refresh_user_to_groups_mappings_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_user_to_groups_mappings_request_proto__pack
-                     (const RefreshUserToGroupsMappingsRequestProto *message,
+size_t hadoop__yarn__refresh_user_to_groups_mappings_request_proto__pack
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_user_to_groups_mappings_request_proto__pack_to_buffer
-                     (const RefreshUserToGroupsMappingsRequestProto *message,
+size_t hadoop__yarn__refresh_user_to_groups_mappings_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshUserToGroupsMappingsRequestProto *
-       refresh_user_to_groups_mappings_request_proto__unpack
+Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *
+       hadoop__yarn__refresh_user_to_groups_mappings_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshUserToGroupsMappingsRequestProto *)
-     protobuf_c_message_unpack (&refresh_user_to_groups_mappings_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_user_to_groups_mappings_request_proto__free_unpacked
-                     (RefreshUserToGroupsMappingsRequestProto *message,
+void   hadoop__yarn__refresh_user_to_groups_mappings_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_user_to_groups_mappings_response_proto__init
-                     (RefreshUserToGroupsMappingsResponseProto         *message)
+void   hadoop__yarn__refresh_user_to_groups_mappings_response_proto__init
+                     (Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto         *message)
 {
-  static RefreshUserToGroupsMappingsResponseProto init_value = REFRESH_USER_TO_GROUPS_MAPPINGS_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto init_value = HADOOP__YARN__REFRESH_USER_TO_GROUPS_MAPPINGS_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_user_to_groups_mappings_response_proto__get_packed_size
-                     (const RefreshUserToGroupsMappingsResponseProto *message)
+size_t hadoop__yarn__refresh_user_to_groups_mappings_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_user_to_groups_mappings_response_proto__pack
-                     (const RefreshUserToGroupsMappingsResponseProto *message,
+size_t hadoop__yarn__refresh_user_to_groups_mappings_response_proto__pack
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_user_to_groups_mappings_response_proto__pack_to_buffer
-                     (const RefreshUserToGroupsMappingsResponseProto *message,
+size_t hadoop__yarn__refresh_user_to_groups_mappings_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshUserToGroupsMappingsResponseProto *
-       refresh_user_to_groups_mappings_response_proto__unpack
+Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *
+       hadoop__yarn__refresh_user_to_groups_mappings_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshUserToGroupsMappingsResponseProto *)
-     protobuf_c_message_unpack (&refresh_user_to_groups_mappings_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_user_to_groups_mappings_response_proto__free_unpacked
-                     (RefreshUserToGroupsMappingsResponseProto *message,
+void   hadoop__yarn__refresh_user_to_groups_mappings_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_user_to_groups_mappings_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_admin_acls_request_proto__init
-                     (RefreshAdminAclsRequestProto         *message)
+void   hadoop__yarn__refresh_admin_acls_request_proto__init
+                     (Hadoop__Yarn__RefreshAdminAclsRequestProto         *message)
 {
-  static RefreshAdminAclsRequestProto init_value = REFRESH_ADMIN_ACLS_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshAdminAclsRequestProto init_value = HADOOP__YARN__REFRESH_ADMIN_ACLS_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_admin_acls_request_proto__get_packed_size
-                     (const RefreshAdminAclsRequestProto *message)
+size_t hadoop__yarn__refresh_admin_acls_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshAdminAclsRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_admin_acls_request_proto__pack
-                     (const RefreshAdminAclsRequestProto *message,
+size_t hadoop__yarn__refresh_admin_acls_request_proto__pack
+                     (const Hadoop__Yarn__RefreshAdminAclsRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_admin_acls_request_proto__pack_to_buffer
-                     (const RefreshAdminAclsRequestProto *message,
+size_t hadoop__yarn__refresh_admin_acls_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshAdminAclsRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshAdminAclsRequestProto *
-       refresh_admin_acls_request_proto__unpack
+Hadoop__Yarn__RefreshAdminAclsRequestProto *
+       hadoop__yarn__refresh_admin_acls_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshAdminAclsRequestProto *)
-     protobuf_c_message_unpack (&refresh_admin_acls_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshAdminAclsRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_admin_acls_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_admin_acls_request_proto__free_unpacked
-                     (RefreshAdminAclsRequestProto *message,
+void   hadoop__yarn__refresh_admin_acls_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshAdminAclsRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_admin_acls_response_proto__init
-                     (RefreshAdminAclsResponseProto         *message)
+void   hadoop__yarn__refresh_admin_acls_response_proto__init
+                     (Hadoop__Yarn__RefreshAdminAclsResponseProto         *message)
 {
-  static RefreshAdminAclsResponseProto init_value = REFRESH_ADMIN_ACLS_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshAdminAclsResponseProto init_value = HADOOP__YARN__REFRESH_ADMIN_ACLS_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_admin_acls_response_proto__get_packed_size
-                     (const RefreshAdminAclsResponseProto *message)
+size_t hadoop__yarn__refresh_admin_acls_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshAdminAclsResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_admin_acls_response_proto__pack
-                     (const RefreshAdminAclsResponseProto *message,
+size_t hadoop__yarn__refresh_admin_acls_response_proto__pack
+                     (const Hadoop__Yarn__RefreshAdminAclsResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_admin_acls_response_proto__pack_to_buffer
-                     (const RefreshAdminAclsResponseProto *message,
+size_t hadoop__yarn__refresh_admin_acls_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshAdminAclsResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshAdminAclsResponseProto *
-       refresh_admin_acls_response_proto__unpack
+Hadoop__Yarn__RefreshAdminAclsResponseProto *
+       hadoop__yarn__refresh_admin_acls_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshAdminAclsResponseProto *)
-     protobuf_c_message_unpack (&refresh_admin_acls_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshAdminAclsResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_admin_acls_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_admin_acls_response_proto__free_unpacked
-                     (RefreshAdminAclsResponseProto *message,
+void   hadoop__yarn__refresh_admin_acls_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshAdminAclsResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_admin_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_admin_acls_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_service_acls_request_proto__init
-                     (RefreshServiceAclsRequestProto         *message)
+void   hadoop__yarn__refresh_service_acls_request_proto__init
+                     (Hadoop__Yarn__RefreshServiceAclsRequestProto         *message)
 {
-  static RefreshServiceAclsRequestProto init_value = REFRESH_SERVICE_ACLS_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__RefreshServiceAclsRequestProto init_value = HADOOP__YARN__REFRESH_SERVICE_ACLS_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_service_acls_request_proto__get_packed_size
-                     (const RefreshServiceAclsRequestProto *message)
+size_t hadoop__yarn__refresh_service_acls_request_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshServiceAclsRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_service_acls_request_proto__pack
-                     (const RefreshServiceAclsRequestProto *message,
+size_t hadoop__yarn__refresh_service_acls_request_proto__pack
+                     (const Hadoop__Yarn__RefreshServiceAclsRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_service_acls_request_proto__pack_to_buffer
-                     (const RefreshServiceAclsRequestProto *message,
+size_t hadoop__yarn__refresh_service_acls_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshServiceAclsRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshServiceAclsRequestProto *
-       refresh_service_acls_request_proto__unpack
+Hadoop__Yarn__RefreshServiceAclsRequestProto *
+       hadoop__yarn__refresh_service_acls_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshServiceAclsRequestProto *)
-     protobuf_c_message_unpack (&refresh_service_acls_request_proto__descriptor,
+  return (Hadoop__Yarn__RefreshServiceAclsRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_service_acls_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_service_acls_request_proto__free_unpacked
-                     (RefreshServiceAclsRequestProto *message,
+void   hadoop__yarn__refresh_service_acls_request_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshServiceAclsRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   refresh_service_acls_response_proto__init
-                     (RefreshServiceAclsResponseProto         *message)
+void   hadoop__yarn__refresh_service_acls_response_proto__init
+                     (Hadoop__Yarn__RefreshServiceAclsResponseProto         *message)
 {
-  static RefreshServiceAclsResponseProto init_value = REFRESH_SERVICE_ACLS_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__RefreshServiceAclsResponseProto init_value = HADOOP__YARN__REFRESH_SERVICE_ACLS_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t refresh_service_acls_response_proto__get_packed_size
-                     (const RefreshServiceAclsResponseProto *message)
+size_t hadoop__yarn__refresh_service_acls_response_proto__get_packed_size
+                     (const Hadoop__Yarn__RefreshServiceAclsResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t refresh_service_acls_response_proto__pack
-                     (const RefreshServiceAclsResponseProto *message,
+size_t hadoop__yarn__refresh_service_acls_response_proto__pack
+                     (const Hadoop__Yarn__RefreshServiceAclsResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t refresh_service_acls_response_proto__pack_to_buffer
-                     (const RefreshServiceAclsResponseProto *message,
+size_t hadoop__yarn__refresh_service_acls_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__RefreshServiceAclsResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-RefreshServiceAclsResponseProto *
-       refresh_service_acls_response_proto__unpack
+Hadoop__Yarn__RefreshServiceAclsResponseProto *
+       hadoop__yarn__refresh_service_acls_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (RefreshServiceAclsResponseProto *)
-     protobuf_c_message_unpack (&refresh_service_acls_response_proto__descriptor,
+  return (Hadoop__Yarn__RefreshServiceAclsResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__refresh_service_acls_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   refresh_service_acls_response_proto__free_unpacked
-                     (RefreshServiceAclsResponseProto *message,
+void   hadoop__yarn__refresh_service_acls_response_proto__free_unpacked
+                     (Hadoop__Yarn__RefreshServiceAclsResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &refresh_service_acls_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__refresh_service_acls_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   get_groups_for_user_request_proto__init
-                     (GetGroupsForUserRequestProto         *message)
+void   hadoop__yarn__get_groups_for_user_request_proto__init
+                     (Hadoop__Yarn__GetGroupsForUserRequestProto         *message)
 {
-  static GetGroupsForUserRequestProto init_value = GET_GROUPS_FOR_USER_REQUEST_PROTO__INIT;
+  static Hadoop__Yarn__GetGroupsForUserRequestProto init_value = HADOOP__YARN__GET_GROUPS_FOR_USER_REQUEST_PROTO__INIT;
   *message = init_value;
 }
-size_t get_groups_for_user_request_proto__get_packed_size
-                     (const GetGroupsForUserRequestProto *message)
+size_t hadoop__yarn__get_groups_for_user_request_proto__get_packed_size
+                     (const Hadoop__Yarn__GetGroupsForUserRequestProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_request_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t get_groups_for_user_request_proto__pack
-                     (const GetGroupsForUserRequestProto *message,
+size_t hadoop__yarn__get_groups_for_user_request_proto__pack
+                     (const Hadoop__Yarn__GetGroupsForUserRequestProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_request_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t get_groups_for_user_request_proto__pack_to_buffer
-                     (const GetGroupsForUserRequestProto *message,
+size_t hadoop__yarn__get_groups_for_user_request_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetGroupsForUserRequestProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_request_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-GetGroupsForUserRequestProto *
-       get_groups_for_user_request_proto__unpack
+Hadoop__Yarn__GetGroupsForUserRequestProto *
+       hadoop__yarn__get_groups_for_user_request_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (GetGroupsForUserRequestProto *)
-     protobuf_c_message_unpack (&get_groups_for_user_request_proto__descriptor,
+  return (Hadoop__Yarn__GetGroupsForUserRequestProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__get_groups_for_user_request_proto__descriptor,
                                 allocator, len, data);
 }
-void   get_groups_for_user_request_proto__free_unpacked
-                     (GetGroupsForUserRequestProto *message,
+void   hadoop__yarn__get_groups_for_user_request_proto__free_unpacked
+                     (Hadoop__Yarn__GetGroupsForUserRequestProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_request_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_request_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   get_groups_for_user_response_proto__init
-                     (GetGroupsForUserResponseProto         *message)
+void   hadoop__yarn__get_groups_for_user_response_proto__init
+                     (Hadoop__Yarn__GetGroupsForUserResponseProto         *message)
 {
-  static GetGroupsForUserResponseProto init_value = GET_GROUPS_FOR_USER_RESPONSE_PROTO__INIT;
+  static Hadoop__Yarn__GetGroupsForUserResponseProto init_value = HADOOP__YARN__GET_GROUPS_FOR_USER_RESPONSE_PROTO__INIT;
   *message = init_value;
 }
-size_t get_groups_for_user_response_proto__get_packed_size
-                     (const GetGroupsForUserResponseProto *message)
+size_t hadoop__yarn__get_groups_for_user_response_proto__get_packed_size
+                     (const Hadoop__Yarn__GetGroupsForUserResponseProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_response_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t get_groups_for_user_response_proto__pack
-                     (const GetGroupsForUserResponseProto *message,
+size_t hadoop__yarn__get_groups_for_user_response_proto__pack
+                     (const Hadoop__Yarn__GetGroupsForUserResponseProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_response_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t get_groups_for_user_response_proto__pack_to_buffer
-                     (const GetGroupsForUserResponseProto *message,
+size_t hadoop__yarn__get_groups_for_user_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__GetGroupsForUserResponseProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_response_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-GetGroupsForUserResponseProto *
-       get_groups_for_user_response_proto__unpack
+Hadoop__Yarn__GetGroupsForUserResponseProto *
+       hadoop__yarn__get_groups_for_user_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (GetGroupsForUserResponseProto *)
-     protobuf_c_message_unpack (&get_groups_for_user_response_proto__descriptor,
+  return (Hadoop__Yarn__GetGroupsForUserResponseProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__get_groups_for_user_response_proto__descriptor,
                                 allocator, len, data);
 }
-void   get_groups_for_user_response_proto__free_unpacked
-                     (GetGroupsForUserResponseProto *message,
+void   hadoop__yarn__get_groups_for_user_response_proto__free_unpacked
+                     (Hadoop__Yarn__GetGroupsForUserResponseProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &get_groups_for_user_response_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__get_groups_for_user_response_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_state_data_proto__init
-                     (ApplicationStateDataProto         *message)
+void   hadoop__yarn__application_state_data_proto__init
+                     (Hadoop__Yarn__ApplicationStateDataProto         *message)
 {
-  static ApplicationStateDataProto init_value = APPLICATION_STATE_DATA_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationStateDataProto init_value = HADOOP__YARN__APPLICATION_STATE_DATA_PROTO__INIT;
   *message = init_value;
 }
-size_t application_state_data_proto__get_packed_size
-                     (const ApplicationStateDataProto *message)
+size_t hadoop__yarn__application_state_data_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationStateDataProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_state_data_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_state_data_proto__pack
-                     (const ApplicationStateDataProto *message,
+size_t hadoop__yarn__application_state_data_proto__pack
+                     (const Hadoop__Yarn__ApplicationStateDataProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_state_data_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_state_data_proto__pack_to_buffer
-                     (const ApplicationStateDataProto *message,
+size_t hadoop__yarn__application_state_data_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationStateDataProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_state_data_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationStateDataProto *
-       application_state_data_proto__unpack
+Hadoop__Yarn__ApplicationStateDataProto *
+       hadoop__yarn__application_state_data_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationStateDataProto *)
-     protobuf_c_message_unpack (&application_state_data_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationStateDataProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_state_data_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_state_data_proto__free_unpacked
-                     (ApplicationStateDataProto *message,
+void   hadoop__yarn__application_state_data_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationStateDataProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_state_data_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-void   application_attempt_state_data_proto__init
-                     (ApplicationAttemptStateDataProto         *message)
+void   hadoop__yarn__application_attempt_state_data_proto__init
+                     (Hadoop__Yarn__ApplicationAttemptStateDataProto         *message)
 {
-  static ApplicationAttemptStateDataProto init_value = APPLICATION_ATTEMPT_STATE_DATA_PROTO__INIT;
+  static Hadoop__Yarn__ApplicationAttemptStateDataProto init_value = HADOOP__YARN__APPLICATION_ATTEMPT_STATE_DATA_PROTO__INIT;
   *message = init_value;
 }
-size_t application_attempt_state_data_proto__get_packed_size
-                     (const ApplicationAttemptStateDataProto *message)
+size_t hadoop__yarn__application_attempt_state_data_proto__get_packed_size
+                     (const Hadoop__Yarn__ApplicationAttemptStateDataProto *message)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_state_data_proto__descriptor);
   return protobuf_c_message_get_packed_size ((const ProtobufCMessage*)(message));
 }
-size_t application_attempt_state_data_proto__pack
-                     (const ApplicationAttemptStateDataProto *message,
+size_t hadoop__yarn__application_attempt_state_data_proto__pack
+                     (const Hadoop__Yarn__ApplicationAttemptStateDataProto *message,
                       uint8_t       *out)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_state_data_proto__descriptor);
   return protobuf_c_message_pack ((const ProtobufCMessage*)message, out);
 }
-size_t application_attempt_state_data_proto__pack_to_buffer
-                     (const ApplicationAttemptStateDataProto *message,
+size_t hadoop__yarn__application_attempt_state_data_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ApplicationAttemptStateDataProto *message,
                       ProtobufCBuffer *buffer)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_state_data_proto__descriptor);
   return protobuf_c_message_pack_to_buffer ((const ProtobufCMessage*)message, buffer);
 }
-ApplicationAttemptStateDataProto *
-       application_attempt_state_data_proto__unpack
+Hadoop__Yarn__ApplicationAttemptStateDataProto *
+       hadoop__yarn__application_attempt_state_data_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data)
 {
-  return (ApplicationAttemptStateDataProto *)
-     protobuf_c_message_unpack (&application_attempt_state_data_proto__descriptor,
+  return (Hadoop__Yarn__ApplicationAttemptStateDataProto *)
+     protobuf_c_message_unpack (&hadoop__yarn__application_attempt_state_data_proto__descriptor,
                                 allocator, len, data);
 }
-void   application_attempt_state_data_proto__free_unpacked
-                     (ApplicationAttemptStateDataProto *message,
+void   hadoop__yarn__application_attempt_state_data_proto__free_unpacked
+                     (Hadoop__Yarn__ApplicationAttemptStateDataProto *message,
                       ProtobufCAllocator *allocator)
 {
-  PROTOBUF_C_ASSERT (message->base.descriptor == &application_attempt_state_data_proto__descriptor);
+  PROTOBUF_C_ASSERT (message->base.descriptor == &hadoop__yarn__application_attempt_state_data_proto__descriptor);
   protobuf_c_message_free_unpacked ((ProtobufCMessage*)message, allocator);
 }
-#define refresh_queues_request_proto__field_descriptors NULL
-#define refresh_queues_request_proto__field_indices_by_name NULL
-#define refresh_queues_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_queues_request_proto__descriptor =
+#define hadoop__yarn__refresh_queues_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_queues_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_queues_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_queues_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshQueuesRequestProto",
   "RefreshQueuesRequestProto",
-  "RefreshQueuesRequestProto",
-  "RefreshQueuesRequestProto",
-  "",
-  sizeof(RefreshQueuesRequestProto),
+  "Hadoop__Yarn__RefreshQueuesRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshQueuesRequestProto),
   0,
-  refresh_queues_request_proto__field_descriptors,
-  refresh_queues_request_proto__field_indices_by_name,
-  0,  refresh_queues_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_queues_request_proto__init,
+  hadoop__yarn__refresh_queues_request_proto__field_descriptors,
+  hadoop__yarn__refresh_queues_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_queues_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_queues_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_queues_response_proto__field_descriptors NULL
-#define refresh_queues_response_proto__field_indices_by_name NULL
-#define refresh_queues_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_queues_response_proto__descriptor =
+#define hadoop__yarn__refresh_queues_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_queues_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_queues_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_queues_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshQueuesResponseProto",
   "RefreshQueuesResponseProto",
-  "RefreshQueuesResponseProto",
-  "RefreshQueuesResponseProto",
-  "",
-  sizeof(RefreshQueuesResponseProto),
+  "Hadoop__Yarn__RefreshQueuesResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshQueuesResponseProto),
   0,
-  refresh_queues_response_proto__field_descriptors,
-  refresh_queues_response_proto__field_indices_by_name,
-  0,  refresh_queues_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_queues_response_proto__init,
+  hadoop__yarn__refresh_queues_response_proto__field_descriptors,
+  hadoop__yarn__refresh_queues_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_queues_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_queues_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_nodes_request_proto__field_descriptors NULL
-#define refresh_nodes_request_proto__field_indices_by_name NULL
-#define refresh_nodes_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_nodes_request_proto__descriptor =
+#define hadoop__yarn__refresh_nodes_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_nodes_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_nodes_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_nodes_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshNodesRequestProto",
   "RefreshNodesRequestProto",
-  "RefreshNodesRequestProto",
-  "RefreshNodesRequestProto",
-  "",
-  sizeof(RefreshNodesRequestProto),
+  "Hadoop__Yarn__RefreshNodesRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshNodesRequestProto),
   0,
-  refresh_nodes_request_proto__field_descriptors,
-  refresh_nodes_request_proto__field_indices_by_name,
-  0,  refresh_nodes_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_nodes_request_proto__init,
+  hadoop__yarn__refresh_nodes_request_proto__field_descriptors,
+  hadoop__yarn__refresh_nodes_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_nodes_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_nodes_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_nodes_response_proto__field_descriptors NULL
-#define refresh_nodes_response_proto__field_indices_by_name NULL
-#define refresh_nodes_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_nodes_response_proto__descriptor =
+#define hadoop__yarn__refresh_nodes_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_nodes_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_nodes_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_nodes_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshNodesResponseProto",
   "RefreshNodesResponseProto",
-  "RefreshNodesResponseProto",
-  "RefreshNodesResponseProto",
-  "",
-  sizeof(RefreshNodesResponseProto),
+  "Hadoop__Yarn__RefreshNodesResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshNodesResponseProto),
   0,
-  refresh_nodes_response_proto__field_descriptors,
-  refresh_nodes_response_proto__field_indices_by_name,
-  0,  refresh_nodes_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_nodes_response_proto__init,
+  hadoop__yarn__refresh_nodes_response_proto__field_descriptors,
+  hadoop__yarn__refresh_nodes_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_nodes_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_nodes_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_super_user_groups_configuration_request_proto__field_descriptors NULL
-#define refresh_super_user_groups_configuration_request_proto__field_indices_by_name NULL
-#define refresh_super_user_groups_configuration_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_super_user_groups_configuration_request_proto__descriptor =
+#define hadoop__yarn__refresh_super_user_groups_configuration_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_super_user_groups_configuration_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_super_user_groups_configuration_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_super_user_groups_configuration_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshSuperUserGroupsConfigurationRequestProto",
   "RefreshSuperUserGroupsConfigurationRequestProto",
-  "RefreshSuperUserGroupsConfigurationRequestProto",
-  "RefreshSuperUserGroupsConfigurationRequestProto",
-  "",
-  sizeof(RefreshSuperUserGroupsConfigurationRequestProto),
+  "Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshSuperUserGroupsConfigurationRequestProto),
   0,
-  refresh_super_user_groups_configuration_request_proto__field_descriptors,
-  refresh_super_user_groups_configuration_request_proto__field_indices_by_name,
-  0,  refresh_super_user_groups_configuration_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_super_user_groups_configuration_request_proto__init,
+  hadoop__yarn__refresh_super_user_groups_configuration_request_proto__field_descriptors,
+  hadoop__yarn__refresh_super_user_groups_configuration_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_super_user_groups_configuration_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_super_user_groups_configuration_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_super_user_groups_configuration_response_proto__field_descriptors NULL
-#define refresh_super_user_groups_configuration_response_proto__field_indices_by_name NULL
-#define refresh_super_user_groups_configuration_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_super_user_groups_configuration_response_proto__descriptor =
+#define hadoop__yarn__refresh_super_user_groups_configuration_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_super_user_groups_configuration_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_super_user_groups_configuration_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_super_user_groups_configuration_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshSuperUserGroupsConfigurationResponseProto",
   "RefreshSuperUserGroupsConfigurationResponseProto",
-  "RefreshSuperUserGroupsConfigurationResponseProto",
-  "RefreshSuperUserGroupsConfigurationResponseProto",
-  "",
-  sizeof(RefreshSuperUserGroupsConfigurationResponseProto),
+  "Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshSuperUserGroupsConfigurationResponseProto),
   0,
-  refresh_super_user_groups_configuration_response_proto__field_descriptors,
-  refresh_super_user_groups_configuration_response_proto__field_indices_by_name,
-  0,  refresh_super_user_groups_configuration_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_super_user_groups_configuration_response_proto__init,
+  hadoop__yarn__refresh_super_user_groups_configuration_response_proto__field_descriptors,
+  hadoop__yarn__refresh_super_user_groups_configuration_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_super_user_groups_configuration_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_super_user_groups_configuration_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_user_to_groups_mappings_request_proto__field_descriptors NULL
-#define refresh_user_to_groups_mappings_request_proto__field_indices_by_name NULL
-#define refresh_user_to_groups_mappings_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_user_to_groups_mappings_request_proto__descriptor =
+#define hadoop__yarn__refresh_user_to_groups_mappings_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_user_to_groups_mappings_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_user_to_groups_mappings_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_user_to_groups_mappings_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshUserToGroupsMappingsRequestProto",
   "RefreshUserToGroupsMappingsRequestProto",
-  "RefreshUserToGroupsMappingsRequestProto",
-  "RefreshUserToGroupsMappingsRequestProto",
-  "",
-  sizeof(RefreshUserToGroupsMappingsRequestProto),
+  "Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshUserToGroupsMappingsRequestProto),
   0,
-  refresh_user_to_groups_mappings_request_proto__field_descriptors,
-  refresh_user_to_groups_mappings_request_proto__field_indices_by_name,
-  0,  refresh_user_to_groups_mappings_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_user_to_groups_mappings_request_proto__init,
+  hadoop__yarn__refresh_user_to_groups_mappings_request_proto__field_descriptors,
+  hadoop__yarn__refresh_user_to_groups_mappings_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_user_to_groups_mappings_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_user_to_groups_mappings_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_user_to_groups_mappings_response_proto__field_descriptors NULL
-#define refresh_user_to_groups_mappings_response_proto__field_indices_by_name NULL
-#define refresh_user_to_groups_mappings_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_user_to_groups_mappings_response_proto__descriptor =
+#define hadoop__yarn__refresh_user_to_groups_mappings_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_user_to_groups_mappings_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_user_to_groups_mappings_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_user_to_groups_mappings_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshUserToGroupsMappingsResponseProto",
   "RefreshUserToGroupsMappingsResponseProto",
-  "RefreshUserToGroupsMappingsResponseProto",
-  "RefreshUserToGroupsMappingsResponseProto",
-  "",
-  sizeof(RefreshUserToGroupsMappingsResponseProto),
+  "Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshUserToGroupsMappingsResponseProto),
   0,
-  refresh_user_to_groups_mappings_response_proto__field_descriptors,
-  refresh_user_to_groups_mappings_response_proto__field_indices_by_name,
-  0,  refresh_user_to_groups_mappings_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_user_to_groups_mappings_response_proto__init,
+  hadoop__yarn__refresh_user_to_groups_mappings_response_proto__field_descriptors,
+  hadoop__yarn__refresh_user_to_groups_mappings_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_user_to_groups_mappings_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_user_to_groups_mappings_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_admin_acls_request_proto__field_descriptors NULL
-#define refresh_admin_acls_request_proto__field_indices_by_name NULL
-#define refresh_admin_acls_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_admin_acls_request_proto__descriptor =
+#define hadoop__yarn__refresh_admin_acls_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_admin_acls_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_admin_acls_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_admin_acls_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshAdminAclsRequestProto",
   "RefreshAdminAclsRequestProto",
-  "RefreshAdminAclsRequestProto",
-  "RefreshAdminAclsRequestProto",
-  "",
-  sizeof(RefreshAdminAclsRequestProto),
+  "Hadoop__Yarn__RefreshAdminAclsRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshAdminAclsRequestProto),
   0,
-  refresh_admin_acls_request_proto__field_descriptors,
-  refresh_admin_acls_request_proto__field_indices_by_name,
-  0,  refresh_admin_acls_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_admin_acls_request_proto__init,
+  hadoop__yarn__refresh_admin_acls_request_proto__field_descriptors,
+  hadoop__yarn__refresh_admin_acls_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_admin_acls_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_admin_acls_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_admin_acls_response_proto__field_descriptors NULL
-#define refresh_admin_acls_response_proto__field_indices_by_name NULL
-#define refresh_admin_acls_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_admin_acls_response_proto__descriptor =
+#define hadoop__yarn__refresh_admin_acls_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_admin_acls_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_admin_acls_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_admin_acls_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshAdminAclsResponseProto",
   "RefreshAdminAclsResponseProto",
-  "RefreshAdminAclsResponseProto",
-  "RefreshAdminAclsResponseProto",
-  "",
-  sizeof(RefreshAdminAclsResponseProto),
+  "Hadoop__Yarn__RefreshAdminAclsResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshAdminAclsResponseProto),
   0,
-  refresh_admin_acls_response_proto__field_descriptors,
-  refresh_admin_acls_response_proto__field_indices_by_name,
-  0,  refresh_admin_acls_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_admin_acls_response_proto__init,
+  hadoop__yarn__refresh_admin_acls_response_proto__field_descriptors,
+  hadoop__yarn__refresh_admin_acls_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_admin_acls_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_admin_acls_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_service_acls_request_proto__field_descriptors NULL
-#define refresh_service_acls_request_proto__field_indices_by_name NULL
-#define refresh_service_acls_request_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_service_acls_request_proto__descriptor =
+#define hadoop__yarn__refresh_service_acls_request_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_service_acls_request_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_service_acls_request_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_service_acls_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshServiceAclsRequestProto",
   "RefreshServiceAclsRequestProto",
-  "RefreshServiceAclsRequestProto",
-  "RefreshServiceAclsRequestProto",
-  "",
-  sizeof(RefreshServiceAclsRequestProto),
+  "Hadoop__Yarn__RefreshServiceAclsRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshServiceAclsRequestProto),
   0,
-  refresh_service_acls_request_proto__field_descriptors,
-  refresh_service_acls_request_proto__field_indices_by_name,
-  0,  refresh_service_acls_request_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_service_acls_request_proto__init,
+  hadoop__yarn__refresh_service_acls_request_proto__field_descriptors,
+  hadoop__yarn__refresh_service_acls_request_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_service_acls_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_service_acls_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-#define refresh_service_acls_response_proto__field_descriptors NULL
-#define refresh_service_acls_response_proto__field_indices_by_name NULL
-#define refresh_service_acls_response_proto__number_ranges NULL
-const ProtobufCMessageDescriptor refresh_service_acls_response_proto__descriptor =
+#define hadoop__yarn__refresh_service_acls_response_proto__field_descriptors NULL
+#define hadoop__yarn__refresh_service_acls_response_proto__field_indices_by_name NULL
+#define hadoop__yarn__refresh_service_acls_response_proto__number_ranges NULL
+const ProtobufCMessageDescriptor hadoop__yarn__refresh_service_acls_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.RefreshServiceAclsResponseProto",
   "RefreshServiceAclsResponseProto",
-  "RefreshServiceAclsResponseProto",
-  "RefreshServiceAclsResponseProto",
-  "",
-  sizeof(RefreshServiceAclsResponseProto),
+  "Hadoop__Yarn__RefreshServiceAclsResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__RefreshServiceAclsResponseProto),
   0,
-  refresh_service_acls_response_proto__field_descriptors,
-  refresh_service_acls_response_proto__field_indices_by_name,
-  0,  refresh_service_acls_response_proto__number_ranges,
-  (ProtobufCMessageInit) refresh_service_acls_response_proto__init,
+  hadoop__yarn__refresh_service_acls_response_proto__field_descriptors,
+  hadoop__yarn__refresh_service_acls_response_proto__field_indices_by_name,
+  0,  hadoop__yarn__refresh_service_acls_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__refresh_service_acls_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor get_groups_for_user_request_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__get_groups_for_user_request_proto__field_descriptors[1] =
 {
   {
     "user",
@@ -918,83 +918,83 @@ static const ProtobufCFieldDescriptor get_groups_for_user_request_proto__field_d
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(GetGroupsForUserRequestProto, user),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__GetGroupsForUserRequestProto, user),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned get_groups_for_user_request_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__get_groups_for_user_request_proto__field_indices_by_name[] = {
   0,   /* field[0] = user */
 };
-static const ProtobufCIntRange get_groups_for_user_request_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__get_groups_for_user_request_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor get_groups_for_user_request_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__get_groups_for_user_request_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.GetGroupsForUserRequestProto",
   "GetGroupsForUserRequestProto",
-  "GetGroupsForUserRequestProto",
-  "GetGroupsForUserRequestProto",
-  "",
-  sizeof(GetGroupsForUserRequestProto),
+  "Hadoop__Yarn__GetGroupsForUserRequestProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__GetGroupsForUserRequestProto),
   1,
-  get_groups_for_user_request_proto__field_descriptors,
-  get_groups_for_user_request_proto__field_indices_by_name,
-  1,  get_groups_for_user_request_proto__number_ranges,
-  (ProtobufCMessageInit) get_groups_for_user_request_proto__init,
+  hadoop__yarn__get_groups_for_user_request_proto__field_descriptors,
+  hadoop__yarn__get_groups_for_user_request_proto__field_indices_by_name,
+  1,  hadoop__yarn__get_groups_for_user_request_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__get_groups_for_user_request_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor get_groups_for_user_response_proto__field_descriptors[1] =
+static const ProtobufCFieldDescriptor hadoop__yarn__get_groups_for_user_response_proto__field_descriptors[1] =
 {
   {
     "groups",
     1,
     PROTOBUF_C_LABEL_REPEATED,
     PROTOBUF_C_TYPE_STRING,
-    PROTOBUF_C_OFFSETOF(GetGroupsForUserResponseProto, n_groups),
-    PROTOBUF_C_OFFSETOF(GetGroupsForUserResponseProto, groups),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__GetGroupsForUserResponseProto, n_groups),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__GetGroupsForUserResponseProto, groups),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned get_groups_for_user_response_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__get_groups_for_user_response_proto__field_indices_by_name[] = {
   0,   /* field[0] = groups */
 };
-static const ProtobufCIntRange get_groups_for_user_response_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__get_groups_for_user_response_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 1 }
 };
-const ProtobufCMessageDescriptor get_groups_for_user_response_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__get_groups_for_user_response_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.GetGroupsForUserResponseProto",
   "GetGroupsForUserResponseProto",
-  "GetGroupsForUserResponseProto",
-  "GetGroupsForUserResponseProto",
-  "",
-  sizeof(GetGroupsForUserResponseProto),
+  "Hadoop__Yarn__GetGroupsForUserResponseProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__GetGroupsForUserResponseProto),
   1,
-  get_groups_for_user_response_proto__field_descriptors,
-  get_groups_for_user_response_proto__field_indices_by_name,
-  1,  get_groups_for_user_response_proto__number_ranges,
-  (ProtobufCMessageInit) get_groups_for_user_response_proto__init,
+  hadoop__yarn__get_groups_for_user_response_proto__field_descriptors,
+  hadoop__yarn__get_groups_for_user_response_proto__field_indices_by_name,
+  1,  hadoop__yarn__get_groups_for_user_response_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__get_groups_for_user_response_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor application_state_data_proto__field_descriptors[3] =
+static const ProtobufCFieldDescriptor hadoop__yarn__application_state_data_proto__field_descriptors[3] =
 {
   {
     "submit_time",
     1,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_INT64,
-    PROTOBUF_C_OFFSETOF(ApplicationStateDataProto, has_submit_time),
-    PROTOBUF_C_OFFSETOF(ApplicationStateDataProto, submit_time),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationStateDataProto, has_submit_time),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationStateDataProto, submit_time),
     NULL,
     NULL,
     0,            /* packed */
@@ -1006,8 +1006,8 @@ static const ProtobufCFieldDescriptor application_state_data_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationStateDataProto, application_submission_context),
-    &application_submission_context_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationStateDataProto, application_submission_context),
+    &hadoop__yarn__application_submission_context_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1018,39 +1018,39 @@ static const ProtobufCFieldDescriptor application_state_data_proto__field_descri
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationStateDataProto, user),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationStateDataProto, user),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_state_data_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_state_data_proto__field_indices_by_name[] = {
   1,   /* field[1] = application_submission_context */
   0,   /* field[0] = submit_time */
   2,   /* field[2] = user */
 };
-static const ProtobufCIntRange application_state_data_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_state_data_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 3 }
 };
-const ProtobufCMessageDescriptor application_state_data_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_state_data_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationStateDataProto",
   "ApplicationStateDataProto",
-  "ApplicationStateDataProto",
-  "ApplicationStateDataProto",
-  "",
-  sizeof(ApplicationStateDataProto),
+  "Hadoop__Yarn__ApplicationStateDataProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationStateDataProto),
   3,
-  application_state_data_proto__field_descriptors,
-  application_state_data_proto__field_indices_by_name,
-  1,  application_state_data_proto__number_ranges,
-  (ProtobufCMessageInit) application_state_data_proto__init,
+  hadoop__yarn__application_state_data_proto__field_descriptors,
+  hadoop__yarn__application_state_data_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_state_data_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_state_data_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCFieldDescriptor application_attempt_state_data_proto__field_descriptors[3] =
+static const ProtobufCFieldDescriptor hadoop__yarn__application_attempt_state_data_proto__field_descriptors[3] =
 {
   {
     "attemptId",
@@ -1058,8 +1058,8 @@ static const ProtobufCFieldDescriptor application_attempt_state_data_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptStateDataProto, attemptid),
-    &application_attempt_id_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptStateDataProto, attemptid),
+    &hadoop__yarn__application_attempt_id_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1070,8 +1070,8 @@ static const ProtobufCFieldDescriptor application_attempt_state_data_proto__fiel
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_MESSAGE,
     0,   /* quantifier_offset */
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptStateDataProto, master_container),
-    &container_proto__descriptor,
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptStateDataProto, master_container),
+    &hadoop__yarn__container_proto__descriptor,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
@@ -1081,36 +1081,36 @@ static const ProtobufCFieldDescriptor application_attempt_state_data_proto__fiel
     3,
     PROTOBUF_C_LABEL_OPTIONAL,
     PROTOBUF_C_TYPE_BYTES,
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptStateDataProto, has_app_attempt_tokens),
-    PROTOBUF_C_OFFSETOF(ApplicationAttemptStateDataProto, app_attempt_tokens),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptStateDataProto, has_app_attempt_tokens),
+    PROTOBUF_C_OFFSETOF(Hadoop__Yarn__ApplicationAttemptStateDataProto, app_attempt_tokens),
     NULL,
     NULL,
     0,            /* packed */
     0,NULL,NULL    /* reserved1,reserved2, etc */
   },
 };
-static const unsigned application_attempt_state_data_proto__field_indices_by_name[] = {
+static const unsigned hadoop__yarn__application_attempt_state_data_proto__field_indices_by_name[] = {
   2,   /* field[2] = app_attempt_tokens */
   0,   /* field[0] = attemptId */
   1,   /* field[1] = master_container */
 };
-static const ProtobufCIntRange application_attempt_state_data_proto__number_ranges[1 + 1] =
+static const ProtobufCIntRange hadoop__yarn__application_attempt_state_data_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
   { 0, 3 }
 };
-const ProtobufCMessageDescriptor application_attempt_state_data_proto__descriptor =
+const ProtobufCMessageDescriptor hadoop__yarn__application_attempt_state_data_proto__descriptor =
 {
   PROTOBUF_C_MESSAGE_DESCRIPTOR_MAGIC,
+  "hadoop.yarn.ApplicationAttemptStateDataProto",
   "ApplicationAttemptStateDataProto",
-  "ApplicationAttemptStateDataProto",
-  "ApplicationAttemptStateDataProto",
-  "",
-  sizeof(ApplicationAttemptStateDataProto),
+  "Hadoop__Yarn__ApplicationAttemptStateDataProto",
+  "hadoop.yarn",
+  sizeof(Hadoop__Yarn__ApplicationAttemptStateDataProto),
   3,
-  application_attempt_state_data_proto__field_descriptors,
-  application_attempt_state_data_proto__field_indices_by_name,
-  1,  application_attempt_state_data_proto__number_ranges,
-  (ProtobufCMessageInit) application_attempt_state_data_proto__init,
+  hadoop__yarn__application_attempt_state_data_proto__field_descriptors,
+  hadoop__yarn__application_attempt_state_data_proto__field_indices_by_name,
+  1,  hadoop__yarn__application_attempt_state_data_proto__number_ranges,
+  (ProtobufCMessageInit) hadoop__yarn__application_attempt_state_data_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };

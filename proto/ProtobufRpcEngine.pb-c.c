@@ -65,7 +65,7 @@ static const ProtobufCFieldDescriptor hadoop__common__request_header_proto__fiel
   },
   {
     "declaringClassProtocolName",
-    3,
+    2,
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
@@ -77,7 +77,7 @@ static const ProtobufCFieldDescriptor hadoop__common__request_header_proto__fiel
   },
   {
     "clientProtocolVersion",
-    4,
+    3,
     PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_UINT64,
     0,   /* quantifier_offset */
@@ -93,10 +93,9 @@ static const unsigned hadoop__common__request_header_proto__field_indices_by_nam
   1,   /* field[1] = declaringClassProtocolName */
   0,   /* field[0] = methodName */
 };
-static const ProtobufCIntRange hadoop__common__request_header_proto__number_ranges[2 + 1] =
+static const ProtobufCIntRange hadoop__common__request_header_proto__number_ranges[1 + 1] =
 {
   { 1, 0 },
-  { 3, 1 },
   { 0, 3 }
 };
 const ProtobufCMessageDescriptor hadoop__common__request_header_proto__descriptor =
@@ -110,7 +109,7 @@ const ProtobufCMessageDescriptor hadoop__common__request_header_proto__descripto
   3,
   hadoop__common__request_header_proto__field_descriptors,
   hadoop__common__request_header_proto__field_indices_by_name,
-  2,  hadoop__common__request_header_proto__number_ranges,
+  1,  hadoop__common__request_header_proto__number_ranges,
   (ProtobufCMessageInit) hadoop__common__request_header_proto__init,
   NULL,NULL,NULL    /* reserved[123] */
 };

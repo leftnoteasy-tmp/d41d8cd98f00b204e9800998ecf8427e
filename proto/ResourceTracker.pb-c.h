@@ -21,40 +21,40 @@ PROTOBUF_C_BEGIN_DECLS
 
 /* --- services --- */
 
-typedef struct _ResourceTrackerService_Service ResourceTrackerService_Service;
-struct _ResourceTrackerService_Service
+typedef struct _Hadoop__Yarn__ResourceTrackerService_Service Hadoop__Yarn__ResourceTrackerService_Service;
+struct _Hadoop__Yarn__ResourceTrackerService_Service
 {
   ProtobufCService base;
-  void (*register_node_manager)(ResourceTrackerService_Service *service,
-                                const RegisterNodeManagerRequestProto *input,
-                                RegisterNodeManagerResponseProto_Closure closure,
+  void (*register_node_manager)(Hadoop__Yarn__ResourceTrackerService_Service *service,
+                                const Hadoop__Yarn__RegisterNodeManagerRequestProto *input,
+                                Hadoop__Yarn__RegisterNodeManagerResponseProto_Closure closure,
                                 void *closure_data);
-  void (*node_heartbeat)(ResourceTrackerService_Service *service,
-                         const NodeHeartbeatRequestProto *input,
-                         NodeHeartbeatResponseProto_Closure closure,
+  void (*node_heartbeat)(Hadoop__Yarn__ResourceTrackerService_Service *service,
+                         const Hadoop__Yarn__NodeHeartbeatRequestProto *input,
+                         Hadoop__Yarn__NodeHeartbeatResponseProto_Closure closure,
                          void *closure_data);
 };
-typedef void (*ResourceTrackerService_ServiceDestroy)(ResourceTrackerService_Service *);
-void resource_tracker_service__init (ResourceTrackerService_Service *service,
-                                     ResourceTrackerService_ServiceDestroy destroy);
-#define RESOURCE_TRACKER_SERVICE__BASE_INIT \
-    { &resource_tracker_service__descriptor, protobuf_c_service_invoke_internal, NULL }
-#define RESOURCE_TRACKER_SERVICE__INIT(function_prefix__) \
-    { RESOURCE_TRACKER_SERVICE__BASE_INIT,\
+typedef void (*Hadoop__Yarn__ResourceTrackerService_ServiceDestroy)(Hadoop__Yarn__ResourceTrackerService_Service *);
+void hadoop__yarn__resource_tracker_service__init (Hadoop__Yarn__ResourceTrackerService_Service *service,
+                                                   Hadoop__Yarn__ResourceTrackerService_ServiceDestroy destroy);
+#define HADOOP__YARN__RESOURCE_TRACKER_SERVICE__BASE_INIT \
+    { &hadoop__yarn__resource_tracker_service__descriptor, protobuf_c_service_invoke_internal, NULL }
+#define HADOOP__YARN__RESOURCE_TRACKER_SERVICE__INIT(function_prefix__) \
+    { HADOOP__YARN__RESOURCE_TRACKER_SERVICE__BASE_INIT,\
       function_prefix__ ## register_node_manager,\
       function_prefix__ ## node_heartbeat  }
-void resource_tracker_service__register_node_manager(ProtobufCService *service,
-                                                     const RegisterNodeManagerRequestProto *input,
-                                                     RegisterNodeManagerResponseProto_Closure closure,
-                                                     void *closure_data);
-void resource_tracker_service__node_heartbeat(ProtobufCService *service,
-                                              const NodeHeartbeatRequestProto *input,
-                                              NodeHeartbeatResponseProto_Closure closure,
-                                              void *closure_data);
+void hadoop__yarn__resource_tracker_service__register_node_manager(ProtobufCService *service,
+                                                                   const Hadoop__Yarn__RegisterNodeManagerRequestProto *input,
+                                                                   Hadoop__Yarn__RegisterNodeManagerResponseProto_Closure closure,
+                                                                   void *closure_data);
+void hadoop__yarn__resource_tracker_service__node_heartbeat(ProtobufCService *service,
+                                                            const Hadoop__Yarn__NodeHeartbeatRequestProto *input,
+                                                            Hadoop__Yarn__NodeHeartbeatResponseProto_Closure closure,
+                                                            void *closure_data);
 
 /* --- descriptors --- */
 
-extern const ProtobufCServiceDescriptor resource_tracker_service__descriptor;
+extern const ProtobufCServiceDescriptor hadoop__yarn__resource_tracker_service__descriptor;
 
 PROTOBUF_C_END_DECLS
 

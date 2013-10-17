@@ -9,167 +9,167 @@ PROTOBUF_C_BEGIN_DECLS
 
 #include "yarn_protos.pb-c.h"
 
-typedef struct _LocalResourceStatusProto LocalResourceStatusProto;
-typedef struct _LocalizerStatusProto LocalizerStatusProto;
-typedef struct _ResourceLocalizationSpecProto ResourceLocalizationSpecProto;
-typedef struct _LocalizerHeartbeatResponseProto LocalizerHeartbeatResponseProto;
+typedef struct _Hadoop__Yarn__LocalResourceStatusProto Hadoop__Yarn__LocalResourceStatusProto;
+typedef struct _Hadoop__Yarn__LocalizerStatusProto Hadoop__Yarn__LocalizerStatusProto;
+typedef struct _Hadoop__Yarn__ResourceLocalizationSpecProto Hadoop__Yarn__ResourceLocalizationSpecProto;
+typedef struct _Hadoop__Yarn__LocalizerHeartbeatResponseProto Hadoop__Yarn__LocalizerHeartbeatResponseProto;
 
 
 /* --- enums --- */
 
-typedef enum _ResourceStatusTypeProto {
-  RESOURCE_STATUS_TYPE_PROTO__FETCH_PENDING = 1,
-  RESOURCE_STATUS_TYPE_PROTO__FETCH_SUCCESS = 2,
-  RESOURCE_STATUS_TYPE_PROTO__FETCH_FAILURE = 3
-} ResourceStatusTypeProto;
-typedef enum _LocalizerActionProto {
-  LOCALIZER_ACTION_PROTO__LIVE = 1,
-  LOCALIZER_ACTION_PROTO__DIE = 2
-} LocalizerActionProto;
+typedef enum _Hadoop__Yarn__ResourceStatusTypeProto {
+  HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_PENDING = 1,
+  HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_SUCCESS = 2,
+  HADOOP__YARN__RESOURCE_STATUS_TYPE_PROTO__FETCH_FAILURE = 3
+} Hadoop__Yarn__ResourceStatusTypeProto;
+typedef enum _Hadoop__Yarn__LocalizerActionProto {
+  HADOOP__YARN__LOCALIZER_ACTION_PROTO__LIVE = 1,
+  HADOOP__YARN__LOCALIZER_ACTION_PROTO__DIE = 2
+} Hadoop__Yarn__LocalizerActionProto;
 
 /* --- messages --- */
 
-struct  _LocalResourceStatusProto
+struct  _Hadoop__Yarn__LocalResourceStatusProto
 {
   ProtobufCMessage base;
-  LocalResourceProto *resource;
+  Hadoop__Yarn__LocalResourceProto *resource;
   protobuf_c_boolean has_status;
-  ResourceStatusTypeProto status;
-  URLProto *localpath;
+  Hadoop__Yarn__ResourceStatusTypeProto status;
+  Hadoop__Yarn__URLProto *localpath;
   protobuf_c_boolean has_localsize;
   int64_t localsize;
-  SerializedExceptionProto *exception;
+  Hadoop__Yarn__SerializedExceptionProto *exception;
 };
-#define LOCAL_RESOURCE_STATUS_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&local_resource_status_proto__descriptor) \
+#define HADOOP__YARN__LOCAL_RESOURCE_STATUS_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__local_resource_status_proto__descriptor) \
     , NULL, 0,0, NULL, 0,0, NULL }
 
 
-struct  _LocalizerStatusProto
+struct  _Hadoop__Yarn__LocalizerStatusProto
 {
   ProtobufCMessage base;
   char *localizer_id;
   size_t n_resources;
-  LocalResourceStatusProto **resources;
+  Hadoop__Yarn__LocalResourceStatusProto **resources;
 };
-#define LOCALIZER_STATUS_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&localizer_status_proto__descriptor) \
+#define HADOOP__YARN__LOCALIZER_STATUS_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__localizer_status_proto__descriptor) \
     , NULL, 0,NULL }
 
 
-struct  _ResourceLocalizationSpecProto
+struct  _Hadoop__Yarn__ResourceLocalizationSpecProto
 {
   ProtobufCMessage base;
-  LocalResourceProto *resource;
-  URLProto *destination_directory;
+  Hadoop__Yarn__LocalResourceProto *resource;
+  Hadoop__Yarn__URLProto *destination_directory;
 };
-#define RESOURCE_LOCALIZATION_SPEC_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&resource_localization_spec_proto__descriptor) \
+#define HADOOP__YARN__RESOURCE_LOCALIZATION_SPEC_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__resource_localization_spec_proto__descriptor) \
     , NULL, NULL }
 
 
-struct  _LocalizerHeartbeatResponseProto
+struct  _Hadoop__Yarn__LocalizerHeartbeatResponseProto
 {
   ProtobufCMessage base;
   protobuf_c_boolean has_action;
-  LocalizerActionProto action;
+  Hadoop__Yarn__LocalizerActionProto action;
   size_t n_resources;
-  ResourceLocalizationSpecProto **resources;
+  Hadoop__Yarn__ResourceLocalizationSpecProto **resources;
 };
-#define LOCALIZER_HEARTBEAT_RESPONSE_PROTO__INIT \
- { PROTOBUF_C_MESSAGE_INIT (&localizer_heartbeat_response_proto__descriptor) \
+#define HADOOP__YARN__LOCALIZER_HEARTBEAT_RESPONSE_PROTO__INIT \
+ { PROTOBUF_C_MESSAGE_INIT (&hadoop__yarn__localizer_heartbeat_response_proto__descriptor) \
     , 0,0, 0,NULL }
 
 
-/* LocalResourceStatusProto methods */
-void   local_resource_status_proto__init
-                     (LocalResourceStatusProto         *message);
-size_t local_resource_status_proto__get_packed_size
-                     (const LocalResourceStatusProto   *message);
-size_t local_resource_status_proto__pack
-                     (const LocalResourceStatusProto   *message,
+/* Hadoop__Yarn__LocalResourceStatusProto methods */
+void   hadoop__yarn__local_resource_status_proto__init
+                     (Hadoop__Yarn__LocalResourceStatusProto         *message);
+size_t hadoop__yarn__local_resource_status_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalResourceStatusProto   *message);
+size_t hadoop__yarn__local_resource_status_proto__pack
+                     (const Hadoop__Yarn__LocalResourceStatusProto   *message,
                       uint8_t             *out);
-size_t local_resource_status_proto__pack_to_buffer
-                     (const LocalResourceStatusProto   *message,
+size_t hadoop__yarn__local_resource_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalResourceStatusProto   *message,
                       ProtobufCBuffer     *buffer);
-LocalResourceStatusProto *
-       local_resource_status_proto__unpack
+Hadoop__Yarn__LocalResourceStatusProto *
+       hadoop__yarn__local_resource_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   local_resource_status_proto__free_unpacked
-                     (LocalResourceStatusProto *message,
+void   hadoop__yarn__local_resource_status_proto__free_unpacked
+                     (Hadoop__Yarn__LocalResourceStatusProto *message,
                       ProtobufCAllocator *allocator);
-/* LocalizerStatusProto methods */
-void   localizer_status_proto__init
-                     (LocalizerStatusProto         *message);
-size_t localizer_status_proto__get_packed_size
-                     (const LocalizerStatusProto   *message);
-size_t localizer_status_proto__pack
-                     (const LocalizerStatusProto   *message,
+/* Hadoop__Yarn__LocalizerStatusProto methods */
+void   hadoop__yarn__localizer_status_proto__init
+                     (Hadoop__Yarn__LocalizerStatusProto         *message);
+size_t hadoop__yarn__localizer_status_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalizerStatusProto   *message);
+size_t hadoop__yarn__localizer_status_proto__pack
+                     (const Hadoop__Yarn__LocalizerStatusProto   *message,
                       uint8_t             *out);
-size_t localizer_status_proto__pack_to_buffer
-                     (const LocalizerStatusProto   *message,
+size_t hadoop__yarn__localizer_status_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalizerStatusProto   *message,
                       ProtobufCBuffer     *buffer);
-LocalizerStatusProto *
-       localizer_status_proto__unpack
+Hadoop__Yarn__LocalizerStatusProto *
+       hadoop__yarn__localizer_status_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   localizer_status_proto__free_unpacked
-                     (LocalizerStatusProto *message,
+void   hadoop__yarn__localizer_status_proto__free_unpacked
+                     (Hadoop__Yarn__LocalizerStatusProto *message,
                       ProtobufCAllocator *allocator);
-/* ResourceLocalizationSpecProto methods */
-void   resource_localization_spec_proto__init
-                     (ResourceLocalizationSpecProto         *message);
-size_t resource_localization_spec_proto__get_packed_size
-                     (const ResourceLocalizationSpecProto   *message);
-size_t resource_localization_spec_proto__pack
-                     (const ResourceLocalizationSpecProto   *message,
+/* Hadoop__Yarn__ResourceLocalizationSpecProto methods */
+void   hadoop__yarn__resource_localization_spec_proto__init
+                     (Hadoop__Yarn__ResourceLocalizationSpecProto         *message);
+size_t hadoop__yarn__resource_localization_spec_proto__get_packed_size
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto   *message);
+size_t hadoop__yarn__resource_localization_spec_proto__pack
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto   *message,
                       uint8_t             *out);
-size_t resource_localization_spec_proto__pack_to_buffer
-                     (const ResourceLocalizationSpecProto   *message,
+size_t hadoop__yarn__resource_localization_spec_proto__pack_to_buffer
+                     (const Hadoop__Yarn__ResourceLocalizationSpecProto   *message,
                       ProtobufCBuffer     *buffer);
-ResourceLocalizationSpecProto *
-       resource_localization_spec_proto__unpack
+Hadoop__Yarn__ResourceLocalizationSpecProto *
+       hadoop__yarn__resource_localization_spec_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   resource_localization_spec_proto__free_unpacked
-                     (ResourceLocalizationSpecProto *message,
+void   hadoop__yarn__resource_localization_spec_proto__free_unpacked
+                     (Hadoop__Yarn__ResourceLocalizationSpecProto *message,
                       ProtobufCAllocator *allocator);
-/* LocalizerHeartbeatResponseProto methods */
-void   localizer_heartbeat_response_proto__init
-                     (LocalizerHeartbeatResponseProto         *message);
-size_t localizer_heartbeat_response_proto__get_packed_size
-                     (const LocalizerHeartbeatResponseProto   *message);
-size_t localizer_heartbeat_response_proto__pack
-                     (const LocalizerHeartbeatResponseProto   *message,
+/* Hadoop__Yarn__LocalizerHeartbeatResponseProto methods */
+void   hadoop__yarn__localizer_heartbeat_response_proto__init
+                     (Hadoop__Yarn__LocalizerHeartbeatResponseProto         *message);
+size_t hadoop__yarn__localizer_heartbeat_response_proto__get_packed_size
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto   *message);
+size_t hadoop__yarn__localizer_heartbeat_response_proto__pack
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto   *message,
                       uint8_t             *out);
-size_t localizer_heartbeat_response_proto__pack_to_buffer
-                     (const LocalizerHeartbeatResponseProto   *message,
+size_t hadoop__yarn__localizer_heartbeat_response_proto__pack_to_buffer
+                     (const Hadoop__Yarn__LocalizerHeartbeatResponseProto   *message,
                       ProtobufCBuffer     *buffer);
-LocalizerHeartbeatResponseProto *
-       localizer_heartbeat_response_proto__unpack
+Hadoop__Yarn__LocalizerHeartbeatResponseProto *
+       hadoop__yarn__localizer_heartbeat_response_proto__unpack
                      (ProtobufCAllocator  *allocator,
                       size_t               len,
                       const uint8_t       *data);
-void   localizer_heartbeat_response_proto__free_unpacked
-                     (LocalizerHeartbeatResponseProto *message,
+void   hadoop__yarn__localizer_heartbeat_response_proto__free_unpacked
+                     (Hadoop__Yarn__LocalizerHeartbeatResponseProto *message,
                       ProtobufCAllocator *allocator);
 /* --- per-message closures --- */
 
-typedef void (*LocalResourceStatusProto_Closure)
-                 (const LocalResourceStatusProto *message,
+typedef void (*Hadoop__Yarn__LocalResourceStatusProto_Closure)
+                 (const Hadoop__Yarn__LocalResourceStatusProto *message,
                   void *closure_data);
-typedef void (*LocalizerStatusProto_Closure)
-                 (const LocalizerStatusProto *message,
+typedef void (*Hadoop__Yarn__LocalizerStatusProto_Closure)
+                 (const Hadoop__Yarn__LocalizerStatusProto *message,
                   void *closure_data);
-typedef void (*ResourceLocalizationSpecProto_Closure)
-                 (const ResourceLocalizationSpecProto *message,
+typedef void (*Hadoop__Yarn__ResourceLocalizationSpecProto_Closure)
+                 (const Hadoop__Yarn__ResourceLocalizationSpecProto *message,
                   void *closure_data);
-typedef void (*LocalizerHeartbeatResponseProto_Closure)
-                 (const LocalizerHeartbeatResponseProto *message,
+typedef void (*Hadoop__Yarn__LocalizerHeartbeatResponseProto_Closure)
+                 (const Hadoop__Yarn__LocalizerHeartbeatResponseProto *message,
                   void *closure_data);
 
 /* --- services --- */
@@ -177,12 +177,12 @@ typedef void (*LocalizerHeartbeatResponseProto_Closure)
 
 /* --- descriptors --- */
 
-extern const ProtobufCEnumDescriptor    resource_status_type_proto__descriptor;
-extern const ProtobufCEnumDescriptor    localizer_action_proto__descriptor;
-extern const ProtobufCMessageDescriptor local_resource_status_proto__descriptor;
-extern const ProtobufCMessageDescriptor localizer_status_proto__descriptor;
-extern const ProtobufCMessageDescriptor resource_localization_spec_proto__descriptor;
-extern const ProtobufCMessageDescriptor localizer_heartbeat_response_proto__descriptor;
+extern const ProtobufCEnumDescriptor    hadoop__yarn__resource_status_type_proto__descriptor;
+extern const ProtobufCEnumDescriptor    hadoop__yarn__localizer_action_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__local_resource_status_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__localizer_status_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__resource_localization_spec_proto__descriptor;
+extern const ProtobufCMessageDescriptor hadoop__yarn__localizer_heartbeat_response_proto__descriptor;
 
 PROTOBUF_C_END_DECLS
 
