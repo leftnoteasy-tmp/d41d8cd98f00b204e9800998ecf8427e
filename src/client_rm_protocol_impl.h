@@ -1,8 +1,8 @@
-#ifndef _HD_CLIENT_CLIENT_RM_PROTOCOL_IMPL_H
-#define _HD_CLIENT_CLIENT_RM_PROTOCOL_IMPL_H
+#ifndef _YARN_CLIENT_RM_PROTOCOL_IMPL_H
+#define _YARN_CLIENT_RM_PROTOCOL_IMPL_H
 
 #include "yarn.h"
 
-int get_new_app_impl(hadoop_rpc_proxy_t* proxy);
+int get_new_application_impl(hadoop_rpc_proxy_t* proxy);
 
-#endif // _HD_CLIENT_CLIENT_RM_PROTOCOL_IMPL_H
+#endif // _YARN_CLIENT_RM_PROTOCOL_IMPL_H

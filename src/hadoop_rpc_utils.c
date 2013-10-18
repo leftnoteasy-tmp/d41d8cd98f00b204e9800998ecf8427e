@@ -8,6 +8,7 @@
 // PB definitions
 #include "RpcHeader.pb-c.h"
 #include "IpcConnectionContext.pb-c.h"
+#include "ProtobufRpcEngine.pb-c.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -148,13 +149,20 @@ int write_connection_header(hadoop_rpc_proxy_t* proxy) {
     rc = write_all(proxy->socket_id, header_buffer, header_len);
     if (rc != 0) {
         yarn_log_error("write rpc header failed.");
+        free(header_buffer);
+        free(ipc_ctx_buffer);
         return -1;
     }
     rc = write_all(proxy->socket_id, ipc_ctx_buffer, ipc_ctx_len);
     if (rc != 0) {
         yarn_log_error("write ipc connection context failed.");
+        free(header_buffer);
+        free(ipc_ctx_buffer);
         return -1;
     }
+
+    free(header_buffer);
+    free(ipc_ctx_buffer);
 
     return 0;
 }
@@ -168,7 +176,7 @@ static char* generate_protobuf_header(hadoop_rpc_proxy_t* proxy, const char* met
     header.declaringclassprotocolname = proxy->protocol_name;
     header.clientprotocolversion = 1L;
 
-    return generate_delimited_message((const ProtobufCMessage*)&msg, len);
+    return generate_delimited_message((const ProtobufCMessage*)&header, len);
 }
 
 /* send the whole rpc payload to socket, will add header for it */
@@ -269,230 +277,6 @@ int write_request(
     return 0;
 }
 
-/**
- * set local resources to msg, return 0 if succeed
- */
-/*
-int set_local_resources(struct pbc_wmessage* msg, const char* key) {
-    int rc, len, i;
-
-    // instanity check
-    if ((!msg) || (!key)) {
-        yarn_log_error("set_local_resources: msg/key is null.\n");
-        return -1;
-    }
-
-    // check if initialized
-    if (local_resource_pb_num < 0) {
-        rc = init_local_resources();
-        if (rc != 0) {
-            yarn_log_error("init_local_resources failed.\n");
-            return -1;
-        }
-    }
-
-
-    // loop local_resource and copy it to msg
-    for (i = 0; i < local_resource_pb_num; i++) {
-
-        // for convenience
-        struct pbc_rmessage* rvalue = local_resource_pb_array[i]->rmsg;
-
-        // get a new wmsg for write
-        struct pbc_wmessage* wmsg = pbc_wmessage_message(msg, key);
-        if (!wmsg) {
-            yarn_log_error("set_local_resources get wmsg from msg failed.\n");
-            return -1;
-        }
-
-        // serialize key
-        rc = pbc_wmessage_string(wmsg, "key", local_resource_pb_array[i]->key, 0);
-        if (0 != rc) {
-            yarn_log_error("serialize key to wmsg failed.\n");
-            return -1;
-        }
-
-        // get LocalResourceProto
-        struct pbc_wmessage* wvalue = pbc_wmessage_message(wmsg, "value");
-        if (!wvalue) {
-            yarn_log_error("failed to get walue from wmsg.\n");
-            return -1;
-        }
-
-        // read and set size
-        uint64_t size;
-        size = pbc_rmessage_int64(rvalue, "size", 0);
-        uint32_t ulo = size & 0xFFFFFFFF;
-        uint32_t uhi = size >> 32;
-        rc = pbc_wmessage_integer(wvalue, "size", ulo, uhi);
-        if (0 != rc) {
-            yarn_log_error("failed to set size in wvalue.\n");
-            return -1;
-        }
-
-        // read and set timestamp
-        uint64_t timestamp;
-        timestamp = pbc_rmessage_int64(rvalue, "timestamp", 0);
-        ulo = timestamp & 0xFFFFFFFF;
-        uhi = timestamp >> 32;
-        rc = pbc_wmessage_integer(wvalue, "timestamp", ulo, uhi);
-        if (0 != rc) {
-            yarn_log_error("failed to set timestamp in wvalue.\n");
-            return -1;
-        }
-
-        // read and set type
-        int type = pbc_rmessage_integer(rvalue, "type", 0, NULL);
-        rc = pbc_wmessage_integer(wvalue, "type", type, NULL);
-        if (0 != rc) {
-            yarn_log_error("failed to set type in wvalue");
-            return -1;
-        }
-
-        // read and set visibility
-        int visibility = pbc_rmessage_integer(rvalue, "visibility", 0, NULL);
-        rc = pbc_wmessage_integer(wvalue, "visibility", visibility, NULL);
-        if (0 != rc) {
-            yarn_log_error("failed to set visibility in wvalue");
-            return -1;
-        }
-
-        // read and set url
-        struct pbc_rmessage* rurl = pbc_rmessage_message(rvalue, "resource", 0);
-        struct pbc_wmessage* wurl = pbc_wmessage_message(wvalue, "resource");
-        if ((!rurl) || (!wurl)) {
-            yarn_log_error("failed to get rurl or wurl.\n");
-            return -1;
-        }
-
-        char* scheme = pbc_rmessage_string(rurl, "scheme", 0, NULL);
-        char* host = pbc_rmessage_string(rurl, "host", 0, NULL);
-        char* file = pbc_rmessage_string(rurl, "file", 0, NULL);
-        int port = pbc_rmessage_integer(rurl, "port", 0, NULL);
-
-        if (!file) {
-            yarn_log_error("failed to read file from rurl.\n");
-            return -1;
-        }
-
-        if (scheme) {
-            rc = pbc_wmessage_string(wurl, "scheme", scheme, NULL);
-            if (rc != 0) {
-                yarn_log_error("failed to ser scheme to wurl.\n");
-                return -1;
-            }
-        }
-
-        if (host) {
-            rc = pbc_wmessage_string(wurl, "host", host, NULL);
-            if (rc != 0) {
-                yarn_log_error("failed to ser host to wurl.\n");
-                return -1;
-            }
-        }
-
-        rc = pbc_wmessage_string(wurl, "file", file, NULL);
-        if (rc != 0) {
-            yarn_log_error("failed to ser file to wurl.\n");
-            return -1;
-        }
-
-        rc = pbc_wmessage_integer(wurl, "port", port, NULL);
-        if (rc != 0) {
-            yarn_log_error("failed to ser port to wurl.\n");
-            return -1;
-        }
-    }
-    return 0;
-}
-*/
-
-/**
- *  set app_id in PB
-    message ApplicationIdProto {
-        optional int32 id = 1;
-        optional int64 cluster_timestamp = 2;
-    }
- */
-/*
-int set_app_id(struct pbc_wmessage* m,
-        const char* key,
-        hadoop_rpc_proxy_t* proxy) {
-    int rc;
-    struct pbc_wmessage* app_id_msg = pbc_wmessage_message(m, key);
-    if (!app_id_msg) {
-        yarn_log_error("get app_id_msg, failed.\n");
-        return -1;
-    }
-
-    rc = pbc_wmessage_integer(app_id_msg, "id", proxy->app_id, 0);
-    if (rc != 0) {
-        yarn_log_error("pack app_id failed.\n");
-        return -1;
-    }
-
-    int64_t ts = proxy->cluster_timestamp;
-    uint32_t ulo = ts & 0xFFFFFFFF;
-    uint32_t uhi = ts >> 32;
-    rc = pbc_wmessage_integer(app_id_msg, "cluster_timestamp", ulo, uhi);
-    if (rc != 0) {
-        yarn_log_error("pack cluster timestamp failed.\n");
-        return -1;
-    }
-
-    return 0;
-}
-*/
-
-/**
- *  message ApplicationAttemptIdProto {
- *   optional ApplicationIdProto application_id = 1;
- *   optional int32 attemptId = 2;
- *  }
- */
- /*
-int set_app_attempt_id(struct pbc_wmessage *m,
-        const char *key,
-        hadoop_rpc_proxy_t* proxy) {
-    int rc;
-    struct pbc_wmessage* app_attempt_id_msg = pbc_wmessage_message(m, key);
-    if (!app_attempt_id_msg) {
-        yarn_log_error("get app_attempt_id_msg failed.\n");
-        return -1;
-    }
-
-    // pack attempt_id
-    rc = pbc_wmessage_integer(app_attempt_id_msg, "attemptId", proxy->app_attempt_id, 0);
-    if (rc != 0) {
-        yarn_log_error("pack attempt_id failed.\n");
-        return -1;
-    }
-
-    struct pbc_wmessage* app_id_msg = pbc_wmessage_message(app_attempt_id_msg, "application_id");
-    if (!app_id_msg) {
-        yarn_log_error("get app_id_msg, failed.\n");
-        return -1;
-    }
-
-    rc = pbc_wmessage_integer(app_id_msg, "id", proxy->app_id, 0);
-    if (rc != 0) {
-        yarn_log_error("pack app_id failed.\n");
-        return -1;
-    }
-
-    int64_t ts = proxy->cluster_timestamp;
-    uint32_t ulo = ts & 0xFFFFFFFF;
-    uint32_t uhi = ts >> 32;
-    rc = pbc_wmessage_integer(app_id_msg, "cluster_timestamp", ulo, uhi);
-    if (rc != 0) {
-        yarn_log_error("pack cluster timestamp failed.\n");
-        return -1;
-    }
-
-    return 0;
-}
-*/
-
 /* genereate delimited message (with vint length in buffer) */
 char* generate_delimited_message(const ProtobufCMessage *message, int* length_out) {
     int msg_len = protobuf_c_message_get_packed_size(message);
@@ -501,13 +285,6 @@ char* generate_delimited_message(const ProtobufCMessage *message, int* length_ou
     protobuf_c_message_pack(message, buffer + vint_len);
     write_raw_varint32(buffer, msg_len);
     *length_out = msg_len + vint_len;
-
-    //debug
-    int i;
-    for (i = 0; i < msg_len; i++) {
-        printf("%d ", buffer[i + vint_len]);
-    }
-    printf("\n");
     return buffer;
 }
 
@@ -559,49 +336,74 @@ char* generate_request_header(hadoop_rpc_proxy_t* proxy, bool first, int* size) 
 }
 
 
-/* read header of response, it will first read a varint32 of header size, 
- * then following is header
- * if SUCCEED, (return RESPONSE_SUCCEED), it will also read response buffer and size
- * if ERROR, (return RESPONSE_ERROR), then you can call read_exception(...) to get 
- *    what happended
- * if FATAL, (return RESPONSE_FATAL), then you can call read_fatal to get version of
- *    server side
+/* read header of response,
+ * it will return actual response message if succeed
+ * it will return NULL if failed/error, and print error messages
  */ 
-response_type_t recv_rpc_response(hadoop_rpc_proxy_t* proxy,
-    char** response, int* size) {
-    // add return
-}
+char* recv_rpc_response(hadoop_rpc_proxy_t* proxy, int* response_msg_len) {
+    int response_total_len;
+    int rc;
 
-/**
- * init app_id and cluster_timestamp from envars, 
- * will return 0: if proxy->app_id not defined (-1) and successfully 
-                 get from env or it's already set
-               other value: other-wise.
- */
-int init_app_id_from_env(hadoop_rpc_proxy_t* proxy) {
-    if (proxy->app_id == -1) {
-        /* if app_id not defined, try to see if is it defined in envar */
-        char* val = getenv(APP_ID_ENV_KEY);
-        if (NULL != val) {
-            int app_id = atoi(val);
-            proxy->app_id = app_id;
-        } else {
-            yarn_log_error("app id is not defined, please check.\n");
-            return -1;
-        }
+    // read length
+    rc = read_all(proxy->socket_id, &response_total_len, sizeof(int));
+    if (0 != rc) {
+        yarn_log_error("failed to read total length of response");
+        return NULL;
     }
 
-    if (proxy->cluster_timestamp == -1) {
-        /* if app_id not defined, try to see if is it defined in envar */
-        char* val = getenv(CLUSTER_TIMESTAMP_ENV_KEY);
-        if (NULL != val) {
-            long ts = atol(val);
-            proxy->cluster_timestamp = ts;
-        } else {
-            yarn_log_error("cluster time stamp is not defined, please check.\n");
-            return -1;
-        }
+    // read vlen of response header
+    int vint_len;
+    int response_header_len;
+    rc = read_raw_varint32(proxy->socket_id, &vint_len, &response_header_len);
+    if (0 != rc) {
+        yarn_log_error("failed to read response header length");
+        return NULL;
     }
 
-    return 0;
+    // parse response header
+    char header_buffer[response_header_len];
+    rc = read_all(proxy->socket_id, header_buffer, response_header_len);
+    Hadoop__Common__RpcResponseHeaderProto* response_header = 
+        hadoop__common__rpc_response_header_proto__unpack(NULL, response_header_len, header_buffer);
+    if (!response_header) {
+        yarn_log_error("failed to parse rpc response header");
+        return NULL;
+    }
+
+    // check values of response header and print error messages if needed
+    if (HADOOP__COMMON__RPC_RESPONSE_HEADER_PROTO__RPC_STATUS_PROTO__SUCCESS == response_header->status) {
+        // clear response header
+        hadoop__common__rpc_response_header_proto__free_unpacked(response_header, NULL);
+
+        // do succeed response
+        // continue read buffer, get actual response message
+        rc = read_raw_varint32(proxy->socket_id, &vint_len, response_msg_len);
+        if (0 != rc) {
+            yarn_log_error("failed to read response message length");
+            return NULL;
+        }
+        char* buffer = (char*)malloc(*response_msg_len);
+        rc = read_all(proxy->socket_id, buffer, *response_msg_len);
+        if (0 != rc) {
+            yarn_log_error("failed to read response message");
+            free(buffer);
+            return NULL;
+        }
+        return buffer;
+    } else {
+        yarn_log_error("error received in rpc communication:");
+        // do failed response
+        if (response_header->exceptionclassname) {
+            yarn_log_error("exception class name:%s", response_header->exceptionclassname);
+        }
+        if (response_header->errormsg) {
+            yarn_log_error("exception message:%s", response_header->errormsg);
+        }
+        if (response_header->has_errordetail) {
+            // TODO, make the error code readable
+            yarn_log_error("detailed error code is %d", response_header->errordetail);
+        }
+        hadoop__common__rpc_response_header_proto__free_unpacked(response_header, NULL);
+        return NULL;
+    }
 }

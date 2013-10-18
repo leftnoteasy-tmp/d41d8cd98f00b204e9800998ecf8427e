@@ -51,7 +51,8 @@ libyarn_la_SOURCES += \
 	src/hadoop_rpc_utils.c \
 	src/net_utils.c \
 	src/str_utils.c \
-	src/log_utils.c
+	src/log_utils.c \
+	src/client_rm_protocol_impl.c
 
 #	src/am_rm_protocol_impl.c \
 #	src/container_manager_impl.c \

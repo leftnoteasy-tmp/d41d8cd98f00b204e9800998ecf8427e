@@ -1,8 +1,6 @@
 #include "yarn.h"
 #include "hadoop_rpc_utils.h"
 #include "client_rm_protocol_impl.h"
-#include "am_rm_protocol_impl.h"
-#include "container_manager_impl.h"
 #include "net_utils.h"
 #include "str_utils.h"
 #include "log_utils.h"
@@ -21,18 +19,13 @@
 #include <ctype.h>
 #include <unistd.h>
 
-/* local variables */
-bool is_env_initialize = false;
-struct pbc_env* env;
-const char* hadoop_version = NULL;
-
 /******************
  * global methods *
  ******************/
 hadoop_rpc_proxy_t* new_hadoop_rpc_proxy(
     const char* host,
     int port,
-    hadoop_client_type_t client_type, 
+    hadoop_client_type_t client_type,
     hadoop_server_type_t server_type) {
     int rc;
 
@@ -108,18 +101,25 @@ void destory_hadoop_rpc_proxy(hadoop_rpc_proxy_t** pproxy) {
 }
 
 /**
- * submit application to YARN-RM from client
- * return 0 if succeed, otherwise, it's failed
+ * get new application from YARN RM, app id / attempt-id / cluster ts
+ * will be put in hadoop_rpc_proxy_t struct
  */
-int submit_application(
-    hadoop_rpc_proxy_t* proxy, 
-    submit_application_context_t* context) {
-    int rc = get_new_app_impl(proxy);
+int get_new_application(hadoop_rpc_proxy_t* proxy) {
+    int rc = pthread_mutex_lock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("get new application invoke failed.\n");
+        yarn_log_error("try to lock failed in get_new_application");
         return -1;
     }
-    return 0;
+    rc = get_new_application_impl(proxy);
+    if (rc != 0) {
+        pthread_mutex_unlock(&proxy->lock);
+        yarn_log_error("get new application failed");
+        return -1;
+    }
+    rc = pthread_mutex_unlock(&proxy->lock);
+    if (rc != 0) {
+        yarn_log_error("try to unlock proxy failed in get_new_application");
+    }
 }
 
 /**
@@ -129,7 +129,7 @@ int submit_application(
 int register_app_master(hadoop_rpc_proxy_t* proxy) {
     int rc = pthread_mutex_lock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to lock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to lock proxy failed in register_app_master.\n");
         return -1;
     }
     rc = register_app_master_impl(proxy);
@@ -140,7 +140,7 @@ int register_app_master(hadoop_rpc_proxy_t* proxy) {
     }
     rc = pthread_mutex_unlock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to unlock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to unlock proxy failed in register_app_master.\n");
         return -1;
     }
     return 0;
@@ -154,7 +154,7 @@ int finish_app_master(hadoop_rpc_proxy_t* proxy,
     const char* diagnostics_msg) {
     int rc = pthread_mutex_lock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to lock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to lock proxy failed in finish_app_master.\n");
         return -1;
     }
     rc = finish_app_master_impl(proxy, status, diagnostics_msg);
@@ -165,7 +165,7 @@ int finish_app_master(hadoop_rpc_proxy_t* proxy,
     }
     rc = pthread_mutex_unlock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to unlock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to unlock proxy failed in finish_app_master.\n");
         return -1;
     }
     return 0;
@@ -187,13 +187,13 @@ allocate_resource_response_t* allocate_resource(
     int rc;
     rc = pthread_mutex_lock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to lock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to lock proxy failed in allocate_resource.\n");
         return NULL;
     }
     allocate_resource_response_t* response = allocate_resource_impl(proxy, context, max_wait_time);
     rc = pthread_mutex_unlock(&proxy->lock);
     if (rc != 0) {
-        yarn_log_error("try to unlock proxy failed in get_completed_containers.\n");
+        yarn_log_error("try to unlock proxy failed in allocate_resource.\n");
         return NULL;
     }
     if (!response) {

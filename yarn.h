@@ -5,8 +5,6 @@
 #include <stdint.h>
 #include <pthread.h>
 
-#include "opal/util/output.h"
-
 /**
  * type of PB server
  */
@@ -166,12 +164,10 @@ hadoop_rpc_proxy_t* new_hadoop_rpc_proxy(
     hadoop_server_type_t server_type);  /* pass NULL we will use latest YARN version we support */
 
 /**
- * submit application to YARN-RM from client
- * return 0 if succeed, otherwise, it's failed
+ * get new application from YARN RM, app id / attempt-id / cluster ts
+ * will be put in hadoop_rpc_proxy_t struct
  */
-int submit_application(
-    hadoop_rpc_proxy_t* proxy, 
-    submit_application_context_t* context);
+int get_new_application(hadoop_rpc_proxy_t* proxy);
 
 /**
  * register app master, like register to RM, init proxy-app-id, etc.

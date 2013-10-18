@@ -93,16 +93,11 @@ int write_request(
  */
 int init_app_id_from_env(hadoop_rpc_proxy_t* proxy);
 
-/* read response, it will first read a varint32 of header size, 
- * then following is header
- * if SUCCEED, (return RESPONSE_SUCCEED), it will also read response buffer and size
- * if ERROR, (return RESPONSE_ERROR), then you can call read_exception(...) to get 
- *    what happended
- * if FATAL, (return RESPONSE_FATAL), then you can call read_fatal to get version of
- *    server side
+/* read header of response,
+ * it will return actual response message if succeed
+ * it will return NULL if failed/error, and print error messages
  */ 
-response_type_t recv_rpc_response(hadoop_rpc_proxy_t* proxy,
-    char** response, int* size);
+char* recv_rpc_response(hadoop_rpc_proxy_t* proxy, int* response_msg_len);
 
 /* read error, return 0 if SUCCEED, and put error msg to params */
 int read_exception(hadoop_rpc_proxy_t* proxy, 
